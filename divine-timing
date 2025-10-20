@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Path of Divine Timing — Preview</title>
+<style>
+  :root{--bg:#0f0f12; --fg:#e9e9ef; --muted:#b5b5c6; --accent:#ffd07a; --card:#18181d; --line:#26262c;}
+  *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;line-height:1.6}
+  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:900px;margin:0 auto;padding:24px}
+  .card{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:22px}
+  h1{margin:0 0 6px;font-weight:750;font-size:clamp(26px,4vw,40px)}
+  .sub{color:var(--muted);margin:0 0 16px}
+  .cta{display:inline-block;background:var(--accent);color:#1a1300;padding:10px 16px;border-radius:12px;font-weight:700;box-shadow:0 6px 24px rgba(255,208,122,.15)}
+  .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  img.cover{width:100%;border-radius:12px}
+  .back{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row" style="justify-content:space-between;align-items:center;margin-bottom:10px">
+    <a class="back" href="index.html">← Back to Home</a>
+  </div>
+
+  <div class="card">
+    <h1>My Path of Divine Timing</h1>
+    <p class="sub">Aligning with Light’s rhythm — trust, balance, and the right moment arriving in peace.</p>
+
+    <img class="cover" src="https://bkandersonbooks.github.io/ChatGPT%20Image%20Oct%2019,%202025.png" alt="My Path of Divine Timing cover">
+
+    <p style="margin-top:16px">
+      Divine timing invites us to rest from forcing outcomes and to live with the gentle confidence that what is needed arrives on time. This book gathers stories and reflections on walking by Light’s rhythm.
+    </p>
+
+    <div class="row" style="margin-top:8px">
+      <a class="cta" href="index.html#triad">Read more soon</a>
+      <a class="back" href="mailto:bkandersonbooks@gmail.com">Contact the authors</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
