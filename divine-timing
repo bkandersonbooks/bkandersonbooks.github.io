@@ -1,54 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>My Path of Divine Timing — Preview</title>
-<style>
-  :root{--bg:#0f0f12; --fg:#e9e9ef; --muted:#b5b5c6; --accent:#ffd07a; --card:#18181d; --line:#26262c;}
-  *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;line-height:1.6}
-  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-  .wrap{max-width:980px;margin:0 auto;padding:24px}
-  header{display:flex;align-items:center;justify-content:space-between;margin:4px 0 18px}
-  .brand{color:var(--muted)} .back{color:var(--muted)}
-  .card{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:24px}
-  h1{margin:0 0 8px;font-weight:750;font-size:clamp(26px,4vw,40px)}
-  .sub{color:var(--muted);margin:0 0 18px}
-  .grid{display:grid;gap:18px;grid-template-columns: minmax(260px, 360px) 1fr}
-  img class="cover" 
-  src="https://bkandersonbooks.github.io/ChatGPT%20Image%20Oct%2019,%202025,%2012_25_54%20PM.jpg" 
-  alt="My Path of Divine Timing cover">}
-  .pill{display:inline-block;border:1px solid var(--line);color:var(--muted);padding:6px 10px;border-radius:999px;font-size:13px}
-  .cta{display:inline-block;background:var(--accent);color:#1a1300;padding:10px 16px;border-radius:12px;font-weight:700;box-shadow:0 6px 24px rgba(255,208,122,.15)}
-  footer{color:var(--muted);text-align:center;padding:24px 0 8px}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Path of Divine Timing — Preview</title>
+  <style>
+    :root{
+      --bg:#0f0f12; --fg:#e9e9ef; --muted:#b5b5c6; --accent:#ffd07a; --card:#18181d; --line:#26262c;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--fg);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif; line-height:1.6}
+    .wrap{max-width:900px; margin:0 auto; padding:24px}
+    .card{border:1px solid var(--line); background:var(--card); border-radius:18px; padding:20px}
+    h1{font-weight:750; letter-spacing:.2px; margin:6px 0 12px}
+    .sub{color:var(--muted)}
+    .cta{display:inline-block; background:var(--accent); color:#1a1300; padding:10px 14px; border-radius:10px; font-weight:700; text-decoration:none}
+    .row{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
+    img.cover{width:100%; border-radius:12px; display:block}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+  </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <a class="back" href="index.html">← Back to Home</a>
-    <span class="brand">The Triad of Light</span>
-  </header>
+  <div class="wrap">
+    <div class="row" style="justify-content:space-between; margin-bottom:12px">
+      <a href="./" class="cta" style="background:transparent; border:1px solid var(--line); color:var(--muted)">← Back to Home</a>
+    </div>
 
-  <div class="card">
-    <div class="grid">
-      <!-- Use your actual uploaded filename (JPG in your repo): -->
-      <img class="cover" src="https://bkandersonbooks.github.io/ChatGPT%20Image%20Oct%2019,%202025,%2012_25_54%20PM.jpg" alt="My Path of Divine Timing cover">
+    <div class="card">
+      <img class="cover"
+           src="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg"
+           alt="My Path of Divine Timing cover">
+      <h1>My Path of Divine Timing</h1>
+      <p class="sub">A luminous reflection on divine timing, balance, and spiritual awakening — guiding seekers to align their path with Light, purpose, and peace.</p>
 
-      <div>
-        <h1>My Path of Divine Timing</h1>
-        <p class="sub">Aligning with Light’s rhythm — trust, balance, and the right moment arriving in peace.</p>
-
-        <p>Divine timing invites us to rest from forcing outcomes and to live with the gentle confidence that what is needed arrives on time. This book gathers stories and reflections on walking by Light’s rhythm.</p>
-
-        <p><span class="pill">Preview</span> • <a class="cta" href="mailto:bkandersonbooks@gmail.com">Contact the authors</a></p>
+      <div style="margin-top:16px" class="row">
+        <a class="cta" href="./MyPathOfDivineTimingCover.jpg" target="_blank">View Cover Image</a>
+        <a class="cta" href="./" style="background:transparent; border:1px solid var(--line); color:var(--muted)">Back to Home</a>
       </div>
     </div>
   </div>
-
-  <footer>© <span id="y"></span> B.K. Anderson & Anders Taft</footer>
-</div>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
-
