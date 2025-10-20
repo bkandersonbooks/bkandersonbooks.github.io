@@ -15,14 +15,35 @@
     .card{border:1px solid var(--line); background:var(--card); border-radius:18px; padding:20px}
     h1{font-weight:750; letter-spacing:.2px; margin:6px 0 12px}
     .sub{color:var(--muted)}
-    .cta{display:inline-block; background:var(--accent); color:#1a1300; padding:10px 14px; border-radius:10px; font-weight:700; text-decoration:none}
-    .row {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 16px;
+    .cta {
+      background: var(--accent);
+      color: var(--bg);
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
 }
 
+.cta:hover {
+  background: var(--accent-hover);
+}
+<div class="card">
+  <a href="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg" target="_blank">
+    <img src="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg"
+         alt="My Path of Divine Timing cover"
+         style="width:100%; border-radius:8px;">
+  </a>
+
+  <h1>My Path of Divine Timing</h1>
+  <p class="sub">A luminous reflection on divine timing, balance, and spiritual awakening —
+     guiding seekers to align their path with the flow of Light, purpose, and peace.</p>
+
+  <div class="row" style="margin-top:16px;">
+    <a class="cta" href="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg" target="_blank">View Cover Image</a>
+    <a class="cta" href="./" style="background:transparent; border:1px solid var(--line); color:var(--muted);">Back to Books</a>
+  </div>
+</div>
+    .row{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
     img.cover{width:100%; border-radius:12px; display:block}
     a{color:var(--accent); text-decoration:none}
     a:hover{text-decoration:underline}
@@ -33,38 +54,7 @@
     <div class="row" style="justify-content:space-between; margin-bottom:12px">
       <a href="./" class="cta" style="background:transparent; border:1px solid var(--line); color:var(--muted)">← Back to Home</a>
     </div>
-    
-     <div class="card">
-       <a href="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg" target="_blank">
-         <img src="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg"
-              alt="My Path of Divine Timing cover"
-              style="width:100%; border-radius:8px;">
-  </a>
 
-  <h1>My Path of Divine Timing</h1>
-  <p class="sub">
-    A luminous reflection on divine timing, balance, and spiritual awakening — guiding seekers to align their path with the flow of Light, purpose, and peace.
-  </p>
-
-  <div style="margin-top:16px" class="row">
-    <a class="cta" href="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg" target="_blank">
-      View Cover Image
-    </a>
-     .cta {
-       background: var(--accent);
-       color: var(--bg);
-       padding: 10px 16px;
-       border-radius: 8px;
-       text-decoration: none;
-       font-weight: 600;
-}
-.cta:hover {
-  background: var(--accent-hover);
-}
-
-    </a>
-  </div>
-</div>
-
-  </body>
+   
+</body>
 </html>
