@@ -9,52 +9,36 @@
       --bg:#0f0f12; --fg:#e9e9ef; --muted:#b5b5c6; --accent:#ffd07a; --card:#18181d; --line:#26262c;
     }
     *{box-sizing:border-box}
-    html,body{margin:0; padding:0; background:var(--bg); color:var(--fg);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif; line-height:1.6}
-    .wrap{max-width:900px; margin:0 auto; padding:24px}
-    .card{border:1px solid var(--line); background:var(--card); border-radius:18px; padding:20px}
-    h1{font-weight:750; letter-spacing:.2px; margin:6px 0 12px}
-    .sub{color:var(--muted)}
-    .cta {
-      background: var(--accent);
-      color: var(--bg);
-      padding: 10px 16px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-}
-
-.cta:hover {
-  background: var(--accent-hover);
-}
-<div class="card">
-  <a href="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg" target="_blank">
-    <img src="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg"
-         alt="My Path of Divine Timing cover"
-         style="width:100%; border-radius:8px;">
-  </a>
-
-  <h1>My Path of Divine Timing</h1>
-  <p class="sub">A luminous reflection on divine timing, balance, and spiritual awakening —
-     guiding seekers to align their path with the flow of Light, purpose, and peace.</p>
-
-  <div class="row" style="margin-top:16px;">
-    <a class="cta" href="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg" target="_blank">View Cover Image</a>
-    <a class="cta" href="./" style="background:transparent; border:1px solid var(--line); color:var(--muted);">Back to Books</a>
-  </div>
-</div>
-    .row{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
-    img.cover{width:100%; border-radius:12px; display:block}
-    a{color:var(--accent); text-decoration:none}
-    a:hover{text-decoration:underline}
-  </style>
-</head>
 <body>
   <div class="wrap">
-    <div class="row" style="justify-content:space-between; margin-bottom:12px">
-      <a href="./" class="cta" style="background:transparent; border:1px solid var(--line); color:var(--muted)">← Back to Home</a>
+    <header>
+      <a class="back" href="index.html">← Back to Home</a>
+      <span class="brand">The Triad of Light</span>
+    </header>
+    <div class="card">
+      <div class="grid">
+        <img class="cover"
+             src="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg"
+             alt="My Path of Divine Timing cover">
+
+        <div>
+          <h1>My Path of Divine Timing</h1>
+          <p class="sub">A luminous reflection on divine timing, balance, and spiritual awakening — guiding seekers to align their path with the flow of Light, purpose, and peace.</p>
+
+          <p>
+            <span class="pill">Preview</span>
+            •
+            <a class="cta" href="mailto:bkandersonbooks@gmail.com">Contact the author</a>
+          </p>
+        </div>
+      </div>
     </div>
 
-   
+    <footer>© <span id="y"></span> B.K. Anderson & Anders Taft</footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
-</html>
+   
