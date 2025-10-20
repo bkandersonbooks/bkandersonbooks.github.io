@@ -27,13 +27,12 @@
     <div class="row" style="justify-content:space-between; margin-bottom:12px">
       <a href="./" class="cta" style="background:transparent; border:1px solid var(--line); color:var(--muted)">← Back to Home</a>
     </div>
-
     <div class="card">
-      <img class="cover"
-          <img src="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg"
-               alt="My Path of Divine Timing cover"
-               style="width:100%; border-radius:8px;">
-           alt="My Path of Divine Timing cover">
+      "<img class="cover
+       <img src="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg"
+            alt="My Path of Divine Timing cover"
+            style="width:100%; border-radius:8px;">
+               alt="My Path of Divine Timing cover">
       <h1>My Path of Divine Timing</h1>
       <p class="sub">A luminous reflection on divine timing, balance, and spiritual awakening — guiding seekers to align their path with Light, purpose, and peace.</p>
 
