@@ -47,6 +47,53 @@
     <div class="book" data-full="./images/book-cover-3.jpg" title="Click to preview">
       <img src="./images/book-cover-3.jpg" alt="Cover of the third book">
     </div>
+<main class="book-gallery">
+  <!-- The Phillips Family Legacy -->
+  <div class="book" data-full="./images/PhillipsFamilyLegacy.jpg" title="Click to preview">
+    <img src="./images/PhillipsFamilyLegacy.jpg" alt="The Phillips Family Legacy cover">
+  </div>
+
+  <!-- The Brown Family Legacy -->
+  <div class="book" data-full="./images/BrownFamilyLegacy.jpg" title="Click to preview">
+    <img src="./images/BrownFamilyLegacy.jpg" alt="The Brown Family Legacy cover">
+  </div>
+
+  <!-- The Anderson Family Legacy -->
+  <div class="book" data-full="./images/AndersonFamilyLegacy.jpg" title="Click to preview">
+    <img src="./images/AndersonFamilyLegacy.jpg" alt="The Anderson Family Legacy cover">
+  </div>
+
+  <!-- Andrew Berry Anderson -->
+  <div class="book" data-full="./images/AndrewBerryAnderson.jpg" title="Click to preview">
+    <img src="./images/AndrewBerryAnderson.jpg" alt="Andrew Berry Anderson cover">
+  </div>
+
+  <!-- Awakening in Silence -->
+  <div class="book" data-full="./images/AwakeningInSilence.jpg" title="Click to preview">
+    <img src="./images/AwakeningInSilence.jpg" alt="Awakening in Silence cover">
+  </div>
+
+  <!-- My Path of Light -->
+  <div class="book" data-full="./images/MyPathOfLight.jpg" title="Click to preview">
+    <img src="./images/MyPathOfLight.jpg" alt="My Path of Light cover">
+  </div>
+
+  <!-- My Path of Divine Timing -->
+  <div class="book" data-full="./images/MyPathOfDivineTimingCover.jpg" title="Click to preview">
+    <img src="./images/MyPathOfDivineTimingCover.jpg" alt="My Path of Divine Timing cover">
+  </div>
+
+  <!-- 3I/Atlas: The Lunar Key -->
+  <div class="book" data-full="./images/3IAtlas_TheLunarKey.jpg" title="Click to preview">
+    <img src="./images/3IAtlas_TheLunarKey.jpg" alt="3I/Atlas: The Lunar Key cover">
+  </div>
+
+  <!-- The Manuscript Book -->
+  <div class="book" data-full="./images/TheManuscriptBook.jpg" title="Click to preview">
+    <img src="./images/TheManuscriptBook.jpg" alt="The Manuscript Book cover">
+  </div>
+</main>
+
   </main>
 
   <footer id="y">
