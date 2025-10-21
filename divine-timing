@@ -26,9 +26,9 @@
   </header>
   
 <main class="book-gallery">
-  <!-- Divine Timing — uses the correct path -->
-  <div class="book" data-full="../images/My Divine Timing/MyPathOfDivineTimingCover.jpg" title="Click to preview">
-    <img src="../images/My Divine Timing/MyPathOfDivineTimingCover.jpg" alt="My Path Of Divine Timing cover">
+  <!-- Divine Timing — uses correct root-level image -->
+  <div class="book" data-full="/MyPathOfDivineTimingCover.jpg" title="Click to preview">
+    <img src="/MyPathOfDivineTimingCover.jpg" alt="My Path Of Divine Timing cover">
   </div>
 
   <!-- Other books -->
@@ -39,7 +39,6 @@
     <img src="../images/book-cover-3.jpg" alt="Cover of the third book">
   </div>
 </main>
-
 
     <!-- Other books -->
     <div class="book" data-full="./images/book-cover-2.jpg" title="Click to preview">
