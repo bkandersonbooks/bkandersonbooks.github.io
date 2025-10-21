@@ -28,7 +28,7 @@
   <main class="book-gallery">
     <!-- Divine Timing — uses the correct filename -->
     <div class="book" data-full="./images/MyPathOfDivineTimingCover.jpg" title="Click to preview">
-      <img src="./images/MyPathOfDivineTimingCover.jpg" alt="My Path of Divine Timing cover">
+      <img src="./images/MyPathOfDivineTimingCover.jpg" alt="My Path Of Divine Timing cover">
     </div>
 
     <!-- Other books -->
