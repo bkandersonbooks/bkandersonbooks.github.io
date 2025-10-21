@@ -3,46 +3,78 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>My Path of Divine Timing — Preview</title>
+<title>Echoes in Silence — Preview</title>
 <style>
-  :root{--bg:#0f0f12; --fg:#e9e9ef; --muted:#b5b5c6; --accent:#ffd07a; --card:#18181d; --line:#26262c;}
+  :root{
+    --bg:#0f0f12; --fg:#e9e9ef; --muted:#b5b5c6;
+    --accent:#a8c7ff; --card:#18181d; --line:#26262c;
+  }
   *{box-sizing:border-box}
-  html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;line-height:1.6}
+  html,body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;
+    line-height:1.6;
+  }
   a{color:var(--accent);text-decoration:none}
   a:hover{text-decoration:underline}
   .wrap{max-width:980px;margin:0 auto;padding:24px}
   header{display:flex;align-items:center;justify-content:space-between;margin:4px 0 18px}
   .brand{color:var(--muted)}
   .back{color:var(--muted)}
-  .card{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:24px}
+  .card{
+    border:1px solid var(--line);
+    background:var(--card);
+    border-radius:18px;
+    padding:24px;
+  }
   h1{margin:0 0 8px;font-weight:750;font-size:clamp(26px,4vw,40px)}
   .sub{color:var(--muted);margin:0 0 18px}
-  .grid{display:grid;gap:18px;grid-template-columns:minmax(260px,360px) 1fr}
+  .grid{display:grid;gap:18px;grid-template-columns:minmax(260px,360px) 1fr;align-items:center}
   img.cover{width:100%;border-radius:12px}
-  .pill{display:inline-block;border:1px solid var(--line);color:var(--muted);padding:6px 10px;border-radius:999px;font-size:13px}
-  .cta{display:inline-block;background:var(--accent);color:#1a1300;padding:10px 16px;border-radius:12px;font-weight:700;box-shadow:0 6px 24px rgba(255,208,122,.15)}
+  .pill{
+    display:inline-block;
+    border:1px solid var(--line);
+    color:var(--muted);
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:13px;
+  }
+  .cta{
+    display:inline-block;
+    background:var(--accent);
+    color:#0e1629;
+    padding:10px 16px;
+    border-radius:12px;
+    font-weight:700;
+    box-shadow:0 6px 24px rgba(168,199,255,.15);
+  }
   footer{color:var(--muted);text-align:center;padding:24px 0 8px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <a class="back" href="index.html">← Back to Home</a>
+    <a class="back" href="../index.html">← Back to Home</a>
     <span class="brand">The Triad of Light</span>
   </header>
 
   <div class="card">
     <div class="grid">
-      <!-- ✅ Local image version -->
-      <img class="cover" src="./images/MyPathOfDivineTimingCover.jpg" alt="My Path Of Divine Timing cover">
+      <!-- ✅ Adjusted path: goes up one folder to /images -->
+      <img class="cover" src="../images/EchoesInSilenceCover.jpg" alt="Echoes in Silence cover">
 
       <div>
-        <h1>My Path of Divine Timing</h1>
-        <p class="sub">Aligning with Light’s rhythm — trust, balance, and the right moment arriving in peace.</p>
+        <h1>Echoes in Silence</h1>
+        <p class="sub">Listening to the still places where Light speaks without words.</p>
 
-        <p>Divine timing invites us to rest from forcing outcomes and to live with the gentle confidence that what is needed arrives on time. This book gathers stories and reflections on walking by Light’s rhythm.</p>
+        <p><em>Echoes in Silence</em> follows the quiet journey beyond noise — into the heart’s calm awareness where memory, Spirit, and time converge.  
+        Through reflections and meditations, B.K. Anderson and Anders Taft reveal that silence itself carries the language of Light.</p>
 
-        <p><span class="pill">Preview</span> • <a class="cta" href="mailto:bkandersonbooks@gmail.com">Contact the authors</a></p>
+        <p><span class="pill">Preview</span> • 
+          <a class="cta" href="mailto:bkandersonbooks@gmail.com">Contact the authors</a>
+        </p>
       </div>
     </div>
   </div>
