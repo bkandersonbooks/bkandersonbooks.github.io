@@ -26,12 +26,12 @@
   </header>
 
   <main class="book-gallery">
-    <!-- Divine Timing — make sure this exact file exists at /images/MyPathOfDivineTiming_Cover.jpg -->
-    <div class="book" data-full="./images/MyPathOfDivineTiming_Cover.jpg" title="Click to preview">
-      <img src="./images/MyPathOfDivineTiming_Cover.jpg" alt="My Path of Divine Timing cover">
+    <!-- Divine Timing — uses the correct filename -->
+    <div class="book" data-full="./images/MyPathOfDivineTimingCover.jpg" title="Click to preview">
+      <img src="./images/MyPathOfDivineTimingCover.jpg" alt="My Path of Divine Timing cover">
     </div>
 
-    <!-- Other books (update filenames to your actual files) -->
+    <!-- Other books -->
     <div class="book" data-full="./images/book-cover-2.jpg" title="Click to preview">
       <img src="./images/book-cover-2.jpg" alt="Cover of the second book">
     </div>
@@ -44,7 +44,7 @@
     <p>&copy; 2025 My Book Collection</p>
   </footer>
 
-  <!-- Script at the end so DOM is ready -->
+  <!-- Single script at the end -->
   <script>
     // Simple lightbox that uses data-full (falls back to img src)
     const modal = document.createElement('div');
@@ -71,134 +71,6 @@
     closeBtn.addEventListener('click', () => modal.classList.remove('open'));
     modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('open'); });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') modal.classList.remove('open'); });
-
-    // Optional: small demo style change to prove script runs after load
-    const footer = document.getElementById('y');
-    if (footer) footer.style.opacity = '0.95';
   </script>
-<script>
-(async function() {
-  // Utility: check if a file exists (HEAD first, fall back to fetch)
-  async function fileExists(url) {
-    try {
-      const res = await fetch(url, { method: 'HEAD', cache: 'no-store' });
-      if (res.ok) return true;
-      // Some servers don’t allow HEAD; try GET without downloading fully
-      const res2 = await fetch(url, { method: 'GET', cache: 'no-store' });
-      return res2.ok;
-    } catch (e) { return false; }
-  }
-
-  // Generate common filename variants to try
-  function variants(base, folder="images") {
-    // Strip stray spaces around dots or in common spots
-    const clean = base.replace(/\s+\./g, '.').replace(/\s+/g, ' ');
-    const noSpaces = clean.replace(/\s+/g, '');
-    const candidates = [];
-    const exts = ['.jpg', '.jpeg', '.png', '.JPG', '.JPEG', '.PNG'];
-
-    // Try common “space before extension” mistakes, case variants, and with/without spaces
-    const bases = [
-      clean,
-      noSpaces,
-      clean.replace(/_/g, ' '),
-      clean.replace(/ /g, '_'),
-      clean.toLowerCase(),
-      clean.toUpperCase(),
-    ];
-
-    for (const b of bases) {
-      for (const e of exts) {
-        candidates.push(`./${folder}/${b}${e}`);
-      }
-      // Also handle accidental space before extension
-      for (const e of exts) {
-        candidates.push(`./${folder}/${b} ${e}`);
-      }
-    }
-    // De-dupe while preserving order
-    return [...new Set(candidates)];
-  }
-
-  // Resolve a working image path for each .book
-  async function resolveBook(bookEl) {
-    // If author provided explicit full path, just use that
-    const explicit = bookEl.dataset.full;
-    if (explicit && await fileExists(explicit)) return explicit;
-
-    // Else try variants from base name
-    const base = bookEl.dataset.base;
-    if (!base) return null;
-
-    const tries = variants(base);
-    for (const url of tries) {
-      if (await fileExists(url)) return url;
-    }
-    return null;
-  }
-
-  // Lightbox (simple)
-  let modal = document.querySelector('.modal');
-  if (!modal) {
-    modal = document.createElement('div');
-    modal.className = 'modal';
-    Object.assign(modal.style, {
-      display:'none', position:'fixed', inset:'0',
-      background:'rgba(0,0,0,.8)', alignItems:'center',
-      justifyContent:'center', zIndex:'9999'
-    });
-    modal.innerHTML = `
-      <span class="close" style="position:absolute;top:16px;right:16px;font-size:28px;color:#fff;cursor:pointer">&times;</span>
-      <img alt="" style="max-width:90vw;max-height:90vh;object-fit:contain;box-shadow:0 10px 30px rgba(0,0,0,.5)">
-    `;
-    document.body.appendChild(modal);
-  }
-  const modalImg = modal.querySelector('img');
-  const closeBtn = modal.querySelector('.close');
-  function openModal(src, alt) {
-    modalImg.src = src; modalImg.alt = alt || 'Preview';
-    modal.style.display = 'flex';
-  }
-  function closeModal() { modal.style.display = 'none'; }
-  closeBtn.onclick = closeModal;
-  modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
-
-  // Resolve all tiles
-  const books = Array.from(document.querySelectorAll('.book'));
-  for (const book of books) {
-    const imgEl = book.querySelector('img');
-    const label = imgEl?.alt || book.getAttribute('title') || 'cover';
-    const found = await resolveBook(book);
-    if (found) {
-      imgEl.src = found;
-      // Keep the working path in data-full for preview
-      book.dataset.full = found;
-      console.log(`✅ Resolved "${label}" →`, found);
-    } else {
-      imgEl.alt = `${label} (not found)`;
-      console.warn(`❌ Could not resolve image for "${label}". Tried variants for base=`, book.dataset.base, 'in /images/');
-    }
-  }
-
-  // Click to preview
-  document.addEventListener('click', (e) => {
-    const book = e.target.closest('.book');
-    if (!book) return;
-    const full = book.dataset.full || book.querySelector('img')?.src;
-    const alt = book.querySelector('img')?.alt;
-    if (full) openModal(full, alt);
-  });
-
-  // Tiny visual cue that script ran
-  const footer = document.getElementById('y');
-  if (footer) footer.style.opacity = '0.97';
-})();
-</script>
-
 </body>
 </html>
-<!-- Divine Timing (keep the base name clean; script will try variants) -->
-<div class="book" data-base="MyPathOfDivineTiming_Cover" title="Click to preview">
-  <img alt="My Path of Divine Timing cover">
-</div>
