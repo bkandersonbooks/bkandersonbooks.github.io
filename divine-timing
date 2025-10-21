@@ -26,11 +26,7 @@
   </header>
   
 <main class="book-gallery">
-  <!-- Divine Timing — uses correct root-level image -->
-  <div class="book" data-full="/MyPathOfDivineTimingCover.jpg" title="Click to preview">
-    <img src="/MyPathOfDivineTimingCover.jpg" alt="My Path Of Divine Timing cover">
-  </div>
-
+ 
   <!-- Other books -->
   <div class="book" data-full="../images/book-cover-2.jpg" title="Click to preview">
     <img src="../images/book-cover-2.jpg" alt="Cover of the second book">
