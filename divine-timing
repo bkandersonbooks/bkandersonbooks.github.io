@@ -24,13 +24,22 @@
   <header>
     <h1>My Book Cover Collection</h1>
   </header>
+  
+<main class="book-gallery">
+  <!-- Divine Timing — uses the correct path -->
+  <div class="book" data-full="../images/My Divine Timing/MyPathOfDivineTimingCover.jpg" title="Click to preview">
+    <img src="../images/My Divine Timing/MyPathOfDivineTimingCover.jpg" alt="My Path Of Divine Timing cover">
+  </div>
 
-  <main class="book-gallery">
-    <!-- Divine Timing — uses the correct filename -->
-    <div class="book" data-full="./images/MyPathOfDivineTimingCover.jpg" title="Click to preview">
-      <img src="../images/My Divine Timing/MyPathOfDivineTimingCover.jpg" alt="My Path Of Divine Timing cover">
+  <!-- Other books -->
+  <div class="book" data-full="../images/book-cover-2.jpg" title="Click to preview">
+    <img src="../images/book-cover-2.jpg" alt="Cover of the second book">
+  </div>
+  <div class="book" data-full="../images/book-cover-3.jpg" title="Click to preview">
+    <img src="../images/book-cover-3.jpg" alt="Cover of the third book">
+  </div>
+</main>
 
-    </div>
 
     <!-- Other books -->
     <div class="book" data-full="./images/book-cover-2.jpg" title="Click to preview">
