@@ -1,44 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Path of Divine Timing — Preview</title>
+  <title>My Book Covers</title>
   <style>
-    :root{
-      --bg:#0f0f12; --fg:#e9e9ef; --muted:#b5b5c6; --accent:#ffd07a; --card:#18181d; --line:#26262c;
-    }
-    *{box-sizing:border-box}
+    body {font-family: Arial, sans-serif; background:#f4f4f4; margin:0}
+    header {text-align:center; padding:20px; background:#333; color:#fff}
+    .book-gallery {display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:20px}
+    .book {border:1px solid #ddd; box-shadow:0 2px 5px rgba(0,0,0,.1); transition:transform .2s; cursor:pointer; background:#fff}
+    .book:hover {transform: translateY(-5px)}
+    .book img {display:block; max-width:100%; height:auto; object-fit:contain}
+    footer {text-align:center; padding:12px; color:#555}
+
+    /* Lightbox */
+    .modal {display:none; position:fixed; inset:0; background:rgba(0,0,0,.8); align-items:center; justify-content:center; z-index:9999}
+    .modal.open {display:flex}
+    .modal img {max-width:90vw; max-height:90vh; object-fit:contain; box-shadow:0 10px 30px rgba(0,0,0,.5)}
+    .modal .close {position:absolute; top:16px; right:16px; font-size:28px; color:#fff; cursor:pointer; user-select:none}
+  </style>
+</head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="back" href="index.html">← Back to Home</a>
-      <span class="brand">The Triad of Light</span>
-    </header>
+  <header>
+    <h1>My Book Cover Collection</h1>
+  </header>
 
-    <div class="card">
-      <div class="grid">
-        <img class="cover"
-             src="https://bkandersonbooks.github.io/MyPathOfDivineTimingCover.jpg"
-             alt="My Path of Divine Timing cover">
-
-        <div>
-          <h1>My Path of Divine Timing</h1>
-          <p class="sub">A luminous reflection on divine timing, balance, and spiritual awakening — guiding seekers to align their path with the flow of Light, purpose, and peace.</p>
-
-          <p>
-            <span class="pill">Preview</span>
-            •
-            <a class="cta" href="mailto:bkandersonbooks@gmail.com">Contact the author</a>
-          </p>
-        </div>
-      </div>
+  <main class="book-gallery">
+    <!-- Divine Timing — make sure this exact file exists at /images/MyPathOfDivineTiming_Cover.jpg -->
+    <div class="book" data-full="./images/MyPathOfDivineTiming_Cover.jpg" title="Click to preview">
+      <img src="./images/MyPathOfDivineTiming_Cover.jpg" alt="My Path of Divine Timing cover">
     </div>
 
-    <footer>© <span id="y"></span> B.K. Anderson & Anders Taft</footer>
-  </div>
+    <!-- Other books (update filenames to your actual files) -->
+    <div class="book" data-full="./images/book-cover-2.jpg" title="Click to preview">
+      <img src="./images/book-cover-2.jpg" alt="Cover of the second book">
+    </div>
+    <div class="book" data-full="./images/book-cover-3.jpg" title="Click to preview">
+      <img src="./images/book-cover-3.jpg" alt="Cover of the third book">
+    </div>
+  </main>
 
+  <footer id="y">
+    <p>&copy; 2025 My Book Collection</p>
+  </footer>
+
+  <!-- Script at the end so DOM is ready -->
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    // Simple lightbox that uses data-full (falls back to img src)
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.innerHTML = `
+      <span class="close" aria-label="Close preview">&times;</span>
+      <img alt="">
+    `;
+    document.body.appendChild(modal);
+    const modalImg = modal.querySelector('img');
+    const closeBtn = modal.querySelector('.close');
+
+    document.addEventListener('click', (e) => {
+      const book = e.target.closest('.book');
+      if (!book) return;
+      const img = book.querySelector('img');
+      const full = book.dataset.full || img?.src;
+      if (!full) return;
+      modalImg.src = full;
+      modalImg.alt = img?.alt || 'Preview';
+      modal.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', () => modal.classList.remove('open'));
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('open'); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') modal.classList.remove('open'); });
+
+    // Optional: small demo style change to prove script runs after load
+    const footer = document.getElementById('y');
+    if (footer) footer.style.opacity = '0.95';
   </script>
 </body>
+</html>
