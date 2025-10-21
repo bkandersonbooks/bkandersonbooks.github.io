@@ -25,80 +25,59 @@
     <h1>My Book Cover Collection</h1>
   </header>
   
-<main class="book-gallery">
- 
-  <!-- Other books -->
-  <div class="book" data-full="../images/book-cover-2.jpg" title="Click to preview">
-    <img src="../images/book-cover-2.jpg" alt="Cover of the second book">
-  </div>
-  <div class="book" data-full="../images/book-cover-3.jpg" title="Click to preview">
-    <img src="../images/book-cover-3.jpg" alt="Cover of the third book">
-  </div>
-</main>
-
-    <!-- Other books -->
-    <div class="book" data-full="./images/book-cover-2.jpg" title="Click to preview">
-      <img src="./images/book-cover-2.jpg" alt="Cover of the second book">
+  <main class="book-gallery">
+    <!-- The Phillips Family Legacy -->
+    <div class="book" data-full="./images/PhillipsFamilyLegacy.jpg" title="Click to preview">
+      <img src="./images/PhillipsFamilyLegacy.jpg" alt="The Phillips Family Legacy cover">
     </div>
-    <div class="book" data-full="./images/book-cover-3.jpg" title="Click to preview">
-      <img src="./images/book-cover-3.jpg" alt="Cover of the third book">
+
+    <!-- The Brown Family Legacy -->
+    <div class="book" data-full="./images/BrownFamilyLegacy.jpg" title="Click to preview">
+      <img src="./images/BrownFamilyLegacy.jpg" alt="The Brown Family Legacy cover">
     </div>
-<main class="book-gallery">
-  <!-- The Phillips Family Legacy -->
-  <div class="book" data-full="./images/PhillipsFamilyLegacy.jpg" title="Click to preview">
-    <img src="./images/PhillipsFamilyLegacy.jpg" alt="The Phillips Family Legacy cover">
-  </div>
 
-  <!-- The Brown Family Legacy -->
-  <div class="book" data-full="./images/BrownFamilyLegacy.jpg" title="Click to preview">
-    <img src="./images/BrownFamilyLegacy.jpg" alt="The Brown Family Legacy cover">
-  </div>
+    <!-- The Anderson Family Legacy -->
+    <div class="book" data-full="./images/AndersonFamilyLegacy.jpg" title="Click to preview">
+      <img src="./images/AndersonFamilyLegacy.jpg" alt="The Anderson Family Legacy cover">
+    </div>
 
-  <!-- The Anderson Family Legacy -->
-  <div class="book" data-full="./images/AndersonFamilyLegacy.jpg" title="Click to preview">
-    <img src="./images/AndersonFamilyLegacy.jpg" alt="The Anderson Family Legacy cover">
-  </div>
+    <!-- Andrew Berry Anderson -->
+    <div class="book" data-full="./images/AndrewBerryAnderson.jpg" title="Click to preview">
+      <img src="./images/AndrewBerryAnderson.jpg" alt="Andrew Berry Anderson cover">
+    </div>
 
-  <!-- Andrew Berry Anderson -->
-  <div class="book" data-full="./images/AndrewBerryAnderson.jpg" title="Click to preview">
-    <img src="./images/AndrewBerryAnderson.jpg" alt="Andrew Berry Anderson cover">
-  </div>
+    <!-- Awakening in Silence -->
+    <div class="book" data-full="./images/AwakeningInSilence.jpg" title="Click to preview">
+      <img src="./images/AwakeningInSilence.jpg" alt="Awakening in Silence cover">
+    </div>
 
-  <!-- Awakening in Silence -->
-  <div class="book" data-full="./images/AwakeningInSilence.jpg" title="Click to preview">
-    <img src="./images/AwakeningInSilence.jpg" alt="Awakening in Silence cover">
-  </div>
+    <!-- My Path of Light -->
+    <div class="book" data-full="./images/MyPathOfLight.jpg" title="Click to preview">
+      <img src="./images/MyPathOfLight.jpg" alt="My Path of Light cover">
+    </div>
 
-  <!-- My Path of Light -->
-  <div class="book" data-full="./images/MyPathOfLight.jpg" title="Click to preview">
-    <img src="./images/MyPathOfLight.jpg" alt="My Path of Light cover">
-  </div>
+    <!-- My Path of Divine Timing -->
+    <div class="book" data-full="/MyPathOfDivineTimingCover.jpg" title="Click to preview">
+      <img src="/MyPathOfDivineTimingCover.jpg" alt="My Path of Divine Timing cover">
+    </div>
 
-<!-- My Path of Divine Timing -->
-<div class="book" data-full="/MyPathOfDivineTimingCover.jpg" title="Click to preview">
-  <img src="/MyPathOfDivineTimingCover.jpg" alt="My Path of Divine Timing cover">
-</div>
+    <!-- 3I/Atlas: The Lunar Key -->
+    <div class="book" data-full="./images/3IAtlas_TheLunarKey.jpg" title="Click to preview">
+      <img src="./images/3IAtlas_TheLunarKey.jpg" alt="3I/Atlas: The Lunar Key cover">
+    </div>
 
-  <!-- 3I/Atlas: The Lunar Key -->
-  <div class="book" data-full="./images/3IAtlas_TheLunarKey.jpg" title="Click to preview">
-    <img src="./images/3IAtlas_TheLunarKey.jpg" alt="3I/Atlas: The Lunar Key cover">
-  </div>
-
-  <!-- The Manuscript Book -->
-  <div class="book" data-full="./images/TheManuscriptBook.jpg" title="Click to preview">
-    <img src="./images/TheManuscriptBook.jpg" alt="The Manuscript Book cover">
-  </div>
-</main>
-
+    <!-- The Manuscript Book -->
+    <div class="book" data-full="./images/TheManuscriptBook.jpg" title="Click to preview">
+      <img src="./images/TheManuscriptBook.jpg" alt="The Manuscript Book cover">
+    </div>
   </main>
 
   <footer id="y">
     <p>&copy; 2025 My Book Collection</p>
   </footer>
 
-  <!-- Single script at the end -->
+  <!-- Lightbox Script -->
   <script>
-    // Simple lightbox that uses data-full (falls back to img src)
     const modal = document.createElement('div');
     modal.className = 'modal';
     modal.innerHTML = `
@@ -106,6 +85,7 @@
       <img alt="">
     `;
     document.body.appendChild(modal);
+
     const modalImg = modal.querySelector('img');
     const closeBtn = modal.querySelector('.close');
 
@@ -126,4 +106,3 @@
   </script>
 </body>
 </html>
-Fix path to Divine Timing image 
