@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B.K. Anderson — Home</title>
+  <meta name="description" content="Books by B.K. Anderson — Family Legacy, Path of Light, and 3I/Atlas." />
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --fg: #e8f0fe;
+      --muted: #b2bfdc;
+      --accent: #86c5ff;
+      --card: #141622;
+      --cardBorder: #23263a;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { padding: 28px 16px 10px; text-align: center; }
+    header h1 { margin: 0; font-size: 1.9rem; }
+    header p { margin: 8px 0 0; color: var(--muted); }
+    main { padding: 10px 16px 60px; max-width: 1100px; margin: 0 auto; }
+    section { margin-top: 30px; }
+    h2 { margin: 22px 0 12px; font-size: 1.3rem; border-left: 4px solid var(--accent); padding-left: 10px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    @media (min-width: 720px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width: 960px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--cardBorder);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .thumb { aspect-ratio: 3 / 4; width: 100%; display: block; background: #0f1220; object-fit: cover; }
+    .body { padding: 10px 12px 14px; display: flex; flex-direction: column; gap: 6px; }
+    .title { font-weight: 600; line-height: 1.25; }
+    .series { font-size: .88rem; color: var(--muted); }
+    .actions { margin-top: 4px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn {
+      border: 1px solid var(--cardBorder);
+      background: transparent;
+      color: var(--fg);
+      padding: 6px 10px;
+      border-radius: 10px;
+      font-size: .88rem;
+      cursor: pointer;
+      transition: background .2s ease;
+    }
+    .btn:hover { background: #1c2135; }
+    footer { padding: 26px 16px; text-align: center; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>B.K. Anderson — Book Gallery</h1>
+    <p>Family Legacy • Path of Light • 3I/Atlas</p>
+  </header>
+
+  <main>
+    <!-- Family Legacy -->
+    <section id="family-legacy">
+      <h2>🌿 Family Legacy Series</h2>
+      <div class="grid">
+        <!-- Andrew Berry Anderson -->
+        <article class="card">
+          <img class="thumb" loading="lazy" alt="Andrew Berry Anderson cover" src="AndrewBerryAnderson.jpg" />
+          <div class="body">
+            <div class="title">Andrew Berry Anderson</div>
+            <div class="series">Family Legacy</div>
+            <div class="actions"><a class="btn" href="#">Details</a></div>
+          </div>
+        </article>
+
+        <!-- Anderson Family Legacy -->
+        <article class="card">
+          <img class="thumb" loading="lazy" alt="Anderson Family Legacy cover" src="AndersonFamilyLegacy.jpg" />
+          <div class="body">
+            <div class="title">Anderson Family Legacy</div>
+            <div class="series">Family Legacy</div>
+            <div class="actions"><a class="btn" href="#">Details</a></div>
+          </div>
+        </article>
+
+        <!-- Brown Family Legacy -->
+        <article class="card">
+          <img class="thumb" loading="lazy" alt="Brown Family Legacy cover" src="BrownFamilyLegacy.jpg" />
+          <div class="body">
+            <div class="title">Brown &amp; Adams Family Legacy</div>
+            <div class="series">Family Legacy</div>
+            <div class="actions"><a class="btn" href="#">Details</a></div>
+          </div>
+        </article>
+
+        <!-- Phillips Family Legacy -->
+        <article class="card">
+          <img class="thumb" loading="lazy" alt="Phillips Family Legacy cover" src="PhillipsFamilyLegacy.jpg" />
+          <div class="body">
+            <div class="title">Phillips Family Legacy</div>
+            <div class="series">Family Legacy</div>
+            <div class="actions"><a class="btn" href="phillips-family-legacy.html">Details</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Path of Light -->
+    <section id="pol">
+      <h2>✨ Path of Light Series</h2>
+      <div class="grid">
+        <!-- Awakening in Silence -->
+        <article class="card">
+          <img class="thumb" loading="lazy" alt="Awakening in Silence cover" src="Awakening%20in%20Silence.jpg" />
+          <div class="body">
+            <div class="title">Awakening in Silence</div>
+            <div class="series">Path of Light</div>
+            <div class="actions"><a class="btn" href="awakening-in-silence.html">Details</a></div>
+          </div>
+        </article>
+
+        <!-- Echoes in Silence (filename currently includes '3I-Atlas' per your repo) -->
+        <article class="card">
+          <img class="thumb" loading="lazy" alt="Echoes in Silence cover" src="3I-Atlas%20Echoes%20in%20Silence.jpg" />
+          <div class="body">
+            <div class="title">Echoes in Silence</div>
+            <div class="series">Path of Light</div>
+            <div class="actions"><a class="btn" href="echoes-in-silence.html">Details</a></div>
+          </div>
+        </article>
+
+        <!-- Path of Light -->
+        <article class="card">
+          <img class="thumb" loading="lazy" alt="Path of Light cover" src="MyPathOfLight.jpg" />
+          <div class="body">
+            <div class="title">Path of Light</div>
+            <div class="series">Path of Light</div>
+            <div class="actions"><a class="btn" href="#">Details</a></div>
+          </div>
+        </article>
+
+        <!-- My Path of Divine Timing -->
+        <article class="card">
+          <img class="thumb" loading="lazy" alt="My Path of Divine Timing cover" src="MyPathOfDivineTimingCover.jpg" />
+          <div class="body">
+            <div class="title">My Path of Divine Timing</div>
+            <div class="series">Path of Light</div>
+            <div class="actions"><a class="btn" href="divine-timing.html">Details</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3I/Atlas -->
+    <section id="atlas">
+      <h2>🚀 3I/Atlas Series</h2>
+      <div class="grid">
+        <!-- Voyage of the 3I-Atlas -->
+        <article class="card">
+          <img class="thumb" loading="lazy" alt="Voyage of the 3I/Atlas cover" src="Voyage%20of%20the%203I-Atlas.jpg" />
+          <div class="body">
+            <div class="title">Voyage of the 3I/Atlas</div>
+            <div class="series">3I/Atlas</div>
+            <div class="actions"><a class="btn" href="#">Details</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="yr"></span> B.K. Anderson — All Rights Reserved
+  </footer>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
