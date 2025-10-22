@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Echoes in Silence — Preview</title>
-<style>
-:root { --bg:#0f0f12; --fg:#e9e9ef; --muted:#b5b5c6; --accent:#ffd07a; --card:#18181d; --line:#26262c; }
-*{box-sizing:border-box;}
-body{ margin:0; background:var(--bg); color:var(--fg); font-family:system-ui,-apple-system,Segoe UI,Roboto; }
-.wrap{ max-width:900px; margin:0 auto; padding:24px; }
-a{ color:var(--accent); text-decoration:none; } a:hover{text-decoration:underline;}
-.card{ border:1px solid var(--line); background:var(--card); border-radius:18px; padding:18px; margin-bottom:20px; }
-h1{ margin:8px 0 6px; font-size:clamp(24px,3.8vw,36px); }
-h2{ font-size:clamp(18px,3vw,24px); margin:0 0 6px; color:var(--muted); }
-img{ width:100%; border-radius:12px; }
-.btn{ display:inline-block; background:var(--accent); color:#1a1300; padding:10px 14px; border-radius:10px; font-weight:700; margin-top:10px; }
-.topnav{ display:flex; gap:10px; align-items:center; margin-bottom:14px; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Echoes in Silence — Book Details</title>
+  <meta name="description" content="Details for the book Echoes in Silence by B.K. Anderson." />
+  <style>
+    :root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{text-align:center;padding:24px 16px}
+    header h1{margin:0;font-size:1.8rem}
+    header p{margin:6px 0 0;color:var(--muted)}
+    main{max-width:1000px;margin:0 auto;padding:0 16px 60px}
+    .card{display:grid;grid-template-columns:1fr;gap:18px;background:var(--card);
+      border:1px solid var(--cardBorder);border-radius:16px;padding:16px}
+    @media(min-width:860px){.card{grid-template-columns:380px 1fr}}
+    .cover{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;
+      border:1px solid var(--cardBorder);background:#101325}
+    h2{margin:0 0 8px;font-size:1.4rem}
+    .meta{color:var(--muted);font-size:.95rem;margin-bottom:12px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .btn{border:1px solid var(--cardBorder);background:transparent;color:var(--fg);
+      padding:8px 12px;border-radius:10px;font-size:.95rem;cursor:pointer}
+    .btn:hover{background:#1c2135}
+    .back{margin:10px 0 20px;display:inline-block}
+    footer{padding:26px 16px;text-align:center;color:var(--muted)}
+  </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="topnav">
-    <a href="index.html">← Back to Home</a>
-  </div>
-
-  <div class="card">
-    <h2>Preview</h2>
+  <header>
+    <a class="back" href="index.html#pol">← Back to Gallery</a>
     <h1>Echoes in Silence</h1>
-    <p style="color:var(--muted)">Book 2 of the Awakening in Silence Series · B.K. Anderson & Anders Taft</p>
+    <p>Path of Light Series</p>
+  </header>
 
-    <img src="https://bkandersonbooks.github.io/fronr%20cover.jpg" alt="Echoes in Silence cover">
+  <main>
+    <section class="card">
+      <!-- Your image file was named '3I-Atlas Echoes in Silence.jpg' -->
+      <img class="cover" src="3I-Atlas%20Echoes%20in%20Silence.jpg" alt="Echoes in Silence book cover" />
 
-    <p style="margin-top:10px">
-      A luminous continuation of the Path of Light journey — exploring reflection, renewal, and divine peace.
-    </p>
+      <div>
+        <h2>About this Book</h2>
+        <p>
+          In this luminous continuation of the Path of Light journey, B.K. Anderson explores how Light
+          moves through time, memory, and the human soul. <em>Echoes in Silence</em> invites readers into
+          the quiet spaces between creation and awakening — where remembrance becomes revelation and
+          each reflection carries a whisper of the eternal.
+        </p>
 
-    <div class="card" style="margin-top:12px">
-      <p><em>Excerpt (sample):</em>
-      “Silence does not end the conversation with God — it begins it. In the quiet, Love repeats itself until the heart remembers.”</p>
-    </div>
+        <div class="meta">
+          <div><strong>Author:</strong> B.K. Anderson</div>
+          <div><strong>Series:</strong> Path of Light</div>
+          <div><strong>Format:</strong> Paperback &amp; eBook</div>
+        </div>
 
-    <div style="margin-top:12px">
-      <a class="btn" href="#">Read sample (PDF)</a>
-      <a class="btn" href="#">Buy / More info</a>
-    </div>
-  </div>
-</div>
+        <div class="actions">
+          <a class="btn" href="awakening-in-silence.html">Previous: Awakening in Silence</a>
+          <a class="btn" href="#">Buy on Amazon (add link)</a>
+          <a class="btn" href="#">Read sample (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="yr"></span> B.K. Anderson — All Rights Reserved
+  </footer>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
 
+  
