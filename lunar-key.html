@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3I-Atlas: The Lunar Key — B.K. Anderson & Anders Taft</title>
+  <meta name="description" content="Details page for 3I-Atlas: The Lunar Key by B.K. Anderson & Anders Taft." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root { --gap: 1rem; --max: 1100px; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    body { margin: 0; line-height: 1.6; background: #0b0b10; color: #e9e9f0; }
+    header, main, footer { max-width: var(--max); margin: 0 auto; padding: 1.25rem; }
+    a { color: #b8a2ff; text-decoration: none; }
+    .btn { display:inline-block; padding:.6rem 1rem; border-radius:.6rem; background:#2b2458; }
+    .btn:hover { filter: brightness(1.1); }
+    .hero { display:grid; grid-template-columns: 280px 1fr; gap: var(--gap); align-items: start; }
+    .cover { width:100%; border-radius:.75rem; box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+    .title { font-size: clamp(1.6rem, 2.2vw, 2.2rem); font-weight: 700; letter-spacing:.2px; }
+    .series { opacity:.8; margin-top:.25rem; }
+    .meta { margin: .75rem 0 1.25rem; font-size:.95rem; opacity:.9; }
+    .grid { display:grid; gap: var(--gap); grid-template-columns: 1fr 1fr; }
+    .card { background: #141424; border: 1px solid rgba(255,255,255,.08); border-radius: 1rem; padding: 1rem; }
+    .card h3 { margin:.2rem 0 .6rem; font-size:1.1rem; }
+    .prose p { margin:.6rem 0; }
+    .back { margin-top: 1.25rem; }
+    @media (max-width: 800px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="btn" href="index.html">← Back to Library</a>
+  </header>
 
+  <main>
+    <section class="hero">
+      <img class="cover" src="BookCovers/3I-AtlasSeries/Web/3I-Atlas%20the%20Lunar%20Key.jpg"
+           alt="Cover of 3I-Atlas: The Lunar Key" />
+      <div>
+        <div class="title">3I-Atlas: The Lunar Key</div>
+        <div class="series">3I-Atlas Series</div>
+        <div class="meta">
+          By B.K. Anderson &amp; Anders Taft
+        </div>
+        <div class="prose">
+          <p>
+            Book two in the 3I-Atlas arc. The Lunar Key hints that the Moon holds a resonance—
+            a harmonic cipher linked to the visitor’s path and to ancient teachers who once
+            walked between worlds.
+          </p>
+        </div>
+        <div class="back">
+          <a class="btn" href="index.html">Back to Library</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Details">
+      <article class="card">
+        <h3>Book Details</h3>
+        <ul>
+          <li>Series: 3I-Atlas</li>
+          <li>Format: Paperback (details TBD)</li>
+          <li>Trim: 6×9 in (if different, update here)</li>
+          <li>Publisher: Path of Light Press</li>
+        </ul>
+      </article>
+      <article class="card prose">
+        <h3>About</h3>
+        <p>
+          Specs will be updated as production moves forward (ISBN, page count, pricing).
+          This page serves as a placeholder with the approved cover and series context.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="y"></span> B.K. Anderson &amp; Anders Taft</small>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
