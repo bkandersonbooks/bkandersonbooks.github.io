@@ -15,37 +15,30 @@
       --cardBorder: #23263a;
     }
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg); color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+
     header { padding: 28px 16px 10px; text-align: center; }
     header h1 { margin: 0; font-size: 1.9rem; }
-    header p { margin: 8px 0 0; color: var(--muted); }
+    header p  { margin: 8px 0 0; color: var(--muted); }
+
     main { padding: 10px 16px 60px; max-width: 1100px; margin: 0 auto; }
     section { margin-top: 30px; }
     h2 { margin: 22px 0 12px; font-size: 1.3rem; border-left: 4px solid var(--accent); padding-left: 10px; }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
-      .card {
-     width: 320px;
-     display: inline-block;
-     vertical-align: top;
-     margin: 10px;
-}
-
-    img.thumb {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
     }
     @media (min-width: 720px) { .grid { grid-template-columns: repeat(3, 1fr); } }
     @media (min-width: 960px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+
     .card {
       background: var(--card);
       border: 1px solid var(--cardBorder);
@@ -55,7 +48,14 @@
       flex-direction: column;
       height: 100%;
     }
-    .thumb { aspect-ratio: 3 / 4; width: 100%; display: block; background: #0f1220; object-fit: cover; }
+    .thumb {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      display: block;
+      background: #0f1220;
+      object-fit: cover;
+      border-bottom: 1px solid var(--cardBorder);
+    }
     .body { padding: 10px 12px 14px; display: flex; flex-direction: column; gap: 6px; }
     .title { font-weight: 600; line-height: 1.25; }
     .series { font-size: .88rem; color: var(--muted); }
@@ -69,11 +69,10 @@
       font-size: .88rem;
       cursor: pointer;
       transition: background .2s ease;
-      section {
-        padding-left: 1.5rem;   /* adds space from the left edge */
-        padding-right: 1.5rem;  /* keeps it balanced on both sides */
-       }
-       .btn:hover { background: #1c2135; }
+      display: inline-block;
+    }
+    .btn:hover { background: #1c2135; }
+
     footer { padding: 26px 16px; text-align: center; color: var(--muted); }
   </style>
 </head>
@@ -94,7 +93,9 @@
           <div class="body">
             <div class="title">Andrew Berry Anderson</div>
             <div class="series">Family Legacy</div>
-            <div class="actions"><a class="btn" href="andrew-berry-anderson.html">Details</a
+            <div class="actions">
+              <a class="btn" href="andrew-berry-anderson.html">Details</a>
+            </div>
           </div>
         </article>
 
@@ -108,9 +109,9 @@
           </div>
         </article>
 
-        <!-- Brown Family Legacy -->
+        <!-- Brown & Adams Family Legacy -->
         <article class="card">
-          <img class="thumb" loading="lazy" alt="Brown Family Legacy cover" src="BrownFamilyLegacy.jpg" />
+          <img class="thumb" loading="lazy" alt="Brown & Adams Family Legacy cover" src="BrownFamilyLegacy.jpg" />
           <div class="body">
             <div class="title">Brown &amp; Adams Family Legacy</div>
             <div class="series">Family Legacy</div>
@@ -144,13 +145,13 @@
           </div>
         </article>
 
-        <!-- Echoes in Silence (filename currently includes '3I-Atlas' per your repo) -->
+        <!-- Echoes in Silence -->
         <article class="card">
           <img class="thumb" loading="lazy" alt="Echoes in Silence cover" src="3I-Atlas%20Echoes%20in%20Silence.jpg" />
           <div class="body">
             <div class="title">Echoes in Silence</div>
             <div class="series">Path of Light</div>
-            <div class="actions"><a class="btn" href="echoes-in-silence.html">Details</a></div> 
+            <div class="actions"><a class="btn" href="echoes-in-silence.html">Details</a></div>
           </div>
         </article>
 
@@ -160,7 +161,7 @@
           <div class="body">
             <div class="title">Path of Light</div>
             <div class="series">Path of Light</div>
-            <div class="actions"><a class="btn" href="my-path-of-divine-timing.html">Details</a></div> 
+            <div class="actions"><a class="btn" href="my-path-of-divine-timing.html">Details</a></div>
           </div>
         </article>
 
@@ -174,26 +175,49 @@
           </div>
         </article>
       </div>
- 
-  <!-- Voyage of the 3I-Atlas -->
-<article class="card">
-  <a href="voyage-of-3i-atlas.html">
-    <img class="thumb" src="Voyage-of-the-3I-Atlas.jpg" alt="Voyage of the 3I-Atlas cover">
-    <div class="card-title">Voyage of the 3I-Atlas</div>
-  </a>
-</article>
+    </section>
 
-<!-- 3I-Atlas: The Lunar Key -->
-<article class="card">
-  <a href="3i-atlas-the-lunar-key.html">
-    <img class="thumb" src="3I-Atlas-The-Lunar-Key.jpg" alt="3I-Atlas: The Lunar Key cover">
-    <div class="card-title">3I-Atlas: The Lunar Key</div>
-  </a>
-</article>
+    <!-- 3I-Atlas Series -->
+    <section id="3i-atlas-series">
+      <h2>🚀 3I-Atlas Series</h2>
+      <div class="grid">
+        <!-- Voyage of the 3I-Atlas -->
+        <article class="card">
+          <a href="voyage-of-the-3i-atlas.html">
+            <img class="thumb" src="VoyageOfThe3I-Atlas.jpg" alt="Voyage of the 3I-Atlas cover" />
+          </a>
+          <div class="body">
+            <div class="title">Voyage of the 3I-Atlas</div>
+            <div class="series">3I-Atlas</div>
+            <div class="actions"><a class="btn" href="voyage-of-the-3i-atlas.html">Details</a></div>
+          </div>
+        </article>
 
-</section>
+        <!-- 3I-Atlas: The Lunar Key -->
+        <article class="card">
+          <a href="3i-atlas-the-lunar-key.html">
+            <img class="thumb" src="3I-AtlasTheLunarKey.jpg" alt="3I-Atlas: The Lunar Key cover" />
+          </a>
+          <div class="body">
+            <div class="title">3I-Atlas: The Lunar Key</div>
+            <div class="series">3I-Atlas</div>
+            <div class="actions"><a class="btn" href="3i-atlas-the-lunar-key.html">Details</a></div>
+          </div>
+        </article>
 
- 
+        <!-- 3I-Atlas: The Eye Within the Silence -->
+        <article class="card">
+          <a href="3i-atlas-the-eye-within-the-silence.html">
+            <img class="thumb" src="TheEyeWithinTheSilence.jpg" alt="3I-Atlas: The Eye Within the Silence cover" />
+          </a>
+          <div class="body">
+            <div class="title">3I-Atlas: The Eye Within the Silence</div>
+            <div class="series">3I-Atlas</div>
+            <div class="actions"><a class="btn" href="3i-atlas-the-eye-within-the-silence.html">Details</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer>
