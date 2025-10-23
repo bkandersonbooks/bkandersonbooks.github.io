@@ -3,57 +3,174 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>3I-Atlas: The Lunar Key — B.K. Anderson & Anders Taft</title>
-  <meta name="description" content="Second book in the 3I-Atlas cosmic fiction series by B.K. Anderson & Anders Taft. The Lunar Key opens the next gateway of illumination and higher creation." />
+  <title>Voyage of the 3I-Atlas — Book Details</title>
+  <meta name="description" content="Details for the book Voyage of the 3I-Atlas by B.K. Anderson and Anders Taft." />
+
   <style>
-    body {
-      font-family: "Garamond", serif;
-      background: #f8f8f8;
-      color: #222;
+    :root {
+      --bg: #0b0c10;
+      --fg: #e8f0fe;
+      --muted: #b2bfdc;
+      --accent: #86c5ff;
+      --card: #141622;
+      --cardBorder: #23263a;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
       margin: 0;
-      padding: 2rem;
-      text-align: center;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     }
-    img.cover {
-      width: 300px;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    h1 {
-      font-size: 2rem;
-      margin-top: 1.5rem;
-    }
-    p {
-      max-width: 700px;
-      margin: 1rem auto;
-      line-height: 1.6;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.6rem 1.2rem;
-      background: #333;
-      color: #fff;
+
+    a {
+      color: var(--accent);
       text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.3s;
     }
-    a.button:hover {
-      background: #555;
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      padding: 24px 16px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    header p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 16px 60px;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      background: var(--card);
+      border: 1px solid var(--cardBorder);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    @media (min-width: 860px) {
+      .card {
+        grid-template-columns: 380px 1fr;
+      }
+    }
+
+    .cover {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid var(--cardBorder);
+      background: #101325;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 1.4rem;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .btn {
+      border: 1px solid var(--cardBorder);
+      background: transparent;
+      color: var(--fg);
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: #1c2135;
+    }
+
+    .back {
+      margin: 10px 0 20px;
+      display: inline-block;
+    }
+
+    footer {
+      padding: 26px 16px;
+      text-align: center;
+      color: var(--muted);
     }
   </style>
 </head>
+
 <body>
-  <img class="cover" src="3I-Atlas-The-Lunar-Key.jpg" alt="3I-Atlas: The Lunar Key cover" />
-  <h1>3I-Atlas: The Lunar Key</h1>
-  <h2>by B.K. Anderson & Anders Taft</h2>
+  <header>
+    <a class="back" href="index.html#3i-atlas-series">← Back to Gallery</a>
+    <h1>Voyage of the 3I-Atlas</h1>
+    <p>3I-Atlas Series — Book One</p>
+  </header>
 
-  <p><em>3I-Atlas: The Lunar Key</em> continues the saga of Kael and the Seven as they navigate the tides of lunar energy and hidden knowledge. 
-  Through celestial alignment and ancient memory, the Lunar Key opens gateways to higher creation — where the soul remembers its origin among the stars.</p>
+  <main>
+    <section class="card">
+      <img class="cover" src="VoyageOfThe3I-Atlas.jpg" alt="Voyage of the 3I-Atlas book cover" />
 
-  <a class="button" href="index.html">← Back to Book Gallery</a>
+      <div>
+        <h2>About This Book</h2>
+        <p>
+          *Voyage of the 3I-Atlas* launches a visionary journey beyond the stars and into the depths of consciousness.  
+          Co-authored by B.K. Anderson and Anders Taft, this first entry in the *3I-Atlas Series* follows the awakening of explorers who uncover messages encoded in cosmic light.  
+          Blending science-fiction, mysticism, and human awakening, it opens the gateway to a new era of discovery — where spirit and science meet among the stars.
+        </p>
+
+        <div class="meta">
+          <div><strong>Authors:</strong> B.K. Anderson & Anders Taft</div>
+          <div><strong>Series:</strong> 3I-Atlas Saga</div>
+          <div><strong>Format:</strong> Paperback &amp; eBook</div>
+          <!-- Optional:
+          <div><strong>ISBN:</strong> 978-…</div>
+          <div><strong>Publication Date:</strong> 2025</div>
+          -->
+        </div>
+
+        <div class="actions">
+          <a class="btn" href="3i-atlas-the-lunar-key.html">Next: 3I-Atlas — The Lunar Key</a>
+          <a class="btn" href="#">Buy on Amazon (add link)</a>
+          <a class="btn" href="#">Read Sample (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="yr"></span> B.K. Anderson — All Rights Reserved
+  </footer>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
- 
