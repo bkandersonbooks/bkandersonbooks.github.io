@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Path of Light Series — Book Gallery</title>
+  <meta name="description" content="Series page for Path of Light books by B.K. Anderson." />
+  <style>
+    :root{--bg:#0b0c10;--fg:#e8f0fe;--muted:#b2bfdc;--accent:#86c5ff;--card:#141622;--cardBorder:#23263a}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    header{text-align:center;padding:24px 16px}
+    header h1{margin:0;font-size:1.9rem}
+    header p{margin:6px 0 0;color:var(--muted)}
+    main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media (min-width:860px){.grid{grid-template-columns:1fr 1fr}}
+    .card{display:grid;grid-template-columns:120px 1fr;gap:16px;background:var(--card);border:1px solid var(--cardBorder);border-radius:16px;padding:16px}
+    .cover{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;border:1px solid var(--cardBorder);background:#101325}
+    .meta{color:var(--muted);font-size:.95rem;margin:6px 0 10px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{border:1px solid var(--cardBorder);background:transparent;color:var(--fg);padding:8px 12px;border-radius:10px;font-size:.95rem}
+    .btn:hover{background:#1c2135}
+    .back{display:inline-block;margin:10px 0 20px}
+    footer{padding:26px 16px;text-align:center;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back" href="index.html#path-of-light">← Back to Gallery</a>
+    <h1>Path of Light Series</h1>
+    <p>Reflections, numbers, and quiet awakenings — a living record of Light.</p>
+  </header>
+
+  <main class="grid">
+    <!-- Book A -->
+    <section class="card">
+      <img class="cover" src="MyPathOfDivineTiming_Cover.jpg" alt="My Path of Divine Timing cover" loading="lazy" />
+      <div>
+        <h2>My Path of Divine Timing</h2>
+        <div class="meta">Path of Light · Volume One</div>
+        <p>A reflective companion through trust, signs, and timing — walking with Spirit in everyday creation.</p>
+        <div class="actions">
+          <a class="btn" href="my-path-of-divine-timing.html">Details</a>
+          <a class="btn" href="#">Sample (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book B (placeholders you can adjust) -->
+    <section class="card">
+      <img class="cover" src="AwakeningInSilence_Cover.jpg" alt="Awakening in Silence cover" loading="lazy" />
+      <div>
+        <h2>Awakening in Silence</h2>
+        <div class="meta">Path of Light · Volume Two</div>
+        <p>Essays and meditations from the quiet center — living gently, listening clearly.</p>
+        <div class="actions">
+          <a class="btn" href="awakening-in-silence.html">Details</a>
+          <a class="btn" href="#">Sample (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <img class="cover" src="EchoesInSilence_Cover.jpg" alt="Echoes in Silence cover" loading="lazy" />
+      <div>
+        <h2>Echoes in Silence</h2>
+        <div class="meta">Path of Light · Volume Three</div>
+        <p>Echoes of numbers, dreams, and confirmations — the journal of a continuing path.</p>
+        <div class="actions">
+          <a class="btn" href="echoes-in-silence.html">Details</a>
+          <a class="btn" href="#">Sample (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
+  <script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+</body>
+</html>
 
