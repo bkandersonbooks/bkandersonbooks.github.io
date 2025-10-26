@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3I-Atlas Series — Book Gallery</title>
+  <meta name="description" content="Series page for the 3I-Atlas Saga by B.K. Anderson & Anders Taft." />
+  <style>
+    :root{--bg:#0b0c10;--fg:#e8f0fe;--muted:#b2bfdc;--accent:#86c5ff;--card:#141622;--cardBorder:#23263a}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    header{text-align:center;padding:24px 16px}
+    header h1{margin:0;font-size:1.9rem}
+    header p{margin:6px 0 0;color:var(--muted)}
+    main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media (min-width:860px){.grid{grid-template-columns:1fr 1fr}}
+    .card{display:grid;grid-template-columns:120px 1fr;gap:16px;background:var(--card);border:1px solid var(--cardBorder);border-radius:16px;padding:16px}
+    .cover{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;border:1px solid var(--cardBorder);background:#101325}
+    .meta{color:var(--muted);font-size:.95rem;margin:6px 0 10px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{border:1px solid var(--cardBorder);background:transparent;color:var(--fg);padding:8px 12px;border-radius:10px;font-size:.95rem}
+    .btn:hover{background:#1c2135}
+    .back{display:inline-block;margin:10px 0 20px}
+    footer{padding:26px 16px;text-align:center;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back" href="index.html#3i-atlas-series">← Back to Gallery</a>
+    <h1>3I-Atlas Series</h1>
+    <p>The interstellar awakening — a voyage between consciousness and creation.</p>
+  </header>
+
+  <main class="grid">
+    <!-- Book 1 -->
+    <section class="card">
+      <img class="cover" src="voyage-of-the-3i-atlas.jpg" alt="Voyage of the 3I-Atlas cover" loading="lazy" />
+      <div>
+        <h2>Voyage of the 3I-Atlas</h2>
+        <div class="meta">Book One · 3I-Atlas Saga</div>
+        <p>The odyssey begins as the crew answers a signal that blurs science and spirit, setting course for a return none expected.</p>
+        <div class="actions">
+          <a class="btn" href="voyage-of-the-3i-atlas.html">Details</a>
+          <a class="btn" href="#">Sample (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book 2 -->
+    <section class="card">
+      <img class="cover" src="3i-atlas-the-lunar-key.jpg" alt="3I-Atlas: The Lunar Key cover" loading="lazy" />
+      <div>
+        <h2>3I-Atlas: The Lunar Key</h2>
+        <div class="meta">Book Two · 3I-Atlas Saga</div>
+        <p>A search for hidden lunar frequencies unveils the bridge between awareness and creation — the key forged in Light.</p>
+        <div class="actions">
+          <a class="btn" href="3i-atlas-the-lunar-key.html">Details</a>
+          <a class="btn" href="#">Sample (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book 3 -->
+    <section class="card">
+      <img class="cover" src="TheEyeWithinTheSilence.jpg" alt="3I-Atlas: The Eye Within the Silence cover" loading="lazy" />
+      <div>
+        <h2>3I-Atlas: The Eye Within the Silence</h2>
+        <div class="meta">Book Three · 3I-Atlas Saga</div>
+        <p>The voyage turns inward as the crew encounters the living geometry of remembrance — the Eye that watches creation.</p>
+        <div class="actions">
+          <a class="btn" href="3i-atlas-the-eye-within-the-silence.html">Details</a>
+          <a class="btn" href="#">Sample (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
+  <script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+</body>
+</html>
 
