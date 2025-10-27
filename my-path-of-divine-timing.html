@@ -10,7 +10,7 @@
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
     header{text-align:center;padding:24px 16px}
     header h1{margin:4px 0 0;font-size:1.9rem}
     header p{margin:6px 0 0;color:var(--muted)}
@@ -18,44 +18,52 @@
     .card{display:grid;gap:18px;background:var(--card);border:1px solid var(--cardBorder);
       border-radius:16px;padding:16px}
     @media(min-width:900px){.card{grid-template-columns:380px 1fr}}
-    img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;border:1px solid var(--cardBorder);background:#101325}
+    img.cover{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;border:1px solid var(--cardBorder);background:#101325;display:block}
     .meta{color:var(--muted);font-size:.95rem;margin:12px 0 14px}
     .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
     .btn{border:1px solid var(--cardBorder);background:transparent;color:var(--fg);
-      padding:8px 12px;border-radius:10px;font-size:.95rem;cursor:pointer}
+      padding:8px 12px;border-radius:10px;font-size:.95rem}
     .btn:hover{background:#1c2135}
+    footer{color:var(--muted);text-align:center;padding:20px 0}
   </style>
 </head>
 <body>
 <header>
+  <!-- If your index section uses a different anchor, update #pol -->
   <a href="index.html#pol">← Back to Gallery</a>
   <h1>My Path of Divine Timing</h1>
   <p>Path of Light Series — Book Two</p>
 </header>
+
 <main class="wrap">
   <section class="card">
-    <img src="MyPathofDivineTiming.jpg" alt="My Path of Divine Timing cover" />
+    <!-- Make sure this filename EXACTLY matches the file in your repo -->
+    <img class="cover" loading="lazy" src="MyPathofDivineTiming.jpg" alt="My Path of Divine Timing cover" />
+
     <div>
       <h2>About This Book</h2>
       <p><em>My Path of Divine Timing</em> continues the journey of awakening begun in <em>The Path of Light</em>.
          It explores alignment, patience, and trust as the rhythm of Spirit’s guidance. (Full description coming soon.)</p>
+
       <div class="meta">
         <div><strong>Author:</strong> B.K. Anderson</div>
         <div><strong>Series:</strong> Path of Light</div>
         <div><strong>Format:</strong> Paperback &amp; eBook</div>
       </div>
+
       <div class="actions">
         <a class="btn" href="my-path-of-light.html">Previous: The Path of Light</a>
-        <a class="btn" href="#">Next (coming soon)</a>
+        <a class="btn" href="awakening-in-silence.html">Next: Awakening in Silence</a>
+        <!-- Keep or change this if your PDF lives elsewhere -->
         <a class="btn" href="pdf/MyPathofDivineTiming.pdf" target="_blank" rel="noopener">Read Sample (PDF)</a>
+        <!-- Optional store link -->
+        <!-- <a class="btn" href="#" target="_blank" rel="noopener">Buy on Amazon</a> -->
       </div>
     </div>
   </section>
 </main>
-<footer style="text-align:center;color:#b2bfdc;padding:20px 0;">© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
+
+<footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
-
-
-
