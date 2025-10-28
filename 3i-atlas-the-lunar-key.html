@@ -2,156 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>3I-Atlas: The Lunar Key — Book Details</title>
   <meta name="description" content="Details for the book 3I-Atlas: The Lunar Key by B.K. Anderson and Anders Taft." />
-
   <style>
-    :root {
-      --bg: #0b0c10;
-      --fg: #e8f0fe;
-      --muted: #b2bfdc;
-      --accent: #86c5ff;
-      --card: #141622;
-      --cardBorder: #23263a;
-    }
-
-    * { box-sizing: border-box; }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    header {
-      text-align: center;
-      padding: 24px 16px;
-    }
-
-    header h1 { margin: 0; font-size: 1.8rem; }
-    header p  { margin: 6px 0 0; color: var(--muted); }
-
-    main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 16px 60px;
-    }
-
-    .card {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 18px;
-      background: var(--card);
-      border: 1px solid var(--cardBorder);
-      border-radius: 16px;
-      padding: 16px;
-    }
-
-    @media (min-width: 860px) {
-      .card { grid-template-columns: 380px 1fr; }
-    }
-
-    .cover {
-      width: 100%;
-      aspect-ratio: 3 / 4;
-      object-fit: cover;
-      border-radius: 12px;
-      border: 1px solid var(--cardBorder);
-      background: #101325;
-    }
-
-    h2 { margin: 0 0 8px; font-size: 1.4rem; }
-
-    .meta {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin-bottom: 12px;
-    }
-
-    .actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 12px;
-    }
-
-    .btn {
-      border: 1px solid var(--cardBorder);
-      background: transparent;
-      color: var(--fg);
-      padding: 8px 12px;
-      border-radius: 10px;
-      font-size: 0.95rem;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-
-    .btn:hover { background: #1c2135; }
-
-    .back {
-      margin: 10px 0 20px;
-      display: inline-block;
-    }
-
-    footer {
-      padding: 26px 16px;
-      text-align: center;
-      color: var(--muted);
-    }
+    :root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    header{text-align:center;padding:24px 16px}
+    header h1{margin:4px 0 0;font-size:1.8rem}
+    header p{margin:8px 0 0;color:var(--muted)}
+    .wrap{max-width:980px;margin:0 auto;padding:16px}
+    .card{display:grid;grid-template-columns:320px 1fr;gap:24px;background:var(--card);
+      border:1px solid var(--cardBorder);border-radius:14px;padding:16px}
+    .cover{width:100%;height:auto;border-radius:10px;border:1px solid var(--cardBorder)}
+    .meta h2{margin:0 0 8px}
+    .meta p{margin:0 0 12px;color:var(--muted);line-height:1.6}
+    .btns{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid var(--cardBorder);
+      background:#111322;color:var(--fg);text-decoration:none}
+    .btn.primary{background:var(--accent);color:#081a2b;border-color:transparent}
+    footer{max-width:980px;margin:24px auto 40px;color:var(--muted);font-size:.95rem;padding:0 16px}
+    @media (max-width:760px){.card{grid-template-columns:1fr}}
   </style>
 </head>
-
 <body>
   <header>
-    <a class="back" href="index.html#3i-atlas-series">← Back to Gallery</a>
     <h1>3I-Atlas: The Lunar Key</h1>
-    <p>3I-Atlas Series — Book Two</p>
+    <p>B.K. Anderson · with Anders Taft</p>
   </header>
 
-  <main>
-    <section class="card">
-      <img class="cover" src="3I-AtlasTheLunarKey.jpg" alt="3I-Atlas: The Lunar Key book cover" />
-
-      <div>
-        <h2>About This Book</h2>
+  <div class="wrap">
+    <article class="card">
+      <img class="cover" loading="lazy" alt="3I-Atlas: The Lunar Key cover"
+           src="3I-Atlas_The_Lunar_Key_Cover.jpg" />
+      <!-- If your cover filename differs, update the src above to match -->
+      <div class="meta">
+        <h2>About the Book</h2>
         <p>
-          *3I-Atlas: The Lunar Key* continues the celestial odyssey that began in *Voyage of the 3I-Atlas*.  
-          B.K. Anderson and Anders Taft guide readers into the next phase of the interstellar awakening —  
-          a search for the hidden frequencies within the Moon that unlock the bridge between consciousness and creation.  
-          Through discovery, loss, and revelation, the crew learns that every key is forged in Light and every voyage is a return home.
+          The Moon holds a key—an older memory in silent orbit. Follow the
+          resonance from dream to threshold as the 3I-Atlas arc deepens.
         </p>
-
-        <div class="meta">
-          <div><strong>Authors:</strong> B.K. Anderson &amp; Anders Taft</div>
-          <div><strong>Series:</strong> 3I-Atlas Saga</div>
-          <div><strong>Format:</strong> Paperback &amp; eBook</div>
-          <!-- Optional:
-          <div><strong>ISBN:</strong> 978-…</div>
-          <div><strong>Publication Date:</strong> 2025</div>
-          -->
-        </div>
-
-        <div class="actions">
-          <a class="btn" href="voyage-of-the-3i-atlas.html">Previous: Voyage of the 3I-Atlas</a>
-          <a class="btn" href="#">Buy on Amazon (add link)</a>
-          <a class="btn" href="#">Read Sample (PDF)</a>
+        <div class="btns">
+          <!-- If your PDFs live in /pdfs/, change href to "pdfs/3I-Atlas_The_Lunar_Key.pdf" -->
+          <a class="btn primary" href="3I-Atlas_The_Lunar_Key.pdf" target="_blank" rel="noopener">Open PDF</a>
+          <a class="btn" href="index.html">← Back to Gallery</a>
         </div>
       </div>
-    </section>
-  </main>
+    </article>
+  </div>
 
   <footer>
-    © <span id="yr"></span> B.K. Anderson — All Rights Reserved
+    © B.K. Anderson · All rights reserved.
   </footer>
-
-  <script>
-    document.getElementById("yr").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
+
