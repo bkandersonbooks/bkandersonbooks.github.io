@@ -17,15 +17,7 @@
     .wrap{max-width:980px;margin:0 auto;padding:16px}
     .card{display:grid;grid-template-columns:320px 1fr;gap:24px;background:var(--card);
       border:1px solid var(--cardBorder);border-radius:14px;padding:16px}
-   .cover {
-    width:100%;
-    max-width:320px;
-    height:auto;
-    border-radius:10px;
-    border:1px solid var(--cardBorder);
-    display:block;
-    margin:auto;
-  }
+    .cover{width:100%;height:auto;border-radius:10px;border:1px solid var(--cardBorder)}
     .meta h2{margin:0 0 8px}
     .meta p{margin:0 0 12px;color:var(--muted);line-height:1.6}
     .btns{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
@@ -42,23 +34,24 @@
     <p>B.K. Anderson · with Anders Taft</p>
   </header>
 
-  <div class="wrap">
-    <article class="card">
-      <img class="thumb" loading="lazy" alt="Voyage of the 3I-Atlas" src="VoyageOfThe3I-Atlas.jpg" />
-      <div class="meta">
-        <h2>About the Book</h2>
-        <p>
-          The opening passage in the 3I-Atlas saga. A journey between worlds,
-          woven with ascension signs, stellar mysteries, and the quiet courage
-          of Light.
-        </p>
-        <div class="btns">
-          <a class="btn primary" href="Voyage_of_3I-Atlas.pdf" target="_blank" rel="noopener">Open PDF</a>
-          <a class="btn" href="index.html">← Back to Gallery</a>
-        </div>
-      </div>
-    </article>
-  </div>
+   <div class="wrap">
+     <article class="card">
+       <img class="cover" loading="lazy" alt="Voyage of the 3I-Atlas" 
+         src="VoyageOfThe3I-Atlas.jpg" />
+          <div class="meta">
+      <h2>About the Book</h2>
+      <p>
+        The opening passage in the 3I-Atlas saga. A journey between worlds,
+        woven with ascension signs, stellar mysteries, and the quiet courage
+        of Light.
+      </p>
+      <div class="btns">
+        <a class="btn primary" href="Voyage_of_3I-Atlas.pdf" target="_blank" rel="noopener">Open PDF</a>
+        <a class="btn" href="index.html">← Back to Gallery</a>
+        /div>
+    </div>
+  </article>
+</div>
 
   <footer>
     © B.K. Anderson · All rights reserved.
