@@ -16,16 +16,7 @@
     main{max-width:1000px;margin:0 auto;padding:0 16px 60px}
     .card{display:grid;grid-template-columns:1fr;gap:18px;background:var(--card);border:1px solid var(--cardBorder);border-radius:16px;padding:16px}
     @media(min-width:860px){.card{grid-template-columns:380px 1fr}}
-    .cover {
-     width: 100%;
-     max-width: 320px;
-     height: auto;
-     border-radius: 10px;
-     border: 1px solid var(--cardBorder);
-     display: block;
-     margin: auto;
-   }
-
+    .cover{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;border:1px solid var(--cardBorder);background:#101325}
     h2{margin:0 0 8px;font-size:1.4rem}
     .meta{color:var(--muted);font-size:.95rem;margin-bottom:12px}
     .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
@@ -34,7 +25,7 @@
     .back{margin:10px 0 20px;display:inline-block}
     footer{padding:26px 16px;text-align:center;color:var(--muted)}
   </style>
-</head>
+</head>              
 <body>
   <header>
     <a class="back" href="index.html#family-legacy">← Back to Gallery</a>
@@ -75,10 +66,8 @@
         Read sample (PDF)
       </a>
       <!-- Optional cross-link to the Andrew Berry page -->
-      <a class="btn" href="AndrewBerryAnderson.html">Andrew Berry Anderson</a>
-    </div>
-  </div>
-</section>
+      <a class="btn" href="AndrewBerryAnderson.html">Andrew Berry And
+  </section>
 
   <footer>
     © <span id="yr"></span> B.K. Anderson — All Rights Reserved
