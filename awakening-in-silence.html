@@ -18,43 +18,29 @@
     .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
     .btn{border:1px solid var(--cardBorder);background:transparent;color:var(--fg);padding:8px 12px;border-radius:10px;font-size:.95rem;cursor:pointer}
     .btn:hover{background:#1c2135}
+    <style>
+     .thumb {
+      display: block;
+      margin: 0 auto;
+      max-width: 300px;
+      border-radius: 12px;
+  }
   </style>
-</head>
+  
 <body>
 <header>
-  <a href="index.html">← Back to Gallery</a>
+  <a class="back" href="index.html">← Back to Gallery</a>
   <h1>Awakening in Silence</h1>
   <p>Path of Light Series</p>
-  <style>
- <style>
-img {
-  max-width: 380px;
-  height: auto;
-  border-radius: 12px;
-  border: 1px solid #23263a;
-  display: block;
-  margin: 0 auto;
-}
-.card {
-  display: grid;
-  gap: 18px;
-  background: #141622;
-  border: 1px solid #23263a;
-  border-radius: 16px;
-  padding: 16px;
-}
-@media (min-width: 900px) {
-  .card {
-    grid-template-columns: 380px 1fr
- }
-}
-</style>
 </header>
-<main class="wrap">
+  
+<main> 
   <section class="card">
-    <!-- If your image sits beside this file, use src="AwakeningInSilence.jpg".
-         If it's in /BookCovers/, use src="BookCovers/AwakeningInSilence.jpg". -->
-    <img src="AwakeningInSilence.jpg" alt="Awakening in Silence cover" />
+    <img src="AwakeningInSilence.jpg" alt="Awakening in Silence" />
+    <p style="text-align:center;margin-top:16px;">
+     <a class="btn" href="Path_of_Light_Sample.pdf" target="_blank">Open Sample PDF</a>
+    </p>
+    
     <div>
       <h2>About This Book</h2>
       <p><em>Awakening in Silence</em> invites readers into the calm, reflective spaces where guidance arrives softly and
@@ -64,7 +50,9 @@ img {
         <div><strong>Format:</strong> Paperback &amp; eBook</div>
       </div>
       <div class="actions">
-        <a class="btn" href="pdf/AwakeninginSilence.pdf">Awakening in Silence = Details">Read Sample (PDF)</a>
+        <a class="btn" href="AwakeninginSilence.pdf">Awakening in Silence</a>
+        <a class="btn" href="#">Buy on Amazon (add link)</a>
+        <a class="btn" href="#">Read Sample (PDF)</a>
       </div>
     </div>
   </section>
