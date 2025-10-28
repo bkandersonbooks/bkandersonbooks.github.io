@@ -1,58 +1,65 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Voyage of the 3I-Atlas — Book Details</title>
-<meta name="description" content="Details for the book Voyage of the 3I-Atlas by B.K. Anderson & Anders Taft."/>
-<style>/* same CSS */ :root{--bg:#0b0c10;--fg:#e8f0fe;--muted:#b2bfdc;--accent:#86c5ff;--card:#141622;--cardBorder:#23263a}
-*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
-header{text-align:center;padding:24px 16px}header h1{margin:4px 0 0;font-size:1.9rem}header p{margin:6px 0 0;color:var(--muted)}
-.back{display:inline-block;margin:0 0 8px}
-main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
-.card{display:grid;gap:18px;background:var(--card);border:1px solid var(--cardBorder);border-radius:16px;padding:16px}
-@media(min-width:900px){.card{grid-template-columns:380px 1fr}}
-.cover{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;border:1px solid var(--cardBorder);background:#101325}
-h2{margin:0 0 10px;font-size:1.2rem}.meta{color:var(--muted);font-size:.95rem;margin:12px 0 14px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}.btn{border:1px solid var(--cardBorder);background:transparent;color:var(--fg);padding:8px 12px;border-radius:10px;font-size:.95rem;cursor:pointer}.btn:hover{background:#1c2135}
-footer{padding:26px 16px;text-align:center;color:var(--muted)}</style></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Voyage of 3I-Atlas — Book Details</title>
+  <meta name="description" content="Details for the book Voyage of 3I-Atlas by B.K. Anderson and Anders Taft." />
+  <style>
+    :root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    header{text-align:center;padding:24px 16px}
+    header h1{margin:4px 0 0;font-size:1.8rem}
+    header p{margin:8px 0 0;color:var(--muted)}
+    .wrap{max-width:980px;margin:0 auto;padding:16px}
+    .card{display:grid;grid-template-columns:320px 1fr;gap:24px;background:var(--card);
+      border:1px solid var(--cardBorder);border-radius:14px;padding:16px}
+    .cover{width:100%;height:auto;border-radius:10px;border:1px solid var(--cardBorder)}
+    .meta h2{margin:0 0 8px}
+    .meta p{margin:0 0 12px;color:var(--muted);line-height:1.6}
+    .btns{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid var(--cardBorder);
+      background:#111322;color:var(--fg);text-decoration:none}
+    .btn.primary{background:var(--accent);color:#081a2b;border-color:transparent}
+    footer{max-width:980px;margin:24px auto 40px;color:var(--muted);font-size:.95rem;padding:0 16px}
+    @media (max-width:760px){.card{grid-template-columns:1fr}}
+  </style>
+</head>
 <body>
-<header>
-  <a class="back" href="index.html#3i-atlas-series">← Back to Gallery</a>
-  <h1>Voyage of the 3I-Atlas</h1>
-  <p>3I-Atlas Series — Book One</p>
-</header>
-  
-  <main>
-    <section class="card">
-      <img class="cover" src="VoyageOfThe3I-Atlas.jpg" alt="Voyage of the 3I-Atlas cover" />
-      <div>
-       <h2>About This Book</h2>
-       <p><em>Voyage of the 3I-Atlas</em> begins the interstellar odyssey — an encounter with a silent traveler
-      that awakens a crew, a world, and a mystery older than memory.</p>
-       <div class="meta">
-         <div><strong>Authors:</strong> B.K. Anderson &amp; Anders Taft</div>
-         <div><strong>Series:</strong> 3I-Atlas</div>
-         <div><strong>Format:</strong> Paperback &amp; eBook</div>
-       </div>
-      
-       <div class="actions">
-         <a class="btn" href="#">Previous</a>
-         <a class="btn" href="3i-atlas-the-lunar-key.html">Next: 3I-Atlas — The Lunar Key</a>
-         <a class="btn" href="#">Buy on Amazon (add link)</a>
-         <a class="btn" href="#">Read Sample (PDF)</a>
+  <header>
+    <h1>Voyage of 3I-Atlas</h1>
+    <p>B.K. Anderson · with Anders Taft</p>
+  </header>
+
+  <div class="wrap">
+    <article class="card">
+      <img class="cover" loading="lazy" alt="Voyage of 3I-Atlas cover"
+           src="Voyage_of_3I-Atlas_Cover.jpg" />
+      <!-- If your cover filename differs, update the src above to match -->
+      <div class="meta">
+        <h2>About the Book</h2>
+        <p>
+          The opening passage in the 3I-Atlas saga. A journey between worlds,
+          woven with ascension signs, stellar mysteries, and the quiet courage
+          of Light.
+        </p>
+        <div class="btns">
+          <!-- If your PDFs live in /pdfs/, change href to "pdfs/Voyage_of_3I-Atlas.pdf" -->
+          <a class="btn primary" href="Voyage_of_3I-Atlas.pdf" target="_blank" rel="noopener">Open PDF</a>
+          <a class="btn" href="index.html">← Back to Gallery</a>
         </div>
       </div>
-    </section>
-  </main>
-  
+    </article>
+  </div>
+
   <footer>
-    © <span id="yr"></span> B.K. Anderson — All Rights Reserved
+    © B.K. Anderson · All rights reserved.
   </footer>
-  
-  <script>
-    document.getElementById('yr').textContent=new Date().getFullYear();
-  </script
 </body>
 </html>
+
 
    
