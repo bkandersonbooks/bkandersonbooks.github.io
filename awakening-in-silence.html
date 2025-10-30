@@ -54,7 +54,19 @@ footer{padding:26px 16px;text-align:center;color:var(--muted)}
 </head>
 <body>
 <header>
-  <a class="back" href="index.html">← Back to Gallery</a>
+  <div class="top-nav">
+    <a class="back" href="index.html">← Back to Gallery</a>
+    <a class="back-link" href="index.html"
+       onclick="
+         try {
+           if (document.referrer && new URL(document.referrer).origin === location.origin) {
+             history.back(); return false;
+           }
+         } catch(e) {}
+       ">
+      ← Return to Previous Page
+    </a>
+  </div>
   <h1>Awakening in Silence</h1>
   <p>Triad of Light — Book One</p>
 </header>
@@ -64,9 +76,10 @@ footer{padding:26px 16px;text-align:center;color:var(--muted)}
     <!-- LEFT COLUMN: centered cover + ONE sample link -->
     <div style="text-align:center">
       <img class="thumb" loading="lazy" src="AwakeninginSilence.jpg" alt="Awakening in Silence cover"/>
-      <div class="actions" style="justify-content:center;margin-top:16px">
-        <a class="btn" href="Awakening_in_Silence_Sample.pdf" target="_blank" rel="noopener">Read Sample PDF</a>
-      </div>
+    <div class="actions" style="justify-content:center;margin-top:16px">
+      <a class="btn" href="Awakening_in_Silence_Sample.pdf" target="_blank" rel="noopener">📖 Read Sample PDF</a>
+      <a class="btn" href="Awakening_in_Silence_Sample.pdf" download>⬇️ Download PDF</a>
+    </div>
     </div>
 
     <!-- RIGHT COLUMN: info + nav -->
@@ -92,5 +105,21 @@ footer{padding:26px 16px;text-align:center;color:var(--muted)}
 
 <footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+ <style>
+   .back-link {
+     position: sticky; top: 12px;
+     display: inline-flex; align-items: center; gap: 6px;
+     padding: 10px 14px; border-radius: 999px;
+     background: var(--card); border: 1px solid var(--cardBorder);
+     color: var(--fg); text-decoration: none; font-weight: 600;
+     box-shadow: 0 2px 8px rgba(0,0,0,.25);
+    }
+    .back-link:hover { border-color: var(--accent); }
+    .back-link:active { transform: translateY(1px); }
+
+    .top-nav { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:8px; }
+    .back { border:1px solid var(--cardBorder); background:var(--card); padding:8px 12px; border-radius:999px; font-weight:600; }
+    .back:hover { border-color: var(--accent); text-decoration:none; }
+</style>
 </body>
 </html>
