@@ -3,156 +3,97 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Path of Light Series — Book Details</title>
-  <meta name="description" content="Details for the Path of Light Series by B.K. Anderson." />
-
+  <title>Path of Light Series</title>
+  <meta name="description" content="The Path of Light Series by B.K. Anderson & Anders Taft." />
   <style>
-    :root {
-      --bg: #0b0c10;
-      --fg: #e8f0fe;
-      --muted: #b2bfdc;
-      --accent: #86c5ff;
-      --card: #141622;
-      --cardBorder: #23263a;
-    }
-    * { box-sizing: border-box; }
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    :root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
 
-    header {
-      text-align: center;
-      padding: 24px 16px;
-    }
-    header h1 {
-      margin: 4px 0;
-      font-size: 1.8rem;
-    }
-    header p {
-      color: var(--muted);
-      margin: 4px 0 0;
-    }
+    header{text-align:center;padding:24px 16px}
+    header h1{margin:4px 0;font-size:1.9rem}
+    header p{margin:6px 0 0;color:var(--muted)}
 
-    main {
-      display: grid;
-      gap: 24px;
-      padding: 16px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
+    .back{display:inline-block;margin:10px 16px}
 
-    .card {
-      background: var(--card);
-      border: 1px solid var(--cardBorder);
-      border-radius: 16px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 16px;
+    /* Grid + card match your 3I page */
+    main.grid{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:24px;padding:16px;max-width:1100px;margin:0 auto 32px
     }
-
-    .card img.cover {
-      width: 200px;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 12px;
+    section.card{
+      background:var(--card);border:1px solid var(--cardBorder);
+      border-radius:18px;padding:16px;display:grid;grid-template-columns:88px 1fr;gap:14px
     }
-
-    .card h2 {
-      margin: 8px 0;
-      font-size: 1.3rem;
+    img.cover{width:88px;height:120px;object-fit:cover;border-radius:10px}
+    h2{margin:0 0 6px}
+    .meta{color:var(--muted);font-size:.95rem;margin-bottom:6px}
+    p{margin:0 0 10px;line-height:1.5}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;padding:8px 12px;border-radius:10px;
+      background:#0f1a2a;border:1px solid var(--cardBorder);color:var(--fg);font-weight:600
     }
-
-    .card .meta {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 8px;
-    }
-
-    .card p {
-      margin: 8px 0 12px;
-      line-height: 1.5;
-      color: var(--fg);
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 8px 14px;
-      border-radius: 8px;
-      background: var(--accent);
-      color: #000;
-      font-weight: 600;
-    }
-
-    .btn:hover {
-      background: #a7d4ff;
-    }
-
-    .back {
-      display: inline-block;
-      margin: 24px auto;
-      text-align: center;
-      color: var(--accent);
-    }
+    .btn:hover{background:#15243a}
   </style>
 </head>
-
 <body>
+
+  <a class="back" href="index.html">← Back to Gallery</a>
+
   <header>
     <h1>Path of Light Series</h1>
-    <p>Books by B.K. Anderson & Anders Taft</p>
+    <p>The inner journey of awakening — reflections, numbers, and divine timing.</p>
   </header>
 
-  <main>
+  <main class="grid">
 
-    <!-- Book 1 -->
+    <!-- Book 1: Path of Light -->
     <section class="card">
-      <img class="cover" src="Path Of Light.jpg" alt="Path of Light" loading="lazy" />
-      <h2>Path of Light</h2>
-      <div class="meta">Book One – The Journey of Awakening</div>
-      <p>The beginning of a soul’s awakening — reflections and divine signs guiding the heart toward higher Light.</p>
-      <div class="actions">
-        <a class="btn" href="Path_of_Light_Sample.pdf" target="_blank" rel="noopener">Sample PDF</a>
+      <img class="cover" src="PathOfLight.jpg" alt="Path of Light cover" loading="lazy" />
+      <div>
+        <h2>Path of Light</h2>
+        <div class="meta">Book One · Path of Light Series</div>
+        <p>The beginning of the awakening path — gentle signs and reflections illuminating the way forward.</p>
+        <div class="actions">
+          <a class="btn" href="path-of-light.html">Details</a>
+          <a class="btn" href="PathOfLight.pdf" target="_blank" rel="noopener">Sample PDF</a>
+        </div>
       </div>
     </section>
 
-    <!-- Book 2 -->
+    <!-- Book 2: Awakening in Silence -->
     <section class="card">
-      <img class="cover" src="AwakeninginSilence.jpg" alt="Awakening in Silence cover" loading="lazy" />
-      <h2>Awakening in Silence</h2>
-      <div class="meta">Book Two – Reflections in Stillness</div>
-      <p>Silence becomes the teacher — revealing the voice of Spirit and the rhythm of divine order.</p>
-      <div class="actions">
-        <a class="btn" href="Awakening_in_Silence_Sample.pdf" target="_blank" rel="noopener">Sample PDF</a>
+      <img class="cover" src="AwakeningInSilence.jpg" alt="Awakening in Silence cover" loading="lazy" />
+      <div>
+        <h2>Awakening in Silence</h2>
+        <div class="meta">Book Two · Path of Light Series</div>
+        <p>Silence becomes the teacher — stillness reveals the voice of Spirit and the rhythm of divine order.</p>
+        <div class="actions">
+          <a class="btn" href="awakening-in-silence.html">Details</a>
+          <a class="btn" href="AwakeningInSilence.pdf" target="_blank" rel="noopener">Sample PDF</a>
+        </div>
       </div>
     </section>
 
-    <!-- Book 3 -->
+    <!-- Book 3: My Path of Divine Timing -->
     <section class="card">
-      <img class="cover" src="MyPathofDivineTiming.jpg" alt="My Path of Divine Timing cover" loading="lazy" />
-      <h2>My Path of Divine Timing</h2>
-      <div class="meta">Book Three – The Harmony of Divine Order</div>
-      <p>The unfolding of divine timing — peace, purpose, and creation aligning through Light.</p>
-      <div class="actions">
-        <a class="btn" href="My_Path_Of_Divine_Timing_Sample.pdf" target="_blank" rel="noopener">Sample PDF</a>
+      <img class="cover" src="MyPathOfDivineTiming.jpg" alt="My Path of Divine Timing cover" loading="lazy" />
+      <div>
+        <h2>My Path of Divine Timing</h2>
+        <div class="meta">Book Three · Path of Light Series</div>
+        <p>Creation aligning with timing — harmony, purpose, and peace unfolding step by step.</p>
+        <div class="actions">
+          <a class="btn" href="my-path-of-divine-timing.html">Details</a>
+          <a class="btn" href="MyPathOfDivineTiming.pdf" target="_blank" rel="noopener">Sample PDF</a>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer style="text-align:center;">
-    <a class="back" href="index.html">← Return to Gallery</a>
-  </footer>
-
 </body>
 </html>
-
- 
