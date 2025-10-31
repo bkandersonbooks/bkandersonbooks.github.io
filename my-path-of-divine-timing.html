@@ -1,101 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Path of Divine Timing — Book Details</title>
-<meta name="description" content="Details for the book My Path of Divine Timing by B.K. Anderson."/>
-<style>
-:root{--bg:#0b0c10;--fg:#e8f0fe;--muted:#b2bfdc;--accent:#86c5ff;--card:#141622;--cardBorder:#23263a}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Path of Divine Timing — Book Details</title>
+  <meta name="description" content="Details for the book My Path of Divine Timing by B.K. Anderson." />
 
-/* Header */
-header{text-align:center;padding:24px 16px}
-header h1{margin:4px 0 0;font-size:1.9rem}
-header p{margin:6px 0 0;color:var(--muted)}
-.back{display:inline-block;margin:0 0 8px}
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --fg: #e8f0fe;
+      --muted: #b2bfdc;
+      --accent: #86c5ff;
+      --card: #141622;
+      --cardBorder: #23263a;
+    }
 
-/* Page container */
-main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
+    * { box-sizing: border-box; }
 
-/* Card/grid like your working page */
-.card{
-  display:grid;gap:18px;
-  background:var(--card);
-  border:1px solid var(--cardBorder);
-  border-radius:16px;
-  padding:16px
-}
-@media(min-width:900px){.card{grid-template-columns:380px 1fr}}
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
 
-/* Cover + buttons */
-.thumb{
-  display:block;margin:0 auto;
-  max-width:300px;border-radius:12px;border:1px solid var(--cardBorder)
-}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
-.btn{
-  border:1px solid var(--cardBorder);
-  background:transparent;color:var(--fg);
-  padding:8px 12px;border-radius:10px;font-size:.95rem;cursor:pointer
-}
-.btn:hover{background:#1c2135}
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-/* Text blocks */
-h2{margin:0 0 10px;font-size:1.2rem}
-.meta{color:var(--muted);font-size:.95rem;margin:12px 0 14px}
+    /* Header */
+    header {
+      text-align: center;
+      padding: 24px 16px;
+    }
+    header h1 { margin: 4px 0 0; font-size: 1.9rem; }
+    header p { margin: 6px 0 0; color: var(--muted); }
+    .back { display: inline-block; margin: 0 0 8px; }
 
-/* Footer */
+    /* Page container */
+    main { max-width: 1100px; margin: 0 auto; padding: 0 16px 60px; }
 
-  <a class="back" href="index.html#pol">← Back to Gallery</a>
-  <h1>My Path of Divine Timing</h1>
-  <p>Path of Light Series — Book Two</p>
-</header>
-text-align:center;
-    padding:32px 0;
-    font-size:0.9rem;
-    color:var(--muted);
-    border-top:1px solid var(--cardBorder);
-    margin-top:48px;
-  }
-  footer a:hover {
-    text-decoration:underline;
-    color:var(--fg);
-  }
-<main>
-  <section class="card">
-    <!-- LEFT COLUMN: centered cover + ONE sample link -->
-    <div style="text-align:center">
-      <img class="thumb" loading="lazy" src="MyPathofDivineTiming.jpg" alt="My Path of Divine Timing cover">
-      <div class="actions" style="justify-content:center;margin-top:16px">
-        <a class="btn" href="My_Path_of_Divine_Timing_Sample.pdf" target="_blank" rel="noopener">Read Sample PDF</a>
+    /* Card/grid */
+    .card {
+      display: grid;
+      gap: 18px;
+      background: var(--card);
+      border: 1px solid var(--cardBorder);
+      border-radius: 16px;
+      padding: 16px;
+    }
+    @media (min-width: 900px) { .card { grid-template-columns: 380px 1fr; } }
+
+    /* Cover + buttons */
+    .thumb {
+      display: block;
+      margin: 0 auto;
+      max-width: 300px;
+      border-radius: 12px;
+      border: 1px solid var(--cardBorder);
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      justify-content: center;
+    }
+
+    .btn {
+      border: 1px solid var(--accent);
+      background: transparent;
+      color: var(--accent);
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      color: #0b0c10;
+    }
+
+    /* Text blocks */
+    h2 { margin: 0 0 10px; font-size: 1.2rem; }
+    .meta { color: var(--muted); font-size: .95rem; margin: 12px 0 14px; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 32px 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+      border-top: 1px solid var(--cardBorder);
+      margin-top: 48px;
+    }
+    footer a:hover { text-decoration: underline; color: var(--fg); }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="back" href="index.html#pol">← Back to Gallery</a>
+    <h1>My Path of Divine Timing</h1>
+    <p>Path of Light Series — Book Two</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <!-- LEFT COLUMN -->
+      <div style="text-align:center">
+        <img class="thumb" loading="lazy" src="MyPathofDivineTiming.jpg" alt="My Path of Divine Timing cover">
+        <div class="actions">
+          <a class="btn" href="My_Path_of_Divine_Timing_Sample.pdf" target="_blank" rel="noopener">Read Sample PDF</a>
+        </div>
       </div>
-    </div>
 
-    <!-- RIGHT COLUMN: info + nav (no duplicate sample link) -->
-    <div>
-      <h2>About This Book</h2>
-      <p><em>My Path of Divine Timing</em> is a reflective journey through alignment, patience, and the rhythm of Spirit.</p>
-      <div class="meta">
-        <div><strong>Author:</strong> B.K. Anderson</div>
-        <div><strong>Series:</strong> Path of Light</div>
-        <div><strong>Format:</strong> Paperback &amp; eBook</div>
+      <!-- RIGHT COLUMN -->
+      <div>
+        <h2>About This Book</h2>
+        <p><em>My Path of Divine Timing</em> is a reflective journey through alignment, patience, and the rhythm of Spirit.</p>
+
+        <div class="meta">
+          <div><strong>Author:</strong> B.K. Anderson</div>
+          <div><strong>Series:</strong> Path of Light</div>
+          <div><strong>Format:</strong> Paperback &amp; eBook</div>
+        </div>
+
+        <div class="actions">
+          <a class="btn" href="my-path-of-light.html">← Previous: Path of Light</a>
+          <a class="btn" href="3i-atlas-the-lunar-key.html">Next: 3I-Atlas — The Lunar Key →</a>
+          <a class="btn" href="#">Buy on Amazon (add link)</a>
+        </div>
       </div>
+    </section>
+  </main>
 
-      <div class="actions">
-        <a class="btn" href="my-path-of-light.html">Previous: Path of Light</a>
-        <a class="btn" href="3i-atlas-the-lunar-key.html">Next: 3I-Atlas - The Lunar Key→</a>
-        <a class="btn" href="#">Buy on Amazon (add link)</a>
-      </div>
-    </div>
-  </section>
-</main>
+  <footer>
+    © <span id="yr"></span> B.K. Anderson — All Rights Reserved
+  </footer>
 
-<footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
 
+ 
