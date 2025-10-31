@@ -1,78 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Phillips Family Legacy — Book Details</title>
-  <meta name="description" content="Details for the book Phillips Family Legacy by B.K. Anderson." />
-  <style>
-    :root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{text-align:center;padding:24px 16px}
-    header h1{margin:0;font-size:1.8rem}
-    header p{margin:6px 0 0;color:var(--muted)}
-    main{max-width:1000px;margin:0 auto;padding:0 16px 60px}
-    .card{display:grid;grid-template-columns:1fr;gap:18px;background:var(--card);
-      border:1px solid var(--cardBorder);border-radius:16px;padding:16px}
-    @media(min-width:860px){.card{grid-template-columns:380px 1fr}}
-    .cover{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;
-      border:1px solid var(--cardBorder);background:#101325}
-    h2{margin:0 0 8px;font-size:1.4rem}
-    .meta{color:var(--muted);font-size:.95rem;margin-bottom:12px}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
-    .btn{border:1px solid var(--cardBorder);background:transparent;color:var(--fg);
-      padding:8px 12px;border-radius:10px;font-size:.95rem;cursor:pointer}
-    .btn:hover{background:#1c2135}
-    .back{margin:10px 0 20px;display:inline-block}
-    footer{padding:26px 16px;text-align:center;color:var(--muted)}
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Phillips Family Legacy — Book Details</title>
+<meta name="description" content="Details for the book The Phillips Family Legacy by B.K. Anderson and Anders Taft."/>
+<meta name="keywords" content="B.K. Anderson, Anders Taft, Phillips Family Legacy, genealogy, Tennessee history, family heritage"/>
+<meta name="author" content="B.K. Anderson & Anders Taft"/>
+<style>
+:root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
+*{box-sizing:border-box}
+html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+
+/* Header */
+header{text-align:center;padding:24px 16px}
+header h1{margin:4px 0 0;font-size:1.9rem}
+header p{margin:6px 0 0;color:var(--muted)}
+
+/* Navigation buttons (top) */
+.top-nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
+.back,.back-link{
+  border:1px solid var(--cardBorder); background:var(--card);
+  padding:8px 12px; border-radius:999px; font-weight:600;
+  box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+.back:hover,.back-link:hover{border-color:var(--accent);text-decoration:none}
+.back-link:active{transform:translateY(1px)}
+
+/* Layout */
+main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
+.card{
+  display:grid; gap:18px; background:var(--card);
+  border:1px solid var(--cardBorder); border-radius:20px; padding:16px;
+  overflow:hidden;                   /* clip inner edges to radius */
+  align-items:center;                /* tidy vertical alignment */
+}
+@media(min-width:900px){.card{grid-template-columns:380px 1fr}}
+
+/* Cover + buttons */
+.thumb{
+  display:block; width:100%; max-width:340px; margin-inline:auto;
+  border-radius:12px; border:1px solid var(--cardBorder);
+}
+.actions{
+  display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:16px;
+}
+.btn{
+  border:1px solid var(--cardBorder); background:transparent; color:var(--fg);
+  padding:8px 12px; border-radius:10px; font-size:.95rem; cursor:pointer;
+}
+.btn:hover{background:#1c2135}
+
+/* Text blocks */
+h2{margin:0 0 10px;font-size:1.2rem}
+.meta{color:var(--muted);font-size:.95rem;margin:12px 0 14px}
+
+/* Footer */
+footer{padding:26px 16px;text-align:center;color:var(--muted)}
+</style>
 </head>
 <body>
-  <header>
-    <a class="back" href="index.html#family-legacy">← Back to Gallery</a>
-    <h1>Phillips Family Legacy</h1>
-    <p>Family Legacy Series</p>
-  </header>
 
-  <main>
-    <section class="card">
-      <img class="cover"
-        src="https://bkandersonbooks.github.io/PhillipsFamilyLegacy.jpg"
-        alt="Abb Anderson and Willie Jane Phillips Anderson" />
+<header>
+  <div class="top-nav">
+    <a class="back" href="index.html">← Back to Gallery</a>
+    <a class="back-link" href="index.html"
+      onclick="
+        try {
+          if (document.referrer && new URL(document.referrer).origin === location.origin) {
+            history.back(); return false;
+          }
+        } catch(e) {}
+      ">
+      ← Return to Previous Page
+    </a>
+  </div>
 
-      <div>
-        <h2>About this Book</h2>
-        <p>
-          This volume celebrates the enduring connection between the Phillips and Anderson families —
-          two lineages joined through love, perseverance, and faith. Within these pages, their stories,
-          photographs, and remembrances weave together a portrait of unity that spans generations.
-          Through this work, their shared legacy continues to speak, reminding all who follow of the
-          strength born from family and the grace of memory preserved in Light.
-        </p>
+  <h1>The Phillips Family Legacy</h1>
+  <p>Family Legacy Series — Volume IV</p>
+</header>
 
-        <div class="meta">
-          <div><strong>Author:</strong> B.K. Anderson</div>
-          <div><strong>Series:</strong> Family Legacy</div>
-          <div><strong>Format:</strong> Paperback &amp; eBook</div>
-        </div>
-
-        <div class="actions">
-          <a class="btn" href="brown-and-adams-legacy.html">Previous: Brown &amp; Adams</a>
-          <a class="btn" href="https://bkandersonbooks.github.io/PhillipsFamilyLegacy.pdf" target="_blank" rel="noopener">Read sample (PDF)</a>
-          <a class="btn" href="#">Buy on Amazon (add link)</a>
-        </div>
+<main>
+  <section class="card">
+    <!-- LEFT COLUMN: cover + PDF links -->
+    <div style="text-align:center">
+      <img class="thumb" loading="lazy" src="PhillipsFamilyLegacy.jpg" alt="The Phillips Family Legacy cover"/>
+      <div class="actions">
+        <a class="btn" href="PhillipsFamilyLegacy.pdf" target="_blank" rel="noopener" type="application/pdf">📖 Read Sample PDF</a>
+        <a class="btn" href="PhillipsFamilyLegacy.pdf" download="PhillipsFamilyLegacy.pdf">⬇️ Download PDF</a>
       </div>
-    </section>
-  </main>
+    </div>
 
-  <footer>
-    © <span id="yr"></span> B.K. Anderson — All Rights Reserved
-  </footer>
-  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+    <!-- RIGHT COLUMN: about + nav (single actions row) -->
+    <div>
+      <h2>About This Book</h2>
+      <p><em>The Phillips Family Legacy</em> gathers the histories, images, and memories of the Phillips line with care and gratitude. B.K. Anderson and Anders Taft honor the endurance and devotion of the family’s ancestors, preserving their stories so future generations can remember where they come from—and carry that light forward.</p>
+
+      <div class="meta">
+        <div><strong>Author:</strong> B.K. Anderson &amp; Anders Taft</div>
+        <div><strong>Series:</strong> Family Legacy Series</div>
+        <div><strong>Format:</strong> Paperback &amp; eBook</div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="brown-and-adams-family-legacy.html">← Previous: Brown &amp; Adams Family Legacy</a>
+        <!-- End of chain; omit Next link -->
+        <a class="btn" href="https://www.amazon.com/dp/placeholder">Buy on Amazon</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
+
 
