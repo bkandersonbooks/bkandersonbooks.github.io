@@ -1,102 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Anderson Family Legacy — Book Details</title>
-  <meta name="description" content="Details for the book Anderson Family Legacy by B.K. Anderson." />
-  <style>
-    :root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Anderson Family Legacy — Book Details</title>
+<meta name="description" content="Details for the book The Anderson Family Legacy by B.K. Anderson and Anders Taft."/>
+<meta name="keywords" content="B.K. Anderson, Anders Taft, Anderson Family Legacy, genealogy, Tennessee history, family heritage"/>
+<meta name="author" content="B.K. Anderson & Anders Taft"/>
+<style>
+:root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
+*{box-sizing:border-box}
+html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
 
-    header{text-align:center;padding:24px 16px}
-    header h1{margin:0;font-size:1.8rem}
-    header p{margin:6px 0 0;color:var(--muted)}
+/* Header */
+header{text-align:center;padding:24px 16px}
+header h1{margin:4px 0 0;font-size:1.9rem}
+header p{margin:6px 0 0;color:var(--muted)}
 
-    main{max-width:1000px;margin:0 auto;padding:0 16px 60px}
+/* Navigation buttons */
+.top-nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
+.back,.back-link{
+  border:1px solid var(--cardBorder); background:var(--card);
+  padding:8px 12px; border-radius:999px; font-weight:600;
+  box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+.back:hover,.back-link:hover{border-color:var(--accent);text-decoration:none}
+.back-link:active{transform:translateY(1px)}
 
-    /* Card layout: fixed cover column ≤320px */
-    .card{
-      display:grid;
-      grid-template-columns:minmax(240px,320px) 1fr;
-      gap:24px;
-      background:var(--card);
-      border:1px solid var(--cardBorder);
-      border-radius:16px;
-      padding:16px;
-    }
-    @media (max-width:760px){
-      .card{ grid-template-columns:1fr; }
-    }
+/* Layout */
+main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
+.card{
+  display:grid; gap:18px; background:var(--card);
+  border:1px solid var(--cardBorder); border-radius:16px; padding:16px;
+}
+@media(min-width:900px){.card{grid-template-columns:380px 1fr}}
 
-    /* Cover image: hard cap width */
-    .cover{
-      width:100% !important;
-      max-width:320px !important;
-      height:auto !important;
-      border-radius:10px;
-      border:1px solid var(--cardBorder);
-      display:block;
-      margin:auto;
-    }
+/* Cover + buttons */
+.thumb{display:block;margin:0 auto;max-width:300px;border-radius:12px;border:1px solid var(--cardBorder)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+.btn{
+  border:1px solid var(--cardBorder); background:transparent; color:var(--fg);
+  padding:8px 12px; border-radius:10px; font-size:.95rem; cursor:pointer;
+}
+.btn:hover{background:#1c2135}
 
-    h2{margin:0 0 8px;font-size:1.4rem}
-    .meta{color:var(--muted);font-size:.95rem;margin:12px 0}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
-    .btn{border:1px solid var(--cardBorder);background:transparent;color:var(--fg);padding:8px 12px;border-radius:10px;font-size:.95rem;cursor:pointer}
-    .btn:hover{background:#1c2135}
+/* Text blocks */
+h2{margin:0 0 10px;font-size:1.2rem}
+.meta{color:var(--muted);font-size:.95rem;margin:12px 0 14px}
 
-    .back{margin:10px 0 20px;display:inline-block}
-    footer{padding:26px 16px;text-align:center;color:var(--muted)}
-  </style>
+/* Footer */
+footer{padding:26px 16px;text-align:center;color:var(--muted)}
+</style>
 </head>
 <body>
-  <header>
-    <a class="back" href="index.html#family-legacy">← Back to Gallery</a>
-    <h1>Anderson Family Legacy</h1>
-    <p>Family Legacy Series</p>
-  </header>
 
-  <main>
-    <section class="card">
-      <!-- Cover -->
-      <img class="cover" src="AndersonFamilyLegacy.jpg"
-           alt="Nathaniel Hamilton Anderson and Sally Adelaide Horton Anderson — Anderson Family Legacy cover" />
+<header>
+  <div class="top-nav">
+    <a class="back" href="index.html">← Back to Gallery</a>
+    <a class="back-link" href="index.html"
+      onclick="
+        try {
+          if (document.referrer && new URL(document.referrer).origin === location.origin) {
+            history.back(); return false;
+          }
+        } catch(e) {}
+      ">
+      ← Return to Previous Page
+    </a>
+  </div>
 
-      <!-- Text / actions -->
-      <div>
-        <h2>About this Book</h2>
-        <p>
-          A commemorative family history focusing on the Anderson lineage — preserving stories,
-          photos, and documents that illuminate the people and moments shaping the Anderson family.
-          Compiled and written by B.K. Anderson as part of the Family Legacy series.
-        </p>
+  <h1>The Anderson Family Legacy</h1>
+  <p>Family Legacy Series — Volume II</p>
+</header>
 
-        <p style="text-align:center;font-size:.9rem;color:var(--muted);font-style:italic;margin-top:4px;">
-          Cover image: Nathaniel Hamilton Anderson (1845–1919) and Sally Adelaide Horton Anderson (1844–1917),
-          great-great-grandparents of B.K. Anderson.
-        </p>
-
-        <div class="meta">
-          <div><strong>Author:</strong> B.K. Anderson</div>
-          <div><strong>Series:</strong> Family Legacy</div>
-          <div><strong>Format:</strong> Paperback &amp; eBook</div>
-        </div>
-
-        <div class="actions">
-          <a class="btn" href="index.html#family-legacy">← Back to Family Legacy</a>
-          <a class="btn" href="AndersonFamilyLegacy.pdf" target="_blank" rel="noopener">Read sample (PDF)</a>
-          <a class="btn" href="andrew-berry-anderson.html">Andrew Berry Anderson</a>
-        </div>
+<main>
+  <section class="card">
+    <!-- LEFT COLUMN: cover + PDF links -->
+    <div style="text-align:center">
+      <img class="thumb" loading="lazy" src="AndersonFamilyLegacy.jpg" alt="The Anderson Family Legacy cover"/>
+      <div class="actions">
+        <a class="btn" href="AndersonFamilyLegacy.pdf" target="_blank" rel="noopener" type="application/pdf">📖 Read Sample PDF</a>
+        <a class="btn" href="AndersonFamilyLegacy.pdf" download="AndersonFamilyLegacy.pdf">⬇️ Download PDF</a>
       </div>
-    </section>
-  </main>
+    </div>
 
-  <footer>
-    © <span id="yr"></span> B.K. Anderson — All Rights Reserved
-  </footer>
-  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+    <!-- RIGHT COLUMN: about + nav -->
+    <div>
+      <h2>About This Book</h2>
+      <p><em>The Anderson Family Legacy</em> preserves the stories, photographs, and memories of generations rooted in Tennessee. Through careful research and heartfelt reflection, B.K. Anderson and Anders Taft bring to light the strength, courage, and enduring spirit of the Anderson family line, uniting past and present in remembrance and grace.</p>
+
+      <div class="meta">
+        <div><strong>Author:</strong> B.K. Anderson &amp; Anders Taft</div>
+        <div><strong>Series:</strong> Family Legacy Series</div>
+        <div><strong>Format:</strong> Paperback &amp; eBook</div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="andrew-berry.html">← Previous: Andrew Berry Anderson</a>
+        <a class="btn" href="brown-adams-family-legacy.html">Next: Brown & Adams Family Legacy →</a>
+        <a class="btn" href="https://www.amazon.com/dp/placeholder">Buy on Amazon</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
+
