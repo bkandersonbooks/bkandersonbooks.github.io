@@ -4,72 +4,76 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Andrew Berry Anderson — Book Details</title>
-  <meta name="description" content="Details for the book Addressing Any and All Hesitations — The Story of Andrew Berry Anderson by B.K. Anderson & Anders Taft." />
+  <meta name="description" content="Details for the book Andrew Berry Anderson by B.K. Anderson." />
+
   <style>
-    :root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
+    :root {
+      --bg:#0b0c10;
+      --fg:#e8f0fe;
+      --muted:#b2bfdc;
+      --accent:#86c5ff;
+      --card:#141622;
+      --cardBorder:#23263a;
+    }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    html,body{
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
     header{text-align:center;padding:24px 16px}
     header h1{margin:0;font-size:1.8rem}
     header p{margin:6px 0 0;color:var(--muted)}
-    main{max-width:1000px;margin:0 auto;padding:0 16px 60px}
-    .card{display:grid;grid-template-columns:1fr;gap:18px;background:var(--card);border:1px solid var(--cardBorder);border-radius:16px;padding:16px}
-    @media(min-width:860px){.card{grid-template-columns:380px 1fr}}
-    .cover{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;border:1px solid var(--cardBorder);background:#101325}
-    h2{margin:0 0 8px;font-size:1.4rem}
-    .meta{color:var(--muted);font-size:.95rem;margin-bottom:12px}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
-    .btn{border:1px solid var(--cardBorder);background:transparent;color:var(--fg);padding:8px 12px;border-radius:10px;font-size:.95rem;cursor:pointer}
-    .btn:hover{background:#1c2135}
-    .back{margin:10px 0 20px;display:inline-block}
-    footer{padding:26px 16px;text-align:center;color:var(--muted)}
+    main{max-width:700px;margin:0 auto;padding:16px}
+    .cover{
+      display:block;
+      width:100%;
+      max-width:350px;
+      margin:24px auto;
+      border:1px solid var(--cardBorder);
+      border-radius:12px;
+      box-shadow:0 0 12px rgba(0,0,0,0.6);
+    }
+    .details{text-align:left;line-height:1.6;margin-top:12px}
+    .actions{text-align:center;margin-top:24px}
+    .btn{
+      display:inline-block;
+      background:var(--accent);
+      color:#000;
+      padding:10px 20px;
+      border-radius:8px;
+      font-weight:600;
+    }
+    .btn:hover{opacity:0.85}
+    footer{text-align:center;padding:24px;color:var(--muted);font-size:0.9rem}
   </style>
 </head>
+
 <body>
   <header>
-    <a class="back" href="index.html#family-legacy">← Back to Gallery</a>
-    <h1>Addressing Any and All Hesitations — Andrew Berry Anderson</h1>
-    <p>Family Legacy Series</p>
+    <h1>Andrew Berry Anderson</h1>
+    <p>By B.K. Anderson</p>
   </header>
 
   <main>
-    <section class="card">
-      <!-- Your exact cover filename -->
-      <img class="cover" src="AndrewBerryAnderson.jpg" alt="Andrew Berry Anderson book cover" />
+    <img class="cover" src="AndrewBerryAnderson.jpg" alt="Andrew Berry Anderson cover" loading="lazy" />
 
-      <div>
-        <h2>About this Book</h2>
-        <p>
-          A family history volume honoring Andrew Berry Anderson — exploring his life, service,
-          and the legacy that echoes through generations. Presented with photographs, documents,
-          and narrative context gathered by B.K. Anderson &amp; Anders Taft.
-        </p>
+    <div class="details">
+      <p><strong>Series:</strong> Family Legacy</p>
+      <p><strong>Description:</strong> A historical and spiritual remembrance of Andrew Berry Anderson — his life, faith, and lineage. This volume preserves his story within the greater tapestry of the Anderson family, honoring his service and the legacy of Light that endures through generations.</p>
+    </div>
 
-        <div class="meta">
-          <div><strong>Authors:</strong> B.K. Anderson &amp; Anders Taft</div>
-          <div><strong>Series:</strong> Family Legacy</div>
-          <div><strong>Format:</strong> Paperback &amp; eBook</div>
-          <!-- Optional:
-          <div><strong>ISBN:</strong> 979-…</div>
-          <div><strong>Publication date:</strong> 2025</div>
-          -->
-        </div>
-
-        <div class="actions">
-          <!-- Link back to Anderson Family Legacy page (adjust filename if yours differs) -->
-          <a class="btn" href="AndersonFamilyLegacy.html">Previous: Anderson Family Legacy</a>
-          <a class="btn" href="#" aria-disabled="true">Buy on Amazon (add link)</a>
-          <!-- Your exact PDF filename -->
-          <a class="btn" href="andrew-berry-anderson.pdf" target="_blank" rel="noopener">Read sample (PDF)</a>
-        </div>
-      </div>
-    </section>
+    <div class="actions">
+      <a class="btn" href="AndrewBerryAnderson.pdf" target="_blank">Open PDF</a>
+    </div>
   </main>
 
   <footer>
-    © <span id="yr"></span> B.K. Anderson — All Rights Reserved
+    <a href="index.html">← Back to Gallery</a>
   </footer>
-  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
