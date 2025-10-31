@@ -1,79 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Andrew Berry Anderson — Book Details</title>
-  <meta name="description" content="Details for the book Andrew Berry Anderson by B.K. Anderson." />
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Addressing Any and All Hesitations — The Story of Andrew Berry</title>
+<meta name="description" content="Details for the book Addressing Any and All Hesitations — The Story of Andrew Berry by B.K. Anderson and Anders Taft."/>
+<meta name="keywords" content="B.K. Anderson, Anders Taft, Family Legacy, Andrew Berry, Addressing Any and All Hesitations, genealogy, Tennessee history"/>
+<meta name="author" content="B.K. Anderson & Anders Taft"/>
+<style>
+:root {
+  --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc;
+  --accent:#86c5ff; --card:#141622; --cardBorder:#23263a;
+}
+*{box-sizing:border-box}
+html,body{
+  margin:0; padding:0;
+  background:var(--bg); color:var(--fg);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
 
-  <style>
-    :root {
-      --bg:#0b0c10;
-      --fg:#e8f0fe;
-      --muted:#b2bfdc;
-      --accent:#86c5ff;
-      --card:#141622;
-      --cardBorder:#23263a;
-    }
-    *{box-sizing:border-box}
-    html,body{
-      margin:0;
-      padding:0;
-      background:var(--bg);
-      color:var(--fg);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-    }
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{text-align:center;padding:24px 16px}
-    header h1{margin:0;font-size:1.8rem}
-    header p{margin:6px 0 0;color:var(--muted)}
-    main{max-width:700px;margin:0 auto;padding:16px}
-    .cover{
-      display:block;
-      width:100%;
-      max-width:350px;
-      margin:24px auto;
-      border:1px solid var(--cardBorder);
-      border-radius:12px;
-      box-shadow:0 0 12px rgba(0,0,0,0.6);
-    }
-    .details{text-align:left;line-height:1.6;margin-top:12px}
-    .actions{text-align:center;margin-top:24px}
-    .btn{
-      display:inline-block;
-      background:var(--accent);
-      color:#000;
-      padding:10px 20px;
-      border-radius:8px;
-      font-weight:600;
-    }
-    .btn:hover{opacity:0.85}
-    footer{text-align:center;padding:24px;color:var(--muted);font-size:0.9rem}
-  </style>
+/* Header */
+header{text-align:center;padding:24px 16px}
+header h1{margin:4px 0 0;font-size:1.9rem}
+header p{margin:6px 0 0;color:var(--muted)}
+
+/* Navigation buttons */
+.top-nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
+.back,.back-link{
+  border:1px solid var(--cardBorder);
+  background:var(--card);
+  padding:8px 12px;
+  border-radius:999px;
+  font-weight:600;
+  box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+.back:hover,.back-link:hover{border-color:var(--accent);text-decoration:none}
+.back-link:active{transform:translateY(1px)}
+
+/* Layout */
+main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
+.card{
+  display:grid;gap:18px;
+  background:var(--card);
+  border:1px solid var(--cardBorder);
+  border-radius:16px;
+  padding:16px;
+}
+@media(min-width:900px){.card{grid-template-columns:380px 1fr}}
+
+/* Cover + buttons */
+.thumb{
+  display:block;margin:0 auto;
+  max-width:300px;border-radius:12px;
+  border:1px solid var(--cardBorder);
+}
+.actions{
+  display:flex;gap:12px;flex-wrap:wrap;
+  justify-content:center;margin-top:16px;
+}
+.btn{
+  border:1px solid var(--cardBorder);
+  background:transparent;color:var(--fg);
+  padding:8px 12px;border-radius:10px;
+  font-size:.95rem;cursor:pointer;
+}
+.btn:hover{background:#1c2135}
+
+/* Text blocks */
+h2{margin:0 0 10px;font-size:1.2rem}
+.meta{color:var(--muted);font-size:.95rem;margin:12px 0 14px}
+
+/* Footer */
+footer{padding:26px 16px;text-align:center;color:var(--muted)}
+</style>
 </head>
-
 <body>
-  <header>
-    <h1>Andrew Berry Anderson</h1>
-    <p>By B.K. Anderson</p>
-  </header>
 
-  <main>
-    <img class="cover" src="AndrewBerryAnderson.jpg" alt="Andrew Berry Anderson cover" loading="lazy" />
+<header>
+  <div class="top-nav">
+    <a class="back" href="index.html">← Back to Gallery</a>
+    <a class="back-link" href="index.html"
+      onclick="
+        try {
+          if (document.referrer && new URL(document.referrer).origin === location.origin) {
+            history.back(); return false;
+          }
+        } catch(e) {}
+      ">
+      ← Return to Previous Page
+    </a>
+  </div>
 
-    <div class="details">
-      <p><strong>Series:</strong> Family Legacy</p>
-      <p><strong>Description:</strong> A historical and spiritual remembrance of Andrew Berry Anderson — his life, faith, and lineage. This volume preserves his story within the greater tapestry of the Anderson family, honoring his service and the legacy of Light that endures through generations.</p>
+  <h1>Addressing Any and All Hesitations — The Story of Andrew Berry Anderson</h1>
+  <p>Family Legacy Series — Volume IV</p>
+</header>
+
+<main>
+  <section class="card">
+    <!-- LEFT COLUMN: cover + PDF links -->
+    <div style="text-align:center">
+      <img class="thumb" loading="lazy" src="AndrewBerryAnderson.jpg" alt="Addressing Any and All Hesitations cover"/>
+      <div class="actions">
+        <a class="btn" href="andrew-berry-anderson.pdf" target="_blank" rel="noopener" type="application/pdf">📖 Read Sample PDF</a>
+        <a class="btn" href="andrew-berry-anderson.pdf" download="andrew-berry-anderson.pdf">⬇️ Download PDF</a>
+      </div>
     </div>
 
-    <div class="actions">
-      <a class="btn" href="andrew-berry=anderson.pdf" target="_blank">Open PDF</a>
-    </div>
-  </main>
+    <!-- RIGHT COLUMN: about + nav -->
+    <div>
+      <h2>About This Book</h2>
+      <p><em>Addressing Any and All Hesitations — The Story of Andrew Berry</em> honors the life and legacy of Andrew Berry Anderson, a steadfast Tennessean whose story reflects resilience, dignity, and faith through adversity. This volume preserves his memory as part of the ongoing Family Legacy Series by B.K. Anderson and Anders Taft.</p>
 
-  <footer>
-    <a href="index.html">← Back to Gallery</a>
-  </footer>
+      <div class="meta">
+        <div><strong>Author:</strong> B.K. Anderson &amp; Anders Taft</div>
+        <div><strong>Series:</strong> Family Legacy Series</div>
+        <div><strong>Format:</strong> Paperback &amp; eBook</div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="phillips-family-legacy.html">← Previous: Phillips Family Legacy</a>
+        <a class="btn" href="awakening-in-silence.html">Next: Awakening in Silence →</a>
+        <a class="btn" href="https://www.amazon.com/dp/placeholder">Buy on Amazon</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
