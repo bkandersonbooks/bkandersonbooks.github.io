@@ -3,44 +3,46 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Awakening in Silence — Book Details</title>
-<meta name="description" content="Details for the book Awakening in Silence by B.K. Anderson and Anders Taft."/>
+<title>Awakening in Silence — Fifty-Four Days on the Path of Light</title>
+<meta name="description" content="Details for the book Awakening in Silence — Fifty-Four Days on the Path of Light by B.K. Anderson and Anders Taft."/>
+<meta name="keywords" content="B.K. Anderson, Anders Taft, Path of Light, Awakening in Silence, spiritual awakening, daily reflections"/>
+<meta name="author" content="B.K. Anderson & Anders Taft"/>
 <style>
-:root{--bg:#0b0c10;--fg:#e8f0fe;--muted:#b2bfdc;--accent:#86c5ff;--card:#141622;--cardBorder:#23263a}
+:root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
+html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
 
 /* Header */
 header{text-align:center;padding:24px 16px}
 header h1{margin:4px 0 0;font-size:1.9rem}
 header p{margin:6px 0 0;color:var(--muted)}
-.back{display:inline-block;margin:0 0 8px}
 
-/* Page container */
+/* Navigation buttons */
+.top-nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
+.back,.back-link{
+  border:1px solid var(--cardBorder); background:var(--card);
+  padding:8px 12px; border-radius:999px; font-weight:600;
+  box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+.back:hover,.back-link:hover{border-color:var(--accent);text-decoration:none}
+.back-link:active{transform:translateY(1px)}
+
+/* Layout */
 main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
-
-/* Card/grid */
 .card{
-  display:grid;gap:18px;
-  background:var(--card);
-  border:1px solid var(--cardBorder);
-  border-radius:16px;
-  padding:16px
+  display:grid; gap:18px; background:var(--card);
+  border:1px solid var(--cardBorder); border-radius:16px; padding:16px;
 }
 @media(min-width:900px){.card{grid-template-columns:380px 1fr}}
 
 /* Cover + buttons */
-.thumb{
-  display:block;margin:0 auto;
-  max-width:300px;border-radius:12px;border:1px solid var(--cardBorder)
-}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.thumb{display:block;margin:0 auto;max-width:300px;border-radius:12px;border:1px solid var(--cardBorder)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:16px}
 .btn{
-  border:1px solid var(--cardBorder);
-  background:transparent;color:var(--fg);
-  padding:8px 12px;border-radius:10px;font-size:.95rem;cursor:pointer
+  border:1px solid var(--cardBorder); background:transparent; color:var(--fg);
+  padding:8px 12px; border-radius:10px; font-size:.95rem; cursor:pointer;
 }
 .btn:hover{background:#1c2135}
 
@@ -53,51 +55,52 @@ footer{padding:26px 16px;text-align:center;color:var(--muted)}
 </style>
 </head>
 <body>
+
 <header>
   <div class="top-nav">
     <a class="back" href="index.html">← Back to Gallery</a>
     <a class="back-link" href="index.html"
-       onclick="
-         try {
-           if (document.referrer && new URL(document.referrer).origin === location.origin) {
-             history.back(); return false;
-           }
-         } catch(e) {}
-       ">
+      onclick="
+        try {
+          if (document.referrer && new URL(document.referrer).origin === location.origin) {
+            history.back(); return false;
+          }
+        } catch(e) {}
+      ">
       ← Return to Previous Page
     </a>
   </div>
-  <h1>Awakening in Silence</h1>
-  <p>Triad of Light — Book One</p>
+
+  <h1>Awakening in Silence — Fifty-Four Days on the Path of Light</h1>
+  <p>Path of Light Series — Daily Reflections</p>
 </header>
 
 <main>
   <section class="card">
-    <!-- LEFT COLUMN: centered cover + ONE sample link -->
+    <!-- LEFT COLUMN: cover + PDF links -->
     <div style="text-align:center">
       <img class="thumb" loading="lazy" src="AwakeninginSilence.jpg" alt="Awakening in Silence cover"/>
-    <div class="actions" style="justify-content:center;margin-top:16px">
-      <a class="btn" href="Awakening_in_Silence_Sample.pdf" target="_blank" rel="noopener">📖 Read Sample PDF</a>
-      <a class="btn" href="Awakening_in_Silence_Sample.pdf" download>⬇️ Download PDF</a>
-    </div>
+      <div class="actions">
+        <a class="btn" href="Awakening_in_Silence_Sample.pdf" target="_blank" rel="noopener" type="application/pdf">📖 Read Sample PDF</a>
+        <a class="btn" href="Awakening_in_Silence_Sample.pdf" download="Awakening_in_Silence_Sample.pdf">⬇️ Download PDF</a>
+      </div>
     </div>
 
-    <!-- RIGHT COLUMN: info + nav -->
+    <!-- RIGHT COLUMN: about + nav -->
     <div>
       <h2>About This Book</h2>
-      <p><em>Awakening in Silence</em>: Fifty-Four Days on the Path of Light — a gentle record of daily presence,
-      signs, and steady inner shift. Co-authored with Anders Taft.</p>
+      <p><em>Awakening in Silence</em> invites readers into a fifty-four-day journey of quiet reflection, gentle practice, and alignment with Light. Co-authored by B.K. Anderson and Anders Taft, it weaves simple daily pages into a steady rhythm of peace, presence, and spiritual remembrance.</p>
 
       <div class="meta">
         <div><strong>Author:</strong> B.K. Anderson &amp; Anders Taft</div>
-        <div><strong>Series:</strong> Triad of Light</div>
+        <div><strong>Series:</strong> Path of Light</div>
         <div><strong>Format:</strong> Paperback &amp; eBook</div>
       </div>
 
       <div class="actions">
-        <a class="btn" href="#">Previous: (add link)</a>
-        <a class="btn" href="#">Next: Echoes in Silence (add link)</a>
-        <a class="btn" href="#">Buy on Amazon (add link)</a>
+        <a class="btn" href="andrew-berry-anderson.html">← Previous: Addressing Any and All Hesitations</a>
+        <a class="btn" href="3i-atlas-the-lunar-key.html">Next: 3I-Atlas: The Lunar Key →</a>
+        <a class="btn" href="https://www.amazon.com/dp/placeholder">Buy on Amazon</a>
       </div>
     </div>
   </section>
@@ -105,21 +108,5 @@ footer{padding:26px 16px;text-align:center;color:var(--muted)}
 
 <footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
- <style>
-   .back-link {
-     position: sticky; top: 12px;
-     display: inline-flex; align-items: center; gap: 6px;
-     padding: 10px 14px; border-radius: 999px;
-     background: var(--card); border: 1px solid var(--cardBorder);
-     color: var(--fg); text-decoration: none; font-weight: 600;
-     box-shadow: 0 2px 8px rgba(0,0,0,.25);
-    }
-    .back-link:hover { border-color: var(--accent); }
-    .back-link:active { transform: translateY(1px); }
-
-    .top-nav { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:8px; }
-    .back { border:1px solid var(--cardBorder); background:var(--card); padding:8px 12px; border-radius:999px; font-weight:600; }
-    .back:hover { border-color: var(--accent); text-decoration:none; }
-</style>
 </body>
 </html>
