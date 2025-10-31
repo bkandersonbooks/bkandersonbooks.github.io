@@ -1,53 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Path of Divine Timing — Preview</title>
-<style>
-:root{--bg:#0f0f12;--fg:#e9e9ef;--muted:#b5b5c6;--accent:#ffd07a;--card:#18181d;--line:#26262c}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto}
-.wrap{max-width:900px;margin:0 auto;padding:24px}
-a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-.card{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:18px;margin-bottom:20px}
-h1{margin:8px 0 6px;font-size:clamp(24px,3.8vw,36px)}
-h2{font-size:clamp(18px,3vw,24px);margin:0 0 6px;color:var(--muted)}
-img{width:100%;border-radius:12px}
-.btn{display:inline-block;background:var(--accent);color:#1a1300;padding:10px 14px;border-radius:10px;font-weight:700;margin-top:10px}
-.topnav{display:flex;gap:10px;align-items:center;margin-bottom:14px}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Path of Divine Timing — Book Details</title>
+  <meta name="description" content="Details for the book My Path of Divine Timing by B.K. Anderson." />
+
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --fg: #e8f0fe;
+      --muted: #b2bfdc;
+      --accent: #86c5ff;
+      --card: #141622;
+      --cardBorder: #23263a;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 24px 16px;
+    }
+    header h1 { margin: 4px 0 0; font-size: 1.9rem; }
+    header p { margin: 6px 0 0; color: var(--muted); }
+    .back { display: inline-block; margin: 0 0 8px; }
+
+    /* Page container */
+    main { max-width: 1100px; margin: 0 auto; padding: 0 16px 60px; }
+
+    /* Card/grid */
+    .card {
+      display: grid;
+      gap: 18px;
+      background: var(--card);
+      border: 1px solid var(--cardBorder);
+      border-radius: 16px;
+      padding: 16px;
+    }
+    @media (min-width: 900px) { .card { grid-template-columns: 380px 1fr; } }
+
+    /* Cover + buttons */
+    .thumb {
+      display: block;
+      margin: 0 auto;
+      max-width: 300px;
+      border-radius: 12px;
+      border: 1px solid var(--cardBorder);
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      justify-content: center;
+    }
+
+    .btn {
+      border: 1px solid var(--accent);
+      background: transparent;
+      color: var(--accent);
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      color: #0b0c10;
+    }
+
+    /* Text blocks */
+    h2 { margin: 0 0 10px; font-size: 1.2rem; }
+    .meta { color: var(--muted); font-size: .95rem; margin: 12px 0 14px; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 32px 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+      border-top: 1px solid var(--cardBorder);
+      margin-top: 48px;
+    }
+    footer a:hover { text-decoration: underline; color: var(--fg); }
+  </style>
 </head>
+
 <body>
-<div class="wrap">
-  <div class="topnav">
-    <a href="index.html">← Back to Home</a>
-  </div>
-
-  <div class="card">
-    <h2>Preview</h2>
+  <header>
+    <a class="back" href="index.html#pol">← Back to Gallery</a>
     <h1>My Path of Divine Timing</h1>
-    <p style="color:var(--muted)">B.K. Anderson & Anders Taft</p>
+    <p>Path of Light Series — Book Two</p>
+  </header>
 
-    <img class="cover" src="MyPathOfDivineTimming.jpg" alt="My Path Of Divine Timming book cover" /> 
-        
-    <p style="margin-top:10px">
-      A luminous reflection on divine timing, balance, and spiritual awakening — guiding seekers
-      to align their path with the flow of Light, purpose, and peace.
-    </p>
+  <main>
+    <section class="card">
+      <!-- LEFT COLUMN -->
+      <div style="text-align:center">
+        <img class="thumb" loading="lazy" src="MyPathofDivineTiming.jpg" alt="My Path of Divine Timing cover">
+        <div class="actions">
+          <a class="btn" href="My_Path_of_Divine_Timing_Sample.pdf" target="_blank" rel="noopener">Read Sample PDF</a>
+        </div>
+      </div>
 
-    <!-- Replace with your real excerpt later -->
-    <div class="card" style="margin-top:12px">
-      <p><em>Excerpt (sample):</em> “Between what was and what will be, Spirit whispers: trust the unfolding.
-      Every pause, every meeting, every turn is right on time.”</p>
-    </div>
+      <!-- RIGHT COLUMN -->
+      <div>
+        <h2>About This Book</h2>
+        <p><em>My Path of Divine Timing</em> is a reflective journey through alignment, patience, and the rhythm of Spirit.</p>
 
-    <!-- Hook up real files/links anytime -->
-    <div style="margin-top:12px">
-      <a class="btn" href="#">Read sample (PDF)</a>
-      <a class="btn" href="#">Buy / More info</a>
-    </div>
-  </div>
-</div>
+        <div class="meta">
+          <div><strong>Author:</strong> B.K. Anderson</div>
+          <div><strong>Series:</strong> Path of Light</div>
+          <div><strong>Format:</strong> Paperback &amp; eBook</div>
+        </div>
+
+        <div class="actions">
+          <a class="btn" href="my-path-of-light.html">← Previous: Path of Light</a>
+          <a class="btn" href="3i-atlas-the-lunar-key.html">Next: 3I-Atlas — The Lunar Key →</a>
+          <a class="btn" href="#">Buy on Amazon (add link)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="yr"></span> B.K. Anderson — All Rights Reserved
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
+ 
