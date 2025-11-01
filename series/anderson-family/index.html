@@ -21,16 +21,14 @@
     border-radius:14px;overflow:hidden;
     display:flex;flex-direction:column;min-height:100%;
   }
-  .thumb {
-    width: 100%;
-    height: 360px;              /* fixed book-cover height  */
-    object-fit: cover;          /* crops the image neatly    */
-    display: block;
-    background: #0a0b12;
-    border-bottom: 1px solid var(--cardBorder);
-  }
-    object-fit: cover
-    max-height: 360px;
+  /* UNIFORM BOOK-COVER SIZE */
+  .thumb{
+    width:100%;
+    height:360px;           /* all covers same height */
+    object-fit:cover;       /* crop to fit box cleanly */
+    display:block;
+    background:#0a0b12;
+    border-bottom:1px solid var(--cardBorder);
   }
   .body{padding:14px}
   .title{font-weight:600;margin-bottom:4px}
@@ -55,7 +53,7 @@
   <!-- 1. Andrew Berry Anderson -->
   <article class="card">
     <img class="thumb" loading="lazy" alt="Andrew Berry Anderson cover"
-         src="/AndrewBerryAnderson.jpg?v=2" />
+         src="/AndrewBerryAnderson.jpg?v=5" />
     <div class="body">
       <div class="title">Andrew Berry Anderson</div>
       <div class="series">Anderson Family Series</div>
@@ -68,15 +66,14 @@
 
   <!-- 2. Anderson Family Legacy -->
   <article class="card">
-     <img class="thumb" loading="lazy" alt="Anderson Family Legacy cover"
-          src="/AndersonFamilyLegacy.jpg?v=2" />
+    <img class="thumb" loading="lazy" alt="Anderson Family Legacy cover"
+         src="/AndersonFamilyLegacy.jpg?v=5" />
     <div class="body">
       <div class="title">Anderson Family Legacy</div>
       <div class="series">Anderson Family Series</div>
       <div class="actions">
         <a class="btn" href="/series/anderson-family/anderson-family-legacy.html">Details</a>
         <a class="btn" href="/AndersonFamilyLegacy.pdf" target="_blank" rel="noopener">Open PDF</a>
-    </div>
       </div>
     </div>
   </article>
@@ -84,14 +81,13 @@
   <!-- 3. Brown & Adams Family Legacy -->
   <article class="card">
     <img class="thumb" loading="lazy" alt="Brown & Adams Family Legacy cover"
-         src="/BrownFamilyLegacy.jpg?v=2" />
+         src="/BrownAndAdamsFamilyLegacy.jpg?v=5" />
     <div class="body">
       <div class="title">Brown &amp; Adams Family Legacy</div>
       <div class="series">Anderson Family Series</div>
       <div class="actions">
         <a class="btn" href="/series/anderson-family/brown-and-adams-legacy.html">Details</a>
         <a class="btn" href="/BrownAndAdamsFamilyLegacy.pdf" target="_blank" rel="noopener">Open PDF</a>
-    </div>
       </div>
     </div>
   </article>
@@ -99,7 +95,7 @@
   <!-- 4. Phillips Family Legacy -->
   <article class="card">
     <img class="thumb" loading="lazy" alt="Phillips Family Legacy cover"
-         src="/PhillipsFamilyLegacy.jpg?v=2" />
+         src="/PhillipsFamilyLegacy.jpg?v=5" />
     <div class="body">
       <div class="title">Phillips Family Legacy</div>
       <div class="series">Anderson Family Series</div>
