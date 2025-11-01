@@ -10,31 +10,37 @@
   body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
   a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
   .wrap{max-width:1000px;margin:0 auto;padding:32px 16px}
-  header h1{margin:0 0 8px}
-  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-  .card{background:var(--card);border:1px solid var(--cardBorder);border-radius:14px;padding:16px}
+  header{text-align:left;margin-bottom:24px}
+  header h1{margin:8px 0 4px}
+  .muted{color:var(--muted)}
+  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .card{background:var(--card);border:1px solid var(--cardBorder);border-radius:14px;padding:20px}
+  .card h2{margin-top:0}
   .btn{display:inline-block;margin-top:12px;padding:10px 14px;border:1px solid var(--cardBorder);border-radius:10px}
 </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <a href="/"><span class="btn">← Back to All Books</span></a>
+      <a href="/" class="btn">← Back to All Books</a>
       <h1>The Anderson Family Series</h1>
       <p class="muted">Legacy, remembrance, and Light through lineage.</p>
     </header>
 
     <section class="grid">
-      <!-- Example book card -->
+      <!-- Book 1 -->
       <article class="card">
-        <h2>Family Legacy</h2>
-        <p>Heirloom histories, photographs, and restored narratives.</p>
-        <a class="btn" href="/book-details/anderson-family-legacy.html">View Book</a>
-        <!-- If you have the PDF: -->
-        <!-- <a class="btn" href="/pdf/anderson-family-legacy-sample.pdf">Sample PDF</a> -->
+        <h2>1 · Andrew Berry Anderson</h2>
+        <p>The story of Andrew Berry Anderson — a life of endurance, faith, and the roots of the Anderson lineage in Tennessee.</p>
+        <a class="btn" href="/book-details/andrew-berry-anderson.html">View Book</a>
       </article>
 
-      <!-- Add more cards as you add each book -->
+      <!-- Book 2 -->
+      <article class="card">
+        <h2>2 · The Anderson Family Legacy</h2>
+        <p>Heirloom histories, photographs, and restored narratives of the Anderson family — a legacy written in Light and remembrance.</p>
+        <a class="btn" href="/book-details/anderson-family-legacy.html">View Book</a>
+      </article>
     </section>
   </div>
 </body>
