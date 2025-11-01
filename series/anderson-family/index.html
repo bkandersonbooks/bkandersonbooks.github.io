@@ -10,42 +10,36 @@
   *{box-sizing:border-box}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
     font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-  a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
   header{text-align:center;padding:24px 16px}
+
+  /* Centered back button area */
+  .backbar{ text-align:center; padding:0 16px 12px; }
+  .btn{
+    display:inline-block; padding:8px 12px; border:1px solid var(--cardBorder);
+    border-radius:10px; background:#0f1120; color:var(--fg); margin:2px 0;
+  }
+  .btn:hover{ background:#11142a }
+
   .grid{
-    display:grid;gap:16px;padding:16px;max-width:1100px;margin:0 auto;
+    display:grid; gap:16px; padding:16px; max-width:1100px; margin:0 auto;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    padding-bottom: 40px;
+    padding-bottom:40px;
   }
   .card{
-    background:var(--card);border:1px solid var(--cardBorder);
-    border-radius:14px;overflow:hidden;
-    display:flex;flex-direction:column;min-height:100%;
+    background:var(--card); border:1px solid var(--cardBorder);
+    border-radius:14px; overflow:hidden;
+    display:flex; flex-direction:column; min-height:100%;
   }
-  /* UNIFORM BOOK-COVER SIZE */
+  /* Uniform book-cover size */
   .thumb{
-    width:100%;
-    height:360px;           /* all covers same height */
-    object-fit:cover;       /* crop to fit box cleanly */
-    display:block;
-    background:#0a0b12;
-    border-bottom:1px solid var(--cardBorder);
+    width:100%; height:360px; object-fit:cover; display:block;
+    background:#0a0b12; border-bottom:1px solid var(--cardBorder);
   }
-  .body{padding:14px}
-  .title{font-weight:600;margin-bottom:4px}
-  .series{color:var(--muted);font-size:0.95rem;margin-bottom:10px}
-  .actions{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}
-  .btn{
-    display:inline-block;padding:8px 12px;border:1px solid var(--cardBorder);
-    border-radius:10px;background:#0f1120;color:var(--fg);
-  }
-  .btn { margin: 2px 0; }
-  .btn:hover{background:#11142a}
-  .back-btn {
-   display: inline-block;
-   margin: 0 auto 20px;
-   text-align: center;
- }
+  .body{ padding:14px }
+  .title{ font-weight:600; margin-bottom:4px }
+  .series{ color:var(--muted); font-size:0.95rem; margin-bottom:10px }
+  .actions{ margin-top:auto; display:flex; gap:8px; flex-wrap:wrap }
 </style>
 </head>
 
@@ -55,28 +49,31 @@
   <p class="series">Four volumes preserving the Anderson heritage in Light</p>
 </header>
 
+<!-- Back button OUTSIDE the grid so it centers correctly -->
+<div class="backbar">
+  <a class="btn" href="/index.html">← Previous Screen</a>
+</div>
+
 <div class="grid">
-  <div class="back-btn">
-    <a class="btn" href="/index.html">← Previous Screen</a>
-  </div>
 
   <!-- 1. Andrew Berry Anderson -->
   <article class="card">
     <img class="thumb" loading="lazy" alt="Andrew Berry Anderson cover"
-         src="/AndrewBerryAnderson.jpg?v=5" />
+         src="/AndrewBerryAnderson.jpg?v=6" />
     <div class="body">
       <div class="title">Andrew Berry Anderson</div>
       <div class="series">Anderson Family Series</div>
       <div class="actions">
         <a class="btn" href="/series/anderson-family/andrew-berry-anderson.html">Details</a>
-        <a class="btn" href="/andrew-berry-anderson.pdf" wnload>Download PDF</a>
+        <a class="btn" href="/andrew-berry-anderson.pdf" download>Download PDF</a>
+      </div>
     </div>
   </article>
 
   <!-- 2. Anderson Family Legacy -->
   <article class="card">
     <img class="thumb" loading="lazy" alt="Anderson Family Legacy cover"
-         src="/AndersonFamilyLegacy.jpg?v=5" />
+         src="/AndersonFamilyLegacy.jpg?v=6" />
     <div class="body">
       <div class="title">Anderson Family Legacy</div>
       <div class="series">Anderson Family Series</div>
@@ -90,13 +87,13 @@
   <!-- 3. Brown & Adams Family Legacy -->
   <article class="card">
     <img class="thumb" loading="lazy" alt="Brown & Adams Family Legacy cover"
-         src="/BrownFamilyLegacy.jpg?v=5" />
+         src="/BrownFamilyLegacy.jpg?v=6" />
     <div class="body">
       <div class="title">Brown &amp; Adams Family Legacy</div>
       <div class="series">Anderson Family Series</div>
       <div class="actions">
         <a class="btn" href="/series/anderson-family/brown-and-adams-legacy.html">Details</a>
-        <a class="btn" href="/BrownAndAdamsFamilyLegacy.pdf"  download>Download PDF</a>
+        <a class="btn" href="/BrownAndAdamsFamilyLegacy.pdf" download>Download PDF</a>
       </div>
     </div>
   </article>
@@ -104,13 +101,13 @@
   <!-- 4. Phillips Family Legacy -->
   <article class="card">
     <img class="thumb" loading="lazy" alt="Phillips Family Legacy cover"
-         src="/PhillipsFamilyLegacy.jpg?v=5" />
+         src="/PhillipsFamilyLegacy.jpg?v=6" />
     <div class="body">
       <div class="title">Phillips Family Legacy</div>
       <div class="series">Anderson Family Series</div>
       <div class="actions">
         <a class="btn" href="/series/anderson-family/phillips-family-legacy.html">Details</a>
-        <a class="btn" href="/PhillipsFamilyLegacy.pdf"  download>Download PDF</a>
+        <a class="btn" href="/PhillipsFamilyLegacy.pdf" download>Download PDF</a>
       </div>
     </div>
   </article>
