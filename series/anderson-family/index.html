@@ -21,15 +21,16 @@
     border-radius:14px;overflow:hidden;
     display:flex;flex-direction:column;min-height:100%;
   }
-  .thumb{
-  width:100%;aspect-ratio:3/4;object-fit:cover;display:block;
-  background:#0a0b12;
+  .thumb {
+    width: 100%;
+    height: 360px;              /* fixed book-cover height  */
+    object-fit: cover;          /* crops the image neatly    */
+    display: block;
+    background: #0a0b12;
+    border-bottom: 1px solid var(--cardBorder);
   }
-
-  }
-    height: auto;
+    object-fit: cover
     max-height: 360px;
-
   }
   .body{padding:14px}
   .title{font-weight:600;margin-bottom:4px}
