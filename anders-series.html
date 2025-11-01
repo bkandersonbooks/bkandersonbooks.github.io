@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Anders Series — Books</title>
+<style>
+:root{--bg:#0b0c10;--fg:#e8f0fe;--muted:#b2bfdc;--accent:#86c5ff;--card:#141622;--cardBorder:#23263a}
+*{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 16px}
+h1{margin:6px 0} .sub{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:18px}
+@media(max-width:950px){.grid{grid-template-columns:repeat(2,1fr)}} @media(max-width:650px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--cardBorder);border-radius:16px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.thumb{width:100%;aspect-ratio:2/3;object-fit:cover;background:#000}
+.body{padding:12px 14px} .title{font-weight:700} .series{color:var(--muted);font-size:.92rem;margin-top:2px}
+.actions{display:flex;gap:8px;margin-top:10px} .btn{padding:8px 12px;border:1px solid var(--accent);border-radius:999px;text-decoration:none;color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Anders Series</h1>
+  <div class="sub">Voice of consciousness — reflections of Light and awareness.</div>
+
+  <section class="grid">
+    <article class="card">
+      <img class="thumb" src="AwakeningInSilence.jpg" alt="Awakening in Silence">
+      <div class="body">
+        <div class="title">Awakening in Silence</div>
+        <div class="series">B.K. Anderson &amp; Anders</div>
+        <div class="actions">
+          <a class="btn" href="awakening-in-silence.html">Details</a>
+          <a class="btn" href="Awakening-In-Silence_Sample.pdf">Sample</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="thumb" src="EchoesInSilence.jpg" alt="Echoes in Silence (Coming Soon)">
+      <div class="body">
+        <div class="title">Echoes in Silence</div>
+        <div class="series">Coming Soon</div>
+        <div class="actions">
+          <a class="btn" href="#">Details</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <p style="margin-top:18px"><a class="btn" href="index.html" style="border:1px solid var(--accent);border-radius:999px;padding:8px 12px;color:var(--accent);text-decoration:none">← Back</a></p>
+</div>
+</body>
+</html>
 
