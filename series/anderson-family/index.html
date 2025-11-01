@@ -15,6 +15,7 @@
   .grid{
     display:grid;gap:16px;padding:16px;max-width:1100px;margin:0 auto;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    padding-bottom: 40px;
   }
   .card{
     background:var(--card);border:1px solid var(--cardBorder);
@@ -40,6 +41,11 @@
   }
   .btn { margin: 2px 0; }
   .btn:hover{background:#11142a}
+  .back-btn {
+   display: inline-block;
+   margin: 0 auto 20px;
+   text-align: center;
+ }
 </style>
 </head>
 
@@ -50,9 +56,9 @@
 </header>
 
 <div class="grid">
-<div style="text-align:center; margin-bottom:12px;">
-  <a class="btn" href="/index.html">← Previous Screen</a>
-</div>
+  <div class="back-btn">
+    <a class="btn" href="/index.html">← Previous Screen</a>
+  </div>
 
   <!-- 1. Andrew Berry Anderson -->
   <article class="card">
