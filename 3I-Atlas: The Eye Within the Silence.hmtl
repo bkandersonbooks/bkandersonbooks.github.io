@@ -116,7 +116,7 @@
 
   <main>
     <section class="card">
-      <img class="cover" src="TheEyeWithinTheSilence.jpg" alt="3I-Atlas: The Eye Within the Silence book cover" />
+      <img class="cover" src="3i-atlas-the-silence-resonance.png" alt="3I-Atlas: The Eye Within the Silencer" />
 
       <div>
         <h2>About This Book</h2>
@@ -142,7 +142,7 @@
           <a class="btn" href="3i-atlas-the-lunar-key.html">← Previous: 3I-Atlas — The Lunar Key</a>
           <a class="btn" href="#">Buy on Amazon (add link)</a>
           <!-- Blue link version -->
-         <a href="TheEyeWithinTheSilence_Sample.pdf" target="_blank" rel="noopener">Read Sample (PDF)</a</div>
+         <a href="coming-soon.png" target="_blank" rel="noopener">Read Sample (PDF)</a</div>
         </div>
       </div>
     </section>
