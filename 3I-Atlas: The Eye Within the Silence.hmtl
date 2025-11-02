@@ -139,9 +139,10 @@
         </div>
 
         <div class="actions">
-          <a class="btn" href="3i-atlas-the-lunar-key.html">Previous: 3I-Atlas — The Lunar Key</a>
+          <a class="btn" href="3i-atlas-the-lunar-key.html">← Previous: 3I-Atlas — The Lunar Key</a>
           <a class="btn" href="#">Buy on Amazon (add link)</a>
-          <a class="btn" href="#">Read Sample (PDF)</a>
+          <!-- Blue link version -->
+         <a href="TheEyeWithinTheSilence_Sample.pdf" target="_blank" rel="noopener">Read Sample (PDF)</a</div>
         </div>
       </div>
     </section>
