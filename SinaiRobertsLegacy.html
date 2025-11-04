@@ -10,6 +10,7 @@
     :root {
       --bg:#0b0c10;
       --fg:#e8f0fe;
+      /* FIXED: typo here (was '#b2band fdc') */
       --muted:#b2bfdc;
       --accent:#86c5ff;
       --card:#141622;
@@ -79,30 +80,38 @@
 
 <body>
   <header>
-    <title>The Roberts Family Legacy — Book Details</title>
+    <!-- REMOVED duplicate <title> here -->
     <h1>The Roberts Family Legacy</h1>
     <p class="meta">Anderson Family Series • B.K. Anderson</p>
   </header>
 
   <main>
-    <!-- FRONT COVER IMAGE -->
-    <img class="cover" src="Sinai Roberts.png"
-         alt="The Roberts Legacy cover" />
+    <!-- TIP: avoid spaces in filenames; if needed, encode as %20 -->
+    <img class="cover" src="Sinai%20Roberts.png" alt="The Roberts Legacy cover" />
 
     <p>
       <strong>The Roberts Family Legacy</strong> continues the Family Legacy series,
       honoring the Roberts line with remembrance, reflection, and the quiet strength
-      that bridges generations.  This volume gathers the stories, letters, and lineage
-      of the Roberts family—restoring their voices and preserving the Light of their
+      that bridges generations. This volume gathers the stories, letters, and lineage
+      of the Roberts family — restoring their voices and preserving the Light of their
       journey for future generations.
     </p>
 
     <div class="actions">
       <a class="btn" href="/andrew-berry-anderson.html">← Previous: Andrew Berry Anderson</a>
-      <a class="btn" href="/The_Roberts_Family_Legacy_Sample.pdf" target="_blank">Download PDF</a>
-      <a class="btn" href="/the-roberts-family-legacy.html" target="_blank">Next: Coming Soon →</a>
-   </div>
 
-   </main>
+      <!-- ✅ IMPORTANT: set this path to where the PDF actually lives -->
+      <!-- If the PDF is in the site ROOT: -->
+      <!-- <a class="btn" href="/The_Roberts_Family_Legacy_Sample.pdf" target="_blank">Download PDF</a> -->
+
+      <!-- If the PDF is in the SAME FOLDER as THIS html file: -->
+      <!-- <a class="btn" href="The_Roberts_Family_Legacy_Sample.pdf" target="_blank">Download PDF</a> -->
+
+      <!-- If the PDF is in BookCovers/FamilyLegacy/Roberts/: -->
+      <a class="btn" href="/BookCovers/FamilyLegacy/Roberts/The_Roberts_Family_Legacy_Sample.pdf" target="_blank">Download PDF</a>
+
+      <a class="btn" href="/the-roberts-family-legacy.html" target="_blank">Next: Coming Soon →</a>
+    </div>
+  </main>
 </body>
 </html>
