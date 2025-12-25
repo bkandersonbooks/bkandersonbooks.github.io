@@ -121,6 +121,43 @@
   gap: 10px;
   flex-wrap: wrap;
 }
+  /* Light card override (for white cards on a dark site) */
+.book-card.light{
+  background:#fff !important;
+  color:#111 !important;
+}
+
+.book-card.light .book-title,
+.book-card.light .book-subtitle,
+.book-card.light p,
+.book-card.light a{
+  color:#111 !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.book-card.light .btn,
+.book-card.light button{
+  background:#111 !important;
+  color:#fff !important;
+  border: none !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.book-card.light .btn:hover,
+.book-card.light button:hover{
+  opacity: .9 !important;
+}
+
+/* If anything is being treated as "disabled", this forces it back on */
+.book-card.light .disabled,
+.book-card.light [aria-disabled="true"]{
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  filter: none !important;
+}
+
 .btn{
   display: inline-block;
   padding: 9px 12px;
@@ -271,7 +308,7 @@
     </article>
 
     <!-- John W. Anderson & Minnie Bryan card -->
-<article class="book-card">
+<article class="book-card light">
   <a class="book-cover-link" href="/JWAnderson.html" aria-label="Open John W. Anderson & Minnie Bryan page">
     <img src="/JWAnderson.png" alt="Cover: John W. Anderson & Minnie Bryan" class="book-cover">
   </a>
