@@ -191,7 +191,33 @@
 .card .card-actions .btn-secondary:hover{
   background:#1e2235;
 }
- 
+  
+ /* === FORCE ACTIVE BUTTON STYLES FOR BOOK CARDS === */
+.card .card-actions .btn{
+  background:#2b6cb0 !important;   /* strong blue */
+  color:#ffffff !important;
+  border:1px solid #2b6cb0 !important;
+  opacity:1 !important;
+  filter:none !important;
+  pointer-events:auto !important;
+}
+
+.card .card-actions .btn:hover{
+  background:#1e4e8c !important;
+}
+
+/* Secondary / Details buttons */
+.card .card-actions .btn-secondary{
+  background:transparent !important;
+  color:#86c5ff !important;
+  border:1px solid #86c5ff !important;
+  opacity:1 !important;
+}
+
+.card .card-actions .btn-secondary:hover{
+  background:#1e2235 !important;
+}
+
 </style>
 </head>
 <body>
@@ -344,15 +370,29 @@
      </p>
     <div class="card-actions">
       <a class="btn btn-secondary" href="/JWAnderson.html">View Details →</a>
-      <a class="btn" href="/John%20Watson%20Anderson.pdf" target="_blank" rel="noopener">
-        📄 Read PDF
-      <a class="btn"
-         href="PASTE_INGRAMSPARK_DIRECT_BUY_LINK_HERE"
-         target="_blank"
-         rel="noopener">
-         📕 Buy Direct
-      </a>
-     
+        <div class="card-actions">
+  <a class="btn btn-secondary" href="/JWAnderson.html">
+    View Details →
+  </a>
+
+  <a class="btn"
+     href="/John%20Watson%20Anderson.pdf"
+     target="_blank"
+     rel="noopener">
+    📄 Read PDF
+  </a>
+
+  <!-- Leave this commented out until IngramSpark is ready -->
+  <!--
+  <a class="btn"
+     href="PASTE_INGRAMSPARK_DIRECT_BUY_LINK_HERE"
+     target="_blank"
+     rel="noopener">
+     📕 Buy Direct
+  </a>
+  -->
+</div>
+    
     </div>
   </div>
 </article>
