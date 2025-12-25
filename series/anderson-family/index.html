@@ -95,6 +95,44 @@
     font-size:0.85rem;
     color:var(--muted);
   }
+  .book-card{
+  max-width: 320px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  background: #fff;
+}
+.book-cover{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+.book-title{
+  margin: 12px 0 2px;
+  font-size: 1.05rem;
+}
+.book-subtitle{
+  margin: 0 0 12px;
+  opacity: .8;
+}
+.book-actions{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.btn{
+  display: inline-block;
+  padding: 9px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid #111;
+  color: #111;
+}
+.btn:hover{ opacity: .85; }
+.btn-ghost{
+  border-color: #bbb;
+}
 </style>
 </head>
 <body>
@@ -234,8 +272,8 @@
 
     <!-- John W. Anderson & Minnie Bryan card -->
 <article class="book-card">
-  <a class="book-cover-link" href="books/JWAnderson.html" aria-label="Open John W. Anderson & Minnie Bryan page">
-    <img src="images/JWAnderson.png" alt="Cover: John W. Anderson & Minnie Bryan" class="book-cover">
+  <a class="book-cover-link" href="/JWAnderson.html" aria-label="Open John W. Anderson & Minnie Bryan page">
+    <img src="/JWAnderson.png" alt="Cover: John W. Anderson & Minnie Bryan" class="book-cover">
   </a>
 
   <h3 class="book-title">John W. Anderson &amp; Minnie Bryan</h3>
