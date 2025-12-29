@@ -12,8 +12,7 @@
       --muted:#666;
       --card:#ffffff;
       --border:#d9d4c8;
-      --accent:#2f5d50;      /* bog green */
-      --accent2:#7a5a3a;     /* earth brown */
+      --accent:#2f5d50;
       --btn:#2f5d50;
       --btnText:#fff;
       --shadow:0 10px 28px rgba(0,0,0,.08);
@@ -32,12 +31,11 @@
     }
     header{
       text-align:center;
-      margin: 8px 0 24px;
+      margin-bottom:24px;
     }
     h1{
       font-size:2.1rem;
       margin:10px 0 8px;
-      letter-spacing:.5px;
     }
     .subtitle{
       color:var(--muted);
@@ -62,8 +60,6 @@
       color:var(--ink);
       font-size:.95rem;
     }
-    .pill:hover{ border-color:#bdb6a7; }
-
     .grid{
       display:grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -78,7 +74,6 @@
       overflow:hidden;
       display:flex;
       flex-direction:column;
-      min-height: 100%;
     }
     .cover{
       width:100%;
@@ -87,7 +82,7 @@
       background:#e9e6df;
     }
     .cardbody{
-      padding:16px 16px 14px;
+      padding:16px;
       display:flex;
       flex-direction:column;
       gap:10px;
@@ -96,37 +91,27 @@
     .booktitle{
       font-size:1.15rem;
       margin:0;
-      letter-spacing:.2px;
     }
     .meta{
       color:var(--muted);
       font-size:.95rem;
-      line-height:1.3;
-      margin:0;
     }
     .blurb{
-      margin:0;
       line-height:1.45;
-      font-size:1rem;
     }
     .actions{
       display:flex;
       gap:10px;
-      flex-wrap:wrap;
       margin-top:auto;
-      padding-top:6px;
     }
     .btn{
-      display:inline-block;
       text-decoration:none;
       background:var(--btn);
       color:var(--btnText);
       padding:10px 14px;
       border-radius:12px;
       font-size:.95rem;
-      border:1px solid rgba(0,0,0,.06);
     }
-    .btn:hover{ filter:brightness(.96); }
     .btn.secondary{
       background:#fff;
       color:var(--ink);
@@ -147,16 +132,6 @@
       color:var(--muted);
       font-size:.95rem;
     }
-    .note{
-      margin:18px auto 0;
-      max-width:900px;
-      padding:14px 16px;
-      background:#fff;
-      border:1px dashed var(--border);
-      border-radius:14px;
-      color:var(--muted);
-      line-height:1.45;
-    }
   </style>
 </head>
 
@@ -166,35 +141,28 @@
       <h1>The Bog Series</h1>
       <p class="subtitle">
         A waking world. A sleeping guardian. A living bog that remembers.
-        When the systems falter and the planet’s breath begins to thin, Saxifraga must rise
-        from stasis and decide whether to restore the ancient design—or let a world fall silent.
+        When balance falters, Saxifraga must decide whether to restore the ancient design
+        or let a world fall silent.
       </p>
 
       <div class="topnav">
         <a class="pill" href="../../index.html">← Back to Home</a>
         <a class="pill" href="../index.html">← Back to Series</a>
-        <!-- Optional: link to a general “Books” page -->
-        <!-- <a class="pill" href="../../books/index.html">All Books</a> -->
       </div>
     </header>
 
-    <div class="note">
-      <strong>Quick note:</strong> Replace the cover image paths and the links below with your real files/URLs.
-      If a book is not live yet, keep the “Coming Soon” button.
-    </div>
-
     <section class="grid">
 
-      <!-- Book 1 -->
+      <!-- Book One -->
       <article class="card">
-        <img class="cover" src="../../SheStirsOne.jpg" alt="She Stirs (Book 1) Cover">
+        <img class="cover" src="../../images/bog/SheStirsOne.jpg" alt="She Stirs – Book One">
         <div class="cardbody">
           <span class="badge">Book One</span>
           <h2 class="booktitle">She Stirs</h2>
-          <p class="meta">The Bog Series • Paperback / eBook (as available)</p>
+          <p class="meta">The Bog Series</p>
           <p class="blurb">
             Saxifraga awakens in a world that no longer sings the way it once did.
-            The machines still hum—but the oxygen thins, the water shifts, and the bog listens like a lonely heart.
+            The systems still function, but the bog listens—lonely, living, and waiting.
           </p>
           <div class="actions">
             <a class="btn secondary" href="./she-stirs.html">Details</a>
@@ -203,16 +171,16 @@
         </div>
       </article>
 
-      <!-- Book 2 -->
+      <!-- Book Two -->
       <article class="card">
-        <img class="cover" src="../../SheSeeksTwo.jpg" alt="(Book 2) Cover">
+        <img class="cover" src="../../images/bog/SheSeeksTwo.jpg" alt="She Seeks – Book Two">
         <div class="cardbody">
           <span class="badge">Book Two</span>
-          <h2 class="booktitle">[Book Two Title]</h2>
+          <h2 class="booktitle">She Seeks</h2>
           <p class="meta">The Bog Series</p>
           <p class="blurb">
-            The search deepens. Old corridors stir. The pod begins to speak—through resonance, through memory,
-            through the living channels of the bog itself.
+            The search deepens. The pod begins to speak through resonance and memory,
+            drawing Saxifraga toward a truth buried in the living bog.
           </p>
           <div class="actions">
             <a class="btn secondary" href="./she-seeks.html">Details</a>
@@ -221,11 +189,11 @@
         </div>
       </article>
 
-      <!-- Book 3 -->
+      <!-- Book Three -->
       <article class="card">
-        <img class="cover" src="../../comming-soon.png" alt="(Book 3) Cover">
+        <img class="cover" src="../../images/bog/coming-soon.png" alt="Book Three – Coming Soon">
         <div class="cardbody">
-          <span class="badge">Book Two</span>
+          <span class="badge">Book Three</span>
           <h2 class="booktitle">[Book Three Title]</h2>
           <p class="meta">The Bog Series</p>
           <p class="blurb">
@@ -251,4 +219,3 @@
   </script>
 </body>
 </html>
-<
