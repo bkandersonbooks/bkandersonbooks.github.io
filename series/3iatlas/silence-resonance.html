@@ -1,131 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3I-Atlas: The Silence Resonance — Book Three</title>
-
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Silence Resonance — Book Details</title>
+<meta name="description" content="Details for the book Silence Resonance by B.K. Anderson and Anders Taft."/>
+<meta name="keywords" content="B.K. Anderson, Anders Taft, 3I-Atlas, Silence Resonance, science fiction, metaphysical fiction, Celestara"/>
+<meta name="author" content="B.K. Anderson & Anders Taft"/>
 <style>
-  body{
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    background: #f5f5f5;
-    color: #333;
-  }
-  .container{
-    max-width: 760px;
-    margin: auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  }
-  h1{
-    text-align:center;
-    color:#2a4d7a;
-    margin: 0 0 8px 0;
-  }
-  .subtitle{
-    text-align:center;
-    color:#444;
-    margin: 0 0 18px 0;
-  }
-  .cover{
-    width:100%;
-    border-radius:10px;
-    margin: 20px 0;
-    display:block;
-  }
-  p{
-    font-size:1.1rem;
-    line-height:1.6;
-    margin: 14px 0;
-  }
-
-  .btn-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    justify-content:center;
-    margin: 22px 0 6px 0;
-  }
-  .btn{
-    display:inline-block;
-    padding: 12px 16px;
-    border-radius: 10px;
-    background:#2a4d7a;
-    color:#fff;
-    text-decoration:none;
-    font-weight:bold;
-  }
-  .btn:hover{ opacity:0.92; }
-
-  .btn.secondary{
-    background:#ffffff;
-    color:#2a4d7a;
-    border:2px solid #2a4d7a;
-  }
-
-  .meta{
-    font-size: 0.98rem;
-    color:#555;
-    margin-top: 14px;
-    text-align:center;
-  }
-
-  .back-link{
-    margin-top: 22px;
-    text-align:center;
-  }
-  .back-link a{
-    font-weight:bold;
-    color:#2a4d7a;
-    text-decoration:none;
-  }
-  .back-link a:hover{ text-decoration:underline; }
+:root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
+*{box-sizing:border-box}
+html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg); font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+header{text-align:center;padding:24px 16px}
+header h1{margin:4px 0 0;font-size:1.9rem}
+header p{margin:6px 0 0;color:var(--muted)}
+.top-nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
+.back,.back-link{
+  border:1px solid var(--cardBorder); background:var(--card);
+  padding:8px 12px; border-radius:999px; font-weight:600;
+  box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+.back:hover,.back-link:hover{border-color:var(--accent);text-decoration:none}
+.back-link:active{transform:translateY(1px)}
+main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
+.card{
+  display:grid; gap:18px; background:var(--card);
+  border:1px solid var(--cardBorder); border-radius:20px; padding:16px;
+  overflow:hidden; align-items:center;
+}
+@media(min-width:900px){.card{grid-template-columns:380px 1fr}}
+.thumb{display:block; width:100%; max-width:340px; margin-inline:auto; border-radius:12px; border:1px solid var(--cardBorder)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+.btn{
+  border:1px solid var(--cardBorder); background:transparent; color:var(--fg);
+  padding:8px 12px; border-radius:10px; font-size:.95rem; cursor:pointer;
+  display:inline-flex; align-items:center; gap:8px;
+}
+.btn:hover{background:#1c2135}
+.btn-primary{
+  border:1px solid var(--accent);
+  background:rgba(134,197,255,.12);
+  color:var(--fg);
+  padding:8px 12px;
+  border-radius:10px;
+  font-size:.95rem;
+  font-weight:700;
+  box-shadow:0 2px 10px rgba(0,0,0,.25);
+  display:inline-flex; align-items:center; gap:8px;
+}
+.btn-primary:hover{background:rgba(134,197,255,.18); text-decoration:none}
+h2{margin:0 0 10px;font-size:1.2rem}
+.meta{color:var(--muted);font-size:.95rem;margin:12px 0 14px}
+footer{padding:26px 16px;text-align:center;color:var(--muted)}
 </style>
 </head>
-
 <body>
-<div class="container">
 
-  <h1>3I-Atlas: The Silence Resonance</h1>
-  <div class="subtitle">Book Three — 3I-Atlas Saga</div>
-
-  <!-- COVER (make sure this file exists at /images/ ) -->
-  <img src="/images/3I-AtlasTheSilenceResonance.jpg"
-       alt="3I-Atlas: The Silence Resonance cover"
-       class="cover">
-
-  <p>
-    <strong>Silence Resonance</strong> continues Kael Andersson’s journey as 3I-Atlas
-    reappears from behind the Sun and the quiet signals become harder to ignore.
-    What begins as observation turns into a deeper question: how much of the universe
-    speaks in ways we were never trained to hear?
-  </p>
-
-  <p>
-    Blending awe, uncertainty, and the tension of discovery, Book Three carries the saga
-    forward toward Earth’s growing attention—where science, perception, and human meaning
-    begin to overlap.
-  </p>
-
-  <!-- BUTTONS: replace # with your real links -->
-  <div class="btn-row">
-    <a class="btn" href="#" target="_blank" rel="noopener">Buy Direct</a>
-    <a class="btn secondary" href="#" target="_blank" rel="noopener">Amazon</a>
-    <a class="btn secondary" href="#" target="_blank" rel="noopener">Sample PDF</a>
+<header>
+  <div class="top-nav">
+    <a class="back" href="index.html">← Back to Gallery</a>
+    <a class="back-link" href="index.html"
+      onclick="
+        try {
+          if (document.referrer && new URL(document.referrer).origin === location.origin) {
+            history.back(); return false;
+          }
+        } catch(e) {}
+      ">
+      ← Return to Previous Page
+    </a>
   </div>
+  <h1>Silence Resonance</h1>
+  <p>3I-Atlas Series — Book II</p>
+</header>
 
-  <!-- OPTIONAL: quick metadata line (edit as desired) -->
-  <div class="meta">
-    By B.K. Anderson &amp; Anders Taft
-  </div>
+<main>
+  <section class="card">
 
-  <div class="back-link">
-    <a href="/series/3iatlas/">← Back to 3I-Atlas Series</a>
-  </div>
+    <!-- LEFT COLUMN: cover + PDF -->
+    <div style="text-align:center">
+      <img class="thumb" loading="lazy"
+           src="Silence-Resonance.jpg"
+           alt="Silence Resonance"/>
+      <div class="actions">
+        <a class="btn" href="Silence_Resonance.pdf" target="_blank" rel="noopener" type="application/pdf">📖 Read Sample PDF</a>
+        <a class="btn" href="Silence_Resonance.pdf" download="Silence_Resonance.pdf">⬇️ Download PDF</a>
+      </div>
+    </div>
 
-</div>
+    <!-- RIGHT COLUMN: about + nav -->
+    <div>
+      <h2>About This Book</h2>
+      <p><em>Silence Resonance</em> deepens the journey as Celestara’s passage reshapes what Kael Andersson thought he knew—about the vessel, about Earth, and about the quiet intelligence listening beneath the noise. In the still places where signals fade, something older answers back, and Kael must learn the difference between silence… and absence.</p>
+
+      <div class="meta">
+        <div><strong>Author:</strong> B.K. Anderson &amp; Anders Taft</div>
+        <div><strong>Series:</strong> 3I-Atlas</div>
+        <div><strong>Format:</strong> Paperback &amp; eBook</div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="voyage-of-3i-atlas.html">← Previous: Voyage of 3I-Atlas</a>
+        <a class="btn" href="3i-atlas-the-lunar-key.html">Next: 3I-Atlas — The Lunar Key →</a>
+
+        <a class="btn-primary"
+           href="https://shop.ingramspark.com/b/084?params=REPLACE_WITH_YOUR_INGRAM_LINK"
+           target="_blank"
+           rel="noopener">
+          🛒 Buy Direct from IngramSpark
+        </a>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
