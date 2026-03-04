@@ -95,131 +95,28 @@
     font-size:0.85rem;
     color:var(--muted);
   }
-  .book-card{
-  max-width: 320px;
-  padding: 14px;
-  border: 1px solid #ddd;
-  border-radius: 14px;
-  background: #fff;
-}
-.book-cover{
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-}
-.book-title{
-  margin: 12px 0 2px;
-  font-size: 1.05rem;
-}
-.book-subtitle{
-  margin: 0 0 12px;
-  opacity: .8;
-}
-.book-actions{
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-  /* Light card override (for white cards on a dark site) */
-.book-card.light{
-  background:#fff !important;
-  color:#111 !important;
-}
 
-.book-card.light .book-title,
-.book-card.light .book-subtitle,
-.book-card.light p,
-.book-card.light a{
-  color:#111 !important;
-  opacity: 1 !important;
-  filter: none !important;
-}
-
-.book-card.light .btn,
-.book-card.light button{
-  background:#111 !important;
-  color:#fff !important;
-  border: none !important;
-  opacity: 1 !important;
-  pointer-events: auto !important;
-}
-
-.book-card.light .btn:hover,
-.book-card.light button:hover{
-  opacity: .9 !important;
-}
-
-/* If anything is being treated as "disabled", this forces it back on */
-.book-card.light .disabled,
-.book-card.light [aria-disabled="true"]{
-  opacity: 1 !important;
-  pointer-events: auto !important;
-  filter: none !important;
-}
-
-.btn{
-  display: inline-block;
-  padding: 9px 12px;
-  border-radius: 10px;
-  text-decoration: none;
-  border: 1px solid #111;
-  color: #111;
-}
-.btn:hover{ opacity: .85; }
-.btn-ghost{
-  border-color: #bbb;
-}
- /* Emphasize action buttons inside cards */
-.card .card-actions .btn{
-  background:#2b6cb0;      /* blue */
-  color:#ffffff;
-  border:1px solid #2b6cb0;
-}
-
-.card .card-actions .btn:hover{
-  background:#1e4e8c;
-}
-
-/* Secondary buttons (Details links) */
-.card .card-actions .btn-secondary{
-  background:transparent;
-  color:#86c5ff;
-  border:1px solid #86c5ff;
-}
-
-.card .card-actions .btn-secondary:hover{
-  background:#1e2235;
-}
-  
- /* === FORCE ACTIVE BUTTON STYLES FOR BOOK CARDS === */
-.card .card-actions .btn{
-  background:#2b6cb0 !important;   /* strong blue */
-  color:#ffffff !important;
-  border:1px solid #2b6cb0 !important;
-  opacity:1 !important;
-  filter:none !important;
-  pointer-events:auto !important;
-}
-
-.card .card-actions .btn:hover{
-  background:#1e4e8c !important;
-}
-
-/* Secondary / Details buttons */
-.card .card-actions .btn-secondary{
-  background:transparent !important;
-  color:#86c5ff !important;
-  border:1px solid #86c5ff !important;
-  opacity:1 !important;
-}
-
-.card .card-actions .btn-secondary:hover{
-  background:#1e2235 !important;
-}
-
+  /* Emphasize action buttons inside cards */
+  .card .card-actions .btn{
+    background:#2b6cb0;
+    color:#ffffff;
+    border:1px solid #2b6cb0;
+  }
+  .card .card-actions .btn:hover{
+    background:#1e4e8c;
+  }
+  /* Secondary buttons (Details links) */
+  .card .card-actions .btn-secondary{
+    background:transparent;
+    color:#86c5ff;
+    border:1px solid #86c5ff;
+  }
+  .card .card-actions .btn-secondary:hover{
+    background:#1e2235;
+  }
 </style>
 </head>
+
 <body>
 
 <a class="backlink" href="/index.html">← Return to Home</a>
@@ -230,24 +127,21 @@
 </header>
 
 <div class="wrap">
-
   <section class="grid">
 
     <!-- ANDERSON FAMILY LEGACY -->
     <article class="card">
-      <img src="/AndersonFamilyLegacy.jpg"
-         alt="Anderson Family Legacy book cover">
+      <img src="/AndersonFamilyLegacy.jpg" alt="Anderson Family Legacy book cover">
       <div class="card-body">
         <div class="card-title">Anderson Family Legacy</div>
-        <div class="card-sub">Manuscipe — A Family Legacy Rooted in Tennessee</div>
+        <div class="card-sub">Manuscript — A Family Legacy Rooted in Tennessee</div>
         <p class="card-desc">
           Tracing the Anderson line from Tennessee roots across generations, this volume weaves
           documents, memories, and story into a single family manuscript — preserving a legacy
           that might otherwise be lost to time.
         </p>
         <div class="card-actions">
-          <a class="btn" href="https://shop.ingramspark.com/b/084?params=hwpBsCpYv4TRMfXhNZBdibZ0tYjIFUEXl7W1mtYicjL"
-             target="_blank" rel="noopener">📕 Buy Direct</a>
+          <a class="btn" href="https://shop.ingramspark.com/b/084?params=hwpBsCpYv4TRMfXhNZBdibZ0tYjIFUEXl7W1mtYicjL" target="_blank" rel="noopener">📕 Buy Direct</a>
           <a class="btn btn-secondary" href="/anderson-family-legacy.html">View Details →</a>
         </div>
       </div>
@@ -255,8 +149,7 @@
 
     <!-- PHILLIPS FAMILY LEGACY -->
     <article class="card">
-      <img src="/PhillipsFamilyLegacy.jpg"
-        alt="Phillips Family Legacy book cover">
+      <img src="/PhillipsFamilyLegacy.jpg" alt="Phillips Family Legacy book cover">
       <div class="card-body">
         <div class="card-title">Phillips Family Legacy</div>
         <div class="card-sub">Branches of the Phillips Line</div>
@@ -266,8 +159,7 @@
           care, and historical grounding.
         </p>
         <div class="card-actions">
-          <a class="btn" href="https://shop.ingramspark.com/b/084?params=LUGe8ChamHQl5WsT5iHwe2mZWOwLvTSJPc3HClAOYqF"
-             target="_blank" rel="noopener">📕 Buy Direct</a>
+          <a class="btn" href="https://shop.ingramspark.com/b/084?params=LUGe8ChamHQl5WsT5iHwe2mZWOwLvTSJPc3HClAOYqF" target="_blank" rel="noopener">📕 Buy Direct</a>
           <a class="btn btn-secondary" href="/phillips-family-legacy.html">View Details →</a>
         </div>
       </div>
@@ -275,8 +167,7 @@
 
     <!-- BROWN & ADAMS FAMILY LEGACY -->
     <article class="card">
-      <img src="/BrownFamilyLegacy.jpg"
-         alt="Brown and Adams Family Legacy book cover">
+      <img src="/BrownFamilyLegacy.jpg" alt="Brown and Adams Family Legacy book cover">
       <div class="card-body">
         <div class="card-title">Brown &amp; Adams Family Legacy</div>
         <div class="card-sub">Intertwined Lines and Shared Ground</div>
@@ -286,8 +177,7 @@
           keepsake volume for future generations.
         </p>
         <div class="card-actions">
-          <a class="btn" href="https://shop.ingramspark.com/b/084?params=VEwMR1JET7GRqMvtk8FsMFAjEsa35AzlDEeXaGBVRSB"
-             target="_blank" rel="noopener">📕 Buy Direct</a>
+          <a class="btn" href="https://shop.ingramspark.com/b/084?params=VEwMR1JET7GRqMvtk8FsMFAjEsa35AzlDEeXaGBVRSB" target="_blank" rel="noopener">📕 Buy Direct</a>
           <a class="btn btn-secondary" href="/brown-adams-family-legacy.html">View Details →</a>
         </div>
       </div>
@@ -295,8 +185,7 @@
 
     <!-- ROBERTS FAMILY LEGACY -->
     <article class="card">
-      <img src="/SinaiRoberts.jpg"
-         alt="Roberts Family Legacy book cover">
+      <img src="/SinaiRoberts.jpg" alt="Roberts Family Legacy book cover">
       <div class="card-body">
         <div class="card-title">The Roberts Family Legacy</div>
         <div class="card-sub">From Cedar Creek to Tate Cemetery</div>
@@ -306,17 +195,15 @@
           each waypoint a chapter in a long, enduring family journey.
         </p>
         <div class="card-actions">
-          <a class="btn" href="https://shop.ingramspark.com/b/084?params=KcAkyeAqhnUM1FSfupllaJGaoowjIBHOf63c0zjVb8r"
-             target="_blank" rel="noopener">📕 Buy Direct</a>
+          <a class="btn" href="https://shop.ingramspark.com/b/084?params=KcAkyeAqhnUM1FSfupllaJGaoowjIBHOf63c0zjVb8r" target="_blank" rel="noopener">📕 Buy Direct</a>
           <a class="btn btn-secondary" href="/the-roberts-family-legacy.html">View Details →</a>
         </div>
       </div>
     </article>
 
-    <!-- ANDREW BERRY ANDERSON (CHAPTER / FOCUSED VOLUME) -->
+    <!-- ANDREW BERRY ANDERSON -->
     <article class="card">
-     <img src="/AndrewBerryAnderson.jpg"
-        alt="Andrew Berry Anderson book or chapter cover">
+      <img src="/AndrewBerryAnderson.jpg" alt="Andrew Berry Anderson book or chapter cover">
       <div class="card-body">
         <div class="card-title">Andrew Berry Anderson</div>
         <div class="card-sub">A Focused Legacy Story</div>
@@ -326,17 +213,15 @@
           volume and can be explored in more detail on its own page.
         </p>
         <div class="card-actions">
-          <!-- If Andrew has his own book/ISBN later, replace this button link -->
           <a class="btn btn-secondary" href="/andrew-berry-anderson.html">Read Story Page →</a>
           <a class="btn" href="/the-roberts-family-legacy.html">📕 Included in Roberts Legacy</a>
         </div>
       </div>
     </article>
-    
+
     <!-- SINA ANDERSON LEGACY -->
     <article class="card">
-      <img src="/SinaAnderson.jpg"
-           alt="Sina Anderson Legacy book cover">
+      <img src="/SinaAnderson.jpg" alt="Sina Anderson Legacy book cover">
       <div class="card-body">
         <div class="card-title">The Sina Anderson Legacy</div>
         <div class="card-sub">Stories Rooted in the Anderson Line</div>
@@ -346,97 +231,55 @@
           one of the most meaningful branches of the Anderson line.
         </p>
         <div class="card-actions">
-          <a class="btn"
-             href="https://shop.ingramspark.com/b/084?params=IWuFfArrtzmlNBvpWMATHKhFRIEkFBE2uKJKPYr1V4S" 
-             target="_blank" rel="noopener">📕 Buy Direct</a>
-          <a class="btn btn-secondary"
-             href="/sina-anderson-legacy.html">View Details →</a>
+          <a class="btn" href="https://shop.ingramspark.com/b/084?params=IWuFfArrtzmlNBvpWMATHKhFRIEkFBE2uKJKPYr1V4S" target="_blank" rel="noopener">📕 Buy Direct</a>
+          <a class="btn btn-secondary" href="/sina-anderson-legacy.html">View Details →</a>
         </div>
       </div>
     </article>
 
-    <!-- John W. Anderson & Minnie Bryan card -->
-   <article class="card">
-   <img src="/JWAnderson.png"
-       alt="John W. Anderson & Minnie Bryan book cover">
-
-   <div class="card-body">
-     <div class="card-title">John W. Anderson &amp; Minnie Bryan</div>
-     <div class="card-sub">Anderson Family Legacy</div>
-
-     <p class="card-desc">
-       A chronicle of family, faith, and frontier roots—preserving the lives and
-       journey of John W. Anderson and Minnie Bryan from Tennessee to California.
-     </p>
-    <div class="card-actions">
-      <a class="btn btn-secondary" href="/JWAnderson.html">View Details →</a>
+    <!-- JOHN W. ANDERSON & MINNIE BRYAN -->
+    <article class="card">
+      <img src="/JWAnderson.png" alt="John W. Anderson & Minnie Bryan book cover">
+      <div class="card-body">
+        <div class="card-title">John W. Anderson &amp; Minnie Bryan</div>
+        <div class="card-sub">Anderson Family Legacy</div>
+        <p class="card-desc">
+          A chronicle of family, faith, and frontier roots—preserving the lives and
+          journey of John W. Anderson and Minnie Bryan from Tennessee to California.
+        </p>
         <div class="card-actions">
-  <a class="btn btn-secondary" href="/JWAnderson.html">
-    View Details →
-  </a>
+          <a class="btn btn-secondary" href="/JWAnderson.html">View Details →</a>
+          <a class="btn" href="/John%20Watson%20Anderson.pdf" target="_blank" rel="noopener">📄 Read PDF</a>
+          <!-- Leave this commented out until IngramSpark is ready -->
+          <!--
+          <a class="btn" href="PASTE_INGRAMSPARK_DIRECT_BUY_LINK_HERE" target="_blank" rel="noopener">📕 Buy Direct</a>
+          -->
+        </div>
+      </div>
+    </article>
 
-  <a class="btn"
-     href="/John%20Watson%20Anderson.pdf"
-     target="_blank"
-     rel="noopener">
-    📄 Read PDF
-  </a>
-
-  <!-- Leave this commented out until IngramSpark is ready -->
-  <!--
-  <a class="btn"
-     href="PASTE_INGRAMSPARK_DIRECT_BUY_LINK_HERE"
-     target="_blank"
-     rel="noopener">
-     📕 Buy Direct
-  </a>
-  -->
-          
-<!—Brandon Family Legacy -->
-   <article class="card">
-   <img src="/BrandonFamilyLegacy.jpg"
-       alt="Raymond B. Brandon Sr.">
-
-   <div class="card-body">
-     <div class="card-title">Raymon B. Brandon Sr.</div>
-     <div class="card-sub">Anderson Family Legacy</div>
-
-     <p class="card-desc">
-       A chronicle of family, faith, and frontier roots—preserving the lives and
-       journey of Raymond B. Brandon Sr. from Tennessee.
- .
-     </p>
-    <div class="card-actions">
-      <a class="btn btn-secondary" href="/brandon-family-legacy.html">View Details →</a>
+    <!-- BRANDON FAMILY LEGACY -->
+    <article class="card">
+      <img src="/BrandonFamilyLegacy.jpg" alt="Raymond B. Brandon Sr. book cover">
+      <div class="card-body">
+        <div class="card-title">Raymond B. Brandon Sr.</div>
+        <div class="card-sub">Brandon Family Legacy</div>
+        <p class="card-desc">
+          A chronicle of family, faith, and Tennessee roots—preserving the life and
+          legacy of Raymond B. Brandon Sr. for the generations that follow.
+        </p>
         <div class="card-actions">
-  <a class="btn btn-secondary" href="/brandon-family-legacy.html">
-    View Details →
-  </a>
+          <a class="btn btn-secondary" href="/brandon-family-legacy.html">View Details →</a>
+          <a class="btn" href="/coming-soon.png" target="_blank" rel="noopener">🖼️ Preview</a>
+          <!-- Leave this commented out until IngramSpark is ready -->
+          <!--
+          <a class="btn" href="PASTE_INGRAMSPARK_DIRECT_BUY_LINK_HERE" target="_blank" rel="noopener">📕 Buy Direct</a>
+          -->
+        </div>
+      </div>
+    </article>
 
-  <a class="btn"
-     href="/coming-soon.png"
-     target="_blank"
-     rel="noopener">
-    📄 Read PDF
-  </a>
-
-  <!-- Leave this commented out until IngramSpark is ready -->
-  <!--
-  <a class="btn"
-     href="PASTE_INGRAMSPARK_DIRECT_BUY_LINK_HERE"
-     target="_blank"
-     rel="noopener">
-     📕 Buy Direct
-  </a>
-  -->
-</div>
-  
-   
-    </div>
-  </div>
-</article>
   </section>
-
 </div>
 
 <footer>
