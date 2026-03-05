@@ -1,296 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>The Bog Series | B.K. Anderson</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8" />
+<title>The Bog Series | B.K. Anderson</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <style>
-    :root{
-      --bg:#f6f5f2;
-      --ink:#222;
-      --muted:#666;
-      --card:#ffffff;
-      --border:#d9d4c8;
-      --accent:#2f5d50;
-      --btn:#2f5d50;
-      --btnText:#fff;
-      --shadow:0 10px 28px rgba(0,0,0,.08);
-      --radius:18px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: Georgia, "Times New Roman", serif;
-      background:var(--bg);
-      color:var(--ink);
-    }
-    .page{
-      max-width:1000px;
-      margin:0 auto;
-      padding:26px 18px 56px;
-    }
-    header{
-      text-align:center;
-      margin-bottom:24px;
-    }
-    h1{
-      font-size:2.1rem;
-      margin:10px 0 8px;
-    }
-    .subtitle{
-      color:var(--muted);
-      max-width:780px;
-      margin:0 auto;
-      line-height:1.45;
-      font-size:1.05rem;
-    }
-    .topnav{
-      display:flex;
-      justify-content:center;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-top:14px;
-    }
-    .pill{
-      text-decoration:none;
-      border:1px solid var(--border);
-      background:#fff;
-      padding:9px 14px;
-      border-radius:999px;
-      color:var(--ink);
-      font-size:.95rem;
-    }
-    .pill:hover{filter:brightness(.98)}
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap:18px;
-      margin-top:22px;
-    }
-    .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      overflow:hidden;
-      display:flex;
-      flex-direction:column;
-    }
-    .cover{
-      width:100%;
-      aspect-ratio: 2 / 3;
-      object-fit:cover;
-      background:#e9e6df;
-      display:block;
-    }
-    .cardbody{
-      padding:16px;
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-      flex:1;
-    }
-    .booktitle{
-      font-size:1.15rem;
-      margin:0;
-    }
-    .meta{
-      color:var(--muted);
-      font-size:.95rem;
-    }
-    .blurb{
-      line-height:1.45;
-      margin:0;
-    }
-    .actions{
-      display:flex;
-      gap:10px;
-      margin-top:auto;
-      flex-wrap:wrap;
-    }
-    .btn{
-      text-decoration:none;
-      background:var(--btn);
-      color:var(--btnText);
-      padding:10px 14px;
-      border-radius:12px;
-      font-size:.95rem;
-      display:inline-block;
-    }
-    .btn:hover{filter:brightness(.95)}
-    .btn.secondary{
-      background:#fff;
-      color:var(--ink);
-      border:1px solid var(--border);
-    }
-    .badge{
-      display:inline-block;
-      padding:6px 10px;
-      border-radius:999px;
-      background:rgba(47,93,80,.12);
-      border:1px solid rgba(47,93,80,.22);
-      color:var(--accent);
-      font-size:.85rem;
-      width:max-content;
-    }
-    .section-title{
-      grid-column:1/-1;
-      margin:34px 0 6px;
-      text-align:center;
-      font-size:1.45rem;
-      color:var(--ink);
-    }
-    footer{
-      text-align:center;
-      margin-top:34px;
-      color:var(--muted);
-      font-size:.95rem;
-    }
-  </style>
+<style>
+:root{
+  --bg:#f6f5f2;
+  --ink:#222;
+  --muted:#666;
+  --card:#ffffff;
+  --border:#d9d4c8;
+  --accent:#2f5d50;
+  --btn:#2f5d50;
+  --btnText:#fff;
+  --shadow:0 10px 28px rgba(0,0,0,.08);
+  --radius:18px;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family: Georgia,"Times New Roman",serif;
+  background:var(--bg);
+  color:var(--ink);
+}
+
+.page{
+  max-width:1000px;
+  margin:0 auto;
+  padding:26px 18px 56px;
+}
+
+header{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+h1{
+  font-size:2.1rem;
+  margin:10px 0 8px;
+}
+
+.subtitle{
+  color:var(--muted);
+  max-width:780px;
+  margin:0 auto;
+  line-height:1.45;
+  font-size:1.05rem;
+}
+
+/* SERIES NAV BAR */
+
+.series-nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin-top:12px;
+}
+
+.series-nav a{
+  padding:6px 12px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:#fff;
+  color:var(--ink);
+  font-size:.9rem;
+  text-decoration:none;
+}
+
+.series-nav a:hover{
+  border-color:var(--accent);
+}
+
+/* TOP NAV */
+
+.topnav{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:14px;
+}
+
+.pill{
+  text-decoration:none;
+  border:1px solid var(--border);
+  background:#fff;
+  padding:9px 14px;
+  border-radius:999px;
+  color:var(--ink);
+  font-size:.95rem;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:18px;
+  margin-top:22px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+.cover{
+  width:100%;
+  aspect-ratio:2/3;
+  object-fit:cover;
+  background:#e9e6df;
+  display:block;
+}
+
+.cardbody{
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  flex:1;
+}
+
+.booktitle{
+  font-size:1.15rem;
+  margin:0;
+}
+
+.meta{
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.blurb{
+  line-height:1.45;
+  margin:0;
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+  margin-top:auto;
+  flex-wrap:wrap;
+}
+
+.btn{
+  text-decoration:none;
+  background:var(--btn);
+  color:var(--btnText);
+  padding:10px 14px;
+  border-radius:12px;
+  font-size:.95rem;
+}
+
+.btn.secondary{
+  background:#fff;
+  color:var(--ink);
+  border:1px solid var(--border);
+}
+
+.badge{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  background:rgba(47,93,80,.12);
+  border:1px solid rgba(47,93,80,.22);
+  color:var(--accent);
+  font-size:.85rem;
+}
+
+.section-title{
+  grid-column:1/-1;
+  margin:34px 0 6px;
+  text-align:center;
+  font-size:1.45rem;
+}
+
+footer{
+  text-align:center;
+  margin-top:34px;
+  color:var(--muted);
+  font-size:.95rem;
+}
+</style>
 </head>
 
 <body>
-  <div class="page">
-    <header>
-      <h1>The Bog Series</h1>
-      <p class="subtitle">
-        A waking world. A sleeping guardian. A living bog that remembers.
-        When balance falters, Saxifraga must decide whether to restore the ancient design
-        or let a world fall silent.
-      </p>
 
-      <div class="topnav">
-        <a class="pill" href="/index.html">← Back to Home</a>
-        <!-- FIXED: link to your bog-series/landing page (change if you prefer a different file) -->
-        <a class="pill" href="/the-bogs-index.html">← Back to Series</a>
-      </div>
-    </header>
+<div class="page">
 
-    <section class="grid">
+<header>
 
-      <!-- The Bog Awakening Trilogy -->
-      <h2 class="section-title">The Bog Awakening Trilogy</h2>
+<h1>The Bog Series</h1>
 
-      <!-- Book One -->
-      <article class="card">
-        <img class="cover" src="/SheStirsOne.jpg" alt="She Stirs – Book One" loading="lazy">
-        <div class="cardbody">
-          <span class="badge">Book One</span>
-          <h3 class="booktitle">She Stirs</h3>
-          <p class="meta">The Bog Series</p>
-          <p class="blurb">
-            Saxifraga awakens in a world that no longer sings the way it once did.
-            The systems still function, but the bog listens—lonely, living, and waiting.
-          </p>
-          <div class="actions">
-            <a class="btn secondary" href="/bk-anderson-series.html">All Series</a>
-            <a class="btn" href="/she-stirs.html">Details</a>
-          </div>
-        </div>
-      </article>
+<p class="subtitle">
+A waking world. A sleeping guardian. A living bog that remembers.
+When balance falters, Saxifraga must decide whether to restore the ancient design
+or let a world fall silent.
+</p>
 
-      <!-- Book Two -->
-      <article class="card">
-        <img class="cover" src="/SheSeeksTwo.jpg" alt="She Seeks – Book Two" loading="lazy">
-        <div class="cardbody">
-          <span class="badge">Book Two</span>
-          <h3 class="booktitle">She Seeks</h3>
-          <p class="meta">The Bog Series</p>
-          <p class="blurb">
-            The search deepens. The pod begins to speak through resonance and memory,
-            drawing Saxifraga toward a truth buried in the living bog.
-          </p>
-          <div class="actions">
-            <a class="btn secondary" href="/she-seeks.html">Details</a>
-            <a class="btn" href="/coming-soon.html">Coming Soon</a>
-          </div>
-        </div>
-      </article>
+<!-- Series navigation -->
 
-      <!-- Book Three -->
-      <article class="card">
-        <img class="cover" src="/SheSowsThree.jpg" alt="She Sows – Book Three" loading="lazy">
-        <div class="cardbody">
-          <span class="badge">Book Three</span>
-          <h3 class="booktitle">She Sows</h3>
-          <p class="meta">The Bog Series</p>
-          <p class="blurb">
-            The cure is life—new frequency, new harmony. A human is taken from Earth,
-            and together they face the truth: the bog is alive… and it is lonely.
-          </p>
-          <div class="actions">
-            <a class="btn secondary" href="/coming-soon.html">Details</a>
-            <a class="btn" href="/coming-soon.html">Coming Soon</a>
-          </div>
-        </div>
-      </article>
+<div class="series-nav">
+<a href="anderson-family-legacy.html">Family Legacy</a>
+<a href="path-of-light-series.html">Path of Light</a>
+<a href="anders-taft-series.html">Anders Taft</a>
+<a href="3i-atlas-series.html">3I-Atlas</a>
+<a href="the-bogs-index.html">Bog Series</a>
+<a href="seven-bogs-series.html">Seven Bogs of Mars</a>
+</div>
 
-      <!-- Seven Bogs of Mars -->
-      <h2 class="section-title">The Seven Bogs of Mars</h2>
+<div class="topnav">
+<a class="pill" href="index.html">← Back to Home</a>
+<a class="pill" href="the-bogs-index.html">← Back to Series</a>
+</div>
 
-      <!-- Bog of Patience -->
-      <article class="card">
-        <img class="cover" src="/BogOfPatience.jpg" alt="The Bog of Patience" loading="lazy">
-        <div class="cardbody">
-          <span class="badge">Book One</span>
-          <h3 class="booktitle">The Bog of Patience</h3>
-          <p class="meta">Seven Bogs of Mars</p>
-          <p class="blurb">
-            Asa walks the silent ground of Mars where the first living bog waits to awaken.
-            Patience becomes the key that restores the ancient harmony between life,
-            water, and the quiet hum of the bees.
-          </p>
-          <div class="actions">
-            <a class="btn secondary" href="/bog-of-patience.html">Details</a>
-          </div>
-        </div>
-      </article>
+</header>
 
-      <!-- Bog of Silence -->
-      <article class="card">
-        <img class="cover" src="/BogOfSilence.jpg" alt="The Bog of Silence" loading="lazy">
-        <div class="cardbody">
-          <span class="badge">Book Two</span>
-          <h3 class="booktitle">The Bog of Silence</h3>
-          <p class="meta">Seven Bogs of Mars</p>
-          <p class="blurb">
-            In the depths of a silent world Asa must quiet the ancient echoes of the past.
-            Only when true silence returns can the One-of-One awaken beneath the bog.
-          </p>
-          <div class="actions">
-            <a class="btn secondary" href="/bog-of-silence.html">Details</a>
-          </div>
-        </div>
-      </article>
+<section class="grid">
 
-      <!-- Bog of Movement -->
-      <article class="card">
-        <img class="cover" src="/BogOfMovement.jpg" alt="The Bog of Movement" loading="lazy">
-        <div class="cardbody">
-          <span class="badge">Book Three</span>
-          <h3 class="booktitle">The Bog of Movement</h3>
-          <p class="meta">Seven Bogs of Mars</p>
-          <p class="blurb">
-            Life must move or it dies. Asa must restore the flow of water,
-            pollen, and living currents through a stagnant bog that has
-            forgotten how to breathe.
-          </p>
-          <div class="actions">
-            <a class="btn secondary" href="/bog-of-movement.html">Details</a>
-          </div>
-        </div>
-      </article>
+<h2 class="section-title">The Bog Awakening Trilogy</h2>
 
-    </section>
+<!-- Book 1 -->
 
-    <footer>
-      © <span id="year"></span> B.K. Anderson • The Bog Series
-    </footer>
-  </div>
+<article class="card">
+<img class="cover" src="SheStirsOne.jpg" alt="She Stirs – Book One">
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<div class="cardbody">
+
+<span class="badge">Book One</span>
+
+<h3 class="booktitle">She Stirs</h3>
+
+<p class="meta">The Bog Series</p>
+
+<p class="blurb">
+Saxifraga awakens in a world that no longer sings the way it once did.
+The systems still function, but the bog listens—lonely, living, and waiting.
+</p>
+
+<div class="actions">
+<a class="btn secondary" href="bk-anderson-series.html">All Series</a>
+<a class="btn" href="she-stirs.html">Details</a>
+</div>
+
+</div>
+</article>
+
+<!-- Book 2 -->
+
+<article class="card">
+<img class="cover" src="SheSeeksTwo.jpg" alt="She Seeks – Book Two">
+
+<div class="cardbody">
+
+<span class="badge">Book Two</span>
+
+<h3 class="booktitle">She Seeks</h3>
+
+<p class="meta">The Bog Series</p>
+
+<p class="blurb">
+The search deepens. The pod begins to speak through resonance and memory,
+drawing Saxifraga toward a truth buried in the living bog.
+</p>
+
+<div class="actions">
+<a class="btn secondary" href="she-seeks.html">Details</a>
+<a class="btn" href="coming-soon.html">Coming Soon</a>
+</div>
+
+</div>
+</article>
+
+<!-- Book 3 -->
+
+<article class="card">
+<img class="cover" src="SheSowsThree.jpg" alt="She Sows – Book Three">
+
+<div class="cardbody">
+
+<span class="badge">Book Three</span>
+
+<h3 class="booktitle">She Sows</h3>
+
+<p class="meta">The Bog Series</p>
+
+<p class="blurb">
+The cure is life—new frequency, new harmony. A human is taken from Earth,
+and together they face the truth: the bog is alive… and it is lonely.
+</p>
+
+<div class="actions">
+<a class="btn secondary" href="coming-soon.html">Details</a>
+<a class="btn" href="coming-soon.html">Coming Soon</a>
+</div>
+
+</div>
+</article>
+
+<h2 class="section-title">The Seven Bogs of Mars</h2>
+
+<!-- Bog of Patience -->
+
+<article class="card">
+<img class="cover" src="BogOfPatience.jpg" alt="The Bog of Patience">
+
+<div class="cardbody">
+
+<span class="badge">Book One</span>
+
+<h3 class="booktitle">The Bog of Patience</h3>
+
+<p class="meta">Seven Bogs of Mars</p>
+
+<p class="blurb">
+Asa walks the silent ground of Mars where the first living bog waits to awaken.
+Patience becomes the key that restores the ancient harmony between life,
+water, and the quiet hum of the bees.
+</p>
+
+<div class="actions">
+<a class="btn secondary" href="bog-of-patience.html">Details</a>
+</div>
+
+</div>
+</article>
+
+<!-- Bog of Silence -->
+
+<article class="card">
+<img class="cover" src="BogOfSilence.jpg" alt="The Bog of Silence">
+
+<div class="cardbody">
+
+<span class="badge">Book Two</span>
+
+<h3 class="booktitle">The Bog of Silence</h3>
+
+<p class="meta">Seven Bogs of Mars</p>
+
+<p class="blurb">
+In the depths of a silent world Asa must quiet the ancient echoes of the past.
+Only when true silence returns can the One-of-One awaken beneath the bog.
+</p>
+
+<div class="actions">
+<a class="btn secondary" href="bog-of-silence.html">Details</a>
+</div>
+
+</div>
+</article>
+
+<!-- Bog of Movement -->
+
+<article class="card">
+<img class="cover" src="BogOfMovement.jpg" alt="The Bog of Movement">
+
+<div class="cardbody">
+
+<span class="badge">Book Three</span>
+
+<h3 class="booktitle">The Bog of Movement</h3>
+
+<p class="meta">Seven Bogs of Mars</p>
+
+<p class="blurb">
+Life must move or it dies. Asa must restore the flow of water,
+pollen, and living currents through a stagnant bog that has
+forgotten how to breathe.
+</p>
+
+<div class="actions">
+<a class="btn secondary" href="bog-of-movement.html">Details</a>
+</div>
+
+</div>
+</article>
+
+</section>
+
+<footer>
+© <span id="year"></span> B.K. Anderson • The Bog Series
+</footer>
+
+</div>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+
 </body>
 </html>
