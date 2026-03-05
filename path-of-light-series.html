@@ -7,134 +7,141 @@
 <meta name="description" content="Explore the Path of Light spiritual journey series by B.K. Anderson." />
 
 <style>
-  :root {
-    --bg:#0b0c10;
-    --fg:#e8f0fe;
-    --muted:#b2bfdc;
-    --accent:#86c5ff;
-    --card:#141622;
-    --cardBorder:#23263a;
+  :root{
+    --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff;
+    --card:#141622; --cardBorder:#23263a;
   }
-  * { box-sizing:border-box; }
-  body {
+  *{box-sizing:border-box}
+  body{
     margin:0; padding:0;
     background:var(--bg); color:var(--fg);
     font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   }
-  a { color:var(--accent); text-decoration:none; }
-  a:hover { text-decoration:underline; }
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
 
-  header {
-    text-align:center;
-    padding:32px 16px;
+  .wrap{max-width:1100px;margin:0 auto;padding:22px 16px 48px}
+  .topbar{display:flex;justify-content:center;margin-bottom:10px}
+  .pill{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:9px 14px;border:1px solid var(--cardBorder);border-radius:999px;
+    background:rgba(255,255,255,.03);color:var(--fg);text-decoration:none;font-weight:600;
   }
-  header h1 {
-    margin:0; font-size:2.2rem;
-  }
-  header p {
-    margin:8px 0 0; color:var(--muted);
-  }
+  .pill:hover{background:rgba(255,255,255,.06);text-decoration:none}
 
-  .grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-    gap:24px;
-    max-width:1040px;
-    margin:0 auto;
-    padding:0 16px 48px;
-  }
+  header{text-align:center;padding:10px 0 18px}
+  header h1{margin:6px 0 6px;font-size:34px}
+  header p{margin:0;color:var(--muted);max-width:70ch;margin-inline:auto}
 
-  .book {
-    background:var(--card);
-    border:1px solid var(--cardBorder);
-    border-radius:16px;
-    padding:16px;
-    text-align:center;
+  .grid{
+    display:grid; gap:16px;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    margin-top:18px;
   }
-  .book img {
-    max-width:100%;
-    border-radius:12px;
-    margin-bottom:12px;
-  }
-  .book h3 {
-    margin:0 0 8px;
-    font-size:1.2rem;
-  }
+  @media(max-width:900px){ .grid{grid-template-columns:1fr} }
 
-  .btn {
-    display:inline-block;
-    padding:8px 12px;
-    border-radius:10px;
-    background:#0f1a2a;
-    border:1px solid var(--cardBorder);
-    color:var(--fg);
-    font-weight:600;
-    margin-top:8px;
+  .card{
+    display:grid;grid-template-columns:120px 1fr;gap:14px;
+    padding:16px;border:1px solid var(--cardBorder);border-radius:16px;
+    background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+    box-shadow:0 10px 22px rgba(0,0,0,.35);
   }
-  .btn:hover { background:#15243a; }
+  .cover{
+    width:120px;height:180px;object-fit:cover;border-radius:10px;
+    border:1px solid rgba(255,255,255,.12);
+    background:#0f111a;
+  }
+  .card h2{margin:2px 0 6px;font-size:18px}
+  .meta{margin:0 0 10px;color:var(--muted);font-size:13px}
+  .blurb{margin:0 0 12px;line-height:1.35}
+  .actions{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    padding:8px 12px;border-radius:10px;border:1px solid var(--cardBorder);
+    background:rgba(255,255,255,.03);color:var(--fg);text-decoration:none;font-weight:600;
+  }
+  .btn:hover{background:rgba(255,255,255,.06);text-decoration:none}
 
-  footer {
-    text-align:center;
-    padding:32px 0;
-    color:var(--muted);
-    border-top:1px solid var(--cardBorder);
-    margin-top:48px;
-  }
-  footer a:hover { color:var(--fg); }
+  footer{text-align:center;color:var(--muted);margin-top:24px;font-size:13px}
 </style>
 </head>
 
 <body>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="pill" href="index.html">← Back to Gallery</a>
+    </div>
 
-<a href="index.html" style="display:inline-block;margin:16px">← Back to Gallery</a>
+    <header>
+      <h1>Path of Light Series</h1>
+      <p>Spiritual reflections and lived wisdom — by B.K. Anderson.</p>
+    </header>
 
-<header>
-  <h1>Path of Light Series</h1>
-  <p>by B.K. Anderson</p>
-</header>
+    <section class="grid">
 
-<div class="grid">
+      <!-- Book: My Path of Divine Timing (exists in repo) -->
+      <article class="card">
+        <img class="cover" src="MyPathofDivineTiming.jpg" alt="My Path of Divine Timing cover">
+        <div>
+          <h2>My Path of Divine Timing</h2>
+          <p class="meta">B.K. Anderson Series</p>
+          <p class="blurb">A personal journey of guidance, trust, and the unfolding of purpose.</p>
+          <div class="actions">
+            <a class="btn" href="my-path-of-divine-timing.html">Details</a>
+            <a class="btn" href="My_Path_of_Divine_Timing_Sample.pdf" target="_blank" rel="noopener">Sample PDF</a>
+          </div>
+        </div>
+      </article>
 
-  <!-- Book 1 -->
-  <div class="book">
-    <img src="MyPathofLight.jpg" alt="My Path of Light cover">
-    <h3>My Path of Light</h3>
-    <a class="btn" href="my-path-of-light.html">View Details</a>
+      <!-- Book: My Path of Light (page exists in repo; cover file in repo is "Path of Light.jpg") -->
+      <article class="card">
+        <img class="cover" src="Path of Light.jpg" alt="Path of Light cover">
+        <div>
+          <h2>The Path of Light</h2>
+          <p class="meta">Path of Light</p>
+          <p class="blurb">A calm companion for seekers—short reflections and gentle practices.</p>
+          <div class="actions">
+            <a class="btn" href="my-path-of-light.html">Details</a>
+            <a class="btn" href="Path_of_Light_Sample.pdf" target="_blank" rel="noopener">Sample PDF</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Book: Echoes of Light (cover file exists: EchosOfLight.jpg ; page exists: echoes-of-light.html) -->
+      <article class="card">
+        <img class="cover" src="EchosOfLight.jpg" alt="Echoes of Light cover">
+        <div>
+          <h2>Echoes of Light</h2>
+          <p class="meta">Path of Light</p>
+          <p class="blurb">Reflections that return you to steadiness, clarity, and grace.</p>
+          <div class="actions">
+            <a class="btn" href="echoes-of-light.html">Details</a>
+            <a class="btn" href="Echoes_of_Light_Sample.pdf" target="_blank" rel="noopener">Sample PDF</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Book: Anchor of Light (cover exists: Anchor Of Light.jpg ; page exists: anchor-of-light.html) -->
+      <article class="card">
+        <img class="cover" src="Anchor Of Light.jpg" alt="Anchor of Light cover">
+        <div>
+          <h2>Anchor of Light</h2>
+          <p class="meta">Path of Light</p>
+          <p class="blurb">A grounding book for storm seasons—holding fast to what is true.</p>
+          <div class="actions">
+            <a class="btn" href="anchor-of-light.html">Details</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- OPTIONAL: Awakening in Silence is an Anders Taft co-author book; keep it on Anders Taft series page -->
+      <!-- If you *want* it here anyway, use the repo filename exactly: "AwakeninginSilence.jpg" and "awakening-in-silence.html" -->
+
+    </section>
+
+    <footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
   </div>
 
-  <!-- Book 2 -->
-  <div class="book">
-    <img src="AwakeningInSilence.jpg" alt="Awakening in Silence cover">
-    <h3>Awakening in Silence</h3>
-    <a class="btn" href="awakening-in-silence.html">View Details</a>
-  </div>
-
-  <!-- Book 3 -->
-  <div class="book">
-    <img src="EchosOfLight.jpg" alt="Echoes of Light cover">
-    <h3>Echoes of Light</h3>
-    <a class="btn" href="echoes-of-light.html">View Details</a>
-  </div>
-
-  <!-- Book 4 -->
-  <div class="book">
-    <img src="EchoesInSilence.jpg" alt="Echoes in Silence cover">
-    <h3>Echoes in Silence</h3>
-    <a class="btn" href="echoes-in-silence.html">View Details</a>
-  </div>
-
-  <!-- Book 5 (placeholder or future release) -->
-  <div class="book">
-    <img src="Anchor%Of%Light.jpg" alt="Anchor of Light cover">
-    <h3>Anchor of Light</h3>
-    <a class="btn" href="anchor-of-light.html">View Details</a>
-  </div>
-
-</div>
-
-<footer>
-  © 2025 <a href="index.html">B.K. Anderson</a> — All Rights Reserved
-</footer>
-
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
