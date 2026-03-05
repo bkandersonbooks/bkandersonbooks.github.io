@@ -1,4 +1,3 @@
-<!-- /series/the-seven-bog.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,32 +13,60 @@
       --card:#141622; --cardBorder:#23263a;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    html,body{
+      margin:0;padding:0;background:var(--bg);color:var(--fg);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif
+    }
     a{color:var(--accent);text-decoration:none}
     a:hover{text-decoration:underline}
+
     .page{max-width:1100px;margin:0 auto;padding:24px 16px 48px}
     header{padding:16px 0 8px;text-align:center}
     h1{margin:0 0 8px;font-size:clamp(28px,3.2vw,44px);letter-spacing:.2px}
-    .subtitle{margin:0 auto;max-width:860px;color:var(--muted);font-size:clamp(14px,1.6vw,18px);line-height:1.5}
+    .subtitle{
+      margin:0 auto;max-width:860px;color:var(--muted);
+      font-size:clamp(14px,1.6vw,18px);line-height:1.5
+    }
+
+    /* Top pills */
     .topnav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:16px 0 8px}
-    .pill{display:inline-block;padding:10px 14px;border:1px solid var(--cardBorder);background:rgba(20,22,34,.9);border-radius:999px}
+    .pill{
+      display:inline-block;padding:10px 14px;border:1px solid var(--cardBorder);
+      background:rgba(20,22,34,.9);border-radius:999px;text-decoration:none;color:var(--fg);
+    }
+    .pill:hover{border-color:var(--accent);text-decoration:none}
+
+    /* Series nav bar (sitewide) */
+    .series-nav{
+      display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:12px
+    }
+    .series-nav a{
+      padding:6px 12px;border-radius:999px;border:1px solid var(--cardBorder);
+      background:rgba(20,22,34,.9);color:var(--fg);font-size:.9rem;text-decoration:none
+    }
+    .series-nav a:hover{border-color:var(--accent)}
+
     .hero{
-      margin:18px auto 0; border-radius:18px; overflow:hidden;
-      border:1px solid var(--cardBorder); background:var(--card);
+      margin:18px auto 0;border-radius:18px;overflow:hidden;
+      border:1px solid var(--cardBorder);background:var(--card);
       box-shadow:0 10px 30px rgba(0,0,0,.35);
     }
     .hero img{display:block;width:100%;height:auto}
+
     .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;margin-top:16px}
     @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+
     .card{
-      border:1px solid var(--cardBorder); background:rgba(20,22,34,.9);
-      border-radius:18px; padding:16px;
+      border:1px solid var(--cardBorder);background:rgba(20,22,34,.9);
+      border-radius:18px;padding:16px;
     }
     .card h2{margin:0 0 8px;font-size:18px}
     .card p{margin:0;color:var(--muted);line-height:1.55}
+
     .list{margin:10px 0 0;padding:0;list-style:none}
     .list li{padding:10px 0;border-top:1px solid rgba(35,38,58,.65)}
     .list li:first-child{border-top:0}
+
     .muted{color:var(--muted)}
     footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
     .smalllinks{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px}
@@ -55,16 +82,26 @@
         A restoration saga where patience, silence, and movement become keys to waking a world.
       </p>
 
+      <!-- Top navigation (simple + safe) -->
       <nav class="topnav" aria-label="Primary">
-       <a class="pill" href="../index.html">← Home</a>
-       <a class="pill" href="./index.html">Series</a>
-       <a class="pill" href="../books/index.html">Books</a>
+        <a class="pill" href="index.html">← Back to Gallery</a>
+        <a class="pill" href="the-seven-bogs.html">This Series</a>
+        <a class="pill" href="the-bog-series.html">Bog Series</a>
       </nav>
+
+      <!-- Sitewide Series Navigation -->
+      <div class="series-nav">
+        <a href="anderson-family-legacy.html">Family Legacy</a>
+        <a href="path-of-light-series.html">Path of Light</a>
+        <a href="anders-taft-series.html">Anders Taft</a>
+        <a href="3i-atlas-series.html">3I-Atlas</a>
+        <a href="the-bog-series.html">Bog Series</a>
+        <a href="the-seven-bogs.html">Seven Bogs</a>
+      </div>
     </header>
 
     <!-- HERO IMAGE -->
     <figure class="hero">
-      <!-- Put the image file in the same folder as this HTML, or update the path. -->
       <img src="TheSevenBog.jpg" alt="The Seven Bogs of Mars series artwork" loading="lazy" />
     </figure>
 
@@ -78,10 +115,10 @@
         </p>
 
         <div class="smalllinks">
-          <!-- Update these when you have the pages -->
-          <a class="pill" href="/books/the-bog-of-patience.html">Start with Book One</a>
-          <a class="pill" href="/books/the-bog-of-silence.html">Book Two</a>
-          <a class="pill" href="/contact.html">Contact</a>
+          <!-- Update these filenames to match your actual book pages -->
+          <a class="pill" href="bog-of-patience.html">Start with Book One</a>
+          <a class="pill" href="bog-of-silence.html">Book Two</a>
+          <a class="pill" href="index.html">Contact</a>
         </div>
       </article>
 
