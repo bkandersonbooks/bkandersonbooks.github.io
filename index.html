@@ -148,6 +148,13 @@ transition:.15s;
 background:rgba(134,197,255,.08);
 }
 
+footer{
+margin-top:30px;
+text-align:center;
+color:var(--muted);
+font-size:.9rem;
+}
+
 </style>
 </head>
 
@@ -199,7 +206,7 @@ Family Legacy • Spiritual Awakening • Conscious Exploration • Cosmic Disco
 <div class="top">
 <div class="icon">🌅</div>
 <div>
-<div class="title">B.K. Anderson Series</div>
+<div class="title">Path of Light Series</div>
 <div class="hint">Personal awakening journey</div>
 </div>
 </div>
@@ -214,7 +221,7 @@ Family Legacy • Spiritual Awakening • Conscious Exploration • Cosmic Disco
 <div class="series">Memoir & spiritual reflections</div>
 
 <div class="actions">
-<a class="btn" href="bk-anderson-series.html">View Series</a>
+<a class="btn" href="path-of-light-series.html">View Series</a>
 </div>
 
 </div>
@@ -301,7 +308,7 @@ Family Legacy • Spiritual Awakening • Conscious Exploration • Cosmic Disco
 <div class="series">The beginning trilogy</div>
 
 <div class="actions">
-<a class="btn" href="the-bog.html">View Series</a>
+<a class="btn" href="the-bog-series.html">View Series</a>
 </div>
 
 </div>
@@ -340,7 +347,15 @@ Family Legacy • Spiritual Awakening • Conscious Exploration • Cosmic Disco
 
 </section>
 
+<footer>
+© <span id="year"></span> B.K. Anderson
+</footer>
+
 </div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
