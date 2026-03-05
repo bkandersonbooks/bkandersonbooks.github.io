@@ -18,6 +18,7 @@
       --shadow:0 10px 28px rgba(0,0,0,.08);
       --radius:18px;
     }
+    *{box-sizing:border-box}
     body{
       margin:0;
       font-family: Georgia, "Times New Roman", serif;
@@ -60,6 +61,7 @@
       color:var(--ink);
       font-size:.95rem;
     }
+    .pill:hover{filter:brightness(.98)}
     .grid{
       display:grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -80,6 +82,7 @@
       aspect-ratio: 2 / 3;
       object-fit:cover;
       background:#e9e6df;
+      display:block;
     }
     .cardbody{
       padding:16px;
@@ -98,11 +101,13 @@
     }
     .blurb{
       line-height:1.45;
+      margin:0;
     }
     .actions{
       display:flex;
       gap:10px;
       margin-top:auto;
+      flex-wrap:wrap;
     }
     .btn{
       text-decoration:none;
@@ -111,7 +116,9 @@
       padding:10px 14px;
       border-radius:12px;
       font-size:.95rem;
+      display:inline-block;
     }
+    .btn:hover{filter:brightness(.95)}
     .btn.secondary{
       background:#fff;
       color:var(--ink);
@@ -125,6 +132,14 @@
       border:1px solid rgba(47,93,80,.22);
       color:var(--accent);
       font-size:.85rem;
+      width:max-content;
+    }
+    .section-title{
+      grid-column:1/-1;
+      margin:34px 0 6px;
+      text-align:center;
+      font-size:1.45rem;
+      color:var(--ink);
     }
     footer{
       text-align:center;
@@ -147,36 +162,40 @@
 
       <div class="topnav">
         <a class="pill" href="/index.html">← Back to Home</a>
-        <a class="pill" href="/series/the%20bog.html/">← Back to Series</a>
+        <!-- FIXED: link to your bog-series/landing page (change if you prefer a different file) -->
+        <a class="pill" href="/the-seven-bogs.html">← Back to Series</a>
       </div>
     </header>
 
     <section class="grid">
 
+      <!-- The Bog Awakening Trilogy -->
+      <h2 class="section-title">The Bog Awakening Trilogy</h2>
+
       <!-- Book One -->
       <article class="card">
-        <img class="cover" src="/SheStirsOne.jpg" alt="She Stirs – Book One">
+        <img class="cover" src="/SheStirsOne.jpg" alt="She Stirs – Book One" loading="lazy">
         <div class="cardbody">
           <span class="badge">Book One</span>
-          <h2 class="booktitle">She Stirs</h2>
+          <h3 class="booktitle">She Stirs</h3>
           <p class="meta">The Bog Series</p>
           <p class="blurb">
             Saxifraga awakens in a world that no longer sings the way it once did.
             The systems still function, but the bog listens—lonely, living, and waiting.
           </p>
           <div class="actions">
-            <a class="btn secondary" href="/series/the%20bog/">Bog Series</a>
-            <a class="btn" href="/she-stirs.html"> Details</a>
+            <a class="btn secondary" href="/bk-anderson-series.html">All Series</a>
+            <a class="btn" href="/she-stirs.html">Details</a>
           </div>
         </div>
       </article>
 
       <!-- Book Two -->
       <article class="card">
-        <img class="cover" src="/SheSeeksTwo.jpg" alt="She Seeks – Book Two">
+        <img class="cover" src="/SheSeeksTwo.jpg" alt="She Seeks – Book Two" loading="lazy">
         <div class="cardbody">
           <span class="badge">Book Two</span>
-          <h2 class="booktitle">She Seeks</h2>
+          <h3 class="booktitle">She Seeks</h3>
           <p class="meta">The Bog Series</p>
           <p class="blurb">
             The search deepens. The pod begins to speak through resonance and memory,
@@ -191,10 +210,10 @@
 
       <!-- Book Three -->
       <article class="card">
-        <img class="cover" src="/SheSowsThree.jpg" alt="Book Three – Coming Soon">
+        <img class="cover" src="/SheSowsThree.jpg" alt="She Sows – Book Three" loading="lazy">
         <div class="cardbody">
           <span class="badge">Book Three</span>
-          <h2 class="booktitle">[Book Three Title]</h2>
+          <h3 class="booktitle">She Sows</h3>
           <p class="meta">The Bog Series</p>
           <p class="blurb">
             The cure is life—new frequency, new harmony. A human is taken from Earth,
@@ -206,59 +225,63 @@
           </div>
         </div>
       </article>
-      
-<!-- Seven Bogs of Mars Saga -->
 
-<h2 style="grid-column:1/-1; margin-top:40px;">
-The Seven Bogs of Mars
-</h2>
+      <!-- Seven Bogs of Mars -->
+      <h2 class="section-title">The Seven Bogs of Mars</h2>
 
-<!-- Bog of Patience -->
-<article class="card">
-  <img class="cover" src="/BogOfPatience.jpg" alt="The Bog of Patience">
-  <div class="cardbody">
-    <span class="badge">Book One</span>
-    <h2 class="booktitle">The Bog of Patience</h2>
-    <p class="meta">Seven Bogs of Mars</p>
-    <p class="blurb">
-      Asa walks the silent ground of Mars where the first living bog waits to awaken.
-      Patience becomes the key that restores the ancient harmony between life,
-      water, and the quiet hum of the bees.
-    </p>
-    <div class="actions">
-      <a class="btn secondary" href="/bog-of-patience.html">Details</a>
-    </div>
-  </div>
-</article>
+      <!-- Bog of Patience -->
+      <article class="card">
+        <img class="cover" src="/BogOfPatience.jpg" alt="The Bog of Patience" loading="lazy">
+        <div class="cardbody">
+          <span class="badge">Book One</span>
+          <h3 class="booktitle">The Bog of Patience</h3>
+          <p class="meta">Seven Bogs of Mars</p>
+          <p class="blurb">
+            Asa walks the silent ground of Mars where the first living bog waits to awaken.
+            Patience becomes the key that restores the ancient harmony between life,
+            water, and the quiet hum of the bees.
+          </p>
+          <div class="actions">
+            <a class="btn secondary" href="/bog-of-patience.html">Details</a>
+          </div>
+        </div>
+      </article>
 
-<!-- Bog of Silence -->
-<article class="card">
-  <img class="cover" src="/BogOfSilence.jpg" alt="The Bog of Silence">
-  <div class="cardbody">
-    <span class="badge">Book Two</span>
-    <h2 class="booktitle">The Bog of Silence</h2>
-    <p class="meta">Seven Bogs of Mars</p>
-    <p class="blurb">
-      In the depths of a silent world Asa must quiet the ancient echoes of the past.
-      Only when true silence returns can the One-of-One awaken beneath the bog.
-    </p>
-  </div>
-</article>
+      <!-- Bog of Silence -->
+      <article class="card">
+        <img class="cover" src="/BogOfSilence.jpg" alt="The Bog of Silence" loading="lazy">
+        <div class="cardbody">
+          <span class="badge">Book Two</span>
+          <h3 class="booktitle">The Bog of Silence</h3>
+          <p class="meta">Seven Bogs of Mars</p>
+          <p class="blurb">
+            In the depths of a silent world Asa must quiet the ancient echoes of the past.
+            Only when true silence returns can the One-of-One awaken beneath the bog.
+          </p>
+          <div class="actions">
+            <a class="btn secondary" href="/bog-of-silence.html">Details</a>
+          </div>
+        </div>
+      </article>
 
-<!-- Bog of Movement -->
-<article class="card">
-  <img class="cover" src="/BogOfMovement.jpg" alt="The Bog of Movement">
-  <div class="cardbody">
-    <span class="badge">Book Three</span>
-    <h2 class="booktitle">The Bog of Movement</h2>
-    <p class="meta">Seven Bogs of Mars</p>
-    <p class="blurb">
-      Life must move or it dies. Asa must restore the flow of water,
-      pollen, and living currents through a stagnant bog that has
-      forgotten how to breathe.
-    </p>
-  </div>
-</article>
+      <!-- Bog of Movement -->
+      <article class="card">
+        <img class="cover" src="/BogOfMovement.jpg" alt="The Bog of Movement" loading="lazy">
+        <div class="cardbody">
+          <span class="badge">Book Three</span>
+          <h3 class="booktitle">The Bog of Movement</h3>
+          <p class="meta">Seven Bogs of Mars</p>
+          <p class="blurb">
+            Life must move or it dies. Asa must restore the flow of water,
+            pollen, and living currents through a stagnant bog that has
+            forgotten how to breathe.
+          </p>
+          <div class="actions">
+            <a class="btn secondary" href="/bog-of-movement.html">Details</a>
+          </div>
+        </div>
+      </article>
+
     </section>
 
     <footer>
