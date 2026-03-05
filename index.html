@@ -1,297 +1,307 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>B.K. Anderson — Books</title>
-  <meta name="description" content="Books by B.K. Anderson — Anderson Family Legacy, Path of Light, Anders Taft, 3I-Atlas, and The Seven Bogs of Mars."/>
-  <meta name="author" content="B.K. Anderson"/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 
-  <style>
-    :root{
-      --bg:#0b0c10;
-      --fg:#e8f0fe;
-      --muted:#b2bfdc;
-      --accent:#86c5ff;
-      --card:#141622;
-      --cardBorder:#23263a;
-    }
+<title>B.K. Anderson — Books</title>
+<meta name="description" content="Books by B.K. Anderson — Anderson Family Legacy, Path of Light, Anders Taft, 3I-Atlas, and The Seven Bogs of Mars."/>
+<meta name="author" content="B.K. Anderson"/>
 
-    *{box-sizing:border-box}
-    html,body{
-      margin:0;
-      padding:0;
-      background:var(--bg);
-      color:var(--fg);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-    }
+<style>
+:root{
+--bg:#0b0c10;
+--fg:#e8f0fe;
+--muted:#b2bfdc;
+--accent:#86c5ff;
+--card:#141622;
+--cardBorder:#23263a;
+}
 
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
+*{box-sizing:border-box}
 
-    .wrap{max-width:1100px;margin:0 auto;padding:24px 16px}
+html,body{
+margin:0;
+padding:0;
+background:var(--bg);
+color:var(--fg);
+font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
 
-    header{text-align:center;margin-bottom:10px}
-    h1{margin:6px 0 6px;font-size:2rem}
-    .sub{color:var(--muted);line-height:1.4}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
 
-    /* Main index grid */
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:18px;
-      margin-top:18px;
-    }
-    @media (max-width:900px){
-      .grid{grid-template-columns:1fr}
-    }
+.wrap{max-width:1100px;margin:auto;padding:24px 16px}
 
-    .panel{
-      background:var(--card);
-      border:1px solid var(--cardBorder);
-      border-radius:16px;
-      overflow:hidden;
-    }
-    .panel .top{
-      display:flex;
-      gap:16px;
-      align-items:center;
-      padding:14px 16px;
-      border-bottom:1px solid var(--cardBorder);
-    }
-    .icon{
-      width:42px;
-      height:42px;
-      border-radius:10px;
-      background:#0f1220;
-      display:grid;
-      place-items:center;
-      font-weight:700;
-      flex:0 0 auto;
-    }
-    .hint{color:var(--muted);font-size:.95rem}
+header{text-align:center;margin-bottom:12px}
 
-    .body{padding:14px 16px}
-    .row{
-      display:grid;
-      grid-template-columns:110px 1fr;
-      gap:12px;
-      margin:10px 0;
-      align-items:start;
-    }
+h1{margin:6px 0;font-size:2rem}
 
-    .cover{
-      width:100%;
-      aspect-ratio:2/3;
-      border-radius:10px;
-      border:1px solid var(--cardBorder);
-      object-fit:cover;
-      background:#000;
-      display:block;
-    }
+.sub{color:var(--muted)}
 
-    .meta .title{font-weight:700}
-    .meta .series{color:var(--muted);font-size:.92rem;margin-top:2px}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:18px;
+margin-top:20px;
+}
 
-    .actions{
-      display:flex;
-      gap:10px;
-      margin-top:10px;
-      flex-wrap:wrap;
-    }
-    .btn{
-      display:inline-block;
-      padding:9px 14px;
-      border:1px solid var(--accent);
-      border-radius:999px;
-    }
-    .btn:focus{outline:2px solid var(--accent);outline-offset:2px}
-  </style>
+@media(max-width:900px){
+.grid{grid-template-columns:1fr}
+}
+
+.panel{
+background:var(--card);
+border:1px solid var(--cardBorder);
+border-radius:16px;
+overflow:hidden;
+}
+
+.top{
+display:flex;
+gap:14px;
+align-items:center;
+padding:14px;
+border-bottom:1px solid var(--cardBorder);
+}
+
+.icon{
+width:40px;
+height:40px;
+border-radius:10px;
+background:#0f1220;
+display:grid;
+place-items:center;
+font-size:18px;
+}
+
+.hint{
+color:var(--muted);
+font-size:.9rem;
+}
+
+.body{padding:14px}
+
+.row{
+display:grid;
+grid-template-columns:110px 1fr;
+gap:12px;
+align-items:start;
+}
+
+.cover{
+width:100%;
+aspect-ratio:2/3;
+border-radius:10px;
+border:1px solid var(--cardBorder);
+object-fit:cover;
+background:#000;
+}
+
+.title{font-weight:700}
+
+.series{
+color:var(--muted);
+font-size:.9rem;
+margin-top:4px;
+}
+
+.actions{
+margin-top:10px;
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.btn{
+padding:8px 14px;
+border:1px solid var(--accent);
+border-radius:999px;
+}
+</style>
 </head>
 
 <body>
-  <div class="wrap">
-    <header>
-      <h1>B.K. Anderson — Books</h1>
-      <div class="sub">Choose a path: Family Light • Human Light • Conscious Light • Cosmic Light</div>
-    </header>
 
-    <section class="grid">
-      <!-- Anderson Family Series -->
-      <article class="panel">
-        <div class="top">
-          <div class="icon" aria-hidden="true">🌳</div>
-          <div>
-            <div class="meta">
-              <div class="title">The Anderson Family Series</div>
-              <div class="hint">Legacy, remembrance, and Light through lineage</div>
-            </div>
-          </div>
-        </div>
-        <div class="body">
-          <div class="row">
-            <img class="cover" src="AndersonFamilyLegacy.jpg" alt="The Anderson Family Legacy cover">
-            <div class="meta">
-              <div class="title">The Anderson Family Legacy</div>
-              <div class="series">Family Legacy</div>
-              <div class="actions">
-                <a class="btn" href="/series/anderson-family/">View Series</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+<div class="wrap">
 
-      <!-- B.K. Anderson Series -->
-      <article class="panel">
-        <div class="top">
-          <div class="icon" aria-hidden="true">🌅</div>
-          <div>
-            <div class="meta">
-              <div class="title">B.K. Anderson Series</div>
-              <div class="hint">Personal journey and ascension</div>
-            </div>
-          </div>
-        </div>
-        <div class="body">
-          <div class="row">
-            <!-- TIP: Avoid spaces in filenames. Example: Path-of-Light.jpg -->
-            <img class="cover" src="Path of Light.jpg" alt="Path of Light cover">
-            <div class="meta">
-              <div class="title">Path of Light</div>
-              <div class="series">Memoir • Ascension</div>
-              <div class="actions">
-                <a class="btn" href="/series/bk-anderson-series.html">View Series</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+<header>
+<h1>B.K. Anderson — Books</h1>
+<div class="sub">Choose a path: Family Light • Human Light • Conscious Light • Cosmic Light</div>
+</header>
 
-      <!-- Anders Taft Series -->
-      <article class="panel">
-        <div class="top">
-          <div class="icon" aria-hidden="true">🌌</div>
-          <div>
-            <div class="meta">
-              <div class="title">Anders Taft Series</div>
-              <div class="hint">Voice of consciousness — reflections of Light and awareness</div>
-            </div>
-          </div>
-        </div>
-        <div class="body">
-          <div class="row">
-            <img class="cover" src="AwakeninginSilence.jpg" alt="Awakening in Silence cover">
-            <div class="meta">
-              <div class="title">Awakening in Silence</div>
-              <div class="series">B.K. Anderson &amp; Anders Taft</div>
-              <div class="actions">
-                <a class="btn" href="/series/anders-taft-series.html">View Series</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+<section class="grid">
 
-      <!-- 3I-Atlas Series -->
-      <article class="panel">
-        <div class="top">
-          <div class="icon" aria-hidden="true">🚀</div>
-          <div>
-            <div class="meta">
-              <div class="title">3I-Atlas Series</div>
-              <div class="hint">Cosmic Light exploration</div>
-            </div>
-          </div>
-        </div>
-        <div class="body">
-          <div class="row">
-            <img class="cover" src="VoyageOfThe3I-Atlas.jpg" alt="Voyage of 3I-Atlas cover">
-            <div class="meta">
-              <div class="title">Voyage of 3I-Atlas</div>
-              <div class="series">3I-Atlas • Book 1</div>
-              <div class="actions">
-                <a class="btn" href="/series/3i-atlas-series.html">View Series</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+<!-- Anderson Family Legacy -->
+<article class="panel">
+<div class="top">
+<div class="icon">🌳</div>
+<div>
+<div class="title">The Anderson Family Series</div>
+<div class="hint">Legacy through lineage</div>
+</div>
+</div>
+
+<div class="body">
+<div class="row">
+
+<img class="cover" src="AndersonFamilyLegacy.jpg" alt="Anderson Family Legacy">
+
+<div>
+<div class="title">The Anderson Family Legacy</div>
+<div class="series">Family history</div>
+
+<div class="actions">
+<a class="btn" href="/series/anderson-family/">View Series</a>
+</div>
+</div>
+
+</div>
+</div>
+</article>
+
+<!-- Path of Light -->
+<article class="panel">
+<div class="top">
+<div class="icon">🌅</div>
+<div>
+<div class="title">B.K. Anderson Series</div>
+<div class="hint">Personal awakening journey</div>
+</div>
+</div>
+
+<div class="body">
+<div class="row">
+
+<img class="cover" src="Path-of-Light.jpg" alt="Path of Light">
+
+<div>
+<div class="title">Path of Light</div>
+<div class="series">Memoir</div>
+
+<div class="actions">
+<a class="btn" href="/series/bk-anderson-series.html">View Series</a>
+</div>
+</div>
+
+</div>
+</div>
+</article>
+
+<!-- Anders Taft -->
+<article class="panel">
+<div class="top">
+<div class="icon">🌌</div>
+<div>
+<div class="title">Anders Taft Series</div>
+<div class="hint">Conscious reflections</div>
+</div>
+</div>
+
+<div class="body">
+<div class="row">
+
+<img class="cover" src="AwakeninginSilence.jpg" alt="Awakening in Silence">
+
+<div>
+<div class="title">Awakening in Silence</div>
+<div class="series">B.K. Anderson & Anders Taft</div>
+
+<div class="actions">
+<a class="btn" href="/series/anders-taft-series.html">View Series</a>
+</div>
+</div>
+
+</div>
+</div>
+</article>
+
+<!-- 3I Atlas -->
+<article class="panel">
+<div class="top">
+<div class="icon">🚀</div>
+<div>
+<div class="title">3I-Atlas Series</div>
+<div class="hint">Cosmic exploration</div>
+</div>
+</div>
+
+<div class="body">
+<div class="row">
+
+<img class="cover" src="VoyageOfThe3I-Atlas.jpg" alt="Voyage of 3I-Atlas">
+
+<div>
+<div class="title">Voyage of 3I-Atlas</div>
+<div class="series">Book One</div>
+
+<div class="actions">
+<a class="btn" href="/series/3i-atlas-series.html">View Series</a>
+</div>
+</div>
+
+</div>
+</div>
+</article>
 
 <!-- Bog Trilogy -->
 <article class="panel">
-  <div class="top">
-    <div class="icon" aria-hidden="true">🌿</div>
-    <div>
-      <div class="meta">
-        <div class="title">The Bog Series</div>
-        <div class="hint">The awakening of living worlds</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="body">
-    <div class="row">
-      <!-- IMPORTANT: use the SAME folder style as your other images -->
-      <img class="cover" src="SheStirsOne.jpg" alt="She Stirs cover">
-
-      <div class="meta">
-        <div class="title">She Stirs • She Seeks • She Sows</div>
-        <div class="series">The beginning trilogy of the Seven Bogs universe</div>
-
-        <div class="actions">
-          <a class="btn" href="/series/the-bog.html">View Series</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-
-  <div class="card">
-  <h2>The Bog Series</h2>
-  <p>The awakening of living worlds</p>
-
-  <div class="book">
-  <img class="cover" src="/images/SheStirsOne.jpg" alt="She Stirs cover">
-    <div>
-      <h3>She Stirs • She Seeks • She Sows</h3>
-      <p>The beginning trilogy of the Seven Bogs universe</p>
-
-      <a class="btn" href="/series/the-bog.html">View Series</a>
-    </div>
-  </div>
+<div class="top">
+<div class="icon">🌿</div>
+<div>
+<div class="title">The Bog Series</div>
+<div class="hint">The awakening of living worlds</div>
 </div>
-  
+</div>
+
+<div class="body">
+<div class="row">
+
+<img class="cover" src="SheStirsOne.jpg" alt="She Stirs">
+
+<div>
+<div class="title">She Stirs • She Seeks • She Sows</div>
+<div class="series">The beginning trilogy</div>
+
+<div class="actions">
+<a class="btn" href="/series/the-bog.html">View Series</a>
+</div>
+</div>
+
+</div>
+</div>
 </article>
 
-      <!-- The Seven Bogs of Mars -->
-      <article class="panel">
-        <div class="top">
-          <div class="icon" aria-hidden="true">🌿</div>
-          <div>
-            <div class="meta">
-              <div class="title">The Seven Bogs of Mars</div>
-              <div class="hint">A seven-book restoration arc — living worlds, sleeping guardians, awakened hum</div>
-            </div>
-          </div>
-        </div>
+<!-- Seven Bogs of Mars -->
+<article class="panel">
+<div class="top">
+<div class="icon">🪐</div>
+<div>
+<div class="title">The Seven Bogs of Mars</div>
+<div class="hint">Seven-book restoration arc</div>
+</div>
+</div>
 
-        <div class="body">
-          <div class="row">
-            <!-- change this filename if your cover uses a different name -->
-            <img class="cover" src="TheSevenBog.jpg" alt="The Seven Bogs of Mars cover">
-            <div class="meta">
-              <div class="title">The Seven Bogs of Mars</div>
-              <div class="series">Seven-book series</div>
-              <div class="actions">
-                <a class="btn" href="/series/the-seven-bog.html">View Series</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+<div class="body">
+<div class="row">
 
-    </section>
-  </div>
+<img class="cover" src="TheSevenBog.jpg" alt="The Seven Bogs of Mars">
+
+<div>
+<div class="title">The Seven Bogs of Mars</div>
+<div class="series">Seven-book series</div>
+
+<div class="actions">
+<a class="btn" href="/series/the-seven-bog.html">View Series</a>
+</div>
+</div>
+
+</div>
+</div>
+</article>
+
+</section>
+</div>
+
 </body>
 </html>
