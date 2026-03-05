@@ -7,12 +7,19 @@
 <meta name="description" content="Details for the book The Anderson Family Legacy by B.K. Anderson and Anders Taft."/>
 <meta name="keywords" content="B.K. Anderson, Anders Taft, Anderson Family Legacy, genealogy, Tennessee history, family heritage"/>
 <meta name="author" content="B.K. Anderson & Anders Taft"/>
+
 <style>
-:root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
+:root{
+  --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff;
+  --card:#141622; --cardBorder:#23263a;
+}
 *{box-sizing:border-box}
-html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg);
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
-a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+html,body{
+  margin:0; padding:0; background:var(--bg); color:var(--fg);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
 
 /* Header */
 header{text-align:center;padding:24px 16px}
@@ -35,16 +42,44 @@ main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
   display:grid; gap:18px; background:var(--card);
   border:1px solid var(--cardBorder); border-radius:16px; padding:16px;
 }
-@media(min-width:900px){.card{grid-template-columns:380px 1fr}}
+@media(min-width:900px){ .card{grid-template-columns:380px 1fr} }
 
 /* Cover + buttons */
-.thumb{display:block;margin:0 auto;max-width:300px;border-radius:12px;border:1px solid var(--cardBorder)}
-.actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:16px}
-.btn{
-  border:1px solid var(--cardBorder); background:transparent; color:var(--fg);
-  padding:8px 12px; border-radius:10px; font-size:.95rem; cursor:pointer;
+.thumb{
+  display:block; margin:0 auto; max-width:300px;
+  border-radius:12px; border:1px solid var(--cardBorder);
 }
-.btn:hover{background:#1c2135}
+.actions{
+  display:flex; gap:12px; flex-wrap:wrap;
+  justify-content:center; margin-top:16px;
+}
+
+/* Unified button styles */
+.btn, .buy-btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  border:1px solid var(--cardBorder);
+  background:transparent;
+  color:var(--fg);
+  padding:8px 12px;
+  border-radius:10px;
+  font-size:.95rem;
+  font-weight:600;
+  cursor:pointer;
+  text-decoration:none;
+}
+.btn:hover{
+  background:#1c2135;
+  text-decoration:none;
+}
+.buy-btn{
+  border-color:var(--accent);
+  background:rgba(134,197,255,.08);
+  color:var(--fg);
+}
+.buy-btn:hover{
+  background:rgba(134,197,255,.14);
+  text-decoration:none;
+}
 
 /* Text blocks */
 h2{margin:0 0 10px;font-size:1.2rem}
@@ -54,18 +89,20 @@ h2{margin:0 0 10px;font-size:1.2rem}
 footer{padding:26px 16px;text-align:center;color:var(--muted)}
 </style>
 </head>
+
 <body>
 
 <header>
   <div class="top-nav">
     <a class="back" href="index.html">← Back to Gallery</a>
+
     <a class="back-link" href="index.html"
       onclick="
-        try {
-          if (document.referrer && new URL(document.referrer).origin === location.origin) {
+        try{
+          if(document.referrer && new URL(document.referrer).origin === location.origin){
             history.back(); return false;
           }
-        } catch(e) {}
+        }catch(e){}
       ">
       ← Return to Previous Page
     </a>
@@ -77,12 +114,16 @@ footer{padding:26px 16px;text-align:center;color:var(--muted)}
 
 <main>
   <section class="card">
+
     <!-- LEFT COLUMN: cover + PDF links -->
     <div style="text-align:center">
       <img class="thumb" loading="lazy" src="AndersonFamilyLegacy.jpg" alt="The Anderson Family Legacy cover"/>
+
       <div class="actions">
-        <a class="btn" href="AndersonFamilyLegacy.pdf" target="_blank" rel="noopener" type="application/pdf">📖 Read Sample PDF</a>
-        <a class="btn" href="AndersonFamilyLegacy.pdf" download="AndersonFamilyLegacy.pdf">⬇️ Download PDF</a>
+        <a class="btn" href="AndersonFamilyLegacy.pdf" target="_blank" rel="noopener">📖 Read Sample PDF</a>
+        <a class="btn" href="AndersonFamilyLegacy.pdf" download>⬇️ Download PDF</a>
+
+        <!-- IMPORTANT: make this match your SERIES PAGE filename -->
         <a class="btn" href="anderson-family-legacy.html">View Series</a>
       </div>
     </div>
@@ -100,15 +141,22 @@ footer{padding:26px 16px;text-align:center;color:var(--muted)}
 
       <div class="actions">
         <a class="btn" href="andrew-berry-anderson.html">← Previous: Andrew Berry Anderson</a>
-        <a class="btn" href="brown-and-adams-legacy.html">Next: Brown & Adams Family Legacy →</a>
-        <a href="https://shop.ingramspark.com/b/084?params=hwpBsCpYv4TRMfXhNZBdibZ0tYjIFUEXl7W1mtYicjL" target="_blank" class="buy-btn">Buy Direct</a>
+        <a class="btn" href="brown-and-adams-legacy.html">Next: Brown &amp; Adams Family Legacy →</a>
+
+        <a class="buy-btn"
+           href="https://shop.ingramspark.com/b/084?params=hwpBsCpYv4TRMfXhNZBdibZ0tYjIFUEXl7W1mtYicjL"
+           target="_blank" rel="noopener">
+          Buy Direct
+        </a>
       </div>
     </div>
+
   </section>
 </main>
 
 <footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
 </body>
 </html>
 
