@@ -1,70 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
 <title>The Path of Light — Book Details</title>
-<meta name="description" content="Details for the book The Path of Light by B.K. Anderson." />
+<meta name="description" content="Details for the book The Path of Light by B.K. Anderson."/>
+<meta name="keywords" content="B.K. Anderson, Path of Light, spiritual reflection, memoir, awakening"/>
+<meta name="author" content="B.K. Anderson"/>
+
 <style>
-  :root { --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff; --card:#141622; --cardBorder:#23263a; }
-  *{box-sizing:border-box}
-  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-  header{text-align:center;padding:24px 16px}
-  header h1{margin:0;font-weight:700;letter-spacing:.3px}
-  header p{margin:6px 0 0;color:var(--muted)}
-  .wrap{max-width:1000px;margin:0 auto;padding:16px}
-  .card{display:grid;grid-template-columns:320px 1fr;gap:20px;background:var(--card);border:1px solid var(--cardBorder);border-radius:16px;padding:16px}
-  .cover{background:#0e1020;border:1px solid var(--cardBorder);border-radius:12px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-  .cover img{max-width:100%;height:auto;display:block}
-  .details h2{margin:.2rem 0 .6rem}
-  .meta{color:var(--muted);font-size:.95rem;line-height:1.5}
-  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
-  .btn{display:inline-block;padding:10px 14px;border:1px solid var(--cardBorder);border-radius:10px;background:#0f1222}
-  .btn.primary{background:var(--accent);color:#06203a;border-color:#6fb8ff}
-  .section{margin-top:18px}
-  .section h3{margin:.2rem 0 .4rem}
-  .desc{color:#d7def5;line-height:1.6}
-  @media (max-width:800px){ .card{grid-template-columns:1fr} }
+:root{
+  --bg:#0b0c10; --fg:#e8f0fe; --muted:#b2bfdc; --accent:#86c5ff;
+  --card:#141622; --cardBorder:#23263a;
+}
+*{box-sizing:border-box}
+html,body{
+  margin:0; padding:0; background:var(--bg); color:var(--fg);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Header */
+header{text-align:center;padding:24px 16px}
+header h1{margin:4px 0 0;font-size:1.9rem}
+header p{margin:6px 0 0;color:var(--muted)}
+
+/* Navigation buttons */
+.top-nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
+.back,.back-link{
+  border:1px solid var(--cardBorder); background:var(--card);
+  padding:8px 12px; border-radius:999px; font-weight:600;
+  box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+.back:hover,.back-link:hover{border-color:var(--accent);text-decoration:none}
+.back-link:active{transform:translateY(1px)}
+
+/* Layout */
+main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
+.card{
+  display:grid; gap:18px; background:var(--card);
+  border:1px solid var(--cardBorder); border-radius:16px; padding:16px;
+}
+@media(min-width:900px){ .card{grid-template-columns:380px 1fr} }
+
+/* Cover + buttons */
+.thumb{
+  display:block; margin:0 auto; max-width:300px;
+  border-radius:12px; border:1px solid var(--cardBorder);
+  background:#0f111a;
+}
+.actions{
+  display:flex; gap:12px; flex-wrap:wrap;
+  justify-content:center; margin-top:16px;
+}
+
+/* Unified button styles */
+.btn, .buy-btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  border:1px solid var(--cardBorder);
+  background:transparent;
+  color:var(--fg);
+  padding:8px 12px;
+  border-radius:10px;
+  font-size:.95rem;
+  font-weight:600;
+  cursor:pointer;
+  text-decoration:none;
+}
+.btn:hover{
+  background:#1c2135;
+  text-decoration:none;
+}
+.buy-btn{
+  border-color:var(--accent);
+  background:rgba(134,197,255,.08);
+}
+.buy-btn:hover{
+  background:rgba(134,197,255,.14);
+  text-decoration:none;
+}
+
+/* Text blocks */
+h2{margin:0 0 10px;font-size:1.2rem}
+.meta{color:var(--muted);font-size:.95rem;margin:12px 0 14px;line-height:1.5}
+
+/* Footer */
+footer{padding:26px 16px;text-align:center;color:var(--muted)}
 </style>
 </head>
+
 <body>
-  <header>
-    <h1>The Path of Light</h1>
-    <p>by B.K. Anderson</p>
-  </header>
 
-  <div class="wrap">
-    <article class="card">
-      <div class="cover">
-        <!-- Update if your filename/path differs -->
-        <img src="Path of Light.jpg" alt="Book cover: The Path of Light by B.K. Anderson" loading="lazy" />
-      </div>
+<header>
+  <div class="top-nav">
+    <a class="back" href="index.html">← Back to Gallery</a>
 
-      <div class="details">
-        <h2>Book Details</h2>
-        <div class="meta">
-          Trim: 6×9 in · Pages: ~115 · Paperback<br/>
-          Series: Path • Genre: Spiritual Reflection
-        </div>
-
-        <div class="btns">
-          <!-- Update if your filename/path differs -->
-          <a class="btn primary" href="Path_of_Light_Sample.pdf" target="_blank" rel="noopener">Read sample PDF</a>
-          <a class="btn" href="index.html">← Back to Home</a>
-          <a class="btn" href="anchor-of-light.html">Next: Anchor of Light →</a>
-          <a class="btn" href="series/bk-anderson.html">View Series</a>
-        </div>
-
-        <div class="section">
-          <h3>About the Book</h3>
-          <p class="desc">
-            A concise, calm companion for seekers—<em>The Path of Light</em> gathers short reflections,
-            gentle practices, and quiet reminders that align daily life with peace and purpose.
-          </p>
-        </div>
-      </div>
-    </article>
+    <a class="back-link" href="index.html"
+      onclick="
+        try{
+          if(document.referrer && new URL(document.referrer).origin === location.origin){
+            history.back(); return false;
+          }
+        }catch(e){}
+      ">
+      ← Return to Previous Page
+    </a>
   </div>
+
+  <h1>The Path of Light</h1>
+  <p>by B.K. Anderson</p>
+</header>
+
+<main>
+  <section class="card">
+
+    <!-- LEFT COLUMN: cover + PDF links -->
+    <div style="text-align:center">
+      <img class="thumb" loading="lazy" src="Path of Light.jpg" alt="The Path of Light cover"/>
+
+      <div class="actions">
+        <a class="btn" href="Path_of_Light_Sample.pdf" target="_blank" rel="noopener">📖 Read Sample PDF</a>
+        <a class="btn" href="Path_of_Light_Sample.pdf" download>⬇️ Download PDF</a>
+
+        <!-- FIXED: this is your real series page filename -->
+        <a class="btn" href="bk-anderson-series.html">View Series</a>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: about + nav -->
+    <div>
+      <h2>About This Book</h2>
+      <p><em>The Path of Light</em> is a calm companion for seekers—short reflections, gentle practices, and quiet reminders that align daily life with peace and purpose.</p>
+
+      <div class="meta">
+        <div><strong>Author:</strong> B.K. Anderson</div>
+        <div><strong>Series:</strong> Path of Light</div>
+        <div><strong>Format:</strong> Paperback &amp; eBook</div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="my-path-of-light.html">← Previous: My Path of Light</a>
+        <a class="btn" href="anchor-of-light.html">Next: Anchor of Light →</a>
+
+        <!-- Optional: add your Buy Direct link here if you have one -->
+        <!-- <a class="buy-btn" href="PASTE_BUY_LINK" target="_blank" rel="noopener">Buy Direct</a> -->
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
 </body>
 </html>
