@@ -3,294 +3,235 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>The Anderson Family Series — Legacy Books</title>
-<meta name="description" content="The Anderson Family Series by B.K. Anderson — Legacy books rooted in Tennessee, Virginia, and beyond." />
-<style>
-  :root {
-    --bg:#0b0c10; 
-    --fg:#e8f0fe; 
-    --muted:#b2bfdc; 
-    --accent:#86c5ff; 
-    --card:#141622; 
-    --cardBorder:#23263a;
-  }
-  *{box-sizing:border-box}
-  html,body{
-    margin:0;
-    padding:0;
-    background:var(--bg);
-    color:var(--fg);
-    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-  }
-  a{color:var(--accent);text-decoration:none}
-  a:hover{text-decoration:underline}
-  header{text-align:center;padding:24px 16px}
-  h1{margin:0;font-size:2rem}
-  h2{margin:6px 0 0 0;font-size:1rem;color:var(--muted)}
-  .wrap{max-width:1200px;margin:0 auto;padding:16px;}
-  .grid{
-    display:grid;
-    gap:20px;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    align-items:stretch;
-  }
-  .card{
-    background:var(--card);
-    border:1px solid var(--cardBorder);
-    border-radius:14px;
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-  }
-  .card img{
-    width:100%;
-    height:auto;
-    display:block;
-  }
-  .card-body{
-    padding:14px 16px 16px 16px;
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-    flex:1;
-  }
-  .card-title{
-    font-size:1.05rem;
-    font-weight:600;
-  }
-  .card-sub{
-    font-size:0.9rem;
-    color:var(--muted);
-  }
-  .card-desc{
-    font-size:0.9rem;
-    color:var(--fg);
-    line-height:1.5;
-  }
-  .card-actions{
-    margin-top:auto;
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-  }
-  .btn{
-    display:inline-block;
-    padding:8px 12px;
-    border-radius:10px;
-    border:1px solid var(--cardBorder);
-    background:#181a28;
-    color:var(--fg);
-    font-size:0.9rem;
-    text-decoration:none;
-  }
-  .btn:hover{background:#1e2235;}
-  .btn-secondary{
-    background:transparent;
-  }
-  .backlink{display:inline-block;margin:12px 16px;}
-  .backlink:hover{text-decoration:underline;}
-  footer{
-    margin:24px 0 16px 0;
-    text-align:center;
-    font-size:0.85rem;
-    color:var(--muted);
-  }
 
-  /* Emphasize action buttons inside cards */
-  .card .card-actions .btn{
-    background:#2b6cb0;
-    color:#ffffff;
-    border:1px solid #2b6cb0;
-  }
-  .card .card-actions .btn:hover{
-    background:#1e4e8c;
-  }
-  /* Secondary buttons (Details links) */
-  .card .card-actions .btn-secondary{
-    background:transparent;
-    color:#86c5ff;
-    border:1px solid #86c5ff;
-  }
-  .card .card-actions .btn-secondary:hover{
-    background:#1e2235;
-  }
+<title>The Anderson Family Series — Legacy Books</title>
+
+<meta name="description" content="The Anderson Family Series by B.K. Anderson — Legacy books rooted in Tennessee, Virginia, and beyond." />
+
+<style>
+
+:root{
+--bg:#0b0c10;
+--fg:#e8f0fe;
+--muted:#b2bfdc;
+--accent:#86c5ff;
+--card:#141622;
+--cardBorder:#23263a;
+}
+
+*{box-sizing:border-box}
+
+html,body{
+margin:0;
+padding:0;
+background:var(--bg);
+color:var(--fg);
+font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+header{
+text-align:center;
+padding:24px 16px;
+}
+
+h1{margin:0;font-size:2rem}
+h2{margin:6px 0 0 0;font-size:1rem;color:var(--muted)}
+
+.wrap{
+max-width:1200px;
+margin:0 auto;
+padding:16px;
+}
+
+.grid{
+display:grid;
+gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
+.card{
+background:var(--card);
+border:1px solid var(--cardBorder);
+border-radius:14px;
+overflow:hidden;
+display:flex;
+flex-direction:column;
+}
+
+.card img{
+width:100%;
+height:auto;
+display:block;
+}
+
+.card-body{
+padding:14px 16px 16px 16px;
+display:flex;
+flex-direction:column;
+gap:8px;
+flex:1;
+}
+
+.card-title{
+font-size:1.05rem;
+font-weight:600;
+}
+
+.card-sub{
+font-size:0.9rem;
+color:var(--muted);
+}
+
+.card-desc{
+font-size:0.9rem;
+line-height:1.5;
+}
+
+.card-actions{
+margin-top:auto;
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.btn{
+display:inline-block;
+padding:8px 12px;
+border-radius:10px;
+border:1px solid var(--accent);
+background:#2b6cb0;
+color:#ffffff;
+font-size:0.9rem;
+text-decoration:none;
+}
+
+.btn:hover{
+background:#1e4e8c;
+}
+
+.btn-secondary{
+background:transparent;
+color:#86c5ff;
+border:1px solid #86c5ff;
+}
+
+.btn-secondary:hover{
+background:#1e2235;
+}
+
+.backlink{
+display:inline-block;
+margin:12px 16px;
+}
+
+footer{
+margin:24px 0 16px 0;
+text-align:center;
+font-size:0.85rem;
+color:var(--muted);
+}
+
 </style>
 </head>
 
 <body>
 
-<a class="backlink" href="/index.html">← Return to Home</a>
+<a class="backlink" href="index.html">← Return to Home</a>
 
 <header>
-  <h1>The Anderson Family Series</h1>
-  <h2>Legacy books rooted in Tennessee, Virginia, and beyond — by B.K. Anderson</h2>
+<h1>The Anderson Family Series</h1>
+<h2>Legacy books rooted in Tennessee, Virginia, and beyond — by B.K. Anderson</h2>
 </header>
 
 <div class="wrap">
-  <section class="grid">
 
-    <!-- ANDERSON FAMILY LEGACY -->
-    <article class="card">
-      <img src="/AndersonFamilyLegacy.jpg" alt="Anderson Family Legacy book cover">
-      <div class="card-body">
-        <div class="card-title">Anderson Family Legacy</div>
-        <div class="card-sub">Manuscript — A Family Legacy Rooted in Tennessee</div>
-        <p class="card-desc">
-          Tracing the Anderson line from Tennessee roots across generations, this volume weaves
-          documents, memories, and story into a single family manuscript — preserving a legacy
-          that might otherwise be lost to time.
-        </p>
-        <div class="card-actions">
-          <a class="btn" href="https://shop.ingramspark.com/b/084?params=hwpBsCpYv4TRMfXhNZBdibZ0tYjIFUEXl7W1mtYicjL" target="_blank" rel="noopener">📕 Buy Direct</a>
-          <a class="btn btn-secondary" href="/anderson-family-legacy.html">View Details →</a>
-        </div>
-      </div>
-    </article>
+<section class="grid">
 
-    <!-- PHILLIPS FAMILY LEGACY -->
-    <article class="card">
-      <img src="/PhillipsFamilyLegacy.jpg" alt="Phillips Family Legacy book cover">
-      <div class="card-body">
-        <div class="card-title">Phillips Family Legacy</div>
-        <div class="card-sub">Branches of the Phillips Line</div>
-        <p class="card-desc">
-          A focused look at the Phillips family line: names, dates, places, and the stories that tie
-          them together. This volume captures a branch of the wider Anderson story with clarity,
-          care, and historical grounding.
-        </p>
-        <div class="card-actions">
-          <a class="btn" href="https://shop.ingramspark.com/b/084?params=LUGe8ChamHQl5WsT5iHwe2mZWOwLvTSJPc3HClAOYqF" target="_blank" rel="noopener">📕 Buy Direct</a>
-          <a class="btn btn-secondary" href="/phillips-family-legacy.html">View Details →</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- BROWN & ADAMS FAMILY LEGACY -->
-    <article class="card">
-      <img src="/BrownFamilyLegacy.jpg" alt="Brown and Adams Family Legacy book cover">
-      <div class="card-body">
-        <div class="card-title">Brown &amp; Adams Family Legacy</div>
-        <div class="card-sub">Intertwined Lines and Shared Ground</div>
-        <p class="card-desc">
-          The Brown and Adams lines intertwine through marriage, migration, and memory.
-          This book gathers those threads — photographs, records, and narrative — into a single
-          keepsake volume for future generations.
-        </p>
-        <div class="card-actions">
-          <a class="btn" href="https://shop.ingramspark.com/b/084?params=VEwMR1JET7GRqMvtk8FsMFAjEsa35AzlDEeXaGBVRSB" target="_blank" rel="noopener">📕 Buy Direct</a>
-          <a class="btn btn-secondary" href="/brown-adams-family-legacy.html">View Details →</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- ROBERTS FAMILY LEGACY -->
-    <article class="card">
-      <img src="/SinaiRoberts.jpg" alt="Roberts Family Legacy book cover">
-      <div class="card-body">
-        <div class="card-title">The Roberts Family Legacy</div>
-        <div class="card-sub">From Cedar Creek to Tate Cemetery</div>
-        <p class="card-desc">
-          From Cedar Creek, Virginia, through Cowan and Marion County in Tennessee, 
-          this volume follows the Roberts line across creeks, roads, and cemeteries —
-          each waypoint a chapter in a long, enduring family journey.
-        </p>
-        <div class="card-actions">
-          <a class="btn" href="https://shop.ingramspark.com/b/084?params=KcAkyeAqhnUM1FSfupllaJGaoowjIBHOf63c0zjVb8r" target="_blank" rel="noopener">📕 Buy Direct</a>
-          <a class="btn btn-secondary" href="/the-roberts-family-legacy.html">View Details →</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- ANDREW BERRY ANDERSON -->
-    <article class="card">
-      <img src="/AndrewBerryAnderson.jpg" alt="Andrew Berry Anderson book or chapter cover">
-      <div class="card-body">
-        <div class="card-title">Andrew Berry Anderson</div>
-        <div class="card-sub">A Focused Legacy Story</div>
-        <p class="card-desc">
-          A closer look at the life and line of Andrew Berry Anderson within the wider Anderson
-          and Roberts family context. This story is part of the larger Roberts Family Legacy
-          volume and can be explored in more detail on its own page.
-        </p>
-        <div class="card-actions">
-          <a class="btn btn-secondary" href="/andrew-berry-anderson.html">Read Story Page →</a>
-          <a class="btn" href="/the-roberts-family-legacy.html">📕 Included in Roberts Legacy</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- SINA ANDERSON LEGACY -->
-    <article class="card">
-      <img src="/SinaAnderson.jpg" alt="Sina Anderson Legacy book cover">
-      <div class="card-body">
-        <div class="card-title">The Sina Anderson Legacy</div>
-        <div class="card-sub">Stories Rooted in the Anderson Line</div>
-        <p class="card-desc">
-          A dedicated legacy volume honoring Sina Anderson’s life, stories, land, and
-          the generations connected through her journey. A heartfelt preservation of
-          one of the most meaningful branches of the Anderson line.
-        </p>
-        <div class="card-actions">
-          <a class="btn" href="https://shop.ingramspark.com/b/084?params=IWuFfArrtzmlNBvpWMATHKhFRIEkFBE2uKJKPYr1V4S" target="_blank" rel="noopener">📕 Buy Direct</a>
-          <a class="btn btn-secondary" href="/sina-anderson-legacy.html">View Details →</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- John W. Anderson & Minnie Bryan card -->
+<!-- Anderson Family Legacy -->
 <article class="card">
-<img src="/JWAnderson.png"
-     alt="John W. Anderson & Minnie Bryan book cover">
+
+<img src="AndersonFamilyLegacy.jpg" alt="Anderson Family Legacy">
 
 <div class="card-body">
-  <div class="card-title">John W. Anderson &amp; Minnie Bryan</div>
-  <div class="card-sub">Anderson Family Legacy</div>
 
-  <p class="card-desc">
-    A chronicle of family, faith, and frontier roots—preserving the lives and
-    journey of John W. Anderson and Minnie Bryan from Tennessee to California.
-  </p>
+<div class="card-title">Anderson Family Legacy</div>
 
-  <div class="card-actions">
-    <a class="btn btn-secondary" href="/JWAnderson.html">View Details →</a>
+<div class="card-sub">
+Manuscript — A Family Legacy Rooted in Tennessee
+</div>
 
-    <a class="btn"
-       href="/John%20Watson%20Anderson.pdf"
-       target="_blank"
-       rel="noopener">
-       📄 Read PDF
-    </a>
-  </div>
+<p class="card-desc">
+Tracing the Anderson line from Tennessee roots across generations,
+this volume weaves documents, memories, and story into a single
+family manuscript — preserving a legacy that might otherwise
+be lost to time.
+</p>
 
+<div class="card-actions">
+
+<a class="btn"
+href="https://shop.ingramspark.com/b/084?params=hwpBsCpYv4TRMfXhNZBdibZ0tYjIFUEXl7W1mtYicjL"
+target="_blank" rel="noopener">
+📕 Buy Direct
+</a>
+
+<a class="btn btn-secondary"
+href="anderson-family-legacy.html">
+View Details →
+</a>
+
+</div>
 </div>
 </article>
 
-<!-- Brandon Family Legacy -->
+<!-- Phillips Family Legacy -->
 <article class="card">
-<img src="/BrandonFamilyLegacy.jpg"
-     alt="Raymond B. Brandon Sr.">
+
+<img src="PhillipsFamilyLegacy.jpg" alt="Phillips Family Legacy">
 
 <div class="card-body">
-  <div class="card-title">Raymond B. Brandon Sr.</div>
-  <div class="card-sub">Brandon Family Legacy</div>
 
-  <p class="card-desc">
-    A chronicle of family, faith, and Tennessee roots—preserving the life
-    and legacy of Raymond B. Brandon Sr. for the generations that follow.
-  </p>
+<div class="card-title">Phillips Family Legacy</div>
 
-  <div class="card-actions">
-    <a class="btn btn-secondary" href="/brandon-family-legacy.html">
-      View Details →
-    </a>
+<div class="card-sub">Branches of the Phillips Line</div>
 
-    <a class="btn"
-       href="/coming-soon.png"
-       target="_blank"
-       rel="noopener">
-       📄 Read PDF
-    </a>
-  </div>
+<p class="card-desc">
+A focused look at the Phillips family line: names, dates, places,
+and the stories that tie them together.
+</p>
+
+<div class="card-actions">
+
+<a class="btn"
+href="https://shop.ingramspark.com/b/084?params=LUGe8ChamHQl5WsT5iHwe2mZWOwLvTSJPc3HClAOYqF"
+target="_blank">
+📕 Buy Direct
+</a>
+
+<a class="btn btn-secondary"
+href="phillips-family-legacy.html">
+View Details →
+</a>
 
 </div>
+</div>
 </article>
+
+</section>
+
+</div>
+
+<footer>
+© <span id="year"></span> B.K. Anderson
+</footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
