@@ -2,31 +2,34 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>The Bog Series | B.K. Anderson</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Bog Series | B.K. Anderson</title>
+<meta name="description" content="The Bog Series by B.K. Anderson — a waking world, a sleeping guardian, and a living bog that remembers." />
 
 <style>
 :root{
-  --bg:#f6f5f2;
-  --ink:#222;
-  --muted:#666;
-  --card:#ffffff;
-  --border:#d9d4c8;
-  --accent:#2f5d50;
-  --btn:#2f5d50;
-  --btnText:#fff;
-  --shadow:0 10px 28px rgba(0,0,0,.08);
+  --bg:#0b0c10;
+  --fg:#e8f0fe;
+  --muted:#b2bfdc;
+  --accent:#86c5ff;
+  --card:#141622;
+  --cardBorder:#23263a;
+  --shadow:0 10px 28px rgba(0,0,0,.25);
   --radius:18px;
 }
 
 *{box-sizing:border-box}
 
-body{
+html,body{
   margin:0;
-  font-family: Georgia,"Times New Roman",serif;
+  padding:0;
   background:var(--bg);
-  color:var(--ink);
+  color:var(--fg);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 }
+
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
 
 .page{
   max-width:1000px;
@@ -36,7 +39,7 @@ body{
 
 header{
   text-align:center;
-  margin-bottom:20px;
+  margin-bottom:18px;
 }
 
 h1{
@@ -52,32 +55,31 @@ h1{
   font-size:1.05rem;
 }
 
-/* SERIES NAV BAR */
-
+/* Series navigation */
 .series-nav{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
   gap:10px;
-  margin-top:12px;
+  margin-top:14px;
 }
 
 .series-nav a{
   padding:6px 12px;
   border-radius:999px;
-  border:1px solid var(--border);
-  background:#fff;
-  color:var(--ink);
+  border:1px solid var(--cardBorder);
+  background:rgba(20,22,34,.9);
+  color:var(--fg);
   font-size:.9rem;
   text-decoration:none;
 }
 
 .series-nav a:hover{
   border-color:var(--accent);
+  text-decoration:none;
 }
 
-/* TOP NAV */
-
+/* Top nav pills */
 .topnav{
   display:flex;
   justify-content:center;
@@ -88,12 +90,17 @@ h1{
 
 .pill{
   text-decoration:none;
-  border:1px solid var(--border);
-  background:#fff;
+  border:1px solid var(--cardBorder);
+  background:rgba(20,22,34,.9);
   padding:9px 14px;
   border-radius:999px;
-  color:var(--ink);
+  color:var(--fg);
   font-size:.95rem;
+}
+
+.pill:hover{
+  border-color:var(--accent);
+  text-decoration:none;
 }
 
 .grid{
@@ -105,7 +112,7 @@ h1{
 
 .card{
   background:var(--card);
-  border:1px solid var(--border);
+  border:1px solid var(--cardBorder);
   border-radius:var(--radius);
   box-shadow:var(--shadow);
   overflow:hidden;
@@ -117,7 +124,7 @@ h1{
   width:100%;
   aspect-ratio:2/3;
   object-fit:cover;
-  background:#e9e6df;
+  background:#0f111a;
   display:block;
 }
 
@@ -153,32 +160,43 @@ h1{
 
 .btn{
   text-decoration:none;
-  background:var(--btn);
-  color:var(--btnText);
   padding:10px 14px;
   border-radius:12px;
   font-size:.95rem;
+  font-weight:600;
+  border:1px solid var(--cardBorder);
+  background:transparent;
+  color:var(--fg);
 }
 
-.btn.secondary{
-  background:#fff;
-  color:var(--ink);
-  border:1px solid var(--border);
+.btn:hover{
+  background:#1c2135;
+  text-decoration:none;
+}
+
+.btn.primary{
+  border-color:var(--accent);
+  background:rgba(134,197,255,.10);
+}
+
+.btn.primary:hover{
+  background:rgba(134,197,255,.16);
 }
 
 .badge{
   display:inline-block;
   padding:6px 10px;
   border-radius:999px;
-  background:rgba(47,93,80,.12);
-  border:1px solid rgba(47,93,80,.22);
+  background:rgba(134,197,255,.10);
+  border:1px solid rgba(134,197,255,.22);
   color:var(--accent);
   font-size:.85rem;
+  width:max-content;
 }
 
 .section-title{
   grid-column:1/-1;
-  margin:34px 0 6px;
+  margin:30px 0 4px;
   text-align:center;
   font-size:1.45rem;
 }
@@ -193,197 +211,142 @@ footer{
 </head>
 
 <body>
-
 <div class="page">
 
 <header>
+  <h1>The Bog Series</h1>
 
-<h1>The Bog Series</h1>
+  <p class="subtitle">
+    A waking world. A sleeping guardian. A living bog that remembers.
+    When balance falters, Saxifraga must decide whether to restore the ancient design
+    or let a world fall silent.
+  </p>
 
-<p class="subtitle">
-A waking world. A sleeping guardian. A living bog that remembers.
-When balance falters, Saxifraga must decide whether to restore the ancient design
-or let a world fall silent.
-</p>
+  <!-- Sitewide Series Navigation -->
+  <div class="series-nav">
+    <a href="anderson-family-legacy.html">Family Legacy</a>
+    <a href="path-of-light-series.html">Path of Light</a>
+    <a href="anders-taft-series.html">Anders Taft</a>
+    <a href="3i-atlas-series.html">3I-Atlas</a>
+    <a href="the-bog-series.html">Bog Series</a>
+    <a href="the-seven-bogs.html">Seven Bogs</a>
+  </div>
 
-<!-- Series navigation -->
-
-<div class="series-nav">
-<a href="anderson-family-legacy.html">Family Legacy</a>
-<a href="path-of-light-series.html">Path of Light</a>
-<a href="anders-taft-series.html">Anders Taft</a>
-<a href="3i-atlas-series.html">3I-Atlas</a>
-<a href="the-bogs-index.html">Bog Series</a>
-<a href="seven-bogs-series.html">Seven Bogs of Mars</a>
-</div>
-
-<div class="topnav">
-<a class="pill" href="index.html">← Back to Home</a>
-<a class="pill" href="the-bogs-index.html">← Back to Series</a>
-</div>
-
+  <div class="topnav">
+    <a class="pill" href="index.html">← Back to Home</a>
+    <a class="pill" href="the-seven-bogs.html">Go to Seven Bogs of Mars →</a>
+  </div>
 </header>
 
 <section class="grid">
 
-<h2 class="section-title">The Bog Awakening Trilogy</h2>
+  <h2 class="section-title">The Bog Awakening Trilogy</h2>
 
-<!-- Book 1 -->
+  <!-- Book 1 -->
+  <article class="card">
+    <img class="cover" src="SheStirsOne.jpg" alt="She Stirs — Book One" loading="lazy">
+    <div class="cardbody">
+      <span class="badge">Book One</span>
+      <h3 class="booktitle">She Stirs</h3>
+      <p class="meta">The Bog Series</p>
+      <p class="blurb">
+        Saxifraga awakens in a world that no longer sings the way it once did.
+        The systems still function, but the bog listens—lonely, living, and waiting.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="she-stirs.html">Details</a>
+      </div>
+    </div>
+  </article>
 
-<article class="card">
-<img class="cover" src="SheStirsOne.jpg" alt="She Stirs – Book One">
+  <!-- Book 2 -->
+  <article class="card">
+    <img class="cover" src="SheSeeksTwo.jpg" alt="She Seeks — Book Two" loading="lazy">
+    <div class="cardbody">
+      <span class="badge">Book Two</span>
+      <h3 class="booktitle">She Seeks</h3>
+      <p class="meta">The Bog Series</p>
+      <p class="blurb">
+        The search deepens. The pod begins to speak through resonance and memory,
+        drawing Saxifraga toward a truth buried in the living bog.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="she-seeks.html">Details</a>
+      </div>
+    </div>
+  </article>
 
-<div class="cardbody">
+  <!-- Book 3 -->
+  <article class="card">
+    <img class="cover" src="SheSowsThree.jpg" alt="She Sows — Book Three" loading="lazy">
+    <div class="cardbody">
+      <span class="badge">Book Three</span>
+      <h3 class="booktitle">She Sows</h3>
+      <p class="meta">The Bog Series</p>
+      <p class="blurb">
+        The cure is life—new frequency, new harmony. A human is taken from Earth,
+        and together they face the truth: the bog is alive… and it is lonely.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="she-sows.html">Details</a>
+      </div>
+    </div>
+  </article>
 
-<span class="badge">Book One</span>
+  <h2 class="section-title">The Seven Bogs of Mars</h2>
 
-<h3 class="booktitle">She Stirs</h3>
+  <!-- Seven Bogs: Book 1 -->
+  <article class="card">
+    <img class="cover" src="BogOfPatience.jpg" alt="The Bog of Patience" loading="lazy">
+    <div class="cardbody">
+      <span class="badge">Book One</span>
+      <h3 class="booktitle">The Bog of Patience</h3>
+      <p class="meta">Seven Bogs of Mars</p>
+      <p class="blurb">
+        Asa walks the silent ground of Mars where the first living bog waits to awaken.
+        Patience becomes the key that restores the ancient harmony between life,
+        water, and the quiet hum of the bees.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="bog-of-patience.html">Details</a>
+      </div>
+    </div>
+  </article>
 
-<p class="meta">The Bog Series</p>
+  <!-- Seven Bogs: Book 2 -->
+  <article class="card">
+    <img class="cover" src="BogOfSilence.jpg" alt="The Bog of Silence" loading="lazy">
+    <div class="cardbody">
+      <span class="badge">Book Two</span>
+      <h3 class="booktitle">The Bog of Silence</h3>
+      <p class="meta">Seven Bogs of Mars</p>
+      <p class="blurb">
+        In the depths of a silent world Asa must quiet the ancient echoes of the past.
+        Only when true silence returns can the One-of-One awaken beneath the bog.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="bog-of-silence.html">Details</a>
+      </div>
+    </div>
+  </article>
 
-<p class="blurb">
-Saxifraga awakens in a world that no longer sings the way it once did.
-The systems still function, but the bog listens—lonely, living, and waiting.
-</p>
-
-<div class="actions">
-<a class="btn secondary" href="bk-anderson-series.html">All Series</a>
-<a class="btn" href="she-stirs.html">Details</a>
-</div>
-
-</div>
-</article>
-
-<!-- Book 2 -->
-
-<article class="card">
-<img class="cover" src="SheSeeksTwo.jpg" alt="She Seeks – Book Two">
-
-<div class="cardbody">
-
-<span class="badge">Book Two</span>
-
-<h3 class="booktitle">She Seeks</h3>
-
-<p class="meta">The Bog Series</p>
-
-<p class="blurb">
-The search deepens. The pod begins to speak through resonance and memory,
-drawing Saxifraga toward a truth buried in the living bog.
-</p>
-
-<div class="actions">
-<a class="btn secondary" href="she-seeks.html">Details</a>
-<a class="btn" href="coming-soon.html">Coming Soon</a>
-</div>
-
-</div>
-</article>
-
-<!-- Book 3 -->
-
-<article class="card">
-<img class="cover" src="SheSowsThree.jpg" alt="She Sows – Book Three">
-
-<div class="cardbody">
-
-<span class="badge">Book Three</span>
-
-<h3 class="booktitle">She Sows</h3>
-
-<p class="meta">The Bog Series</p>
-
-<p class="blurb">
-The cure is life—new frequency, new harmony. A human is taken from Earth,
-and together they face the truth: the bog is alive… and it is lonely.
-</p>
-
-<div class="actions">
-<a class="btn secondary" href="coming-soon.html">Details</a>
-<a class="btn" href="coming-soon.html">Coming Soon</a>
-</div>
-
-</div>
-</article>
-
-<h2 class="section-title">The Seven Bogs of Mars</h2>
-
-<!-- Bog of Patience -->
-
-<article class="card">
-<img class="cover" src="BogOfPatience.jpg" alt="The Bog of Patience">
-
-<div class="cardbody">
-
-<span class="badge">Book One</span>
-
-<h3 class="booktitle">The Bog of Patience</h3>
-
-<p class="meta">Seven Bogs of Mars</p>
-
-<p class="blurb">
-Asa walks the silent ground of Mars where the first living bog waits to awaken.
-Patience becomes the key that restores the ancient harmony between life,
-water, and the quiet hum of the bees.
-</p>
-
-<div class="actions">
-<a class="btn secondary" href="bog-of-patience.html">Details</a>
-</div>
-
-</div>
-</article>
-
-<!-- Bog of Silence -->
-
-<article class="card">
-<img class="cover" src="BogOfSilence.jpg" alt="The Bog of Silence">
-
-<div class="cardbody">
-
-<span class="badge">Book Two</span>
-
-<h3 class="booktitle">The Bog of Silence</h3>
-
-<p class="meta">Seven Bogs of Mars</p>
-
-<p class="blurb">
-In the depths of a silent world Asa must quiet the ancient echoes of the past.
-Only when true silence returns can the One-of-One awaken beneath the bog.
-</p>
-
-<div class="actions">
-<a class="btn secondary" href="bog-of-silence.html">Details</a>
-</div>
-
-</div>
-</article>
-
-<!-- Bog of Movement -->
-
-<article class="card">
-<img class="cover" src="BogOfMovement.jpg" alt="The Bog of Movement">
-
-<div class="cardbody">
-
-<span class="badge">Book Three</span>
-
-<h3 class="booktitle">The Bog of Movement</h3>
-
-<p class="meta">Seven Bogs of Mars</p>
-
-<p class="blurb">
-Life must move or it dies. Asa must restore the flow of water,
-pollen, and living currents through a stagnant bog that has
-forgotten how to breathe.
-</p>
-
-<div class="actions">
-<a class="btn secondary" href="bog-of-movement.html">Details</a>
-</div>
-
-</div>
-</article>
+  <!-- Seven Bogs: Book 3 -->
+  <article class="card">
+    <img class="cover" src="BogOfMovement.jpg" alt="The Bog of Movement" loading="lazy">
+    <div class="cardbody">
+      <span class="badge">Book Three</span>
+      <h3 class="booktitle">The Bog of Movement</h3>
+      <p class="meta">Seven Bogs of Mars</p>
+      <p class="blurb">
+        Life must move or it dies. Asa must restore the flow of water,
+        pollen, and living currents through a stagnant bog that has
+        forgotten how to breathe.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="bog-of-movement.html">Details</a>
+      </div>
+    </div>
+  </article>
 
 </section>
 
@@ -391,11 +354,10 @@ forgotten how to breathe.
 © <span id="year"></span> B.K. Anderson • The Bog Series
 </footer>
 
-</div>
-
 <script>
 document.getElementById("year").textContent=new Date().getFullYear();
 </script>
 
+</div>
 </body>
 </html>
