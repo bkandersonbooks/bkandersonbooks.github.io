@@ -45,6 +45,25 @@ margin:6px 0 0;
 color:var(--muted)
 }
 
+/* sitewide series nav */
+.series-nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+margin-top:14px
+}
+.series-nav a{
+padding:6px 12px;
+border-radius:999px;
+border:1px solid var(--cardBorder);
+background:var(--card);
+color:var(--fg);
+font-size:.9rem;
+text-decoration:none
+}
+.series-nav a:hover{border-color:var(--accent)}
+
 main{
 max-width:1100px;
 margin:0 auto;
@@ -98,14 +117,15 @@ background:transparent;
 color:var(--fg);
 padding:8px 12px;
 border-radius:10px;
-font-size:.95rem
+font-size:.95rem;
+text-decoration:none;
+display:inline-block
 }
-
-.btn:hover{background:#1c2135}
+.btn:hover{background:#1c2135;text-decoration:none}
 
 .back{
 display:inline-block;
-margin:10px 0 20px
+margin:10px 0 12px
 }
 
 footer{
@@ -119,134 +139,99 @@ color:var(--muted)
 <body>
 
 <header>
-<a class="back" href="index.html#3i-atlas-series">← Back to Gallery</a>
-<h1>3I-Atlas Series</h1>
-<p>The interstellar awakening — a voyage between consciousness and creation.</p>
+  <a class="back" href="index.html#3i-atlas-series">← Back to Gallery</a>
+  <h1>3I-Atlas Series</h1>
+  <p>The interstellar awakening — a voyage between consciousness and creation.</p>
+
+  <div class="series-nav">
+    <a href="anderson-family-legacy.html">Family Legacy</a>
+    <a href="path-of-light-series.html">Path of Light</a>
+    <a href="anders-taft-series.html">Anders Taft</a>
+    <a href="3i-atlas-series.html">3I-Atlas</a>
+    <a href="the-bog-series.html">Bog Series</a>
+    <a href="the-seven-bogs.html">Seven Bogs</a>
+  </div>
 </header>
 
 <main class="grid">
 
 <!-- BOOK 1 -->
 <section class="card">
-<img class="cover" src="VoyageOfThe3I-Atlas.jpg" alt="Voyage of the 3I-Atlas" loading="lazy"/>
+  <img class="cover" src="VoyageOfThe3I-Atlas.jpg" alt="Voyage of the 3I-Atlas" loading="lazy"/>
 
-<div>
-<h2>Voyage of the 3I-Atlas</h2>
-<div class="meta">Book One · 3I-Atlas Saga</div>
+  <div>
+    <h2>Voyage of the 3I-Atlas</h2>
+    <div class="meta">Book One · 3I-Atlas Saga</div>
 
-<p>
-The odyssey begins as the crew answers a signal that blurs science and spirit,
-setting course for a return none expected.
-</p>
+    <p>
+      The odyssey begins as the crew answers a signal that blurs science and spirit,
+      setting course for a return none expected.
+    </p>
 
-<div class="actions">
-<a class="btn" href="voyage-of-the-3I-atlas.html">Details</a>
-
-<a class="btn"
-href="Voyage_of_the_3I-Atlas.pdf"
-target="_blank" rel="noopener">
-Sample PDF
-</a>
-</div>
-</div>
+    <div class="actions">
+      <a class="btn" href="voyage-of-3i-atlas.html">Details</a>
+      <a class="btn" href="Voyage_of_the_3I-Atlas.pdf" target="_blank" rel="noopener">Sample PDF</a>
+    </div>
+  </div>
 </section>
-
 
 <!-- BOOK 2 -->
 <section class="card">
+  <img class="cover" src="3I-AtlasTheLunarKey.jpg" alt="3I-Atlas: The Lunar Key cover" loading="lazy"/>
 
-<img class="cover"
-src="3I-AtlasTheLunarKey.jpg"
-alt="3I-Atlas: The Lunar Key cover"
-loading="lazy"/>
+  <div>
+    <h2>3I-Atlas: The Lunar Key</h2>
+    <div class="meta">Book Two · 3I-Atlas Saga</div>
 
-<div>
+    <p>
+      A search for hidden lunar frequencies unveils the bridge between awareness
+      and creation — the key forged in Light.
+    </p>
 
-<h2>3I-Atlas: The Lunar Key</h2>
-
-<div class="meta">Book Two · 3I-Atlas Saga</div>
-
-<p>
-A search for hidden lunar frequencies unveils the bridge between awareness
-and creation — the key forged in Light.
-</p>
-
-<div class="actions">
-
-<a class="btn" href="3i-atlas-the-lunar-key.html">Details</a>
-
-<a class="btn"
-href="3I-Atlas_The_Lunar_Key.pdf"
-target="_blank"
-rel="noopener">
-Sample PDF
-</a>
-
-</div>
-</div>
+    <div class="actions">
+      <a class="btn" href="3i-atlas-the-lunar-key.html">Details</a>
+      <a class="btn" href="3I-Atlas_The_Lunar_Key.pdf" target="_blank" rel="noopener">Sample PDF</a>
+    </div>
+  </div>
 </section>
-
 
 <!-- BOOK 3 -->
 <section class="card">
+  <img class="cover" src="3I-AtlasTheSilenceResonance.png" alt="3I-Atlas: The Silence Resonance cover" loading="lazy"/>
 
-<img class="cover"
-src="3I-AtlasTheSilenceResonance.png"
-alt="3I-Atlas: The Silence Resonance cover"
-loading="lazy"/>
+  <div>
+    <h2>3I-Atlas: The Silence Resonance</h2>
+    <div class="meta">Book Three · 3I-Atlas Saga</div>
 
-<div>
+    <p>
+      The journey turns inward as observation and awareness begin to converge,
+      revealing patterns hidden within the silence between signals.
+    </p>
 
-<h2>3I-Atlas: The Silence Resonance</h2>
-
-<div class="meta">Book Three · 3I-Atlas Saga</div>
-
-<p>
-The journey turns inward as observation and awareness begin to converge,
-revealing patterns hidden within the silence between signals.
-</p>
-
-<div class="actions">
-
-<a class="btn" href="3I-AtlasTheSilenceResonance.html">Details</a>
-
-<a class="btn"
-href="3I-AtlasTheSilenceResonance.pdf"
-target="_blank"
-rel="noopener">
-Sample PDF
-</a>
-
-</div>
-</div>
+    <div class="actions">
+      <a class="btn" href="3i-atlas-the-silence-resonance.html">Details</a>
+      <a class="btn" href="3I-AtlasTheSilenceResonance.pdf" target="_blank" rel="noopener">Sample PDF</a>
+    </div>
+  </div>
 </section>
-
 
 <!-- BOOK 4 -->
 <section class="card">
+  <img class="cover" src="3I-AtlasTheConvergent.jpg" alt="3I-Atlas: The Convergent cover" loading="lazy"/>
 
-<img class="cover"
-src="3I-AtlasTheConvergent.jpg"
-alt="3I-Atlas: The Convergent cover"
-loading="lazy"/>
+  <div>
+    <h2>3I-Atlas: The Convergent</h2>
+    <div class="meta">Book Four · 3I-Atlas Saga</div>
 
-<div>
+    <p>
+      Observation, interpretation, and human response converge as the mystery
+      of 3I-Atlas deepens during its passage through the solar system.
+    </p>
 
-<h2>3I-Atlas: The Convergent</h2>
-
-<div class="meta">Book Four · 3I-Atlas Saga</div>
-
-<p>
-Observation, interpretation, and human response converge as the mystery
-of 3I-Atlas deepens during its passage through the solar system.
-</p>
-
-<div class="actions">
-
-<a class="btn" href="3i-atlas-the-convergent.html">Details</a>
-
-</div>
-</div>
+    <div class="actions">
+      <a class="btn" href="3i-atlas-the-convergent.html">Details</a>
+    </div>
+  </div>
 </section>
 
 </main>
