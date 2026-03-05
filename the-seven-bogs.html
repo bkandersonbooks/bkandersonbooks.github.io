@@ -39,13 +39,17 @@ header h1{margin:0;font-size:34px}
 
       <div class="pills">
         <a class="pill" href="index.html">← Back to Home</a>
-        <a class="pill" href="seven-bogs-series.html">View Bog Series →</a>
+        <a class="pill" href="the-bog-series.html">View Bog Series →</a>
       </div>
     </div>
   </div>
 
-  <div class="footer">© B.K. Anderson & Anders Taft</div>
+  <div class="footer">© <span id="year"></span> B.K. Anderson & Anders Taft</div>
 </div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
