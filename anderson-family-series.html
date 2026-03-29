@@ -3,10 +3,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>The Anderson Family Legacy — Book Details</title>
-<meta name="description" content="Details for the book The Anderson Family Legacy by B.K. Anderson and Anders Taft."/>
-<meta name="keywords" content="B.K. Anderson, Anders Taft, Anderson Family Legacy, genealogy, Tennessee history, family heritage"/>
-<meta name="author" content="B.K. Anderson & Anders Taft"/>
+<title>The Anderson Family Series</title>
+<meta name="description" content="The Anderson Family Series by B.K. Anderson — eight family legacy books rooted in Tennessee, Virginia, and beyond."/>
+<meta name="author" content="B.K. Anderson"/>
 
 <style>
 :root{
@@ -21,50 +20,85 @@ html,body{
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 
-/* Header */
 header{text-align:center;padding:24px 16px}
-header h1{margin:4px 0 0;font-size:1.9rem}
+header h1{margin:4px 0 0;font-size:2rem}
 header p{margin:6px 0 0;color:var(--muted)}
 
-/* Navigation buttons */
-.top-nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
+.top-nav{
+  display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:8px
+}
 .back,.back-link{
   border:1px solid var(--cardBorder); background:var(--card);
   padding:8px 12px; border-radius:999px; font-weight:600;
   box-shadow:0 2px 8px rgba(0,0,0,.25);
 }
 .back:hover,.back-link:hover{border-color:var(--accent);text-decoration:none}
-.back-link:active{transform:translateY(1px)}
 
-/* Layout */
-main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
+main{max-width:1200px;margin:0 auto;padding:0 16px 60px}
+
+.grid{
+  display:grid;
+  gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
 .card{
-  display:grid; gap:18px; background:var(--card);
-  border:1px solid var(--cardBorder); border-radius:16px; padding:16px;
+  background:var(--card);
+  border:1px solid var(--cardBorder);
+  border-radius:16px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
 }
-@media(min-width:900px){ .card{grid-template-columns:380px 1fr} }
 
-/* Cover + buttons */
 .thumb{
-  display:block; margin:0 auto; max-width:300px;
-  border-radius:12px; border:1px solid var(--cardBorder);
-}
-.actions{
-  display:flex; gap:12px; flex-wrap:wrap;
-  justify-content:center; margin-top:16px;
+  display:block;
+  width:100%;
+  max-width:220px;
+  margin:18px auto 0;
+  border-radius:12px;
+  border:1px solid var(--cardBorder);
 }
 
-/* Unified button styles */
-.btn, .buy-btn{
+.card-body{
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  flex:1;
+}
+
+.card-title{
+  font-size:1.05rem;
+  font-weight:700;
+}
+
+.card-sub{
+  font-size:.92rem;
+  color:var(--muted);
+}
+
+.card-desc{
+  font-size:.92rem;
+  line-height:1.5;
+}
+
+.actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:auto;
+}
+
+.btn,.buy-btn{
   display:inline-flex; align-items:center; justify-content:center;
   border:1px solid var(--cardBorder);
   background:transparent;
   color:var(--fg);
   padding:8px 12px;
   border-radius:10px;
-  font-size:.95rem;
+  font-size:.92rem;
   font-weight:600;
-  cursor:pointer;
   text-decoration:none;
 }
 .btn:hover{
@@ -74,19 +108,17 @@ main{max-width:1100px;margin:0 auto;padding:0 16px 60px}
 .buy-btn{
   border-color:var(--accent);
   background:rgba(134,197,255,.08);
-  color:var(--fg);
 }
 .buy-btn:hover{
   background:rgba(134,197,255,.14);
   text-decoration:none;
 }
 
-/* Text blocks */
-h2{margin:0 0 10px;font-size:1.2rem}
-.meta{color:var(--muted);font-size:.95rem;margin:12px 0 14px}
-
-/* Footer */
-footer{padding:26px 16px;text-align:center;color:var(--muted)}
+footer{
+  padding:26px 16px;
+  text-align:center;
+  color:var(--muted);
+}
 </style>
 </head>
 
@@ -95,7 +127,6 @@ footer{padding:26px 16px;text-align:center;color:var(--muted)}
 <header>
   <div class="top-nav">
     <a class="back" href="index.html">← Back to Gallery</a>
-
     <a class="back-link" href="index.html"
       onclick="
         try{
@@ -108,48 +139,51 @@ footer{padding:26px 16px;text-align:center;color:var(--muted)}
     </a>
   </div>
 
-  <h1>The Anderson Family Legacy</h1>
-  <p>Family Legacy Series — Volume II</p>
+  <h1>The Anderson Family Series</h1>
+  <p>Eight family legacy books rooted in Tennessee, Virginia, and beyond</p>
 </header>
 
 <main>
-  <section class="card">
+  <section class="grid">
 
-    <!-- LEFT COLUMN: cover + PDF links -->
-    <div style="text-align:center">
+    <article class="card">
       <img class="thumb" loading="lazy" src="AndersonFamilyLegacy.jpg" alt="The Anderson Family Legacy cover"/>
-
-      <div class="actions">
-        <a class="btn" href="AndersonFamilyLegacy.pdf" target="_blank" rel="noopener">📖 Read Sample PDF</a>
-        <a class="btn" href="AndersonFamilyLegacy.pdf" download>⬇️ Download PDF</a>
-
-        <!-- IMPORTANT: make this match your SERIES PAGE filename -->
-        <a class="btn" href="anderson-family-series.html">View Series</a>
+      <div class="card-body">
+        <div class="card-title">The Anderson Family Legacy</div>
+        <div class="card-sub">Family Legacy Series — Volume II</div>
+        <p class="card-desc">Stories, photographs, and memories preserving the Anderson family line in remembrance and grace.</p>
+        <div class="actions">
+          <a class="btn" href="anderson-family-legacy.html">View Details →</a>
+          <a class="buy-btn" href="https://shop.ingramspark.com/b/084?params=hwpBsCpYv4TRMfXhNZBdibZ0tYjIFUEXl7W1mtYicjL" target="_blank" rel="noopener">Buy Direct</a>
+        </div>
       </div>
-    </div>
+    </article>
 
-    <!-- RIGHT COLUMN: about + nav -->
-    <div>
-      <h2>About This Book</h2>
-      <p><em>The Anderson Family Legacy</em> preserves the stories, photographs, and memories of generations rooted in Tennessee. Through careful research and heartfelt reflection, B.K. Anderson and Anders Taft bring to light the strength, courage, and enduring spirit of the Anderson family line, uniting past and present in remembrance and grace.</p>
-
-      <div class="meta">
-        <div><strong>Author:</strong> B.K. Anderson &amp; Anders Taft</div>
-        <div><strong>Series:</strong> Family Legacy Series</div>
-        <div><strong>Format:</strong> Paperback &amp; eBook</div>
+    <article class="card">
+      <img class="thumb" loading="lazy" src="AndrewBerryAnderson.jpg" alt="Andrew Berry Anderson cover"/>
+      <div class="card-body">
+        <div class="card-title">Andrew Berry Anderson</div>
+        <div class="card-sub">Anderson family volume</div>
+        <p class="card-desc">A legacy volume centered on Andrew Berry Anderson and his place in the family line.</p>
+        <div class="actions">
+          <a class="btn" href="andrew-berry-anderson.html">View Details →</a>
+        </div>
       </div>
+    </article>
 
-      <div class="actions">
-        <a class="btn" href="andrew-berry-anderson.html">← Previous: Andrew Berry Anderson</a>
-        <a class="btn" href="brown-and-adams-legacy.html">Next: Brown &amp; Adams Family Legacy →</a>
-
-        <a class="buy-btn"
-           href="https://shop.ingramspark.com/b/084?params=hwpBsCpYv4TRMfXhNZBdibZ0tYjIFUEXl7W1mtYicjL"
-           target="_blank" rel="noopener">
-          Buy Direct
-        </a>
+    <article class="card">
+      <img class="thumb" loading="lazy" src="BrownAndAdamsLegacy.jpg" alt="Brown and Adams Family Legacy cover"/>
+      <div class="card-body">
+        <div class="card-title">Brown &amp; Adams Family Legacy</div>
+        <div class="card-sub">Family legacy volume</div>
+        <p class="card-desc">A preserved branch of family history carried through memory, place, and lineage.</p>
+        <div class="actions">
+          <a class="btn" href="brown-and-adams-legacy.html">View Details →</a>
+        </div>
       </div>
-    </div>
+    </article>
+
+    <!-- Add your other 5 books here in the same format -->
 
   </section>
 </main>
@@ -159,4 +193,3 @@ footer{padding:26px 16px;text-align:center;color:var(--muted)}
 
 </body>
 </html>
-
