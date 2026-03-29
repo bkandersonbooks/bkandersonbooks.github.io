@@ -138,16 +138,32 @@ h1{
   padding:16px;
   text-align:center;
   box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  min-height:460px;
 }
 
 .book-card img{
   display:block;
   width:100%;
   max-width:180px;
-  height:auto;
+  height:270px;
+  object-fit:cover;
   margin:0 auto 14px;
   border-radius:12px;
   border:1px solid rgba(35,38,58,.65);
+  background:#0f1220;
+}
+
+.book-actions{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:auto;
+}
 }
 
 .book-card h3{
