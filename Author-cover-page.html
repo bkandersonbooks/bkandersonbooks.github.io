@@ -1,1 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B.K. Anderson | Author</title>
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --fg:#e8f0fe;
+      --muted:#b2bfdc;
+      --accent:#86c5ff;
+      --card:#141622;
+      --cardBorder:#23263a;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .page{max-width:1180px;margin:0 auto;padding:32px 18px 60px;}
+
+    .hero{
+      display:grid;
+      grid-template-columns:280px 1fr;
+      gap:28px;
+      align-items:center;
+      background:linear-gradient(180deg, rgba(20,22,34,.98), rgba(11,12,16,.95));
+      border:1px solid var(--cardBorder);
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 18px 50px rgba(0,0,0,.35);
+    }
+
+    .portrait-wrap{
+      background:rgba(255,255,255,.02);
+      border:1px solid var(--cardBorder);
+      border-radius:22px;
+      padding:16px;
+      text-align:center;
+      min-height:360px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .portrait-wrap img{
+      width:100%;
+      max-width:220px;
+      height:auto;
+      border-radius:18px;
+      display:block;
+      border:1px solid rgba(255,255,255,.08);
+      background:#101320;
+    }
+
+    .hero-copy h1{
+      margin:0 0 10px;
+      font-size:clamp(34px,4vw,56px);
+      line-height:1.08;
+    }
+
+    .tagline{
+      margin:0 0 18px;
+      color:var(--accent);
+      font-size:clamp(16px,2vw,22px);
+    }
+
+    .hero-copy p{
+      margin:0 0 16px;
+      color:var(--muted);
+      line-height:1.7;
+      max-width:780px;
+      font-size:1.05rem;
+    }
+
+    .actions,
+    .series-links{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .actions{margin-top:20px}
+    .series-links{margin-top:14px}
+
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      border:1px solid var(--cardBorder);
+      background:rgba(20,22,34,.9);
+      border-radius:999px;
+      color:var(--fg);
+      font-weight:600;
+    }
+
+    .btn:hover{
+      border-color:var(--accent);
+      text-decoration:none;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:22px;
+      margin-top:26px;
+    }
+
+    .card{
+      background:rgba(20,22,34,.95);
+      border:1px solid var(--cardBorder);
+      border-radius:22px;
+      padding:22px;
+    }
+
+    .card h2{
+      margin:0 0 12px;
+      font-size:1.4rem;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.7;
+    }
+
+    .series-list{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+      margin-top:16px;
+    }
+
+    .series-item{
+      border:1px solid var(--cardBorder);
+      background:rgba(11,12,16,.75);
+      border-radius:18px;
+      padding:16px;
+    }
+
+    .series-item h3{
+      margin:0 0 6px;
+      font-size:1.06rem;
+    }
+
+    .series-item p{
+      margin:0 0 12px;
+      color:var(--muted);
+      line-height:1.55;
+      min-height:48px;
+    }
+
+    footer{
+      margin-top:28px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .portrait-wrap{min-height:280px}
+      .grid{grid-template-columns:1fr}
+      .series-list{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <div class="portrait-wrap">
+        <!-- Replace with your photo file name -->
+        <img src="your-photo.jpg" alt="Portrait of B.K. Anderson" loading="lazy">
+      </div>
+
+      <div class="hero-copy">
+        <h1>B.K. Anderson</h1>
+        <p class="tagline">Author of reflective fiction, family legacy, spiritual writing, and cosmic exploration.</p>
+        <p>
+          Welcome to the official author page of B.K. Anderson. Here readers can discover the book series,
+          learn more about the heart behind the stories, and explore works that move from Mars and living bogs
+          to ancestry, remembrance, light, and wonder.
+        </p>
+        <p>
+          This page can serve as your main introduction page, with links out to each series, featured books,
+          direct buy pages, and downloadable samples later.
+        </p>
+
+        <div class="actions">
+          <a class="btn" href="index.html">Enter Main Site</a>
+          <a class="btn" href="mailto:your-email@example.com">Contact</a>
+        </div>
+
+        <div class="series-links">
+          <a class="btn" href="the-bog-series.html">Bog Series</a>
+          <a class="btn" href="the-seven-bogs.html">Seven Bogs of Mars</a>
+          <a class="btn" href="3i-atlas-series.html">3I-Atlas</a>
+          <a class="btn" href="anderson-family-legacy.html">Family Legacy</a>
+          <a class="btn" href="path-of-light-series.html">Path of Light</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Author Bio</h2>
+        <p>
+          B.K. Anderson writes stories shaped by endurance, memory, restoration, and spiritual reflection.
+          Her work ranges from speculative worlds and cosmic mysteries to family-history projects and contemplative
+          writing rooted in meaning, faith, and remembrance. Across each series, her focus remains the same:
+          to create books that invite readers to pause, reflect, and feel part of something larger.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Featured Series</h2>
+        <div class="series-list">
+          <div class="series-item">
+            <h3>The Bog Series</h3>
+            <p>The beginning trilogy of awakening, living worlds, and the first movement toward restoration.</p>
+            <a class="btn" href="the-bog-series.html">View Series</a>
+          </div>
+
+          <div class="series-item">
+            <h3>The Seven Bogs of Mars</h3>
+            <p>An eight-book restoration arc built around healing, belonging, and the waking of ancient worlds.</p>
+            <a class="btn" href="the-seven-bogs.html">View Series</a>
+          </div>
+
+          <div class="series-item">
+            <h3>3I-Atlas</h3>
+            <p>Cosmic observation, wonder, and human response told through a larger unfolding mystery.</p>
+            <a class="btn" href="3i-atlas-series.html">View Series</a>
+          </div>
+
+          <div class="series-item">
+            <h3>Anderson Family Legacy</h3>
+            <p>Books of remembrance, genealogy, and preserved family history for future generations.</p>
+            <a class="btn" href="anderson-family-legacy.html">View Series</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      © <span id="y"></span> B.K. Anderson — All Rights Reserved
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
