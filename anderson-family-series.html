@@ -5,121 +5,147 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anderson Family Series | B.K. Anderson Books</title>
 
-  <style>
-    body {
-      background: #0b0c10;
-      color: #e8f0fe;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
+ <style>
+  body {
+    background: #0b0c10;
+    color: #e8f0fe;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
 
-    .panel {
-      background: #141622;
-      border: 1px solid #23263a;
-      border-radius: 14px;
-      padding: 18px;
-      max-width: 1100px;
-      margin: 0 auto 24px auto;
-    }
+  .panel {
+    background: #141622;
+    border: 1px solid #23263a;
+    border-radius: 14px;
+    padding: 18px;
+    max-width: 1100px;
+    margin: 0 auto 24px auto;
+  }
 
-    .top {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 18px;
-    }
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
 
-    .icon {
-      font-size: 30px;
-    }
+  .icon {
+    font-size: 30px;
+  }
 
-    .title {
-      font-size: 18px;
-      font-weight: bold;
-      margin: 0;
-    }
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
 
-    .hint {
-      font-size: 14px;
-      color: #b2bfdc;
-      margin-top: 4px;
-    }
+  .hint {
+    font-size: 14px;
+    color: #b2bfdc;
+    margin-top: 4px;
+  }
 
-    .actions-top {
-      margin-top: 10px;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
+  .actions-top {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
 
-    .btn {
-      display: inline-block;
-      background: #86c5ff;
-      color: #0b0c10;
-      text-decoration: none;
-      padding: 8px 14px;
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: bold;
-    }
+  .btn {
+    display: inline-block;
+    background: #86c5ff;
+    color: #0b0c10;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
 
-    .book-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 18px;
-      margin-top: 18px;
-    }
+  .book-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 18px;
+  }
 
+  .row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 18px;
+    align-items: center;
+    min-height: 150px;
+    padding: 16px 0;
+    border-top: 1px solid #23263a;
+  }
+
+  .row:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .cover {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+    border: 1px solid #23263a;
+    background: #0b0c10;
+    display: block;
+  }
+
+  .book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 120px;
+  }
+
+  .book-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 4px 0;
+    line-height: 1.25;
+  }
+
+  .series {
+    color: #b2bfdc;
+    font-size: 14px;
+    margin: 0 0 12px 0;
+    line-height: 1.35;
+  }
+
+  .book-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .back-link {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
     .row {
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-      padding: 10px 0;
-      border-top: 1px solid #23263a;
-    }
-
-    .row:first-child {
-      border-top: none;
-      padding-top: 0;
+      grid-template-columns: 70px 1fr;
+      gap: 14px;
+      min-height: 135px;
     }
 
     .cover {
-      width: 80px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 6px;
-      border: 1px solid #23263a;
-      background: #0b0c10;
+      width: 70px;
+      height: 105px;
     }
 
     .book-info {
-      flex: 1;
+      min-height: 105px;
     }
-
-    .book-title {
-      font-size: 16px;
-      font-weight: bold;
-      margin: 0 0 4px 0;
-    }
-
-    .series {
-      color: #b2bfdc;
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    .book-actions {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .back-link {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-  </style>
+  }
+</style> 
 </head>
 <body>
 
