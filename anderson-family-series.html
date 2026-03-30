@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B.K. Anderson Books</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anderson Family Series | B.K. Anderson Books</title>
 
   <style>
     body {
@@ -17,117 +17,226 @@
     .panel {
       background: #141622;
       border: 1px solid #23263a;
-      border-radius: 10px;
-      padding: 15px;
-      margin-bottom: 20px;
+      border-radius: 14px;
+      padding: 18px;
+      max-width: 1100px;
+      margin: 0 auto 24px auto;
     }
 
     .top {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
+      gap: 12px;
+      margin-bottom: 18px;
     }
 
     .icon {
-      font-size: 24px;
-      margin-right: 10px;
+      font-size: 30px;
     }
 
     .title {
       font-size: 18px;
       font-weight: bold;
+      margin: 0;
     }
 
     .hint {
-      font-size: 13px;
-      color: #b2bfdc;
-    }
-
-    .row {
-      display: flex;
-      gap: 15px;
-      align-items: flex-start;
-      margin-bottom: 15px;
-    }
-
-    .cover {
-      width: 90px;
-      border-radius: 6px;
-    }
-
-    .series {
       font-size: 14px;
       color: #b2bfdc;
-      margin-bottom: 8px;
+      margin-top: 4px;
     }
 
-    .actions {
-      margin-top: 8px;
+    .actions-top {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
     }
 
     .btn {
       display: inline-block;
-      padding: 6px 10px;
       background: #86c5ff;
-      color: #000;
+      color: #0b0c10;
       text-decoration: none;
-      border-radius: 5px;
-      margin-right: 6px;
-      margin-top: 6px;
-      font-size: 13px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
     }
 
-    .btn:hover {
-      background: #a7d6ff;
+    .book-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .row {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 10px 0;
+      border-top: 1px solid #23263a;
+    }
+
+    .row:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .cover {
+      width: 90px;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid #23263a;
+      background: #0b0c10;
+      flex-shrink: 0;
+    }
+
+    .book-info {
+      flex: 1;
+    }
+
+    .book-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 0 4px 0;
+    }
+
+    .series {
+      color: #b2bfdc;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .book-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .back-link {
+      max-width: 1100px;
+      margin: 0 auto;
     }
   </style>
 </head>
-
 <body>
 
-   <!-- Anderson Family Series -->
   <article class="panel">
     <div class="top">
       <div class="icon">📚</div>
       <div>
         <div class="title">Anderson Family Series</div>
         <div class="hint">Family history, legacy, and remembrance</div>
-        <a class="btn" href="jw-anderson.html">Details</a>
-        <a class="btn" href="#">Buy Direct</a>
+        <div class="actions-top">
+          <a class="btn" href="books.html">Browse All Books</a>
+          <a class="btn" href="index.html">← Back to Home</a>
+        </div>
       </div>
     </div>
 
-    <div class="body">
+    <div class="book-grid">
 
+      <!-- Book 1 -->
       <div class="row">
-        <img class="cover" src="JWAnderson.jpg" alt="J.W. Anderson">
-        <div>
-          <div class="title">J.W. Anderson</div>
+        <img class="cover" src="jw-anderson.jpg" alt="J.W. Anderson cover" />
+        <div class="book-info">
+          <div class="book-title">J.W. Anderson</div>
           <div class="series">Anderson Family Series</div>
-          <div class="actions">                  
+          <div class="book-actions">
+            <a class="btn" href="jw-anderson.html">Details</a>
+            <a class="btn" href="#">Buy Direct</a>
           </div>
         </div>
       </div>
 
+      <!-- Book 2 -->
       <div class="row">
-        <img class="cover" src="MinnieBryan.jpg" alt="Minnie Bryan">
-        <div>
-          <div class="title">Minnie Bryan</div>
+        <img class="cover" src="minnie-bryan.jpg" alt="Minnie Bryan cover" />
+        <div class="book-info">
+          <div class="book-title">Minnie Bryan</div>
           <div class="series">Anderson Family Series</div>
-          <div class="actions">
+          <div class="book-actions">
             <a class="btn" href="minnie-bryan.html">Details</a>
             <a class="btn" href="#">Buy Direct</a>
           </div>
         </div>
       </div>
 
+      <!-- Book 3 -->
       <div class="row">
-        <img class="cover" src="AndersonManuscripe.jpg" alt="Anderson Manuscripe">
-        <div>
-          <div class="title">Anderson Manuscripe</div>
+        <img class="cover" src="anderson-manuscripe.jpg" alt="Anderson Manuscripe cover" />
+        <div class="book-info">
+          <div class="book-title">Anderson Manuscripe</div>
           <div class="series">Anderson Family Series</div>
-          <div class="actions">
+          <div class="book-actions">
             <a class="btn" href="anderson-manuscripe.html">Details</a>
+            <a class="btn" href="#">Buy Direct</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 4 -->
+      <div class="row">
+        <img class="cover" src="book4.jpg" alt="Book 4 cover" />
+        <div class="book-info">
+          <div class="book-title">Book Title 4</div>
+          <div class="series">Anderson Family Series</div>
+          <div class="book-actions">
+            <a class="btn" href="book4.html">Details</a>
+            <a class="btn" href="#">Buy Direct</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 5 -->
+      <div class="row">
+        <img class="cover" src="book5.jpg" alt="Book 5 cover" />
+        <div class="book-info">
+          <div class="book-title">Book Title 5</div>
+          <div class="series">Anderson Family Series</div>
+          <div class="book-actions">
+            <a class="btn" href="book5.html">Details</a>
+            <a class="btn" href="#">Buy Direct</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 6 -->
+      <div class="row">
+        <img class="cover" src="book6.jpg" alt="Book 6 cover" />
+        <div class="book-info">
+          <div class="book-title">Book Title 6</div>
+          <div class="series">Anderson Family Series</div>
+          <div class="book-actions">
+            <a class="btn" href="book6.html">Details</a>
+            <a class="btn" href="#">Buy Direct</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 7 -->
+      <div class="row">
+        <img class="cover" src="book7.jpg" alt="Book 7 cover" />
+        <div class="book-info">
+          <div class="book-title">Book Title 7</div>
+          <div class="series">Anderson Family Series</div>
+          <div class="book-actions">
+            <a class="btn" href="book7.html">Details</a>
+            <a class="btn" href="#">Buy Direct</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 8 -->
+      <div class="row">
+        <img class="cover" src="book8.jpg" alt="Book 8 cover" />
+        <div class="book-info">
+          <div class="book-title">Book Title 8</div>
+          <div class="series">Anderson Family Series</div>
+          <div class="book-actions">
+            <a class="btn" href="book8.html">Details</a>
             <a class="btn" href="#">Buy Direct</a>
           </div>
         </div>
