@@ -2,148 +2,195 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>John W. Anderson & Minnie Bryan | Anderson Family Legacy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John W. Anderson & Minnie Bryan — Book Details</title>
 
   <style>
-    body{
-      font-family: Georgia, "Times New Roman", serif;
-      background:#f6f5f2;
-      margin:0;
-      padding:0;
-      color:#222;
+    body {
+      background: #0b0c10;
+      color: #e8f0fe;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
     }
 
-    .page{
-      max-width:900px;
-      margin:0 auto;
-      padding:24px;
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
-    header{
-      text-align:center;
-      margin-bottom:32px;
+    .back-links {
+      margin-bottom: 20px;
     }
 
-    h1{
-      font-size:2rem;
-      margin-bottom:6px;
+    .panel {
+      background: #141622;
+      border: 1px solid #23263a;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
     }
 
-    .subtitle{
-      opacity:.85;
-      font-size:1.05rem;
+    .book-layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: flex-start;
     }
 
-    .book-layout{
-      display:grid;
-      grid-template-columns:280px 1fr;
-      gap:32px;
-      align-items:start;
+    .cover-wrap {
+      flex: 0 0 280px;
     }
 
-    .book-cover{
-      width:100%;
-      border-radius:14px;
-      box-shadow:0 6px 20px rgba(0,0,0,.15);
+    .cover {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 10px;
+      border: 1px solid #23263a;
+      display: block;
     }
 
-    .description p{
-      line-height:1.6;
-      margin-bottom:14px;
+    .content {
+      flex: 1 1 420px;
     }
 
-    .actions{
-      margin-top:20px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
+    h1 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 32px;
+      color: #ffffff;
     }
 
-    .btn{
-      text-decoration:none;
-      padding:10px 16px;
-      border-radius:12px;
-      border:1px solid #333;
-      color:#333;
-      background:#fff;
-      display:inline-block;
+    .series {
+      font-size: 16px;
+      color: #86c5ff;
+      margin-bottom: 16px;
     }
 
-    .btn:hover{
-      opacity:.85;
+    .meta {
+      color: #b2bfdc;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 18px;
     }
 
-    footer{
-      margin-top:50px;
-      text-align:center;
-      font-size:.9rem;
-      opacity:.75;
+    .description {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #e8f0fe;
+      margin-bottom: 24px;
     }
 
-    @media(max-width:700px){
-      .book-layout{
-        grid-template-columns:1fr;
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #86c5ff;
+      color: #0b0c10;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.88;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #e8f0fe;
+      border: 1px solid #3a425c;
+    }
+
+    .details-box {
+      background: #10131d;
+      border: 1px solid #23263a;
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 20px;
+    }
+
+    .details-box p {
+      margin: 8px 0;
+      color: #d6def3;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 26px;
+      }
+
+      .cover-wrap {
+        flex: 1 1 100%;
+      }
+
+      .cover {
+        max-width: 240px;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="page">
+  <div class="container">
 
-    <header>
-      <h1>John W. Anderson &amp; Minnie Bryan</h1>
-      <div class="subtitle">Anderson Family Legacy</div>
-    </header>
+    <div class="back-links">
+      <a class="btn btn-secondary" href="anderson-family-series.html">← Back to Anderson Family Series</a>
+    </div>
 
-    <section class="book-layout">
-      <div>
-        <img src="JWAnderson.png"
-             alt="Cover of John W. Anderson & Minnie Bryan"
-             class="book-cover">
-      </div>
+    <div class="panel">
+      <div class="book-layout">
 
-      <div class="description">
-        <p>
-          This volume of the <em>Anderson Family Legacy</em> preserves the lives,
-          journeys, and quiet strength of John W. Anderson and Minnie Bryan.
-          Rooted in Tennessee and carried westward to California, their story
-          reflects family, perseverance, and generational continuity.
-        </p>
+        <div class="cover-wrap">
+          <img class="cover" src="JWAnderson.jpg" alt="John W Anderson Cover">
+        </div>
 
-        <p>
-          Drawing from photographs, records, and family memories, this book
-          honors the everyday lives that shaped future generations—offering
-          both historical detail and heartfelt reflection.
-        </p>
+        <div class="content">
+          <h1>John W. Anderson & Minnie Bryan</h1>
+          <div class="series">Anderson Family Legacy Series</div>
 
-        <div class="actions">
-          <!-- Paste your IngramSpark Direct Buy link below -->
-          <a class="btn"
-             href="PASTE_INGRAMSPARK_LINK_HERE"
-             target="_blank"
-             rel="noopener">
-            Buy Direct from IngramSpark
-          </a>
+          <div class="meta">
+            By B.K. Anderson<br>
+            Paperback • 6×9 • Cream Paper
+          </div>
 
-          <a class="btn"
-             href="John Watson Anderson.pdf"
-             target="_blank"
-             rel="noopener">
-            Read PDF
-          </a>
+          <div class="description">
+            <p>
+              This volume preserves the legacy of John W. Anderson and Minnie Bryan, reflecting a life built on family,
+              perseverance, and the movement westward through changing generations.
+            </p>
 
-          <a class="btn" href="anderson-family-series.html">
-            Back to Anderson Family Series
-          </a>
+            <p>
+              Through stories, records, and remembrance, this book honors the roots of the Anderson line and carries
+              that legacy forward for those yet to come.
+            </p>
+          </div>
+
+          <div class="actions">
+            <a class="btn" href="#">Buy Direct</a>
+            <a class="btn" href="#">Read PDF</a>
+            <a class="btn btn-secondary" href="anderson-family-series.html">View Series</a>
+          </div>
+
+          <div class="details-box">
+            <p><strong>Series:</strong> Anderson Family Legacy Series</p>
+            <p><strong>Format:</strong> Paperback</p>
+            <p><strong>Trim Size:</strong> 6×9</p>
+            <p><strong>Paper:</strong> Cream</p>
+            <p><strong>Author:</strong> B.K. Anderson</p>
+          </div>
+
         </div>
       </div>
-    </section>
-
-    <footer>
-      © 2025 B.K. Anderson · Family Legacy Series
-    </footer>
+    </div>
 
   </div>
 </body>
