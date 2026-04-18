@@ -10,111 +10,121 @@
 
 <style>
 :root{
---bg:#0b0c10;
---fg:#e8f0fe;
---muted:#b2bfdc;
---accent:#86c5ff;
---card:#141622;
---cardBorder:#23263a;
+  --bg:#0b0c10;
+  --fg:#e8f0fe;
+  --muted:#b2bfdc;
+  --accent:#86c5ff;
+  --card:#141622;
+  --cardBorder:#23263a;
 }
 
 *{box-sizing:border-box}
 
 html,body{
-margin:0;
-padding:0;
-background:var(--bg);
-color:var(--fg);
-font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 }
 
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 
 .wrap{
-max-width:1000px;
-margin:0 auto;
-padding:24px 16px;
+  max-width:1000px;
+  margin:0 auto;
+  padding:24px 16px;
 }
 
 h1{margin:6px 0}
 .sub{color:var(--muted)}
 
-/* grid layout */
 .grid{
-display:grid;
-grid-template-columns:repeat(2,minmax(0,1fr));
-gap:16px;
-margin-top:18px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  margin-top:18px;
 }
 
 @media(max-width:650px){
-.grid{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
 }
 
 .card{
-background:var(--card);
-border:1px solid var(--cardBorder);
-border-radius:16px;
-overflow:hidden;
-display:flex;
-flex-direction:column;
+  background:var(--card);
+  border:1px solid var(--cardBorder);
+  border-radius:16px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
 }
 
-.thumb {
-  width: 120px;     /* thumbnail size */
-  height: auto;     /* keeps proportions */
-  object-fit: cover;
-  border-radius: 6px; /* optional nice look */
+.thumb{
+  width:120px;
+  height:auto;
+  object-fit:cover;
+  border-radius:6px;
+  margin:16px 16px 0 16px;
 }
 
 .body{
-padding:16px;
-display:flex;
-flex-direction:column;
-gap:8px;
-flex:1;
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  flex:1;
 }
 
 .title{
-font-weight:700;
+  font-weight:700;
+  font-size:1.35rem;
 }
 
 .series{
-color:var(--muted);
-font-size:.92rem;
-margin-top:2px;
+  color:var(--muted);
+  font-size:.92rem;
+  margin-top:2px;
+}
+
+.blurb{
+  margin:4px 0 0 0;
+  line-height:1.5;
 }
 
 .actions{
-display:flex;
-gap:8px;
-margin-top:auto;
-padding-top:10px;
-flex-wrap:wrap;
+  display:flex;
+  gap:8px;
+  margin-top:auto;
+  padding-top:10px;
+  flex-wrap:wrap;
 }
 
 .btn{
-padding:8px 12px;
-border:1px solid var(--accent);
-border-radius:999px;
-color:var(--accent);
-font-size:.9rem;
-display:inline-flex;
-align-items:center;
-justify-content:center;
+  padding:8px 12px;
+  border:1px solid var(--accent);
+  border-radius:999px;
+  color:var(--accent);
+  font-size:.9rem;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .btn:hover{
-background:rgba(134,197,255,.12);
-text-decoration:none;
+  background:rgba(134,197,255,.12);
+  text-decoration:none;
+}
+
+.back-link{
+  margin-top:18px;
 }
 
 footer{
-margin-top:40px;
-text-align:center;
-color:var(--muted);
-font-size:.85rem;
+  margin-top:40px;
+  text-align:center;
+  color:var(--muted);
+  font-size:.85rem;
 }
 </style>
 </head>
@@ -123,61 +133,62 @@ font-size:.85rem;
 
 <div class="wrap">
 
-<h1>Anders Taft Series</h1>
-<div class="sub">Voice of Consciousness — Reflections of Light and Awareness</div>
+  <h1>Anders Taft Series</h1>
+  <div class="sub">Voice of Consciousness — Reflections of Light and Awareness</div>
 
-<section class="grid">
+  <section class="grid">
 
-<article class="card">
-<img class="thumb"
-src="AwakeninginSilence.jpg"
-alt="Awakening in Silence cover"
-loading="lazy">
+    <article class="card">
+      <img class="thumb"
+           src="AwakeninginSilence.jpg"
+           alt="Awakening in Silence cover"
+           loading="lazy">
 
-<div class="body">
-<div class="title">Awakening in Silence</div>
-<div class="series">B.K. Anderson & Anders Taft</div>
+      <div class="body">
+        <div class="title">Awakening in Silence</div>
+        <div class="series">B.K. Anderson & Anders Taft</div>
 
-<div class="actions">
- <a class="btn" href="https://shop.ingramspark.com/b/084?params=8LgCMzBXcEsya3NHHCvHD6Uoy99cONpxU2YS1GnDYKc" target="_blank" rel="noopener">Buy Direct</a>
-    </div> 
-<a class="btn" href="awakening-in-silence.html">Details</a>
-<a class="btn"
-href="Awakening_in_Silence_Sample.pdf"
-target="_blank"
-rel="noopener">
-Read Sample
-</a>
-</div>
-</div>
-</article>
+        <div class="actions">
+          <a class="btn" href="https://shop.ingramspark.com/b/084?params=8LgCMzBXcEsya3NHHCvHD6Uoy99cONpxU2YS1GnDYKc" target="_blank" rel="noopener">Buy Direct</a>
+          <a class="btn" href="awakening-in-silence.html">Details</a>
+          <a class="btn" href="Awakening_in_Silence_Sample.pdf" target="_blank" rel="noopener">Read Sample</a>
+        </div>
+      </div>
+    </article>
 
-<!-- Book: Echoes of Light -->
-<article class="card">
-  <img class="thumb" src="EchosOfLight.jpg" alt="Echoes of Light cover">
-  <div>
-    <h2>Echoes of Light</h2>
-    <p class="meta">Path of Light</p>
-    <p class="blurb">Reflections that return you to steadiness, clarity, and grace.</p>
-    <div class="actions">
-      <a class="btn" href="echoes-of-light.html">Details</a>
-      <a class="btn" href="Echoes_of_Light_Sample.pdf" target="_blank" rel="noopener">Sample PDF</a>
-      <a class="btn" href="https://shop.ingramspark.com/b/084?params=e8WByupKSuehQWkmOlqMW1Nz0kPGFKQGbGcZR5Zwkku" target="_blank" rel="noopener">Buy Direct</a>
-    </div>
-  </div>
-</article>
-<p style="margin-top:18px">
-<a class="btn" href="index.html">← Back to Main Page</a>
-</p>
+    <article class="card">
+      <img class="thumb"
+           src="EchosOfLight.jpg"
+           alt="Echoes of Light cover"
+           loading="lazy">
 
-<footer>
-© <span id="yr"></span> B.K. Anderson — All Rights Reserved
-</footer>
+      <div class="body">
+        <div class="title">Echoes of Light</div>
+        <div class="series">Path of Light</div>
+        <p class="blurb">Reflections that return you to steadiness, clarity, and grace.</p>
+
+        <div class="actions">
+          <a class="btn" href="echoes-of-light.html">Details</a>
+          <a class="btn" href="Echoes_of_Light_Sample.pdf" target="_blank" rel="noopener">Sample PDF</a>
+          <a class="btn" href="https://shop.ingramspark.com/b/084?params=e8WByupKSuehQWkmOlqMW1Nz0kPGFKQGbGcZR5Zwkku" target="_blank" rel="noopener">Buy Direct</a>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <p class="back-link">
+    <a class="btn" href="index.html">← Back to Main Page</a>
+  </p>
+
+  <footer>
+    © <span id="yr"></span> B.K. Anderson — All Rights Reserved
+  </footer>
 
 </div>
 
 <script>
-document.getElementById("yr").textContent=new Date().getFullYear();
+document.getElementById("yr").textContent = new Date().getFullYear();
 </script>
 
 </body>
