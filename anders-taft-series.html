@@ -61,15 +61,11 @@ display:flex;
 flex-direction:column;
 }
 
-.thumb{
-display:block;
-width:100%;
-max-width:220px;
-margin:18px auto 0;
-border-radius:12px;
-border:1px solid var(--cardBorder);
-height:auto;
-background:#000;
+.thumb {
+  width: 120px;     /* thumbnail size */
+  height: auto;     /* keeps proportions */
+  object-fit: cover;
+  border-radius: 6px; /* optional nice look */
 }
 
 .body{
@@ -158,7 +154,7 @@ Read Sample
 
 <!-- Book: Echoes of Light -->
 <article class="card">
-  <img class="cover" src="EchosOfLight.jpg" alt="Echoes of Light cover">
+  <img class="thumb" src="EchosOfLight.jpg" alt="Echoes of Light cover">
   <div>
     <h2>Echoes of Light</h2>
     <p class="meta">Path of Light</p>
