@@ -18,25 +18,30 @@
       --shadow:0 10px 28px rgba(0,0,0,.08);
       --radius:18px;
     }
+
     body{
       margin:0;
       font-family: Georgia, "Times New Roman", serif;
       background:var(--bg);
       color:var(--ink);
     }
+
     .page{
       max-width:1000px;
       margin:0 auto;
       padding:26px 18px 56px;
     }
+
     header{
       text-align:center;
       margin-bottom:24px;
     }
+
     h1{
       font-size:2.1rem;
       margin:10px 0 8px;
     }
+
     .subtitle{
       color:var(--muted);
       max-width:780px;
@@ -44,6 +49,7 @@
       line-height:1.45;
       font-size:1.05rem;
     }
+
     .topnav{
       display:flex;
       justify-content:center;
@@ -51,6 +57,7 @@
       flex-wrap:wrap;
       margin-top:14px;
     }
+
     .pill{
       text-decoration:none;
       border:1px solid var(--border);
@@ -59,6 +66,7 @@
       border-radius:999px;
       color:var(--ink);
       font-size:.95rem;
+      display:inline-block;
     }
 
     .grid{
@@ -67,6 +75,7 @@
       gap:18px;
       margin-top:22px;
     }
+
     .card{
       background:var(--card);
       border:1px solid var(--border);
@@ -76,12 +85,15 @@
       display:flex;
       flex-direction:column;
     }
+
     .cover{
       width:100%;
-      aspect-ratio: 2 / 3;
+      aspect-ratio:2 / 3;
       object-fit:cover;
       background:#e9e6df;
+      display:block;
     }
+
     .cardbody{
       padding:16px;
       display:flex;
@@ -89,47 +101,58 @@
       gap:10px;
       flex:1;
     }
+
     .booktitle{
       font-size:1.15rem;
       margin:0;
     }
+
     .meta{
       color:var(--muted);
       font-size:.95rem;
+      margin:0;
     }
+
     .blurb{
       line-height:1.45;
+      margin:0;
     }
+
     .actions{
       display:flex;
       gap:10px;
       margin-top:auto;
+      flex-wrap:wrap;
     }
+
     .btn{
-      background: #000;
-      color: #fff;
-      border: 1px solid #000;
-      padding: 10px 16px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-block;
+      background:#000;
+      color:#fff;
+      border:1px solid #000;
+      padding:10px 16px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      display:inline-block;
     }
+
     .btn:hover{
-      background: #1a1a1a;
-      border-color: #1a1a1a;
+      background:#1a1a1a;
+      border-color:#1a1a1a;
     }
+
     footer{
       text-align:center;
       margin-top:34px;
       color:var(--muted);
       font-size:.95rem;
     }
+
     a.btn,
     .btn{
-      background-color: #000 !important;
-      color: #fff !important;
-      border: 1px solid #000 !important;
+      background-color:#000 !important;
+      color:#fff !important;
+      border:1px solid #000 !important;
     }
   </style>
 </head>
@@ -151,10 +174,11 @@
     </header>
 
     <section class="grid">
-      
+
       <!-- Book Two -->
       <article class="card">
-        <img class="cover" src="/SheSeeksTwo.jpg" alt="She Seeks – Book Two">
+        <img class="cover" src="SheSeeksTwo.jpg" alt="She Seeks cover">
+
         <div class="cardbody">
           <h2 class="booktitle">She Seeks</h2>
           <p class="meta">The Bog Series • Book Two</p>
@@ -162,11 +186,12 @@
             The search deepens. The pod begins to speak through resonance and memory,
             drawing Saxifraga toward a truth buried in the living bog.
           </p>
+
           <div class="actions">
-            <a class="btn secondary" href="/she-seeks.html">Details</a>
-            <a class="btn" href="SheSeeksTwo.pdf">She Seeks</a>
-            <a class="btn" href="https://shop.ingramspark.com/b/084?params=okja3BrIGMQf79GRi7qzSysNBvlJYiD2arvFw2rt7cE" target="_blank">Buy Direct</a>
-            <a class="btn" href="https://www.amazon.com/s?i=digital-text&rh=p_27%3ABrian%2BKeith%2BAnderson&s=relevancerank&text=Brian+Keith+Anderson&ref=dp_byline_sr_ebooks_1" target="_blank">Amazon</a>
+            <a class="btn" href="she-seeks.html">Details</a>
+            <a class="btn" href="SheSeeksTwo.pdf" target="_blank" rel="noopener">She Seeks</a>
+            <a class="btn" href="https://shop.ingramspark.com/b/084?params=okja3BrIGMQf79GRi7qzSysNBvlJYiD2arvFw2rt7cE" target="_blank" rel="noopener">Buy Direct</a>
+            <a class="btn" href="https://www.amazon.com/s?i=digital-text&rh=p_27%3ABrian%2BKeith%2BAnderson&s=relevancerank&text=Brian+Keith+Anderson&ref=dp_byline_sr_ebooks_1" target="_blank" rel="noopener">Amazon</a>
           </div>
         </div>
       </article>
@@ -183,4 +208,3 @@
   </script>
 </body>
 </html>
-
