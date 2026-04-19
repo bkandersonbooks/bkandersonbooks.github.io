@@ -49,6 +49,7 @@
       border-radius:999px;
       color:var(--ink);
       font-size:.95rem;
+      display:inline-block;
     }
 
     .cover{
@@ -56,7 +57,8 @@
       max-width:100%;
       border-radius:var(--radius);
       box-shadow:var(--shadow);
-      margin-bottom:20px;
+      margin:0 auto 20px;
+      display:block;
     }
 
     h1{
@@ -67,12 +69,14 @@
     .meta{
       color:var(--muted);
       margin-bottom:20px;
+      font-size:1rem;
+      line-height:1.4;
     }
 
     .desc{
       max-width:650px;
       margin:0 auto 28px;
-      line-height:1.5;
+      line-height:1.6;
       font-size:1.05rem;
     }
 
@@ -91,10 +95,12 @@
       text-decoration:none;
       font-weight:600;
       border:1px solid #000;
+      display:inline-block;
     }
 
     .btn:hover{
       background:#1a1a1a;
+      border-color:#1a1a1a;
     }
 
     footer{
@@ -114,7 +120,7 @@
       <a class="pill" href="bog-fountain-series.html">← Back to Series</a>
     </div>
 
-    <img class="cover" src="SheSowsThree.jpg" alt="She Sows Cover">
+    <img class="cover" src="SheSowsThree.jpg" alt="She Sows cover">
 
     <h1>She Sows</h1>
     <div class="meta">The Bog Series • Book Three<br>by B.K. Anderson</div>
@@ -137,13 +143,9 @@
     </div>
 
     <div class="actions">
-      <a class="btn" href="SheSowsThree.pdf" target="_blank">Read Sample</a>
-
-      <!-- Add your real link -->
-      <a class="btn" href="https://shop.ingramspark.com/b/084?params=7EZpFzI5fBza3HHQzFmxrYfc43uQOO1ygmN6DzTGv0n" target="_blank">Buy Direct</a>
-
-      <!-- Optional -->
-      <a class="btn" href="https://www.amazon.com/s?i=digital-text&rh=p_27%3ABrian%2BKeith%2BAnderson&s=relevancerank&text=Brian+Keith+Anderson&ref=dp_byline_sr_ebooks_1" target="_blank">Amazon</a>
+      <a class="btn" href="SheSowsThree.pdf" target="_blank" rel="noopener">Read Sample</a>
+      <a class="btn" href="https://shop.ingramspark.com/b/084?params=7EZpFzI5fBza3HHQzFmxrYfc43uQOO1ygmN6DzTGv0n" target="_blank" rel="noopener">Buy Direct</a>
+      <a class="btn" href="https://www.amazon.com/s?i=digital-text&rh=p_27%3ABrian%2BKeith%2BAnderson&s=relevancerank&text=Brian+Keith+Anderson&ref=dp_byline_sr_ebooks_1" target="_blank" rel="noopener">Amazon</a>
     </div>
 
     <footer>
@@ -155,6 +157,5 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-
 </body>
-</html>     
+</html>
