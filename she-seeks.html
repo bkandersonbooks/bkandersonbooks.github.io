@@ -1,17 +1,12 @@
-Yes — this page is mixing **two different layouts**, which is why it feels off. Your current code has old styles like `.book-page`, `.nav-btn`, `.book-cover`, but the body uses newer classes like `.page`, `.topnav`, `.grid`, `.card`, `.cover`. So it should be converted fully into your master format. Your master template structure is the right one to use here. 
-
-Here is **She Stirs converted to your master-style setup**:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>She Stirs — Book Details</title>
-<meta name="description" content="Saxifraga awakens in a world that no longer sings the way it once did. The systems still function, but the bog listens—lonely, living, and waiting."/>
-<meta name="keywords" content="B.K. Anderson, She Stirs, The Bog Series, science fiction, Mars, living bog, Saxifraga"/>
+<title>She Seeks — Book Details</title>
+<meta name="description" content="As the world begins to answer, Saxifraga must move deeper into what has been forgotten, listening for the hidden pathways of memory, resonance, and return."/>
+<meta name="keywords" content="B.K. Anderson, She Seeks, The Bog Series, science fiction, Mars, living bog, Saxifraga"/>
 <meta name="author" content="B.K. Anderson"/>
 
 <style>
@@ -124,11 +119,11 @@ footer{
 <main>
   <section class="card">
     <div style="text-align:center;">
-      <img class="thumb" src="SheSeeksTwo.jpg" alt="She Stirs cover"/>
+      <img class="thumb" src="SheSeeksTwo.jpg" alt="She Seeks cover"/>
 
       <div class="actions">
-        <a class="btn" href="she-seeks.html">Next Book →</a>
-        <a class="btn" href="https://shop.ingramspark.com/b/084?params=y5bY9Evri5oCldb6OYG0GyVlzQDhf6UeenzZFX9OYrl" target="_blank" rel="noopener">Buy Direct</a>
+        <a class="btn" href="she-sows.html">Next Book →</a>
+        <a class="btn" href="https://shop.ingramspark.com/" target="_blank" rel="noopener">Buy Direct</a>
         <a class="btn" href="SheSeeksTwo.pdf" target="_blank" rel="noopener">Download Sample (PDF)</a>
         <a class="btn" href="https://www.amazon.com/s?i=digital-text&rh=p_27%3ABrian%2BKeith%2BAnderson&s=relevancerank&text=Brian+Keith+Anderson&ref=dp_byline_sr_ebooks_1" target="_blank" rel="noopener">Buy on Amazon</a>
       </div>
@@ -137,16 +132,15 @@ footer{
     <div class="details-text">
       <h2>About This Book</h2>
       <p>
-        <em>She Stirs</em> begins The Bog Series with the awakening of Saxifraga in a world that no longer sings the way it once did.
-        The systems still function, but the bog listens—lonely, living, and waiting. As old balances falter, the memory of the world
-        begins to stir again.
+        <em>She Seeks</em> continues The Bog Series as Saxifraga moves deeper into a world that is beginning to answer.
+        What first stirred now begins to call, and the pathways between memory, place, and living resonance grow stronger.
       </p>
 
       <div class="meta">
         <div><strong>Author:</strong> B.K. Anderson</div>
         <div><strong>Series:</strong> The Bog Series</div>
         <div><strong>Format:</strong> Paperback &amp; eBook</div>
-        <div><strong>Page File:</strong> she-stirs.html</div>
+        <div><strong>Page File:</strong> she-seeks.html</div>
       </div>
     </div>
   </section>
@@ -156,4 +150,3 @@ footer{
 <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-```
