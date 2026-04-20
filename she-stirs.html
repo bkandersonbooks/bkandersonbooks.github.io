@@ -1,166 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>The Bog Series | B.K. Anderson</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-  <style>
-    :root{
-      --bg:#f6f5f2;
-      --ink:#222;
-      --muted:#666;
-      --card:#ffffff;
-      --border:#d9d4c8;
-      --accent:#2f5d50;
-      --btn:#2f5d50;
-      --btnText:#fff;
-      --shadow:0 10px 28px rgba(0,0,0,.08);
-      --radius:18px;
-    }
+<title>She Stirs — Book Details</title>
+<meta name="description" content="Saxifraga awakens in a world that no longer sings the way it once did. The systems still function, but the bog listens—lonely, living, and waiting."/>
+<meta name="keywords" content="B.K. Anderson, She Stirs, The Bog Series, science fiction, Mars, living bog, Saxifraga"/>
+<meta name="author" content="B.K. Anderson"/>
 
-    body{
-     margin:0;
-     background:#ecebe7;
-     color:#1f1f1f;
-     font-family:Georgia, "Times New Roman", serif;
-   }
+<style>
+:root{
+  --bg:#0b0c10;
+  --fg:#e8f0fe;
+  --muted:#b2bfdc;
+  --accent:#86c5ff;
+  --card:#141622;
+  --cardBorder:#23263a;
+}
 
-   .book-page{
-     max-width:900px;
-     margin:30px auto 60px;
-     text-align:center;
-     padding:0 20px;
-   }
+*{box-sizing:border-box}
 
-   .top-links{
-     margin-bottom:20px;
-   }
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
 
-   .nav-btn{
-     display:inline-block;
-     margin:0 8px 12px;
-     padding:10px 18px;
-     border:1px solid #b9b2a6;
-     border-radius:24px;
-     text-decoration:none;
-     color:#2a2a2a;
-     background:#f7f4ee;
-   }
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
 
-   .book-cover{
-     width:260px;
-     max-width:100%;
-     height:auto;
-     display:block;
-     margin:0 auto 28px;
-     border-radius:24px;
-   }
+header{text-align:center;padding:24px 16px}
+header h1{margin:4px 0 0;font-size:1.9rem}
+header p{margin:6px 0 0;color:var(--muted)}
 
-   h1{
-     font-size:3rem;
-     margin:0 0 10px;
-   }
+.top-nav{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-bottom:8px;
+}
 
-   .series-line{
-    font-size:1.1rem;
-    color:#5c5348;
-    margin-bottom:28px;
-  }
+.back,.back-link{
+  border:1px solid var(--cardBorder);
+  background:var(--card);
+  padding:8px 12px;
+  border-radius:999px;
+  font-weight:600;
+}
 
-  .book-text{
-    max-width:700px;
-    margin:0 auto 30px;
-    font-size:1.15rem;
-    line-height:1.7;
-  }
+main{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 16px 60px;
+}
 
-  .actions{
-    display:flex;
-    justify-content:center;
-    gap:14px;
-    flex-wrap:wrap;
-    margin-top:24px;
-  }
+.card{
+  border-radius:20px;
+  overflow:hidden;
+  background:var(--card);
+  border:1px solid var(--cardBorder);
+  padding:24px;
+}
 
-  .btn{
-    display:inline-block;
-    padding:12px 22px;
-    border-radius:14px;
-    background:#000;
-    color:#fff;
-    text-decoration:none;
-    font-weight:700;
-   }
+.thumb{
+  display:block;
+  width:100%;
+  max-width:300px;
+  margin:auto;
+  border-radius:12px;
+  border:1px solid var(--cardBorder);
+}
 
-    .btn:hover{
-      background:#1a1a1a;
-      border-color:#1a1a1a;
-    }
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:16px;
+}
 
-    footer{
-      text-align:center;
-      margin-top:34px;
-      color:var(--muted);
-      font-size:.95rem;
-    }
+.btn{
+  border:1px solid var(--cardBorder);
+  background:transparent;
+  color:var(--fg);
+  padding:8px 12px;
+  border-radius:10px;
+}
 
-    a.btn,
-    .btn{
-      background-color:#000 !important;
-      color:#fff !important;
-      border:1px solid #000 !important;
-    }
-  </style>
+.btn:hover{background:#1c2135}
+
+h2{margin:0 0 10px;font-size:1.2rem}
+.meta{color:var(--muted);font-size:.95rem;margin:12px 0 14px}
+.details-text{max-width:760px;margin:20px auto 0;line-height:1.7}
+
+footer{
+  padding:26px 16px;
+  text-align:center;
+  color:var(--muted);
+}
+</style>
 </head>
-
 <body>
-  <div class="page">
-    <header>
-      <h1>The Bog Series</h1>
-      <p class="subtitle">
-        A waking world. A sleeping guardian. A living bog that remembers.
-        When balance falters, Saxifraga must decide whether to restore the ancient design
-        or let a world fall silent.
-      </p>
 
-      <div class="topnav">
-        <a class="pill" href="/books.html">← Back to Home</a>
-        <a class="pill" href="/bog-foundation-series.html">← Back to Series</a>
-      </div>
-    </header>
-
-    <section class="grid">
-
-      <!-- Book One -->
-      <article class="card">
-        <img class="cover" src="/SheStirsOne.jpg" alt="She Stirs cover" />
-
-        <div class="cardbody">
-          <h2 class="booktitle">She Stirs</h2>
-          <p class="meta">The Bog Series • Book One</p>
-          <p class="blurb">
-            Saxifraga awakens in a world that no longer sings the way it once did.
-            The systems still function, but the bog listens—lonely, living, and waiting.
-          </p>
-
-          <div class="actions">
-            <a class="btn" href="/SheStirsOne.pdf" target="_blank" rel="noopener">She Stirs</a>
-            <a class="btn" href="https://shop.ingramspark.com/b/084?params=y5bY9Evri5oCldb6OYG0GyVlzQDhf6UeenzZFX9OYrl" target="_blank" rel="noopener">Buy Direct</a>
-            <a class="btn" href="https://www.amazon.com/s?i=digital-text&rh=p_27%3ABrian%2BKeith%2BAnderson&s=relevancerank&text=Brian+Keith+Anderson&ref=dp_byline_sr_ebooks_1" target="_blank" rel="noopener">Amazon</a>
-          </div>
-        </div>
-      </article>
-
-    </section>
-
-    <footer>
-      © <span id="year"></span> B.K. Anderson • The Bog Series
-    </footer>
+<header>
+  <div class="top-nav">
+    <a class="back" href="books.html">← Back to Gallery</a>
+    <a class="back-link" href="bog-foundation-series.html">← Back to Series</a>
   </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <h1>She Stirs</h1>
+  <p>The Bog Series — Book One</p>
+</header>
+
+<main>
+  <section class="card">
+    <div style="text-align:center;">
+      <img class="thumb" src="SheStirsOne.jpg" alt="She Stirs cover"/>
+
+      <div class="actions">
+        <a class="btn" href="she-seeks.html">Next Book →</a>
+        <a class="btn" href="https://shop.ingramspark.com/b/084?params=y5bY9Evri5oCldb6OYG0GyVlzQDhf6UeenzZFX9OYrl" target="_blank" rel="noopener">Buy Direct</a>
+        <a class="btn" href="SheStirsOne.pdf" target="_blank" rel="noopener">Download Sample (PDF)</a>
+        <a class="btn" href="https://www.amazon.com/s?i=digital-text&rh=p_27%3ABrian%2BKeith%2BAnderson&s=relevancerank&text=Brian+Keith+Anderson&ref=dp_byline_sr_ebooks_1" target="_blank" rel="noopener">Buy on Amazon</a>
+      </div>
+    </div>
+
+    <div class="details-text">
+      <h2>About This Book</h2>
+      <p>
+        <em>She Stirs</em> begins The Bog Series with the awakening of Saxifraga in a world that no longer sings the way it once did.
+        The systems still function, but the bog listens—lonely, living, and waiting. As old balances falter, the memory of the world
+        begins to stir again.
+      </p>
+
+      <div class="meta">
+        <div><strong>Author:</strong> B.K. Anderson</div>
+        <div><strong>Series:</strong> The Bog Series</div>
+        <div><strong>Format:</strong> Paperback &amp; eBook</div>
+        <div><strong>Page File:</strong> she-stirs.html</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> B.K. Anderson — All Rights Reserved</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
