@@ -1,1 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 
+<title>The Seven Races of Mars — B.K. Anderson</title>
+
+<meta name="description" content="The return of the seven ancient races whose wisdom once shaped the cities beneath Mars." />
+
+<style>
+:root{
+ --bg:#0b0c10;
+ --fg:#e8f0fe;
+ --muted:#b2bfdc;
+ --accent:#86c5ff;
+ --card:#141622;
+ --cardBorder:#23263a;
+}
+
+*{box-sizing:border-box}
+
+html,body{
+ margin:0;
+ padding:0;
+ background:var(--bg);
+ color:var(--fg);
+ font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+
+a{
+ color:var(--accent);
+ text-decoration:none;
+}
+
+a:hover{
+ text-decoration:underline;
+}
+
+.page{
+ max-width:1200px;
+ margin:0 auto;
+ padding:24px 16px 48px;
+}
+
+header{
+ text-align:center;
+}
+
+h1{
+ margin:0 0 8px;
+ font-size:32px;
+}
+
+.subtitle{
+ color:var(--muted);
+ margin-bottom:16px;
+ max-width:850px;
+ margin-left:auto;
+ margin-right:auto;
+}
+
+.topnav{
+ display:flex;
+ justify-content:center;
+ gap:10px;
+ flex-wrap:wrap;
+ margin-bottom:16px;
+}
+
+.pill{
+ padding:10px 14px;
+ border:1px solid var(--cardBorder);
+ border-radius:999px;
+ background:rgba(20,22,34,.9);
+ color:var(--fg);
+}
+
+.book-grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:22px;
+ margin-top:28px;
+}
+
+.book-card{
+ border:1px solid var(--cardBorder);
+ background:rgba(20,22,34,.95);
+ border-radius:18px;
+ padding:16px;
+ text-align:center;
+}
+
+.book-card img{
+ width:100%;
+ max-width:180px;
+ height:260px;
+ object-fit:cover;
+ margin:0 auto 12px;
+ border-radius:10px;
+}
+
+.book-card h3{
+ margin:0 0 6px;
+}
+
+.book-card p{
+ color:var(--muted);
+}
+
+.book-actions{
+ margin-top:10px;
+ display:flex;
+ gap:10px;
+ justify-content:center;
+ flex-wrap:wrap;
+}
+
+footer{
+ text-align:center;
+ color:var(--muted);
+ padding:30px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<header>
+
+<h1>The Seven Races of Mars</h1>
+
+<p class="subtitle">
+Long before the cities slept beneath Mars, seven races lived in harmony
+with the living world. As the cities awaken and the children of resonance
+send their call across the stars, the ancient races begin their journey home.
+</p>
+
+<div class="topnav">
+<a class="pill" href="index.html">← Back to Home</a>
+<a class="pill" href="books.html">Browse All Books</a>
+</div>
+
+</header>
+
+<section class="book-grid">
+
+<!-- BOOK 1 -->
+<div class="book-card">
+<img src="enduring-ones.jpg" alt="The Enduring Ones cover">
+<h3>The Enduring Ones</h3>
+<p>Book One</p>
+<div class="book-actions">
+<a class="pill" href="enduring-ones.html">Details</a>
+</div>
+</div>
+
+<!-- BOOK 2 -->
+<div class="book-card">
+<img src="current-walkers.jpg" alt="The Current Walkers cover">
+<h3>The Current Walkers</h3>
+<p>Book Two</p>
+<div class="book-actions">
+<a class="pill" href="current-walkers.html">Details</a>
+</div>
+</div>
+
+<!-- BOOK 3 -->
+<div class="book-card">
+<img src="flameborn.jpg" alt="The Flameborn cover">
+<h3>The Flameborn</h3>
+<p>Book Three</p>
+<div class="book-actions">
+<a class="pill" href="flameborn.html">Details</a>
+</div>
+</div>
+
+<!-- BOOK 4 -->
+<div class="book-card">
+<img src="keepers-of-measure.jpg" alt="The Keepers of Measure cover">
+<h3>The Keepers of Measure</h3>
+<p>Book Four</p>
+<div class="book-actions">
+<a class="pill" href="keepers-of-measure.html">Details</a>
+</div>
+</div>
+
+<!-- BOOK 5 -->
+<div class="book-card">
+<img src="gatekeepers.jpg" alt="The Gatekeepers cover">
+<h3>The Gatekeepers</h3>
+<p>Book Five</p>
+<div class="book-actions">
+<a class="pill" href="gatekeepers.html">Details</a>
+</div>
+</div>
+
+<!-- BOOK 6 -->
+<div class="book-card">
+<img src="weavers.jpg" alt="The Weavers cover">
+<h3>The Weavers</h3>
+<p>Book Six</p>
+<div class="book-actions">
+<a class="pill" href="weavers.html">Details</a>
+</div>
+</div>
+
+<!-- BOOK 7 -->
+<div class="book-card">
+<img src="one-of-one.jpg" alt="The One-of-One cover">
+<h3>The One-of-One</h3>
+<p>Book Seven</p>
+<div class="book-actions">
+<a class="pill" href="one-of-one.html">Details</a>
+</div>
+</div>
+
+</section>
+
+</div>
+
+<footer>
+© <span id="yr"></span> B.K. Anderson — All Rights Reserved
+</footer>
+
+<script>
+document.getElementById('yr').textContent =
+new Date().getFullYear();
+</script>
+
+</body>
+</html>
