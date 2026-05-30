@@ -1,1 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+<title>The Seven Races of Mars — Master Template</title>
+<meta name="description" content="Master template for The Seven Races of Mars book detail pages."/>
+<meta name="keywords" content="Seven Races of Mars, Mars fiction, ancient races, science fiction, visionary fiction"/>
+<meta name="author" content="B.K. Anderson"/>
+
+<style>
+:root{
+  --bg:#0b0c10;
+  --fg:#e8f0fe;
+  --muted:#b2bfdc;
+  --accent:#86c5ff;
+  --card:#141622;
+  --cardBorder:#23263a;
+}
+
+*{box-sizing:border-box}
+
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+header{
+  text-align:center;
+  padding:24px 16px;
+}
+
+header h1{
+  margin:4px 0 0;
+  font-size:1.9rem;
+}
+
+header p{
+  margin:6px 0 0;
+  color:var(--muted);
+}
+
+.top-nav{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-bottom:8px;
+}
+
+.back,.back-link{
+  border:1px solid var(--cardBorder);
+  background:var(--card);
+  padding:8px 12px;
+  border-radius:999px;
+  font-weight:600;
+}
+
+main{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 16px 60px;
+}
+
+.card{
+  border:1px solid var(--cardBorder);
+  background:var(--card);
+  border-radius:20px;
+  padding:22px;
+  overflow:hidden;
+}
+
+.thumb{
+  display:block;
+  width:100%;
+  max-width:300px;
+  margin:auto;
+  border-radius:12px;
+  border:1px solid var(--cardBorder);
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:16px;
+}
+
+.btn{
+  border:1px solid var(--cardBorder);
+  background:transparent;
+  color:var(--fg);
+  padding:8px 12px;
+  border-radius:10px;
+}
+
+.btn:hover{background:#1c2135}
+
+h2{
+  margin:22px 0 10px;
+  font-size:1.2rem;
+}
+
+.meta{
+  color:var(--muted);
+  font-size:.95rem;
+  margin:12px 0 14px;
+}
+
+footer{
+  padding:26px 16px;
+  text-align:center;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="top-nav">
+    <a class="back" href="books.html">← Back to Gallery</a>
+    <a class="back-link" href="seven-races.html">← Back to Series</a>
+  </div>
+
+  <h1>BOOK TITLE HERE</h1>
+  <p>The Seven Races of Mars — Volume NUMBER HERE</p>
+</header>
+
+<main>
+  <section class="card">
+
+    <div style="text-align:center">
+      <img class="thumb" src="BOOK-COVER.jpg" alt="BOOK TITLE HERE cover"/>
+
+      <div class="actions">
+        <a class="btn" href="PREVIOUS-BOOK.html">← Previous Book</a>
+        <a class="btn" href="NEXT-BOOK.html">Next Book →</a>
+        <a class="btn" href="BUY-DIRECT-LINK-HERE" target="_blank" rel="noopener">Buy Direct</a>
+        <a class="btn" href="SAMPLE-PDF-HERE.pdf" target="_blank">Download Sample (PDF)</a>
+      </div>
+    </div>
+
+    <div>
+      <h2>About This Book</h2>
+
+      <p>
+        BOOK DESCRIPTION HERE
+      </p>
+
+      <div class="meta">
+        <div><strong>Author:</strong> B.K. Anderson</div>
+        <div><strong>Series:</strong> The Seven Races of Mars</div>
+        <div><strong>Format:</strong> Paperback & eBook</div>
+        <div><strong>Page File:</strong> BOOK-FILE.html</div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  © <span id="yr"></span> B.K. Anderson — All Rights Reserved
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
