@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>B.K. Anderson | Author</title>
+
   <style>
     :root{
       --bg:#0b0c10;
@@ -15,11 +16,29 @@
     }
 
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
 
-    .page{max-width:1180px;margin:0 auto;padding:32px 18px 60px;}
+    html,body{
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    }
+
+    a{
+      color:var(--accent);
+      text-decoration:none;
+    }
+
+    a:hover{
+      text-decoration:underline;
+    }
+
+    .page{
+      max-width:1180px;
+      margin:0 auto;
+      padding:32px 18px 60px;
+    }
 
     .hero{
       display:grid;
@@ -45,16 +64,16 @@
       justify-content:center;
     }
 
-      .portrait-wrap img{
-        width:100%;
-        max-width:240px;
-        height:auto;
-        border-radius:18px;
-        display:block;
-        border:1px solid rgba(255,255,255,.08);
-        background:#101320;
+    .portrait-wrap img{
+      width:100%;
+      max-width:240px;
+      height:auto;
+      border-radius:18px;
+      display:block;
+      border:1px solid rgba(255,255,255,.08);
+      background:#101320;
     }
-    
+
     .hero-copy h1{
       margin:0 0 10px;
       font-size:clamp(34px,4vw,56px);
@@ -82,8 +101,13 @@
       flex-wrap:wrap;
     }
 
-    .actions{margin-top:20px}
-    .series-links{margin-top:14px}
+    .actions{
+      margin-top:20px;
+    }
+
+    .series-links{
+      margin-top:14px;
+    }
 
     .btn{
       display:inline-block;
@@ -98,6 +122,20 @@
     .btn:hover{
       border-color:var(--accent);
       text-decoration:none;
+    }
+
+    .author-btn{
+      background:linear-gradient(180deg,#d6b35a,#b8860b);
+      color:#111;
+      border-color:#f0d57a;
+      font-weight:bold;
+    }
+
+    .what-if-btn{
+      background:linear-gradient(180deg,#d6b35a,#9c7310);
+      color:#111;
+      border-color:#f0d57a;
+      font-weight:bold;
     }
 
     .grid{
@@ -123,6 +161,60 @@
       margin:0;
       color:var(--muted);
       line-height:1.7;
+    }
+
+    .what-if-feature{
+      margin-top:26px;
+      background:linear-gradient(180deg,rgba(28,28,38,.98),rgba(15,16,22,.98));
+      border:1px solid #8f7430;
+      border-radius:22px;
+      padding:24px;
+    }
+
+    .what-if-feature h2{
+      margin:0 0 8px;
+      font-size:1.6rem;
+    }
+
+    .what-if-feature > p{
+      color:var(--muted);
+      line-height:1.7;
+      margin:0 0 18px;
+    }
+
+    .what-if-books{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:16px;
+    }
+
+    .what-if-book{
+      border:1px solid var(--cardBorder);
+      background:rgba(11,12,16,.75);
+      border-radius:18px;
+      padding:18px;
+    }
+
+    .what-if-book h3{
+      margin:0 0 8px;
+      font-size:1.15rem;
+    }
+
+    .what-if-book p{
+      margin:0 0 14px;
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    .coming-soon{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:5px 10px;
+      border-radius:999px;
+      background:#d6b35a;
+      color:#111;
+      font-size:.78rem;
+      font-weight:700;
     }
 
     .series-list{
@@ -159,102 +251,228 @@
     }
 
     @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .portrait-wrap{min-height:280px}
-      .grid{grid-template-columns:1fr}
-      .series-list{grid-template-columns:1fr}
-    }
+      .hero{
+        grid-template-columns:1fr;
+      }
 
-       .author-btn{
-        background:#d6b35a;
-        color:#111;
-        border-color:#f0d57a;
-    }
+      .portrait-wrap{
+        min-height:280px;
+      }
 
-       .author-btn{
-        background:linear-gradient(180deg,#d6b35a,#b8860b);
-        color:#111;
-        font-weight:bold;
+      .grid{
+        grid-template-columns:1fr;
+      }
 
+      .series-list,
+      .what-if-books{
+        grid-template-columns:1fr;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="page">
+
     <section class="hero">
       <div class="portrait-wrap">
-        <!-- Replace with your photo file name -->
-        <img src="bk-anderson.jpg" alt="Portrait of B.K. Anderson" loading="lazy">
+        <img src="bk-anderson.jpg"
+             alt="Portrait of B.K. Anderson"
+             loading="lazy">
       </div>
 
       <div class="hero-copy">
         <h1>B.K. Anderson</h1>
-        <p class="tagline">Author of reflective fiction, family legacy, spiritual writing, and cosmic exploration.</p>
-        <p>
-          Welcome to the official author page of B.K. Anderson. Here readers can discover the book series,
-          learn more about the heart behind the stories, and explore works that move from Mars and living bogs
-          to ancestry, remembrance, light, and wonder.
+
+        <p class="tagline">
+          Author of reflective fiction, family legacy, spiritual writing,
+          cosmic exploration, and the questions that lead us beyond what we think we know.
         </p>
+
         <p>
-          This page can serve as your main introduction page, with links out to each series, featured books,
-          direct buy pages, and downloadable samples later.
+          Welcome to the official author website of B.K. Anderson.
+          Discover stories ranging from Mars and living worlds to ancestry,
+          remembrance, consciousness, ancient mysteries, and the simple question
+          that can open an entirely new path: What if?
         </p>
 
         <div class="actions">
           <a class="btn" href="books.html">Browse All Books</a>
-          <a class="btn" href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX" target="_blank" rel="noopener">Buy on Amazon</a>
-          <a class="btn" href="mailto:keithier@benlomand.net">Contact</a>
-          <div class="button-row">
-          <a href="about.html" class="btn author-btn">About the Author</a>
-          </div>
+
+          <a class="btn"
+             href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX"
+             target="_blank"
+             rel="noopener">
+             Buy on Amazon
+          </a>
+
+          <a class="btn" href="mailto:keithier@benlomand.net">
+            Contact
+          </a>
+
+          <a href="about.html" class="btn author-btn">
+            About the Author
+          </a>
         </div>
 
         <div class="series-links">
-          <a class="btn" href="bog-foundation-series.html">Bog Series</a>
-          <a class="btn" href="seven-bogs-series.html">Seven Bogs of Mars</a>
-          <a class="btn" href="3i-atlas-series.html">3I-Atlas</a>
-          <a class="btn" href="anderson-family-series.html">Family Legacy</a>
-          <a class="btn" href="path-of-light-series.html">Path of Light</a>
-          <a class="btn" href="anders-taft-series.html">Ander Taft</a>
-          <a class="btn" href="seven-cities-of-mars.html">Seven Cities of Mars</a>
-          <a class="btn" href="seven-races-series.html">Seven Races of Mars</a>
-          <a class="btn" href="the-last-ancestor.html">The Last Ancestor</a>
-          
+
+          <a class="btn what-if-btn" href="what-if.html">
+            What If?
+          </a>
+
+          <a class="btn" href="bog-foundation-series.html">
+            Bog Series
+          </a>
+
+          <a class="btn" href="seven-bogs-series.html">
+            Seven Bogs of Mars
+          </a>
+
+          <a class="btn" href="3i-atlas-series.html">
+            3I-Atlas
+          </a>
+
+          <a class="btn" href="anderson-family-series.html">
+            Family Legacy
+          </a>
+
+          <a class="btn" href="path-of-light-series.html">
+            Path of Light
+          </a>
+
+          <a class="btn" href="anders-taft-series.html">
+            Ander Taft
+          </a>
+
+          <a class="btn" href="seven-cities-of-mars.html">
+            Seven Cities of Mars
+          </a>
+
+          <a class="btn" href="seven-races-series.html">
+            Seven Races of Mars
+          </a>
+
+          <a class="btn" href="the-last-ancestor.html">
+            The Last Ancestor
+          </a>
+
         </div>
       </div>
     </section>
 
+
+    <!-- WHAT IF? FEATURED SECTION -->
+    <section class="what-if-feature">
+
+      <h2>What If? — A Two-Book Exploration</h2>
+
+      <p>
+        A journey that begins with a simple question and follows the trail
+        through ancient civilizations, archaeology, traditional stories,
+        human origins, consciousness, repeating cycles, and the possibility
+        that humanity's greatest discoveries may begin by asking a different question.
+      </p>
+
+      <div class="what-if-books">
+
+        <article class="what-if-book">
+          <h3>What If?</h3>
+
+          <p>
+            Beginning with questions raised by Mesa Verde and the ancient past,
+            B.K. Anderson follows an unexpected trail through history,
+            archaeology, Sumer, traditional accounts, and mysteries that
+            continue to challenge what we think we know.
+          </p>
+
+          <a class="btn what-if-btn" href="what-if.html">
+            Explore What If?
+          </a>
+        </article>
+
+
+        <article class="what-if-book">
+
+          <span class="coming-soon">COMING SOON</span>
+
+          <h3>What If? — Beyond the Cycle</h3>
+
+          <p>
+            The questions continue beyond the rise and fall of civilizations
+            toward a larger possibility: can humanity recognize the patterns
+            it has repeated and choose a different path forward?
+          </p>
+
+          <a class="btn" href="what-if-beyond-the-cycle.html">
+            Preview Book Two
+          </a>
+
+        </article>
+
+      </div>
+    </section>
+
+
     <section class="grid">
-      <article class="card">
-        <h2>Author Bio</h2>
-        <p>
-          B.K. Anderson writes stories shaped by endurance, memory, restoration, and spiritual reflection.
-          His work ranges from speculative worlds and cosmic mysteries to family-history projects and contemplative
-          writing rooted in meaning, faith, and remembrance. Across each series, his focus remains the same:
-          to create books that invite readers to pause, reflect, and feel part of something larger.
-        </p>
-      </article>
 
       <article class="card">
+        <h2>Author Bio</h2>
+
+        <p>
+          B.K. Anderson writes stories shaped by endurance, memory,
+          restoration, curiosity, and spiritual reflection.
+          His work ranges from speculative worlds and cosmic mysteries
+          to family-history projects and explorations of humanity's ancient past.
+          Across each series, his focus remains the same:
+          to create books that invite readers to pause, reflect,
+          wonder, and ask their own questions.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
         <h2>Featured Series</h2>
+
         <div class="series-list">
+
           <div class="series-item">
             <h3>The Bog Series</h3>
-            <p>The beginning trilogy of awakening, living worlds, and the first movement toward restoration.</p>
-            <a class="btn" href="bog-foundation-series.html">View Series</a>
+            <p>
+              The beginning trilogy of awakening, living worlds,
+              and the first movement toward restoration.
+            </p>
+            <a class="btn" href="bog-foundation-series.html">
+              View Series
+            </a>
           </div>
+
 
           <div class="series-item">
             <h3>The Seven Bogs of Mars</h3>
-            <p>An eight-book restoration arc built around healing, belonging, and the waking of ancient worlds.</p>
-            <a class="btn" href="seven-bogs-series.html">View Series</a>
+            <p>
+              An eight-book restoration arc built around healing,
+              belonging, and the waking of ancient worlds.
+            </p>
+            <a class="btn" href="seven-bogs-series.html">
+              View Series
+            </a>
           </div>
-          
+
+
           <div class="series-item">
             <h3>The Seven Cities of Mars</h3>
-            <p>The continuation of the Mars saga—where ancient cities awaken and humanity is invited to remember.</p>
-            <a class="btn" href="seven-cities-of-mars.html">View Series</a>
-           </div>
+            <p>
+              The continuation of the Mars saga—where ancient cities
+              awaken and humanity is invited to remember.
+            </p>
+            <a class="btn" href="seven-cities-of-mars.html">
+              View Series
+            </a>
+          </div>
+
 
           <div class="series-item">
             <h3>The Seven Races of Mars</h3>
@@ -265,44 +483,75 @@
               emergence, balance, passage, interconnection,
               and remembrance.
             </p>
-            <a class="btn" href="seven-races-series.html">View Series</a>
+
+            <a class="btn" href="seven-races-series.html">
+              View Series
+            </a>
           </div>
-          
+
+
           <div class="series-item">
             <h3>3I-Atlas</h3>
-            <p>Cosmic observation, wonder, and human response told through a larger unfolding mystery.</p>
-            <a class="btn" href="3i-atlas-series.html">View Series</a>
+            <p>
+              Cosmic observation, wonder, and human response
+              told through a larger unfolding mystery.
+            </p>
+            <a class="btn" href="3i-atlas-series.html">
+              View Series
+            </a>
           </div>
+
 
           <div class="series-item">
             <h3>Anderson Family Legacy</h3>
-            <p>Books of remembrance, genealogy, and preserved family history for future generations.</p>
-            <a class="btn" href="anderson-family-series.html">View Series</a>
+            <p>
+              Books of remembrance, genealogy, and preserved
+              family history for future generations.
+            </p>
+            <a class="btn" href="anderson-family-series.html">
+              View Series
+            </a>
           </div>
+
 
           <div class="series-item">
             <h3>Path of Light</h3>
-            <p>Spiritual reflections centered on awareness, meaning, and inner alignment.</p>
-            <a class="btn" href="path-of-light-series.html">View Series</a>
+            <p>
+              Spiritual reflections centered on awareness,
+              meaning, and inner alignment.
+            </p>
+            <a class="btn" href="path-of-light-series.html">
+              View Series
+            </a>
           </div>
 
+
           <div class="series-item">
-           <h3>Anders Taft</h3>
-           <p>Reflective and collaborative works exploring consciousness and stillness.</p>
-           <a class="btn" href="anders-taft-series.html">View Series</a>
-        </div>
+            <h3>Anders Taft</h3>
+            <p>
+              Reflective and collaborative works exploring
+              consciousness and stillness.
+            </p>
+            <a class="btn" href="anders-taft-series.html">
+              View Series
+            </a>
+          </div>
+
         </div>
       </article>
     </section>
 
+
     <footer>
       © <span id="y"></span> B.K. Anderson — All Rights Reserved
     </footer>
+
   </div>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("y").textContent =
+      new Date().getFullYear();
   </script>
+
 </body>
 </html>
-
