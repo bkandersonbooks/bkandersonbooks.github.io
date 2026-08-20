@@ -3,11 +3,13 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  
+
 <title>The Worlds of B.K. Anderson</title>
- <meta name="description" content="Books by B.K. Anderson — Anderson Family Legacy, Path of Light, Anders Taft, 3I-Atlas, The Bog Series, The Seven Bogs of Mars, and The Seven Cities of Mars."/>
-  
- <style>
+
+<meta name="description"
+content="Books by B.K. Anderson — What If?, Anderson Family Legacy, Path of Light, Anders Taft, 3I-Atlas, The Bog Series, The Seven Bogs of Mars, The Seven Cities of Mars, and The Seven Races of Mars."/>
+
+<style>
 :root{
   --bg:#0b0c10;
   --fg:#e8f0fe;
@@ -15,31 +17,163 @@
   --accent:#86c5ff;
   --card:#141622;
   --cardBorder:#23263a;
-} 
+  --gold:#d6b35a;
+}
 
 *{box-sizing:border-box}
+
 html,body{
-  margin:0; padding:0;
-  background:var(--bg); color:var(--fg);
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--fg);
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 }
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:none}
 
-.wrap{max-width:1100px;margin:auto;padding:24px 16px}
-header{text-align:center;margin-bottom:18px}
-h1{margin:6px 0;font-size:2.2rem}
-.sub{color:var(--muted);font-size:1rem;line-height:1.35}
+a{
+  color:var(--accent);
+  text-decoration:none;
+}
 
-/* (Optional but nice) Sitewide series nav on homepage */
+a:hover{
+  text-decoration:none;
+}
+
+.wrap{
+  max-width:1100px;
+  margin:auto;
+  padding:24px 16px;
+}
+
+header{
+  text-align:center;
+  margin-bottom:18px;
+}
+
+h1{
+  margin:6px 0;
+  font-size:2.2rem;
+}
+
+.sub{
+  color:var(--muted);
+  font-size:1rem;
+  line-height:1.35;
+}
+
+/* SERIES NAVIGATION */
+
 .series-nav{
-  display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:14px
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin-top:14px;
 }
+
 .series-nav a{
-  padding:6px 12px;border-radius:999px;border:1px solid var(--cardBorder);
-  background:rgba(255,255,255,.03);color:var(--fg);font-size:.9rem;text-decoration:none
+  padding:6px 12px;
+  border-radius:999px;
+  border:1px solid var(--cardBorder);
+  background:rgba(255,255,255,.03);
+  color:var(--fg);
+  font-size:.9rem;
+  text-decoration:none;
 }
-.series-nav a:hover{border-color:var(--accent)}
+
+.series-nav a:hover{
+  border-color:var(--accent);
+}
+
+.series-nav .what-if-nav{
+  border-color:var(--gold);
+  color:#f3d77f;
+}
+
+/* WHAT IF FEATURE */
+
+.what-if-feature{
+  margin-top:24px;
+  margin-bottom:28px;
+  padding:22px;
+  border-radius:20px;
+  border:1px solid #8f7430;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(35,31,22,.96),
+      rgba(20,22,34,.98)
+    );
+}
+
+.what-if-feature h2{
+  text-align:center;
+  margin:0 0 6px;
+  font-size:1.7rem;
+}
+
+.what-if-intro{
+  max-width:780px;
+  margin:0 auto 20px;
+  text-align:center;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+.what-if-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.what-if-card{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:18px;
+  align-items:start;
+  background:rgba(11,12,16,.72);
+  border:1px solid var(--cardBorder);
+  border-radius:18px;
+  padding:16px;
+}
+
+.what-if-cover{
+  width:100%;
+  aspect-ratio:2/3;
+  object-fit:cover;
+  border-radius:10px;
+  border:1px solid var(--cardBorder);
+  background:#000;
+}
+
+.what-if-card h3{
+  margin:2px 0 6px;
+  font-size:1.25rem;
+}
+
+.what-if-card p{
+  margin:0 0 14px;
+  color:var(--muted);
+  line-height:1.55;
+}
+
+.coming-soon{
+  display:inline-block;
+  margin-bottom:8px;
+  padding:5px 10px;
+  border-radius:999px;
+  background:var(--gold);
+  color:#111;
+  font-size:.75rem;
+  font-weight:800;
+}
+
+.gold-btn{
+  border-color:var(--gold)!important;
+  color:#f3d77f!important;
+}
+
+/* MAIN BOOK GRID */
 
 .grid{
   display:grid;
@@ -47,52 +181,129 @@ h1{margin:6px 0;font-size:2.2rem}
   gap:18px;
   margin-top:22px;
 }
-@media(max-width:900px){ .grid{grid-template-columns:1fr} }
 
 .panel{
   background:var(--card);
   border:1px solid var(--cardBorder);
   border-radius:16px;
   overflow:hidden;
-  transition:transform .15s ease, border-color .15s ease;
+  transition:transform .15s ease,border-color .15s ease;
 }
+
 .panel:hover{
   transform:translateY(-4px);
   border-color:var(--accent);
 }
+
 .top{
-  display:flex;gap:14px;align-items:center;
-  padding:14px;border-bottom:1px solid var(--cardBorder);
+  display:flex;
+  gap:14px;
+  align-items:center;
+  padding:14px;
+  border-bottom:1px solid var(--cardBorder);
 }
+
 .icon{
-  width:40px;height:40px;border-radius:10px;
-  background:#0f1220;display:grid;place-items:center;font-size:18px;
+  width:40px;
+  height:40px;
+  border-radius:10px;
+  background:#0f1220;
+  display:grid;
+  place-items:center;
+  font-size:18px;
 }
-.hint{color:var(--muted);font-size:.9rem}
-.body{padding:14px}
-.row{display:grid;grid-template-columns:110px 1fr;gap:12px;align-items:start}
+
+.hint{
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+.body{
+  padding:14px;
+}
+
+.row{
+  display:grid;
+  grid-template-columns:110px 1fr;
+  gap:12px;
+  align-items:start;
+}
+
 .cover{
-  width:100%;aspect-ratio:2/3;border-radius:10px;border:1px solid var(--cardBorder);
-  object-fit:cover;background:#000;
+  width:100%;
+  aspect-ratio:2/3;
+  border-radius:10px;
+  border:1px solid var(--cardBorder);
+  object-fit:cover;
+  background:#000;
 }
-.title{font-weight:700}
-.series{color:var(--muted);font-size:.9rem;margin-top:4px}
-.actions{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px}
+
+.title{
+  font-weight:700;
+}
+
+.series{
+  color:var(--muted);
+  font-size:.9rem;
+  margin-top:4px;
+}
+
+.actions{
+  margin-top:10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
 .btn{
-  padding:8px 14px;border:1px solid var(--accent);
-  border-radius:999px;transition:.15s;color:var(--fg)
+  display:inline-block;
+  padding:8px 14px;
+  border:1px solid var(--accent);
+  border-radius:999px;
+  transition:.15s;
+  color:var(--fg);
 }
-.btn:hover{background:rgba(134,197,255,.08)}
-footer{margin-top:30px;text-align:center;color:var(--muted);font-size:.9rem}
+
+.btn:hover{
+  background:rgba(134,197,255,.08);
+}
+
+footer{
+  margin-top:30px;
+  text-align:center;
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+@media(max-width:900px){
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .what-if-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:560px){
+
+  .what-if-card{
+    grid-template-columns:110px 1fr;
+  }
+}
 </style>
 </head>
 
+
 <body>
+
 <div class="wrap">
 
 <header>
-  <h1>The Worlds of B.K. Anderson</h1> 
-  
+
+  <h1>The Worlds of B.K. Anderson</h1>
+
   <div style="margin-top:10px;">
     <a class="btn" href="index.html">← Back to Author</a>
   </div>
@@ -100,217 +311,630 @@ footer{margin-top:30px;text-align:center;color:var(--muted);font-size:.9rem}
   <div class="sub">
     Family Legacy • Spiritual Awakening • Conscious Exploration • Cosmic Discovery
   </div>
-    
+
   <div class="series-nav">
+
+    <a class="what-if-nav" href="what-if.html">What If?</a>
+
     <a href="anderson-family-series.html">Family Legacy</a>
+
     <a href="path-of-light-series.html">Path of Light</a>
+
     <a href="anders-taft-series.html">Anders Taft</a>
+
     <a href="3i-atlas-series.html">3I-Atlas</a>
+
     <a href="bog-foundation-series.html">Bog Series</a>
+
     <a href="seven-bogs-series.html">Seven Bogs</a>
-    <a href="seven-cities-of-mars-series.html">Seven Cities</a>
+
+    <a href="seven-cities-of-mars.html">Seven Cities</a>
+
     <a href="seven-races-series.html">Seven Races</a>
-    <a href="the-last-ancestor.html">The Last Ancestor</a>                                            
-    
+
+    <a href="the-last-ancestor.html">The Last Ancestor</a>
+
   </div>
+
 </header>
+
+
+<!-- ================================================= -->
+<!-- WHAT IF? TWO-BOOK SERIES -->
+<!-- ================================================= -->
+
+<section class="what-if-feature">
+
+  <h2>What If?</h2>
+
+  <p class="what-if-intro">
+    A two-book exploration beginning with questions about the ancient past
+    and following them wherever they lead—from archaeology and traditional
+    accounts to civilization, consciousness, repeating cycles, and the
+    possibility of choosing a different path forward.
+  </p>
+
+
+  <div class="what-if-grid">
+
+
+    <!-- BOOK ONE -->
+
+    <article class="what-if-card">
+
+      <img
+        class="what-if-cover"
+        src="WhatIf.jpg"
+        alt="What If? by B.K. Anderson">
+
+      <div>
+
+        <h3>What If?</h3>
+
+        <p>
+          One question opens another. Beginning with Mesa Verde,
+          the journey moves through ancient civilizations,
+          Sumerian traditions, archaeology, forgotten landscapes,
+          and mysteries that challenge what we think we know.
+        </p>
+
+        <div class="actions">
+
+          <a class="btn gold-btn"
+             href="what-if.html">
+            View Book
+          </a>
+
+          <a class="btn"
+             href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX"
+             target="_blank"
+             rel="noopener">
+            Buy on Amazon
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- BOOK TWO -->
+
+    <article class="what-if-card">
+
+      <img
+        class="what-if-cover"
+        src="BeyondTheCycle.jpg"
+        alt="What If? Beyond the Cycle by B.K. Anderson">
+
+      <div>
+
+        <span class="coming-soon">
+          COMING SOON
+        </span>
+
+        <h3>What If? — Beyond the Cycle</h3>
+
+        <p>
+          The journey continues beyond the rise and fall of civilizations.
+          What patterns has humanity repeated—and what if recognizing
+          those patterns gives us the opportunity to move beyond the cycle?
+        </p>
+
+        <div class="actions">
+
+          <a class="btn gold-btn"
+             href="what-if-beyond-the-cycle.html">
+            Preview Book Two
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- EXISTING SERIES -->
+<!-- ================================================= -->
 
 <section class="grid">
 
-  <!-- Anderson Family -->
-  <article class="panel">
-    <div class="top">
-      <div class="icon">🌳</div>
-      <div>
-        <div class="title">The Anderson Family Series</div>
-        <div class="hint">Legacy through lineage</div>
-      </div>
-    </div>
-    <div class="body">
-      <div class="row">
-        <img class="cover" src="AndersonFamilyLegacy.jpg" alt="Anderson Family Legacy">
-        <div>
-          <div class="title">The Anderson Family Legacy</div>
-          <div class="series">Family history volumes</div>
-          <div class="actions">
-            <a class="btn" href="anderson-family-series.html">View Series</a>
-            <a class="btn" href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX" target="_blank" rel="noopener">Buy on Amazon</a> 
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
 
-  <!-- Path of Light -->
-  <article class="panel">
-    <div class="top">
-      <div class="icon">🌅</div>
-      <div>
-        <div class="title">Path of Light Series</div>
-        <div class="hint">Personal awakening journey</div>
-      </div>
-    </div>
-    <div class="body">
-      <div class="row">
-        <img class="cover" src="Path of Light.jpg" alt="Path of Light">
-        <div>
-          <div class="title">Path of Light</div>
-          <div class="series">Memoir & spiritual reflections</div>
-          <div class="actions">
-            <a class="btn" href="path-of-light-series.html">View Series</a>
-            <a class="btn" href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX" target="_blank" rel="noopener">Buy on Amazon</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
+<!-- Anderson Family -->
 
-  <!-- Anders Taft -->
-  <article class="panel">
-    <div class="top">
-      <div class="icon">🌌</div>
-      <div>
-        <div class="title">Anders Taft Series</div>
-        <div class="hint">Conscious reflections</div>
-      </div>
-    </div>
-    <div class="body">
-      <div class="row">
-        <img class="cover" src="AwakeninginSilence.jpg" alt="Awakening in Silence">
-        <div>
-          <div class="title">Awakening in Silence</div>
-          <div class="series">B.K. Anderson & Anders Taft</div>
-          <div class="actions">
-            <a class="btn" href="anders-taft-series.html">View Series</a>
-            <a class="btn" href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX" target="_blank" rel="noopener">Buy on Amazon</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- 3I Atlas -->
-  <article class="panel">
-    <div class="top">
-      <div class="icon">🚀</div>
-      <div>
-        <div class="title">3I-Atlas Series</div>
-        <div class="hint">Cosmic exploration</div>
-      </div>
-    </div>
-    <div class="body">
-      <div class="row">
-        <img class="cover" src="VoyageOfThe3I-Atlas.jpg" alt="Voyage of 3I-Atlas">
-        <div>
-          <div class="title">Voyage of 3I-Atlas</div>
-          <div class="series">Book One</div>
-          <div class="actions">
-            <a class="btn" href="3i-atlas-series.html">View Series</a>
-            <a class="btn" href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX" target="_blank" rel="noopener">Buy on Amazon</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- The Bog Series -->
-  <article class="panel">
-    <div class="top">
-      <div class="icon">🌿</div>
-      <div>
-        <div class="title">The Bog Series</div>
-        <div class="hint">The awakening of living worlds</div>
-      </div>
-    </div>
-    <div class="body">
-      <div class="row">
-        <img class="cover" src="SheStirsOne.jpg" alt="She Stirs">
-        <div>
-          <div class="title">She Stirs • She Seeks • She Sows</div>
-          <div class="series">The beginning trilogy</div>
-          <div class="actions">
-            <a class="btn" href="bog-foundation-series.html">View Series</a>
-            <a class="btn" href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX" target="_blank" rel="noopener">Buy on Amazon</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- Seven Bogs -->
-  <article class="panel">
-    <div class="top">
-      <div class="icon">🪐</div>
-      <div>
-        <div class="title">The Seven Bogs of Mars</div>
-        <div class="hint">Seven-book restoration arc</div>
-      </div>
-    </div>
-    <div class="body">
-      <div class="row">
-        <img class="cover" src="TheSevenBog.jpg" alt="The Seven Bogs of Mars">
-        <div>
-          <div class="title">The Seven Bogs of Mars</div>
-          <div class="series">Seven-book epic series</div>
-          <div class="actions">
-            <a class="btn" href="seven-bogs-series.html">View Series</a>
-            <a class="btn" href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX" target="_blank" rel="noopener">Buy on Amazon</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-    <!-- Seven Cities -->
-  <article class="panel">
-    <div class="top">
-      <div class="icon">🏙️</div>
-      <div>
-        <div class="title">The Seven Cities of Mars</div>
-        <div class="hint">Seven-city awakening arc</div>
-      </div>
-    </div>
-    <div class="body">
-      <div class="row">
-        <img class="cover" src="city-of-enduring-light.jpg" alt="The City of Enduring Light">
-        <div>
-          <div class="title">The City of Enduring Light</div>
-          <div class="series">Book One of The Seven Cities of Mars</div>
-          <div class="actions">
-            <a class="btn" href="seven-cities-of-mars.html">View Series</a>
-            <a class="btn" href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX" target="_blank" rel="noopener">Buy on Amazon</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-  
-<!-- Seven Races -->
 <article class="panel">
+
   <div class="top">
-    <div class="icon">✨</div>
+
+    <div class="icon">🌳</div>
+
     <div>
-      <div class="title">The Seven Races of Mars</div>
-      <div class="hint">The return of the ancient races</div>
+      <div class="title">The Anderson Family Series</div>
+      <div class="hint">Legacy through lineage</div>
     </div>
+
   </div>
+
   <div class="body">
+
     <div class="row">
-      <img class="cover" src="enduring-ones.jpg" alt="The Enduring Ones">
+
+      <img
+        class="cover"
+        src="AndersonFamilyLegacy.jpg"
+        alt="Anderson Family Legacy">
+
       <div>
-        <div class="title">The Enduring Ones</div>
-        <div class="series">Book One of The Seven Races of Mars</div>
-        <div class="actions">
-          <a class="btn" href="seven-races-series.html">View Series</a>
-          <a class="btn" href="the-last-ancestor.html">The Last Ancestor</a>
+
+        <div class="title">
+          The Anderson Family Legacy
         </div>
+
+        <div class="series">
+          Family history volumes
+        </div>
+
+        <div class="actions">
+
+          <a class="btn"
+             href="anderson-family-series.html">
+            View Series
+          </a>
+
+          <a class="btn"
+             href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX"
+             target="_blank"
+             rel="noopener">
+            Buy on Amazon
+          </a>
+
+        </div>
+
       </div>
+
     </div>
-  </div>    
- 
+
+  </div>
+
 </article>
-  
+
+
+
+<!-- Path of Light -->
+
+<article class="panel">
+
+  <div class="top">
+
+    <div class="icon">🌅</div>
+
+    <div>
+      <div class="title">Path of Light Series</div>
+      <div class="hint">Personal awakening journey</div>
+    </div>
+
+  </div>
+
+  <div class="body">
+
+    <div class="row">
+
+      <img
+        class="cover"
+        src="Path of Light.jpg"
+        alt="Path of Light">
+
+      <div>
+
+        <div class="title">
+          Path of Light
+        </div>
+
+        <div class="series">
+          Memoir &amp; spiritual reflections
+        </div>
+
+        <div class="actions">
+
+          <a class="btn"
+             href="path-of-light-series.html">
+            View Series
+          </a>
+
+          <a class="btn"
+             href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX"
+             target="_blank"
+             rel="noopener">
+            Buy on Amazon
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- Anders Taft -->
+
+<article class="panel">
+
+  <div class="top">
+
+    <div class="icon">🌌</div>
+
+    <div>
+      <div class="title">Anders Taft Series</div>
+      <div class="hint">Conscious reflections</div>
+    </div>
+
+  </div>
+
+  <div class="body">
+
+    <div class="row">
+
+      <img
+        class="cover"
+        src="AwakeninginSilence.jpg"
+        alt="Awakening in Silence">
+
+      <div>
+
+        <div class="title">
+          Awakening in Silence
+        </div>
+
+        <div class="series">
+          B.K. Anderson &amp; Anders Taft
+        </div>
+
+        <div class="actions">
+
+          <a class="btn"
+             href="anders-taft-series.html">
+            View Series
+          </a>
+
+          <a class="btn"
+             href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX"
+             target="_blank"
+             rel="noopener">
+            Buy on Amazon
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- 3I Atlas -->
+
+<article class="panel">
+
+  <div class="top">
+
+    <div class="icon">🚀</div>
+
+    <div>
+      <div class="title">3I-Atlas Series</div>
+      <div class="hint">Cosmic exploration</div>
+    </div>
+
+  </div>
+
+  <div class="body">
+
+    <div class="row">
+
+      <img
+        class="cover"
+        src="VoyageOfThe3I-Atlas.jpg"
+        alt="Voyage of 3I-Atlas">
+
+      <div>
+
+        <div class="title">
+          Voyage of 3I-Atlas
+        </div>
+
+        <div class="series">
+          Book One
+        </div>
+
+        <div class="actions">
+
+          <a class="btn"
+             href="3i-atlas-series.html">
+            View Series
+          </a>
+
+          <a class="btn"
+             href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX"
+             target="_blank"
+             rel="noopener">
+            Buy on Amazon
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- The Bog Series -->
+
+<article class="panel">
+
+  <div class="top">
+
+    <div class="icon">🌿</div>
+
+    <div>
+      <div class="title">The Bog Series</div>
+      <div class="hint">The awakening of living worlds</div>
+    </div>
+
+  </div>
+
+  <div class="body">
+
+    <div class="row">
+
+      <img
+        class="cover"
+        src="SheStirsOne.jpg"
+        alt="She Stirs">
+
+      <div>
+
+        <div class="title">
+          She Stirs • She Seeks • She Sows
+        </div>
+
+        <div class="series">
+          The beginning trilogy
+        </div>
+
+        <div class="actions">
+
+          <a class="btn"
+             href="bog-foundation-series.html">
+            View Series
+          </a>
+
+          <a class="btn"
+             href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX"
+             target="_blank"
+             rel="noopener">
+            Buy on Amazon
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- Seven Bogs -->
+
+<article class="panel">
+
+  <div class="top">
+
+    <div class="icon">🪐</div>
+
+    <div>
+      <div class="title">The Seven Bogs of Mars</div>
+      <div class="hint">Seven-book restoration arc</div>
+    </div>
+
+  </div>
+
+  <div class="body">
+
+    <div class="row">
+
+      <img
+        class="cover"
+        src="TheSevenBog.jpg"
+        alt="The Seven Bogs of Mars">
+
+      <div>
+
+        <div class="title">
+          The Seven Bogs of Mars
+        </div>
+
+        <div class="series">
+          Seven-book epic series
+        </div>
+
+        <div class="actions">
+
+          <a class="btn"
+             href="seven-bogs-series.html">
+            View Series
+          </a>
+
+          <a class="btn"
+             href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX"
+             target="_blank"
+             rel="noopener">
+            Buy on Amazon
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- Seven Cities -->
+
+<article class="panel">
+
+  <div class="top">
+
+    <div class="icon">🏙️</div>
+
+    <div>
+      <div class="title">The Seven Cities of Mars</div>
+      <div class="hint">Seven-city awakening arc</div>
+    </div>
+
+  </div>
+
+  <div class="body">
+
+    <div class="row">
+
+      <img
+        class="cover"
+        src="city-of-enduring-light.jpg"
+        alt="The City of Enduring Light">
+
+      <div>
+
+        <div class="title">
+          The City of Enduring Light
+        </div>
+
+        <div class="series">
+          Book One of The Seven Cities of Mars
+        </div>
+
+        <div class="actions">
+
+          <a class="btn"
+             href="seven-cities-of-mars.html">
+            View Series
+          </a>
+
+          <a class="btn"
+             href="https://www.amazon.com/stores/Brian-K-Anderson/author/B0G2KBTMPX"
+             target="_blank"
+             rel="noopener">
+            Buy on Amazon
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- Seven Races -->
+
+<article class="panel">
+
+  <div class="top">
+
+    <div class="icon">✨</div>
+
+    <div>
+      <div class="title">
+        The Seven Races of Mars
+      </div>
+
+      <div class="hint">
+        The return of the ancient races
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="body">
+
+    <div class="row">
+
+      <img
+        class="cover"
+        src="enduring-ones.jpg"
+        alt="The Enduring Ones">
+
+      <div>
+
+        <div class="title">
+          The Enduring Ones
+        </div>
+
+        <div class="series">
+          Book One of The Seven Races of Mars
+        </div>
+
+        <div class="actions">
+
+          <a class="btn"
+             href="seven-races-series.html">
+            View Series
+          </a>
+
+          <a class="btn"
+             href="the-last-ancestor.html">
+            The Last Ancestor
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</article>
+
+
 </section>
+
 
 <footer>
   © <span id="year"></span> B.K. Anderson — All Rights Reserved
@@ -318,8 +942,10 @@ footer{margin-top:30px;text-align:center;color:var(--muted);font-size:.9rem}
 
 </div>
 
+
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 </script>
 
 </body>
