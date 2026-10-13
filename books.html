@@ -173,6 +173,48 @@ h1{
   color:#f3d77f!important;
 }
 
+
+/* WHY SEVEN? FEATURE */
+
+.why-seven-feature{
+  margin-top:24px;
+  margin-bottom:28px;
+  padding:22px;
+  border:1px solid #8f7430;
+  border-radius:20px;
+  background:linear-gradient(180deg,rgba(35,31,22,.96),rgba(20,22,34,.98));
+}
+
+.why-seven-feature h2{
+  margin:0 0 8px;
+  text-align:center;
+  font-size:1.7rem;
+}
+
+.why-seven-intro{
+  text-align:center;
+  color:var(--muted);
+  line-height:1.6;
+  margin:0 auto 20px;
+}
+
+.why-seven-feature .what-if-card{
+  grid-template-columns:180px minmax(0,1fr);
+  max-width:850px;
+  margin:0 auto;
+}
+
+.why-seven-feature .gold-btn{
+  background:linear-gradient(180deg,#d6b35a,#9c7310);
+  color:#111!important;
+  border:1px solid #f0d57a!important;
+  font-weight:700;
+}
+
+.why-seven-feature .gold-btn:hover{
+  background:linear-gradient(180deg,#e3c56d,#b88a16);
+}
+
 /* MAIN BOOK GRID */
 
 .grid{
@@ -288,8 +330,9 @@ footer{
 
 @media(max-width:560px){
 
-  .what-if-card{
-    grid-template-columns:110px 1fr;
+  .what-if-card,
+  .why-seven-feature .what-if-card{
+    grid-template-columns:110px minmax(0,1fr);
   }
 }
 </style>
@@ -315,6 +358,8 @@ footer{
   <div class="series">
 
     <a href="what-if.html">What If?</a>
+
+    <a href="WhySeven.html">WHY SEVEN?</a>
 
     <a href="anderson-family-series.html">Family Legacy</a>
 
@@ -478,6 +523,43 @@ footer{
        
 
   </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- WHY SEVEN? FEATURED BOOK -->
+<!-- ================================================= -->
+
+<section class="why-seven-feature">
+
+  <h2>WHY SEVEN?</h2>
+
+  <p class="why-seven-intro">Following an Ancient Pattern Through Time — Book One of the WHY SEVEN? series</p>
+
+  <article class="what-if-card">
+
+    <img
+      class="what-if-cover"
+      src="Why Seven.jpg"
+      alt="WHY SEVEN? Following an Ancient Pattern Through Time book cover by B. K. Anderson"
+      loading="lazy">
+
+    <div>
+      <h3>WHY SEVEN? — Following an Ancient Pattern Through Time</h3>
+
+      <p>
+        Why does the number seven appear so often across ancient cultures?
+        Follow a trail through archaeology, astronomy, mythology, sacred
+        traditions, and early civilizations as B. K. Anderson explores
+        the evidence, the possibilities, and the mysteries that remain.
+      </p>
+
+      <div class="actions">
+        <a class="btn gold-btn" href="WhySeven.html">View Book</a>
+      </div>
+    </div>
+
+  </article>
 
 </section>
 
