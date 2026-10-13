@@ -138,6 +138,61 @@
       font-weight:bold;
     }
 
+    /* Featured WHY SEVEN? book */
+    .why-seven-feature{
+      display:grid;
+      grid-template-columns:minmax(190px,270px) minmax(0,1fr);
+      gap:28px;
+      align-items:center;
+      margin-top:26px;
+      padding:28px;
+      border:1px solid #8f7430;
+      border-radius:22px;
+      background:linear-gradient(135deg,rgba(34,29,20,.98),rgba(15,16,22,.98));
+    }
+
+    .why-seven-cover{
+      display:block;
+      max-width:270px;
+      width:100%;
+      margin:auto;
+    }
+
+    .why-seven-cover img{
+      display:block;
+      width:100%;
+      height:auto;
+      border-radius:10px;
+      box-shadow:0 12px 30px rgba(0,0,0,.4);
+    }
+
+    .why-seven-copy h2{
+      margin:4px 0 8px;
+      font-size:clamp(1.7rem,3vw,2.3rem);
+      color:#f0d57a;
+    }
+
+    .why-seven-copy p{
+      color:var(--muted);
+      line-height:1.7;
+      margin:0 0 16px;
+    }
+
+    .why-seven-copy .why-seven-label{
+      color:#e1bf65;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-size:.82rem;
+      margin-bottom:8px;
+    }
+
+    .why-seven-copy .why-seven-subtitle{
+      color:var(--fg);
+      font-weight:600;
+      font-size:1.08rem;
+    }
+
     .grid{
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -255,6 +310,11 @@
         grid-template-columns:1fr;
       }
 
+      .why-seven-feature{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
       .portrait-wrap{
         min-height:280px;
       }
@@ -321,6 +381,10 @@
             What If?
           </a>
 
+          <a class="btn" href="WhySeven.html">
+            WHY SEVEN?
+          </a>
+
           <a class="btn" href="bog-foundation-series.html">
             Bog Series
           </a>
@@ -358,6 +422,30 @@
           </a>
 
         </div>
+      </div>
+    </section>
+
+
+    <!-- WHY SEVEN? FEATURED RELEASE -->
+    <section class="why-seven-feature" aria-labelledby="why-seven-title">
+      <a class="why-seven-cover" href="WhySeven.html" aria-label="View WHY SEVEN? book details">
+        <img src="Why Seven.jpg"
+             alt="WHY SEVEN? Following an Ancient Pattern Through Time by B. K. Anderson"
+             loading="lazy">
+      </a>
+
+      <div class="why-seven-copy">
+        <p class="why-seven-label">Featured New Release · Book One</p>
+        <h2 id="why-seven-title">WHY SEVEN?</h2>
+        <p class="why-seven-subtitle">Following an Ancient Pattern Through Time</p>
+        <p>
+          Why does the number seven appear across so many ancient civilizations,
+          sacred traditions, and stories? Follow the trail through archaeology,
+          astronomy, early texts, and human history—separating the evidence
+          from interpretation while exploring a question that has echoed
+          through the ages.
+        </p>
+        <a class="btn what-if-btn" href="WhySeven.html">View Book</a>
       </div>
     </section>
 
@@ -579,3 +667,4 @@
 
 </body>
 </html>
+
